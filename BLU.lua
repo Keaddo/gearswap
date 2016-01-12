@@ -38,7 +38,7 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Taeon Chapeau",neck="Sanctity Necklace", ear1="Dawn earring", ear2="Infused Earring",
-                                                  body="Mirage Jubbah",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas ring",
+                                                  body="Assimilator's Jubbah +1",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas ring",
                                                   back="Cornflower Cape",waist="Windbuffet Belt",legs="Crimson Cuisses",feet="Luhlaza Charuqs"}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
@@ -478,7 +478,7 @@ function get_sets()
                                                        
         sets.BlueMagic.SelfCures = {ammo="Hydrocera",
     head="Telchine Cap",
-    body="Taeon Tabard",
+    body="Assimilator's Jubbah +1",
     hands="Telchine Gloves",
     legs="Telchine Braconi",
     feet="Luhlaza Charuqs",
@@ -493,7 +493,7 @@ function get_sets()
                                                        
         sets.BlueMagic.Stun = {ammo="Falcon Eye",
     head="Dampening Tam",
-    body="Samnuha Coat",
+    body="Assimilator's Jubbah +1",
     hands="Rawhide Gloves",
     legs="Miasmic Pants",
     feet={ name="Herculean Boots", augments={'Accuracy+25 Attack+25','DEX+1','Accuracy+12','Attack+14',}},
@@ -538,17 +538,17 @@ function get_sets()
        
         sets.BlueMagic.WhiteWind = {ammo="Egoist's Tathlum",
     head="Telchine Cap",
-    body="Vrikodara Jupon",
+    body="Assimilator's Jubbah +1",
     hands="Telchine Gloves",
-    legs="Gyve Trousers",
-    feet="Medium's Sabots",
-    neck="Dualism Collar +1",
-    waist="Gishdubar Sash",
+    legs="Telchine Braconi",
+    feet="Luhlaza Charuqs",
+    neck="Phalaina Locket",
+    waist="Pythia Sash",
     left_ear="Mendi. Earring",
-    right_ear="Etiolation Earring",
-    left_ring="Lebeche Ring",
-    right_ring="Kunaji Ring",
-    back="Aenotherus Mantle +1",
+    right_ear="Lifestorm Earring",
+    left_ring="Levia. Ring",
+    right_ring="Levia. Ring",
+    back="Cornflower Cape",
 }
                                                                          
         sets.BlueMagic.MagicAccuracy = {ammo="Mavi Tathlum",
@@ -613,7 +613,7 @@ function get_sets()
                                                                          
         sets.BlueMagic.Skill = {ammo="Mavi Tathlum",
     head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+4','Mag. Acc.+4',}},
-    body="Taeon Tabard",
+    body="Assimilator's Jubbah +1",
     hands="Rawhide Gloves",
     legs="Psycloth Lappas",
     feet="Luhlaza Charuqs",
@@ -628,7 +628,7 @@ function get_sets()
                                                        
         sets.BlueMagic.SkillRecast = {ammo="Mavi Tathlum",
     head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+4','Mag. Acc.+4',}},
-    body="Taeon Tabard",
+    body="Assimilator's Jubbah +1",
     hands="Rawhide Gloves",
     legs="Psycloth Lappas",
     feet="Luhlaza Charuqs",
