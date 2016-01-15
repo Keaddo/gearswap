@@ -1,5 +1,5 @@
 
-sets.reive = {neck="Ygnas's Resolve +1"}
+sets.reive = {neck="Adoulin's Refuge +1"}
 
 function user_post_precast(spell, action, spellMap, eventArgs)
     -- reive mark
