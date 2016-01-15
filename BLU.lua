@@ -731,7 +731,7 @@ function get_sets()
        
         sets.precast.FC.Blue = {ammo="Sapience Orb",
     head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+4','Mag. Acc.+4',}},
-    body="Assimilator's Jubbah +1",
+    body="Mavi Mintan +1",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
     feet="Taeon Boots",
