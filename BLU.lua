@@ -37,7 +37,7 @@ function get_sets()
         Idle_ind = 1                   
        
         sets.Idle.Standard = {ammo="Jukukik Feather",
-                                                  head="Taeon Chapeau",neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Brutal Earring",
+                                                  head="Rawhide Mask",neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Brutal Earring",
                                                   body="Assimilator's Jubbah +1",hands="Rawhide Gloves",ring1="Epona's Ring",ring2="Rajas ring",
                                                   back="Cornflower Cape",waist="Windbuffet Belt +1",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  
