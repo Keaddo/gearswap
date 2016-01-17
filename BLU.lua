@@ -36,9 +36,9 @@ function get_sets()
         sets.Idle.index = {'Standard','DT'}
         Idle_ind = 1                   
        
-        sets.Idle.Standard = {ammo="Ginsen",
+        sets.Idle.Standard = {ammo="Jukukik Feather",
                                                   head="Taeon Chapeau",neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Brutal Earring",
-                                                  body="Assimilator's Jubbah +1",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas ring",
+                                                  body="Assimilator's Jubbah +1",hands="Rawhide Gloves",ring1="Epona's Ring",ring2="Rajas ring",
                                                   back="Cornflower Cape",waist="Windbuffet Belt +1",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
@@ -161,19 +161,19 @@ function get_sets()
     right_ring="Rajas Ring",
     back="Kayapa Cape",
 }
-	sets.TP.CantHitShit = {ammo="Falcon Eye",
-    head="Dampening Tam",
-    body="Adhemar Jacket",
-    hands={ name="Herculean Gloves", augments={'Accuracy+24 Attack+24','Crit.hit rate+1','DEX+10','Accuracy+11',}},
-    legs="Samnuha Tights",
+	sets.TP.CantHitShit = {ammo="Amar Cluster",
+    head="Taeon Chapeau",
+    body="Rawhide Vest",
+    hands="Rawhide Gloves",
+    legs="Taeon Tights",
     feet="Rawhide Boots",
-    neck="Subtlety Spec.",
+    neck="Sanctity Necklace",
     waist="Olseni Belt",
-    left_ear="Suppanomimi",
-    right_ear="Brutal Earring",
-    left_ring="Yacuruna Ring",
-    right_ring="Rajas Ring",
-    back="Grounded Mantle",
+    left_ear="Steelflash Earring",
+    right_ear="Bladeborn Earring",
+    left_ring="Enlivened Ring",
+    right_ring="Yacuruna Ring",
+    back="Kayapa Cape",
 }
                                                        
         sets.TP.DT = {ammo="Vanir Battery",
