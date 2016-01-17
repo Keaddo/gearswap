@@ -117,7 +117,7 @@ function get_sets()
     right_ring="Rajas Ring",
     back="Bleating Mantle",
 }
-	sets.TP.AccuracyMedium = {ammo="Falcon Eye",
+	sets.TP.AccuracyMedium = {ammo="Amar Cluster",
     head="Taeon Chapeau",
     body="Rawhide Vest",
     hands="Taeon Gloves",
@@ -132,7 +132,7 @@ function get_sets()
     back="Bleating Mantle",
 }
        
-        sets.TP.AccuracyFull = {ammo="Falcon Eye",
+        sets.TP.AccuracyFull = {ammo="Amar Cluster",
     head="Taeon Chapeau",
     body="Rawhide Vest",
     hands="Taeon Gloves",
@@ -144,13 +144,13 @@ function get_sets()
     right_ear="Bladeborn Earring",
     left_ring="Epona's Ring",
     right_ring="Rajas Ring",
-    back="Bleating Mantle",
+    back="Kayapa Mantle",
 }
                                                        
-        sets.TP.AccuracyExtreme = {ammo="Falcon Eye",
+        sets.TP.AccuracyExtreme = {ammo="Amar Cluster",
     head="Taeon Chapeau",
     body="Rawhide Vest",
-    hands="Taeon Gloves",
+    hands="Rawhide Gloves",
     legs="Taeon Tights",
     feet="Rawhide Boots",
     neck="Sanctity Necklace",
@@ -159,7 +159,7 @@ function get_sets()
     right_ear="Bladeborn Earring",
     left_ring="Epona's Ring",
     right_ring="Rajas Ring",
-    back="Cornflower Cape",
+    back="Kayapa Cape",
 }
 	sets.TP.CantHitShit = {ammo="Falcon Eye",
     head="Dampening Tam",
@@ -248,7 +248,7 @@ function get_sets()
         sets.ChantDuCygne.Accuracy = {ammo="Falcon Eye",
     head="Taeon Chapeau",
     body="Rawhide Vest",
-    hands="Taeon Gloves",
+    hands="Rawhide Gloves",
     legs="Taeon Tights",
     feet="Rawhide Boots",
     neck="Sanctity Necklace",
@@ -614,7 +614,7 @@ function get_sets()
         sets.BlueMagic.Skill = {ammo="Mavi Tathlum",
      head="Helios Band",
     body="Assimilator's Jubbah +1",
-    hands="Amalric Gages",
+    hands="Rawhide Gloves",
     legs="Psycloth Lappas",
     feet="Luhlaza Charuqs",
     neck="Phalaina Locket",

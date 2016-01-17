@@ -202,7 +202,7 @@ function init_gear_sets()
 		back="Bleating Mantle",
         waist="Windbuffet Belt +1",
         legs="Taeon Tights",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     }
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {
         head="Whirlpool Mask",
@@ -317,7 +317,7 @@ function init_gear_sets()
 		back="Argochampsa Mantle",
         waist="Thunder Belt",
         legs="Limbo Trousers",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     }
 	
         -- Midcast Sets
@@ -384,7 +384,7 @@ function init_gear_sets()
         ring2="Epona's Ring",
 		back="Canny Cape",
         legs="Samnuha Tights",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     }
 
 	sets.defense.PDT = {
@@ -408,7 +408,7 @@ function init_gear_sets()
         ring2="Epona's Ring",
 		back="Engulfer Cape +1",
         legs="Nahtirah Trousers",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     }
 
 	sets.Kiting = {feet="Skadi's Jambeaux +1"}
@@ -434,7 +434,7 @@ function init_gear_sets()
 		back="Canny Cape",
         waist="Windbuffet Belt +1",
         legs="Taeon Tights",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     }
     sets.engaged.Mid = set_combine(sets.engaged, {
         neck="Lissome Necklace",
@@ -448,12 +448,12 @@ function init_gear_sets()
         ear2="Steelflash Earring",
         ring1="Patricius Ring",
         waist="Olseni Belt",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     })
 	sets.engaged.Evasion = set_combine(sets.engaged, {
 		body="Qaaxo Harness",
         ring1="Beeline Ring",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     })
     sets.engaged.Mid.Evasion = sets.engaged.Evasion
 	sets.engaged.Acc.Evasion = set_combine(sets.engaged.Evasion, {
@@ -491,12 +491,12 @@ function init_gear_sets()
         back="Bleating Mantle",
         waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     })
     sets.engaged.Mid.Haste_43 = set_combine(sets.engaged.Haste_43, { 
         body="Taeon Tabard",
         ring1="Patricius Ring",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     })
     sets.engaged.Acc.Haste_43 = set_combine(sets.engaged.Haste_43, {
         body="Taeon Tabard",
@@ -509,7 +509,7 @@ function init_gear_sets()
         waist="Olseni Belt",
         back="Canny Cape"
     })
-    sets.engaged.Evasion.Haste_43 = set_combine(sets.engaged.Haste_43, { body="Qaaxo Harness", ring1="Beeline Ring", feet="Taeon Boots"})
+    sets.engaged.Evasion.Haste_43 = set_combine(sets.engaged.Haste_43, { body="Qaaxo Harness", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_43 = set_combine(sets.engaged.Haste_43, {
 		    head="Iuitl Headgear +1",
             neck="Twilight Torque", 
@@ -518,7 +518,7 @@ function init_gear_sets()
             ring2="Dark Ring", 
             back="Repulse Mantle", 
             legs="Iuitl Tights +1", 
-            feet="Taeon Boots" 
+            feet="Herculean Boots" 
     })
     
      -- 40
@@ -531,9 +531,9 @@ function init_gear_sets()
     sets.engaged.Acc.Haste_40 = set_combine(sets.engaged.Acc.Haste_43, {
         ear1="Suppanomimi"
     })
-    sets.engaged.Evasion.Haste_40 = set_combine(sets.engaged.Haste_40, { body="Qaaxo Harness", ring1="Beeline Ring", feet="Taeon Boots"})
+    sets.engaged.Evasion.Haste_40 = set_combine(sets.engaged.Haste_40, { body="Qaaxo Harness", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_40 = set_combine(sets.engaged.Haste_40, { head="Lithelimb Cap", neck="Twilight Torque", 
-        body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Taeon Boots" })
+        body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Herculean Boots" })
 
      -- 30
     sets.engaged.Haste_30 = set_combine(sets.engaged.Haste_40, {
@@ -541,20 +541,20 @@ function init_gear_sets()
 		body="Samnuha Coat",
         hands=TaeonHands.TA,
         back="Canny Cape",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     })
     sets.engaged.Mid.Haste_30 = set_combine(sets.engaged.Haste_30, { 
 		body="Samnuha Coat",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     })
     sets.engaged.Acc.Haste_30 = set_combine(sets.engaged.Acc.Haste_40, {
         waist="Patentia Sash",
         back="Canny Cape",
-        feet="Taeon Boots"
+        feet="Herculean Boots"
     })
-    sets.engaged.Evasion.Haste_30 = set_combine(sets.engaged.Haste_30, { body="Samnuha Coat", ring1="Beeline Ring", feet="Taeon Boots"})
+    sets.engaged.Evasion.Haste_30 = set_combine(sets.engaged.Haste_30, { body="Samnuha Coat", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_30 = set_combine(sets.engaged.Haste_30, { head="Lithelimb Cap", neck="Twilight Torque", 
-        body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Taeon Boots" })
+        body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Herculean Boots" })
 
      -- 25
     sets.engaged.Haste_25 = set_combine(sets.engaged.Haste_30, {
@@ -567,9 +567,9 @@ function init_gear_sets()
         ear2="Dudgeon Earring"
     })
     sets.engaged.Mid.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Samnuha Coat" })
-    sets.engaged.Evasion.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Samnuha Coat", ring1="Beeline Ring", feet="Taeon Boots"})
+    sets.engaged.Evasion.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Samnuha Coat", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_25 = set_combine(sets.engaged.Haste_25, { head="Lithelimb Cap", neck="Twilight Torque", 
-        body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Taeon Boots" })
+        body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Herculean Boots" })
 end
 
 
