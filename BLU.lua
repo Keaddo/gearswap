@@ -59,7 +59,7 @@ function get_sets()
         TP_ind = 1
        
         sets.TP.Standard = {ammo="Ginsen",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Taeon Gloves",
     legs="Samnuha Tights",
@@ -74,7 +74,7 @@ function get_sets()
 }
                                                
         sets.TP.Solo = {ammo="Ginsen",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Taeon Gloves",
     legs="Samnuha Tights",
@@ -89,7 +89,7 @@ function get_sets()
 }
                                        
         sets.TP.Safe = {ammo="Ginsen",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Taeon Gloves",
     legs="Samnuha Tights",
@@ -104,7 +104,7 @@ function get_sets()
 }
                                        
         sets.TP.AccuracyLite = {ammo="Ginsen",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Taeon Gloves",
     legs="Samnuha Tights",
@@ -118,7 +118,7 @@ function get_sets()
     back="Bleating Mantle",
 }
 	sets.TP.AccuracyMedium = {ammo="Amar Cluster",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Taeon Gloves",
     legs="Samnuha Tights",
@@ -133,7 +133,7 @@ function get_sets()
 }
        
         sets.TP.AccuracyFull = {ammo="Amar Cluster",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Taeon Gloves",
     legs="Samnuha Tights",
@@ -148,7 +148,7 @@ function get_sets()
 }
                                                        
         sets.TP.AccuracyExtreme = {ammo="Amar Cluster",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Rawhide Gloves",
     legs="Samnuha Tights",
@@ -206,7 +206,7 @@ function get_sets()
         Requiescat_ind = 1
        
         sets.Requiescat.Attack = {ammo="Hydrocera",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Taeon Gloves",
     legs="Samnuha Tights",
@@ -246,7 +246,7 @@ function get_sets()
 }
                                                            
         sets.ChantDuCygne.Accuracy = {ammo="Falcon Eye",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Rawhide Gloves",
     legs="Samnuha Tights",
@@ -507,7 +507,7 @@ function get_sets()
 }
                                                    
         sets.BlueMagic.HeavyStrike = {ammo="Mantoptera Eye",
-    head="Taeon Chapeau",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands={ name="Herculean Gloves", augments={'Accuracy+24 Attack+24','Crit.hit rate+1','DEX+10','Accuracy+11',}},
     legs="Samnuha Tights",
