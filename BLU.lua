@@ -433,7 +433,7 @@ function get_sets()
                                                  
         sets.BlueMagic.INT = {ammo="Ombre Tathlum",
     head="Helios Band",
-    body="Rawhide Vest",
+    body="Samnuha Coat",
     hands="Amalric Gages",
     legs="Telchine Braconi",
     feet="Helios Boots",
@@ -448,7 +448,7 @@ function get_sets()
 
 	sets.BlueMagic.Dark = {ammo="Ghastly Tathlum",
     head="Helios Band",
-    body="Rawhide Vest",
+    body="Samnuha Coat",
     hands="Amalric Gages",
     legs="Telchine Braconi",
     feet="Helios Boots",
@@ -493,7 +493,7 @@ function get_sets()
                                                        
         sets.BlueMagic.Stun = {ammo="Falcon Eye",
     head="Dampening Tam",
-    body="Assimilator's Jubbah +1",
+    body="Samnuha Coat",
     hands="Rawhide Gloves",
     legs="Miasmic Pants",
     feet="Herculean Boots",
@@ -628,7 +628,7 @@ function get_sets()
                                                        
         sets.BlueMagic.SkillRecast = {ammo="Mavi Tathlum",
     head="Helios Band",
-    body="Taeon Tabard",
+    body="Assimilator's Jubbah +1",
     hands="Rawhide Gloves",
     legs="Psycloth Lappas",
     feet="Luhlaza Charuqs",
