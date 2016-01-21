@@ -191,7 +191,7 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
-		head="Adhemar Bonnet",
+		head="Lilitu Headpiece",
         neck="Asperity Necklace",
         ear1="Steelflash Earring",
         ear2="Bladeborn Earring",
@@ -201,7 +201,7 @@ function init_gear_sets()
         ring2="Rajas Ring",
 		back="Bleating Mantle",
         waist="Windbuffet Belt +1",
-        legs="Taeon Tights",
+        legs="Samnuha Tights",
         feet="Herculean Boots"
     }
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {
@@ -340,16 +340,17 @@ function init_gear_sets()
 
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {
-		head="Iuitl Headgear +1",
-        neck="Lissome Necklace",
-        ear1="Zennaroi Earring",
-        ear2="Trux Earring",
-        body="Emet Harness +1",
-        hands="Iuitl Wristbands +1",
-        ring1="Karieyh Ring",
-        ring2="Dark Ring",
-		back="Engulfer Cape +1",
-        waist="Flume Belt",
+		head="Adhemar Bonnet",
+        neck="Asperity Necklace",
+        ear1="Steelflash Earring",
+        ear2="Bladeborn Earring",
+		--body="Skadi's Cuirie +1",
+		body="Rawhide Vest",
+        hands=TaeonHands.DW,
+        ring1="Rajas Ring",
+        ring2="Epona's Ring",
+		back="Canny Cape",
+        waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
         feet="Trotter Boots"
     }
@@ -433,7 +434,7 @@ function init_gear_sets()
         ring2="Epona's Ring",
 		back="Canny Cape",
         waist="Windbuffet Belt +1",
-        legs="Taeon Tights",
+        legs="Samnuha Tights",
         feet="Herculean Boots"
     }
     sets.engaged.Mid = set_combine(sets.engaged, {
