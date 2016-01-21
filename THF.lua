@@ -191,7 +191,7 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
-		head="Taeon Chapeau",
+		head="Adhemar Bonnet",
         neck="Asperity Necklace",
         ear1="Steelflash Earring",
         ear2="Bladeborn Earring",
@@ -273,7 +273,7 @@ function init_gear_sets()
 	sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Mid, {neck="Shadow Gorget"})
 	
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
-        head="Taeon Chapeau",
+        head="Adhemar Bonnet",
         neck="Moepapa Medal",
         hands=TaeonHands.TA,
         body="Dread Jupon",
@@ -422,7 +422,7 @@ function init_gear_sets()
 	
 	-- Normal melee group
 	sets.engaged = {
-		head="Taeon Chapeau",
+		head="Adhemar Bonnet",
         neck="Asperity Necklace",
         ear1="Steelflash Earring",
         ear2="Bladeborn Earring",
@@ -483,7 +483,7 @@ function init_gear_sets()
     
     -- Haste 43%
     sets.engaged.Haste_43 = set_combine(sets.engaged, {
-        head="Taeon Chapeau",
+        head="Adhemar Bonnet",
         ear1="Trux Earring",
         ear2="Brutal Earring",
         body="Qaaxo Harness",
