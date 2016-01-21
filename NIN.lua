@@ -86,10 +86,10 @@ function init_gear_sets()
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Qirmiz Tathlum",
-        head="Taeon Chapeau",neck="Asperity Necklace",ear1="",ear2="",
-        body="Taeon Tabard",hands="Taeon Gloves",ring1="Thunder Ring",ring2="",
-        back="Iga dochugappa",waist="Cuchulain's Belt",legs="Taeon Tights",feet="Taeon Boots"}
+    sets.precast.WS = {ammo="Amar Cluster",
+        head="Lilitu Headpiece",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earri",
+        body="Rawhide Vest0",hands="Rawhide Gloves",ring1="Thunder Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Jukukik Feather",hands="Buremte Gloves",
         back="Yokaze Mantle"})
 
@@ -98,9 +98,9 @@ function init_gear_sets()
         {neck="Rancor Collar",ear1="Brutal Earring",ear2="Moonshade Earring",feet="Daihanshi Habaki"})
 
     sets.precast.WS['Blade: Hi'] = set_combine(sets.precast.WS,
-        {back="Blithe Mantle", ring1="Stormsoul Ring",hands="Iga Tekko +2",legs="Taeon Tights", feet="Taeon Boots"})
+        {back="Blithe Mantle", ring1="Stormsoul Ring"})
 
-    sets.precast.WS['Blade: Shun'] = set_combine(sets.precast.WS, {feet="Taeon Boots"})
+    sets.precast.WS['Blade: Shun'] = set_combine(sets.precast.WS, {feet="Herculean Boots"})
 
 
     sets.precast.WS['Aeolian Edge'] = {
@@ -114,26 +114,26 @@ function init_gear_sets()
     --------------------------------------
 
     sets.midcast.FastRecast = {
-        head="Taeon Chapeau",ear2="Loquacious Earring",
-        body="Taeon Tabard",hands="Koga Tekko +2",ring1="Prolix Ring",
+        head="Taeon Chapeau",ear1="Loquacious Earring",
+        body="Samnuha Coat",hands="Koga Tekko +2",ring2="Weatherspoon Ring",
         legs="Taeon Tights",feet="Taeon Boots"}
         
-    sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {feet="Iga Kyahan +2"})
+    sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {body="Mochizuki Chainmail", feet="Iga Kyahan +2"})
 
     sets.midcast.ElementalNinjutsu = {
-        head="Taeon Chapeau",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Taeon Tabard",hands="Iga Tekko +2",ring1="Icesoul Ring",ring2="Acumen Ring",
-        back="Toro Cape",waist=gear.ElementalObi,legs="Iga Hakama +2",feet="Taeon Boots"}
+        head="Lilitu Headpiece",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        body="Samnuha Coat",hands="Iga Tekko +2",ring1="Fenrir Ring",ring2="Fenrir Ring",
+        back="Toro Cape",waist=gear.ElementalObi,legs="Samnuha Tights",feet="Herculean Boots"}
 
     sets.midcast.ElementalNinjutsu.Resistant = set_combine(sets.midcast.Ninjutsu, {ear1="Lifestorm Earring",ear2="Psystorm Earring",
         back="Yokaze Mantle"})
 
     sets.midcast.NinjutsuDebuff = {
-        head="Taeon Chapeau",neck="Stoicheion Medal",ear1="Lifestorm Earring",ear2="Psystorm Earring",
-        hands="Koga Tekko +2",ring2="Sangoma Ring",
+        head="Lilitu Headpiece",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        body="Samnuha Coat",hands="Iga Tekko +2",ring1="Fenrir Ring",ring2="Fenrir Ring",
         back="Yokaze Mantle",feet="Hachiya Kyahan"}
 
-    sets.midcast.NinjutsuBuff = {head="Taeon Chapeau",neck="Ej Necklace",back="Yokaze Mantle"}
+    sets.midcast.NinjutsuBuff = {neck="Ej Necklace",back="Yokaze Mantle"}
 
     sets.midcast.RA = {
         head="Taeon Chapeau",neck="Ej Necklace",
@@ -151,25 +151,25 @@ function init_gear_sets()
     
     -- Idle sets
     sets.idle = {ammo="Hachiya Shuriken",
-        head="Taeon Chapeau",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Mochizuki Chainmail",hands="Koga Tekko +2",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Mochizuki Hakama",feet=gear.MovementFeet}
+        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Samnuha Coat",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.MovementFeet}
 
-    sets.idle.Town = {ammo="Qirmiz Tathlum",
-        head="Koga Hatsuburi",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Mochizuki Chainmail",hands="Koga Tekko +2",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Mochizuki Hakama",feet=gear.MovementFeet}
+    sets.idle.Town = {ammo="Hachiya Shuriken",
+        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Samnuha Coat",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.MovementFeet}
     
-    sets.idle.Weak = {
-        head="Taeon Chapeau",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Mochizuki Chainmail",hands="Koga Tekko +2",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Mochizuki Hakama",feet=gear.MovementFeet}
+    sets.idle.Weak = {ammo="Hachiya Shuriken",
+        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Samnuha Coat",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.MovementFeet}
     
     -- Defense sets
-    sets.defense.Evasion = {
-        head="Taeon Chapeau",neck="Iga Erimaki",
-        body="Taeon Tabard",hands="Taeon Gloves",ring1="Defending Ring",ring2="Beeline Ring",
-        back="Yokaze Mantle",waist="Flume Belt",legs="Taeon Tights",feet="Taeon Boots"}
+    sets.defense.Evasion = {ammo="Hachiya Shuriken",
+        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
 
     sets.defense.PDT = {ammo="Iron Gobbet",
         head="Outrider Mask",neck="Twilight Torque",
@@ -177,9 +177,9 @@ function init_gear_sets()
         back="Shadow Mantle",waist="Flume Belt",legs="Outrider hose",feet="Outrider greaves"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
-        head="Taeon Chapeau",neck="Twilight Torque",
-        body="Taeon Tabard",hands="Taeon Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Engulfer Cape",waist="Flume Belt",legs="Taeon Tights",feet="Taeon Boots"}
+        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
 
 
     sets.Kiting = {feet=gear.MovementFeet}
@@ -196,24 +196,24 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {ammo="Hachiya Shuriken",
-        head="Taeon Chapeau",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Taeon Tabard",hands="Taeon Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Taeon Tights",feet="Taeon Boots"}
+        head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.Acc = {ammo="Hachiya Shuriken",
-        head="Taeon Chapeau",neck="Iga Erimaki",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Taeon Tabard",hands="Outrider mittens",ring1="Heed Ring",ring2="Keen Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Taeon Tights",feet="Taeon Boots"}
+        head="Adhemar Bonnet",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.Evasion = {ammo="Hachiya Shuriken",
-        head="Taeon Chapeau",neck="Iga Erimaki",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Taeon Tabard",hands="Taeon Gloves",ring1="Rajas Ring",ring2="Heed Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Taeon Tights",feet="Taeon Boots"}
+        head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.Acc.Evasion = {ammo="Hachiya Shuriken",
-        head="Taeon Chapeau",neck="Iga Erimaki",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Taeon Tabard",hands="Taeon Gloves",ring1="Rajas Ring",ring2="Heed Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Taeon Tights",feet="Taeon Boots"}
+        head="Adhemar Bonnet",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.PDT = {ammo="Hachiya Shuriken",
         head="Outrider Mask",neck="Twilight torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Outrider Mail",hands="Outrider mittens",ring1="Rajas Ring",ring2="Epona's Ring",
+        body="Outrider Mail",hands="Outrider mittens",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Twilight Belt",legs="Outrider hose",feet="Outrider greaves"}
     sets.engaged.Acc.PDT = {ammo="Hachiya Shuriken",
         head="Outrider Mask",neck="Twilight torque",ear1="Iga mimikazari",ear2="Suppanomimi",
@@ -230,8 +230,8 @@ function init_gear_sets()
 
     sets.buff.Migawari = {body="Iga Ningi +2"}
     sets.buff.Doom = {ring2="Saida Ring"}
-    sets.buff.Yonin = {}
-    sets.buff.Innin = {}
+    sets.buff.Yonin = {legs="Iga Hakama +2"}
+    sets.buff.Innin = {head="Iga Zukin +2"}
 end
 
 -------------------------------------------------------------------------------------------------------------------
