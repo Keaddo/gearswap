@@ -42,8 +42,8 @@ function get_sets()
                                                   back="Cornflower Cape",waist="Windbuffet Belt +1",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
-                                	head="Rabid Visor",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Dark ring",ring2="Shneddick ring",
+                                	head="Rawhide Mask",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
+                                        body="Assimilator's Jubbah +1",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Dark ring",ring2="Shneddick ring",
                                         back="Solemnity Cape",waist="Flume belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                        
                                                        
@@ -231,7 +231,7 @@ function get_sets()
         ChantDuCygne_ind = 1
        
         sets.ChantDuCygne.Attack = {ammo="Jukukik Feather",
-    head="Lilitu Headpiece",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -295,21 +295,21 @@ function get_sets()
         sets.WS.CircleBlade = {}               
                        
         sets.WS.CircleBlade = {ammo="Mantoptera Eye",
-                                                   head="Lilitu Headpiece",neck="Caro Necklace",ear1="Ishvara earring",ear2="Moonshade earring",
+                                                   head="Adhemar Bonnet",neck="Caro Necklace",ear1="Ishvara earring",ear2="Moonshade earring",
                                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Rufescent ring",
                                                    back="Buquwik Cape",waist="Prosilio Belt",legs="Samnuha Tights",feet="Herculean Boots",}
                                                    
         sets.WS.Expiacion = {}         
                        
         sets.WS.Expiacion = {ammo="Mantoptera Eye",
-                                                   head="Lilitu Headpiece",neck="Caro Necklace",ear1="Ishvara earring",ear2="Moonshade earring",
+                                                   head="Adhemar Bonnet",neck="Caro Necklace",ear1="Ishvara earring",ear2="Moonshade earring",
                                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Rufescent ring",
                                                    back="Buquwik Cape",waist="Prosilio Belt",legs="Samnuha Tights",feet="Herculean Boots",}
 
 	sets.WS.VorpalBlade = {}
 	
 	sets.WS.VorpalBlade = {ammo="Mantoptera Eye",
-                                                   head="Lilitu Headpiece",neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
+                                                   head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
                                                    body="Abnoba Kaftan",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Rufescent ring",
                                                    back="Rancorous Mantle",waist="Fotia Belt",legs="Samnuha Tights",feet="Thereoid Greaves"}
                                                  
@@ -357,7 +357,7 @@ function get_sets()
         sets.BlueMagic = {}
        
         sets.BlueMagic.STR = {ammo="Mantoptera Eye",
-    head="Lilitu Headpiece",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -372,7 +372,7 @@ function get_sets()
 }
                                                  
         sets.BlueMagic.STRDEX = {ammo="Mantoptera Eye",
-    head="Lilitu Headpiece",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -387,7 +387,7 @@ function get_sets()
 }
                                                        
         sets.BlueMagic.STRVIT = {ammo="Mantoptera Eye",
-    head="Lilitu Headpiece",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -402,7 +402,7 @@ function get_sets()
 }
                                                          
         sets.BlueMagic.STRMND = {ammo="Mantoptera Eye",
-    head="Lilitu Headpiece",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -417,7 +417,7 @@ function get_sets()
 }
                                                                
         sets.BlueMagic.AGI = {ammo="Mantoptera Eye",
-    head="Lilitu Headpiece",
+    head="Adhemar Bonnet",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -522,7 +522,7 @@ function get_sets()
 }
                                                                  
         sets.BlueMagic.ChargedWhisker = {ammo="Ghastly Tathlum",
-    head="Lilitu Headpiece",
+    head="Adhemar Bonnet",
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
