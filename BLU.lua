@@ -133,7 +133,7 @@ function get_sets()
 }
        
         sets.TP.AccuracyFull = {ammo="Amar Cluster",
-    head="Adhemar Bonnet",
+    head="Dampening Tam",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -148,7 +148,7 @@ function get_sets()
 }
                                                        
         sets.TP.AccuracyExtreme = {ammo="Amar Cluster",
-    head="Adhemar Bonnet",
+    head="Dampening Tam",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -162,7 +162,7 @@ function get_sets()
     back="Kayapa Cape",
 }
 	sets.TP.CantHitShit = {ammo="Amar Cluster",
-    head="Adhemar Bonnet",
+    head="Dampening Tam",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -177,14 +177,14 @@ function get_sets()
 }
                                                        
         sets.TP.DT = {ammo="Vanir Battery",
-                                head="Rabid Visor",
+                                head="Dampening Tam",
 								neck="Twilight Torque", 
-								ear1="Etiolation earring", 
-								ear2="Cryptic Earring",
-                                body="Emet Harness +1",
-								hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},
-								ring1="Dark ring",
-								ring2="Succor ring",
+								ear1="Ethereal earring", 
+								ear2="Brutal Earring",
+                                body="Emet Harness",
+								hands="Adhemar Wristbands",
+								ring1="Epona's ring",
+								ring2="Rajas ring",
                                 back="Cheviot Cape",
 								waist="Flume belt",
 								legs="Herculean Trousers",
@@ -193,12 +193,12 @@ function get_sets()
                                  
         sets.TP.DTAccuracy = {ammo="Vanir Battery",
                                 head="Rabid Visor",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Dark ring",ring2="Succor ring",
+                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Dark ring",ring2="Succor ring",
                                         back="Cheviot Cape",waist="Flume belt",legs="Herculean Trousers",feet="Herculean Boots",
 }
         sets.TP.MDTAccuracy = {ammo="Vanir Battery",
                                 head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Fortified ring",ring2="Yacuruna ring",
+                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Fortified ring",ring2="Yacuruna ring",
                                         back="Mubvumbamiri Mantle",waist="Flume belt",legs="Herculean Trousers",feet="Herculean Boots",
 }
        
@@ -475,7 +475,7 @@ function get_sets()
     body="Telchine Chasuble",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
-    feet="Rawhide Boots",
+    feet="Medium's Sabots",
     neck="Phalaina Locket",
     waist="Pythia Sash",
     left_ear="Mendi. Earring",
@@ -490,7 +490,7 @@ function get_sets()
     body="Telchine Chasuble",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
-    feet="Rawhide Boots",
+    feet="Medium's Sabots",
     neck="Phalaina Locket",
     waist="Pythia Sash",
     left_ear="Mendi. Earring",
@@ -577,7 +577,7 @@ function get_sets()
 
 	sets.BlueMagic.Enmity = {ammo="Sapience Orb",
     head="Rabid Visor",
-    body="Emet Harness +1",
+    body="Emet Harness",
     hands="Leyline Gloves",
     legs="Obatala Subligar",
     feet="Dux Greaves",
