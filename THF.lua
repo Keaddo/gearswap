@@ -69,8 +69,8 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
     TaeonHands = {}
-    TaeonHands.TA = {hands="Taeon Gloves"}
-    TaeonHands.DW = {hands="Taeon Gloves"}
+    TaeonHands.TA = {hands="Adhemar Wristbands"}
+    TaeonHands.DW = {hands="Adhemar Wristbands"}
 
 	sets.TreasureHunter = {hands="Plunderer's Armlets", feet="Skulker's Poulaines"}
     sets.ExtraRegen = { head="Ocelomeh Headpiece +1" }
@@ -125,7 +125,7 @@ function init_gear_sets()
     }
 	sets.precast.JA['Despoil'] = {}
 	sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets"}
-	sets.precast.JA['Feint'] = {hands="Plunderer's Armlets +1"} -- {legs="Assassin's Culottes +2"}
+	sets.precast.JA['Feint'] = {hands="Plunderer's Armlets"} -- {legs="Assassin's Culottes +2"}
 	
 	sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
 	sets.precast.JA['Trick Attack'] = sets.buff['Trick Attack']
@@ -196,7 +196,7 @@ function init_gear_sets()
         ear1="Steelflash Earring",
         ear2="Bladeborn Earring",
 		body="Rawhide Vest",
-        hands="Taeon Gloves",
+        hands="Adhemar Wristbands",
         ring1="Epona's Ring",
         ring2="Rajas Ring",
 		back="Bleating Mantle",
@@ -207,7 +207,7 @@ function init_gear_sets()
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {
         head="Whirlpool Mask",
 		neck="Sanctity Necklace",
-        hands="Plunderer's Armlets +1",
+        hands="Plunderer's Armlets",
 		body="Dread Jupon",
         ring2="Patricius Ring",
         back="Canny Cape",
@@ -228,7 +228,7 @@ function init_gear_sets()
     })
 	sets.precast.WS['Exenterator'].Mid = set_combine(sets.precast.WS['Exenterator'], {waist="Thunder Belt"})
 	sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'].Mid, {
-        hands="Plunderer's Armlets +1",
+        hands="Plunderer's Armlets",
         back="Canny Cape"
     })
 	sets.precast.WS['Exenterator'].SA = set_combine(sets.precast.WS['Exenterator'].Mid, {
@@ -262,7 +262,7 @@ function init_gear_sets()
 	sets.precast.WS['Evisceration'].Mid = set_combine(sets.precast.WS['Evisceration'], {back="Canny Cape"})
 	sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {
         head="Whirlpool Mask",
-        hands="Plunderer's Armlets +1",
+        hands="Plunderer's Armlets",
         ring1="Rajas Ring",
         ring2="Ramuh Ring",
         back="Canny Cape",
