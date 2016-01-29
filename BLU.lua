@@ -42,8 +42,8 @@ function get_sets()
                                                   back="Cornflower Cape",waist="Windbuffet Belt +1",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
-                                	head="Rawhide Mask",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Assimilator's Jubbah +1",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Dark ring",ring2="Shneddick ring",
+                                	head="Rawhide Mask",neck="Twilight Torque", ear1="Ethereal earring", ear2="Brutal Earring",
+                                        body="Emet Harness",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Rajas ring",
                                         back="Cheviot Cape",waist="Flume belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                        
                                                        
@@ -109,7 +109,7 @@ function get_sets()
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
-    neck="Sanctity Necklace",
+    neck="Lissome Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
     right_ear="Brutal Earring",
@@ -118,7 +118,7 @@ function get_sets()
     back="Bleating Mantle",
 }
 	sets.TP.AccuracyMedium = {ammo="Amar Cluster",
-    head="Adhemar Bonnet",
+    head="Dampening Tam",
     body="Rawhide Vest",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
@@ -192,9 +192,18 @@ function get_sets()
 }
                                  
         sets.TP.DTAccuracy = {ammo="Vanir Battery",
-                                head="Rabid Visor",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Dark ring",ring2="Succor ring",
-                                        back="Cheviot Cape",waist="Flume belt",legs="Herculean Trousers",feet="Herculean Boots",
+                                head="Dampening Tam",
+								neck="Twilight Torque", 
+								ear1="Ethereal earring", 
+								ear2="Brutal Earring",
+                                body="Emet Harness",
+								hands="Adhemar Wristbands",
+    left_ring="Enlivened Ring",
+    right_ring="Yacuruna Ring",
+                                back="Cheviot Cape",
+								waist="Flume belt",
+								legs="Herculean Trousers",
+								feet="Herculean Boots",
 }
         sets.TP.MDTAccuracy = {ammo="Vanir Battery",
                                 head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
