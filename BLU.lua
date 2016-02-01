@@ -38,7 +38,7 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Brutal Earring",
-                                                  body="Assimilator's Jubbah +1",hands="Adhemar wristbands",ring1="Epona's Ring",ring2="Rajas ring",
+                                                  body="Amalric Doublet",hands="Adhemar wristbands",ring1="Epona's Ring",ring2="Rajas ring",
                                                   back="Cornflower Cape",waist="Windbuffet Belt +1",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
@@ -60,7 +60,7 @@ function get_sets()
        
         sets.TP.Standard = {ammo="Ginsen",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -75,7 +75,7 @@ function get_sets()
                                                
         sets.TP.Solo = {ammo="Ginsen",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -90,7 +90,7 @@ function get_sets()
                                        
         sets.TP.Safe = {ammo="Ginsen",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -105,7 +105,7 @@ function get_sets()
                                        
         sets.TP.AccuracyLite = {ammo="Ginsen",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -119,7 +119,7 @@ function get_sets()
 }
 	sets.TP.AccuracyMedium = {ammo="Amar Cluster",
     head="Dampening Tam",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -134,7 +134,7 @@ function get_sets()
        
         sets.TP.AccuracyFull = {ammo="Amar Cluster",
     head="Dampening Tam",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean boots",
@@ -149,7 +149,7 @@ function get_sets()
                                                        
         sets.TP.AccuracyExtreme = {ammo="Amar Cluster",
     head="Dampening Tam",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean boots",
@@ -163,7 +163,7 @@ function get_sets()
 }
 	sets.TP.CantHitShit = {ammo="Amar Cluster",
     head="Dampening Tam",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean boots",
@@ -225,7 +225,7 @@ function get_sets()
        
         sets.Requiescat.Attack = {ammo="Hydrocera",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -250,7 +250,7 @@ function get_sets()
        
         sets.ChantDuCygne.Attack = {ammo="Jukukik Feather",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -265,7 +265,7 @@ function get_sets()
                                                            
         sets.ChantDuCygne.Accuracy = {ammo="Falcon Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean boots",
@@ -280,7 +280,7 @@ function get_sets()
 
         sets.ChantDuCygne.Accuracy = {ammo="Falcon Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean boots",
@@ -297,7 +297,7 @@ function get_sets()
        
         sets.WS.SanguineBlade = {ammo="Ombre Tathlum",
     head="Helios Band",
-    body="Samnuha Coat",
+    body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Telchine Braconi",
     feet="Helios Boots",
@@ -350,8 +350,8 @@ function get_sets()
        
         sets.WS.FlashNova = {ammo="Ghastly Tathlum",
     head="Helios Band",
-    body="Assimilator's Jubbah +1",
-    hands="Rawhide Vest",
+    body="Amalric Doublet",
+    hands="Amalric Gages",
     legs="Telchine Braconi",
     feet="Helios Boots",
     neck="Sanctity Necklace",
@@ -376,7 +376,7 @@ function get_sets()
        
         sets.BlueMagic.STR = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -391,7 +391,7 @@ function get_sets()
                                                  
         sets.BlueMagic.STRDEX = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -406,7 +406,7 @@ function get_sets()
                                                        
         sets.BlueMagic.STRVIT = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -421,7 +421,7 @@ function get_sets()
                                                          
         sets.BlueMagic.STRMND = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -436,7 +436,7 @@ function get_sets()
                                                                
         sets.BlueMagic.AGI = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
+    body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Herculean Boots",
@@ -451,7 +451,7 @@ function get_sets()
                                                  
         sets.BlueMagic.INT = {ammo="Ombre Tathlum",
     head="Helios Band",
-    body="Samnuha Coat",
+    body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Telchine Braconi",
     feet="Helios Boots",
@@ -466,7 +466,7 @@ function get_sets()
 
 	sets.BlueMagic.Dark = {ammo="Ghastly Tathlum",
     head="Helios Band",
-    body="Samnuha Coat",
+    body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Telchine Braconi",
     feet="Helios Boots",
@@ -511,7 +511,7 @@ function get_sets()
                                                        
         sets.BlueMagic.Stun = {ammo="Falcon Eye",
     head="Dampening Tam",
-    body="Samnuha Coat",
+    body="Amalric Doublet",
     hands="Rawhide Gloves",
     legs="Miasmic Pants",
     feet="Herculean Boots",
@@ -526,8 +526,8 @@ function get_sets()
                                                    
         sets.BlueMagic.HeavyStrike = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
-    body="Rawhide Vest",
-    hands={ name="Herculean Gloves", augments={'Accuracy+24 Attack+24','Crit.hit rate+1','DEX+10','Accuracy+11',}},
+    body="Adhemar Jacket",
+    hands="Rawhide Gloves",
     legs="Samnuha Tights",
     feet="Herculean Boots",
     neck="Subtlety Spec.",
@@ -571,7 +571,7 @@ function get_sets()
                                                                          
         sets.BlueMagic.MagicAccuracy = {ammo="Ombre Tathlum",
     head="Helios Band",
-    body="Samnuha coat",
+    body="Amalric Doublet",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
     feet="Herculean Boots",
