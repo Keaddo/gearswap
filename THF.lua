@@ -156,7 +156,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	sets.precast.FC = {
         --ammo="Impatiens",
-        head="Teon Chapeau",
+        head="Adhemar Bonnet",
         ear2="Loquacious Earring",
         hands="Buremte Gloves",
         body="Taeon Tabard",
@@ -191,11 +191,11 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
-		head="Lilitu Headpiece",
+		head="Adhemar Bonnet",
         neck="Asperity Necklace",
         ear1="Steelflash Earring",
         ear2="Bladeborn Earring",
-		body="Rawhide Vest",
+		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         ring1="Epona's Ring",
         ring2="Rajas Ring",
@@ -345,7 +345,7 @@ function init_gear_sets()
         ear1="Steelflash Earring",
         ear2="Bladeborn Earring",
 		--body="Skadi's Cuirie +1",
-		body="Rawhide Vest",
+		body="Adhemar Jacket",
         hands=TaeonHands.DW,
         ring1="Rajas Ring",
         ring2="Epona's Ring",
@@ -428,7 +428,7 @@ function init_gear_sets()
         ear1="Steelflash Earring",
         ear2="Bladeborn Earring",
 		--body="Skadi's Cuirie +1",
-		body="Rawhide Vest",
+		body="Adhemar Jacket",
         hands=TaeonHands.DW,
         ring1="Rajas Ring",
         ring2="Epona's Ring",
