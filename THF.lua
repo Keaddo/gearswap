@@ -68,9 +68,9 @@ function init_gear_sets()
 	--------------------------------------
 	-- Start defining the sets
 	--------------------------------------
-    TaeonHands = {}
-    TaeonHands.TA = {hands="Adhemar Wristbands"}
-    TaeonHands.DW = {hands="Adhemar Wristbands"}
+  --  TaeonHands = {"Adhemar Wristbands"}
+   -- "Adhemar Wristbands" = {hands="Adhemar Wristbands"}
+   -- "Adhemar Wristbands" = {hands="Adhemar Wristbands"}
 
 	sets.TreasureHunter = {hands="Plunderer's Armlets", feet="Skulker's Poulaines"}
     sets.ExtraRegen = { head="Ocelomeh Headpiece +1" }
@@ -142,7 +142,7 @@ function init_gear_sets()
         neck="Lissome Necklace",
         ear1="Dudgeon Earring",
         ear2="Heartseeker Earring",
-        hands=TaeonHands.TA,
+        hands="Adhemar Wristbands",
         back="Canny Cape",
         ring1="Patricius Ring",
         ring2="Mars's Ring",
@@ -275,7 +275,7 @@ function init_gear_sets()
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
         head="Adhemar Bonnet",
         neck="Moepapa Medal",
-        hands=TaeonHands.TA,
+        hands="Adhemar Wristbands",
         body="Dread Jupon",
         ring1="Ramuh Ring",
         ring2="Karieyh Ring",
@@ -310,8 +310,8 @@ function init_gear_sets()
 		neck="Stoicheion Medal",
         ear1="Crematio Earring",
         head="Umbani Cap",
-		body="Samnuha Coat",
-        hands="Leyline Gloves",
+		body="Adhemar Jacket",
+        hands="Adhemar Wristbands",
         ring1="Acumen Ring",
         ring2="Garuda Ring",
 		back="Argochampsa Mantle",
@@ -346,7 +346,7 @@ function init_gear_sets()
         ear2="Bladeborn Earring",
 		--body="Skadi's Cuirie +1",
 		body="Adhemar Jacket",
-        hands=TaeonHands.DW,
+        hands="Adhemar Wristbands",
         ring1="Rajas Ring",
         ring2="Epona's Ring",
 		back="Canny Cape",
@@ -360,7 +360,7 @@ function init_gear_sets()
         back="Canny Cape",
         neck="Lissome Necklace",
         body="Councilor's Garb",
-        hands="Leyline Gloves",
+        hands="Adhemar Wristbands",
         ring1="Karieyh Ring",
         ring2="Epona's Ring",
         legs="Samnuha Tights",
@@ -429,7 +429,7 @@ function init_gear_sets()
         ear2="Bladeborn Earring",
 		--body="Skadi's Cuirie +1",
 		body="Adhemar Jacket",
-        hands=TaeonHands.DW,
+        hands="Adhemar Wristbands",
         ring1="Rajas Ring",
         ring2="Epona's Ring",
 		back="Canny Cape",
@@ -442,8 +442,8 @@ function init_gear_sets()
         ring1="Rajas Ring",
     })
 	sets.engaged.Acc = set_combine(sets.engaged.Mid, {
-		body="Samnuha Coat",
-        hands=TaeonHands.TA,
+		body="Adhemar Jacket",
+        hands="Adhemar Wristbands",
         neck="Lissome Necklace",
         ear1="Zennaroi Earring",
         ear2="Steelflash Earring",
@@ -488,7 +488,7 @@ function init_gear_sets()
         ear1="Trux Earring",
         ear2="Brutal Earring",
         body="Qaaxo Harness",
-        hands=TaeonHands.TA,
+        hands="Adhemar Wristbands",
         back="Bleating Mantle",
         waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
@@ -502,7 +502,7 @@ function init_gear_sets()
     sets.engaged.Acc.Haste_43 = set_combine(sets.engaged.Haste_43, {
         body="Taeon Tabard",
         neck="Lissome Necklace",
-        hands="Leyline Gloves",
+        hands="Adhemar Wristbands",
         ear1="Zennaroi Earring",
         ear2="Steelflash Earring",
         ring1="Mars's Ring",
@@ -524,10 +524,10 @@ function init_gear_sets()
     
      -- 40
     sets.engaged.Haste_40 = set_combine(sets.engaged.Haste_43, {
-		body="Samnuha Coat",
+		body="Adhemar Jacket",
         ear1="Suppanomimi",
     })
-    sets.engaged.Mid.Haste_40 = set_combine(sets.engaged.Haste_40, { body="Samnuha Coat" })
+    sets.engaged.Mid.Haste_40 = set_combine(sets.engaged.Haste_40, { body="Adhemar Jacket" })
 
     sets.engaged.Acc.Haste_40 = set_combine(sets.engaged.Acc.Haste_43, {
         ear1="Suppanomimi"
@@ -539,13 +539,13 @@ function init_gear_sets()
      -- 30
     sets.engaged.Haste_30 = set_combine(sets.engaged.Haste_40, {
         waist="Patentia Sash",
-		body="Samnuha Coat",
-        hands=TaeonHands.TA,
+		body="Adhemar Jacket",
+        hands="Adhemar Wristbands",
         back="Canny Cape",
         feet="Herculean Boots"
     })
     sets.engaged.Mid.Haste_30 = set_combine(sets.engaged.Haste_30, { 
-		body="Samnuha Coat",
+		body="Adhemar Jacket",
         feet="Herculean Boots"
     })
     sets.engaged.Acc.Haste_30 = set_combine(sets.engaged.Acc.Haste_40, {
@@ -553,13 +553,13 @@ function init_gear_sets()
         back="Canny Cape",
         feet="Herculean Boots"
     })
-    sets.engaged.Evasion.Haste_30 = set_combine(sets.engaged.Haste_30, { body="Samnuha Coat", ring1="Beeline Ring", feet="Herculean Boots"})
+    sets.engaged.Evasion.Haste_30 = set_combine(sets.engaged.Haste_30, { body="Adhemar Jacket", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_30 = set_combine(sets.engaged.Haste_30, { head="Lithelimb Cap", neck="Twilight Torque", 
         body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Herculean Boots" })
 
      -- 25
     sets.engaged.Haste_25 = set_combine(sets.engaged.Haste_30, {
-        hands=TaeonHands.TA,
+        hands="Adhemar Wristbands",
         ear1="Heartseeker Earring",
         ear2="Dudgeon Earring"
     })
@@ -567,8 +567,8 @@ function init_gear_sets()
         ear1="Heartseeker Earring",
         ear2="Dudgeon Earring"
     })
-    sets.engaged.Mid.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Samnuha Coat" })
-    sets.engaged.Evasion.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Samnuha Coat", ring1="Beeline Ring", feet="Herculean Boots"})
+    sets.engaged.Mid.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Adhemar Jacket" })
+    sets.engaged.Evasion.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Adhemar Jacket", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_25 = set_combine(sets.engaged.Haste_25, { head="Lithelimb Cap", neck="Twilight Torque", 
         body="Qaaxo Harness", ring1="Patricius Ring", ring2="Dark Ring", back="Repulse Mantle", legs="Iuitl Tights +1", feet="Herculean Boots" })
 end
