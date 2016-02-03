@@ -87,9 +87,18 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Amar Cluster",
-        head="Lilitu Headpiece",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earri",
-        body="Rawhide Vest0",hands="Rawhide Gloves",ring1="Thunder Ring",ring2="Rajas Ring",
-        back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
+        head="Adhemar Bonnet",
+		neck="Asperity Necklace",
+		ear1="Steelflash Earring",
+		ear2="Bladeborn Earri",
+        body="Adhemar Jacket",
+		hands="Adhemar Wristbands",
+		ring1="Thunder Ring",
+		ring2="Rajas Ring",
+        back="Yokaze Mantle",
+		waist="Windbuffet Belt +1",
+		legs="Samnuha Tights",
+		feet="Herculean Boots"}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Jukukik Feather",hands="Buremte Gloves",
         back="Yokaze Mantle"})
 
@@ -116,12 +125,12 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         head="Taeon Chapeau",ear1="Loquacious Earring",
         body="Samnuha Coat",hands="Koga Tekko +2",ring2="Weatherspoon Ring",
-        legs="Taeon Tights",feet="Taeon Boots"}
+        legs="Taeon Tights",feet="Herculean Boots"}
         
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {body="Mochizuki Chainmail", feet="Iga Kyahan +2"})
 
     sets.midcast.ElementalNinjutsu = {
-        head="Lilitu Headpiece",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        head="Adhemar Bonnet",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Samnuha Coat",hands="Iga Tekko +2",ring1="Fenrir Ring",ring2="Fenrir Ring",
         back="Toro Cape",waist=gear.ElementalObi,legs="Samnuha Tights",feet="Herculean Boots"}
 
@@ -129,7 +138,7 @@ function init_gear_sets()
         back="Yokaze Mantle"})
 
     sets.midcast.NinjutsuDebuff = {
-        head="Lilitu Headpiece",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        head="Adhemar Bonnet",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Samnuha Coat",hands="Iga Tekko +2",ring1="Fenrir Ring",ring2="Fenrir Ring",
         back="Yokaze Mantle",feet="Hachiya Kyahan"}
 
@@ -152,33 +161,33 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo="Hachiya Shuriken",
         head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.MovementFeet}
 
     sets.idle.Town = {ammo="Hachiya Shuriken",
         head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.MovementFeet}
     
     sets.idle.Weak = {ammo="Hachiya Shuriken",
         head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Leyline Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.MovementFeet}
     
     -- Defense sets
     sets.defense.Evasion = {ammo="Hachiya Shuriken",
         head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
 
     sets.defense.PDT = {ammo="Iron Gobbet",
         head="Outrider Mask",neck="Twilight Torque",
         body="Outrider Mail",hands="Outrider mittens",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Shadow Mantle",waist="Flume Belt",legs="Outrider hose",feet="Outrider greaves"}
+        back="Shadow Mantle",waist="Flume Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
         head="Rawhide Mask",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
 
 
@@ -197,28 +206,28 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Hachiya Shuriken",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.Acc = {ammo="Hachiya Shuriken",
         head="Adhemar Bonnet",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.Evasion = {ammo="Hachiya Shuriken",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.Acc.Evasion = {ammo="Hachiya Shuriken",
         head="Adhemar Bonnet",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Rawhide Vest",hands="Taeon Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's Ring",ring2="Rajas Ring",
         back="Yokaze Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
     sets.engaged.PDT = {ammo="Hachiya Shuriken",
         head="Outrider Mask",neck="Twilight torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
         body="Outrider Mail",hands="Outrider mittens",ring1="Epona's Ring",ring2="Rajas Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Outrider hose",feet="Outrider greaves"}
+        back="Yokaze Mantle",waist="Twilight Belt",legs="Herculean Trousers",feet="Herculean Boots"}
     sets.engaged.Acc.PDT = {ammo="Hachiya Shuriken",
         head="Outrider Mask",neck="Twilight torque",ear1="Iga mimikazari",ear2="Suppanomimi",
         body="Outrider Mail",hands="Outrider mittens",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Yokaze Mantle",waist="Twilight Belt",legs="Outrider hose",feet="Outrider greaves"}
+        back="Yokaze Mantle",waist="Twilight Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
 -- Not Yet, Restore as Needed
     -- Custom melee group: High Haste (~20% DW)
