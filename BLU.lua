@@ -113,7 +113,7 @@ function get_sets()
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
     right_ear="Brutal Earring",
-    left_ring="Epona's Ring",
+    left_ring="Cacoethic Ring +1",
     right_ring="Rajas Ring",
     back="Bleating Mantle",
 }
@@ -127,7 +127,7 @@ function get_sets()
     waist="Windbuffet Belt +1",
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
-    left_ring="Epona's Ring",
+    left_ring="Cacoethic Ring +1",
     right_ring="Rajas Ring",
     back="Bleating Mantle",
 }
@@ -142,7 +142,7 @@ function get_sets()
     waist="Windbuffet Belt +1",
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
-    left_ring="Epona's Ring",
+    left_ring="Cacoethic Ring +1",
     right_ring="Rajas Ring",
     back="Kayapa Mantle",
 }
@@ -157,7 +157,7 @@ function get_sets()
     waist="Olseni Belt",
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
-    left_ring="Epona's Ring",
+    left_ring="Cacoethic Ring +1",
     right_ring="Rajas Ring",
     back="Kayapa Cape",
 }
@@ -171,8 +171,8 @@ function get_sets()
     waist="Olseni Belt",
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
-    left_ring="Enlivened Ring",
-    right_ring="Yacuruna Ring",
+    left_ring="Cacoethic Ring +1",
+    right_ring="Enlivened Ring",
     back="Kayapa Cape",
 }
                                                        
