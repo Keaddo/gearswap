@@ -133,31 +133,29 @@ function get_sets()
 			main="Burtgang",
 			sub="Aegis",
 			ammo="Ginsen",
-			head="Otomi Helm",
+			head="Founder's Corona",
 			neck="Asperity Necklace",
-			ear1="Trux Earring",
-			ear2="Brutal Earring",
-			body="Acro Surcoat",
-			hands="Acro Gauntlets",
-			ring1="K'ayres Ring",
+			ear1="Steelflash Earring",
+			ear2="Bladeborn Earring",
+			body="Terminal Plate",
+			hands="Founder's Gauntlets",
+			ring1="Apate Ring",
 			ring2="Rajas Ring",
 			back="Bleating Mantle",
 			waist="Windbuffet Belt +1",
-			legs="Acro Breeches",
-			feet="Acro Leggings"}	
+			legs="Founder's Hose",
+			feet="Founder's Greaves"}	
 	sets.TP.Aegis.MidACC = set_combine(sets.TP.Aegis,{
-			head={name="Yorium Barbuta",augments={"Accuracy+21","Dbl. Atk. +2","Damage taken -1%"}},
-			ear2="Zennaroi Earring",
+			ammo="Amar Cluster",
+			neck="Lissome Necklace",
 			hands="Leyline Gloves",
-			ring1="Patricius Ring",
 			back="Grounded Mantle",
 			legs="Eschite Cuisses"})	
 	sets.TP.Aegis.HighACC = set_combine(sets.TP.Aegis.MidACC,{
 			neck="Subtlety Spec.",
 			ear1="Zwazo Earring +1",
-			body="Found. Breastplate",
-			ring2="Beeline Ring",
-			waist="Dynamic Belt +1"})
+			ring1="Cacoethic Ring +1",
+			waist="Olseni Belt"})
 			
 	-- Priwen TP Sets --
 	sets.TP.Priwen = {
@@ -223,18 +221,18 @@ function get_sets()
 	sets.PDT.Aegis = {
 			sub="Aegis",
 			ammo="Hasty Pinion +1",
-			head={name="Yorium Barbuta",augments={"Accuracy+21","Dbl. Atk. +2","Damage taken -1%"}},
-			neck="Subtlety Spec.",
-			ear1="Zennaroi Earring",
+			head="Jumalik Helm",
+			neck="Twilight Torque",
+			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
-			body="Cab. Surcoat +1",
+			body="Souveran Cuirass",
 			hands="Souv. Handsch. +1",
 			ring1="Defending Ring",
 			ring2="Vocane Ring",
 			back="Weard Mantle",
-			waist="Flume Belt +1",
+			waist="Flume Belt",
 			legs="Chev. Cuisses +1",
-			feet="Souveran Schuhs +1"}
+			feet="Souveran Schuhs"}
 			
 	sets.PDT.Priwen = {
 			sub="Priwen",
@@ -273,18 +271,18 @@ function get_sets()
 	sets.MDT.Aegis = {
 			sub="Aegis",
 			ammo="Vanir Battery",
-			head="Cizin Helm +1",
+			head="Terminal Helm",
 			neck="Twilight Torque",
-			ear1="Etiolation Earring",
-			ear2="Merman's Earring",
-			body="Cab. Surcoat +1",
+			ear1="Merman's Earring",
+			ear2="Ethereal Earring",
+			body="Souveran Cuirass",
 			hands="Souv. Handsch. +1",
 			ring1="Defending Ring",
 			ring2="Shadow Ring",
-			back="Mollusca Mantle",
+			back="Engulfer Cape +1",
 			waist="Nierenschutz",
 			legs={name="Cizin Breeches +1",augments={"Dbl.Atk. +1","Phys. dmg. taken -3%","Magic dmg. taken -3%"}},
-			feet="Cab. Leggings +1"}
+			feet="Amm Greaves"}
 								
 	sets.MDT.Priwen = {
 			sub="Priwen",

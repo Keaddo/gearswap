@@ -69,7 +69,7 @@ function get_sets()
     left_ear="Suppanomimi",
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
-    right_ring="Rajas Ring",
+    right_ring="Petrov Ring",
     back="Bleating Mantle",
 }
                                                
@@ -84,7 +84,7 @@ function get_sets()
     left_ear="Suppanomimi",
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
-    right_ring="Rajas Ring",
+    right_ring="Petrov Ring",
     back="Cornflower Cape",
 }
                                        
@@ -99,7 +99,7 @@ function get_sets()
     left_ear="Suppanomimi",
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
-    right_ring="Rajas Ring",
+    right_ring="Petrov Ring",
     back="Cornflower Cape",
 }
                                        
@@ -114,7 +114,7 @@ function get_sets()
     left_ear="Suppanomimi",
     right_ear="Brutal Earring",
     left_ring="Cacoethic Ring +1",
-    right_ring="Rajas Ring",
+    right_ring="Petrov Ring",
     back="Bleating Mantle",
 }
 	sets.TP.AccuracyMedium = {ammo="Amar Cluster",
@@ -128,7 +128,7 @@ function get_sets()
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
     left_ring="Cacoethic Ring +1",
-    right_ring="Rajas Ring",
+    right_ring="Petrov Ring",
     back="Bleating Mantle",
 }
        
@@ -143,7 +143,7 @@ function get_sets()
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
     left_ring="Cacoethic Ring +1",
-    right_ring="Rajas Ring",
+    right_ring="Petrov Ring",
     back="Kayapa Mantle",
 }
                                                        
@@ -158,7 +158,7 @@ function get_sets()
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
     left_ring="Cacoethic Ring +1",
-    right_ring="Rajas Ring",
+    right_ring="Petrov Ring",
     back="Kayapa Cape",
 }
 	sets.TP.CantHitShit = {ammo="Amar Cluster",
@@ -184,7 +184,7 @@ function get_sets()
                                 body="Emet Harness",
 								hands="Adhemar Wristbands",
 								ring1="Epona's ring",
-								ring2="Rajas ring",
+								ring2="Petrov Ring",
                                 back="Cheviot Cape",
 								waist="Flume belt",
 								legs="Herculean Trousers",
@@ -385,7 +385,7 @@ function get_sets()
     left_ear="Bladeborn Earring",
     right_ear="Ethereal Earring",
     left_ring="Pyrosoul Ring",
-    right_ring="Rajas Ring",
+    right_ring="Apate Ring",
     back="Cornflower cape",
 }
                                                  
@@ -399,7 +399,7 @@ function get_sets()
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
     right_ear="Ethereal Earring",
-    left_ring="Pyrosoul Ring",
+    left_ring="Apate Ring",
     right_ring="Rajas Ring",
     back="Cornflower cape",
 }
@@ -415,7 +415,7 @@ function get_sets()
     left_ear="Bladeborn Earring",
     right_ear="Ethereal Earring",
     left_ring="Pyrosoul Ring",
-    right_ring="Rajas Ring",
+    right_ring="Apate Ring",
     back="Cornflower cape",
 }
                                                          
@@ -430,7 +430,7 @@ function get_sets()
     left_ear="Bladeborn Earring",
     right_ear="Ethereal Earring",
     left_ring="Pyrosoul Ring",
-    right_ring="Rajas Ring",
+    right_ring="Apate Ring",
     back="Cornflower cape",
 }
                                                                
@@ -444,7 +444,7 @@ function get_sets()
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
     right_ear="Ethereal Earring",
-    left_ring="Pyrosoul Ring",
+    left_ring="Apate Ring",
     right_ring="Rajas Ring",
     back="Cornflower cape",
 }
