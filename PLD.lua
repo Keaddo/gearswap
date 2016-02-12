@@ -31,18 +31,18 @@ function get_sets()
 	-- Idle/Town Sets --
 	sets.Idle.Regen = {
 			ammo="Homiliary",
-			head="Baghere Salade",
+			head="Jumalik Helm",
 			neck="Coatl Gorget +1",
-			ear1="Infused Earring",
+			ear1="Merman's Earring",
 			ear2="Ethereal Earring",
-			body="Ares' Cuirass +1",
-			hands="Ogier's Gauntlets",
+			body="Chozoron Coselete",
+			hands="Souveran Handschuhs",
 			ring1="Paguroidea Ring",
 			ring2="Sheltered Ring",
-			back="Scuta Cape",
-			waist="Fucho-no-Obi",
+			back="Weard Mantle",
+			waist="Flume Belt",
 			legs="Crimson Cuisses",
-			feet="Ogier's Leggings"}
+			feet="Amm Greaves"}
 	sets.Idle.Regen.Ochain = set_combine(sets.Idle.Regen,{
 			main="Burtgang",
 			sub="Ochain"})
@@ -77,9 +77,9 @@ function get_sets()
 			main="Burtgang",
 			sub="Priwen"})
 	sets.Town = set_combine(sets.Idle.Hybrid,{
-			head="Cab. Coronet +1",
-			body="Councilor's Garb",
-			hands="Souv. Handsch. +1",
+		--	head="Cab. Coronet +1", --
+		--	body="Councilor's Garb", --
+		--	hands="Souv. Handsch. +1", --
 			ring1="Defending Ring",
 			ring2="Vocane Ring",
 			feet="Souveran Schuhs +1"})
@@ -91,7 +91,7 @@ function get_sets()
 	sets.Idle.Hybrid = set_combine(sets.Idle.Regen,{
 			neck="Coatl Gorget +1",
 			ring2="Sheltered Ring",
-			back="Shadow Mantle",
+			back="Weard Mantle",
 			legs="Crimson Cuisses"})
 			
 	-- TP Base Set --
@@ -108,25 +108,22 @@ function get_sets()
 			ear2="Bladeborn Earring",
 			body="Terminal Plate",
 			hands="Founder's Gauntlets",
-			ring1="Apate Ring",
+			ring1="Petrov Ring",
 			ring2="Rajas Ring",
 			back="Bleating Mantle",
 			waist="Windbuffet Belt +1",
-			legs="Founder's Hose",
+			legs={name="Odyssean Cuisses",augments={"Accuracy+19", "Attack+34","Dbl. Atk.+4"}},
 			feet="Founder's Greaves"}				
 	sets.TP.Ochain.MidACC = set_combine(sets.TP.Ochain,{
-			head={name="Yorium Barbuta",augments={"Accuracy+21","Dbl. Atk. +2","Damage taken -1%"}},
-			ear2="Zennaroi Earring",
+			ammo="Amar Cluster",
+			neck="Lissome Necklace",
 			hands="Leyline Gloves",
-			ring1="Patricius Ring",
-			back="Grounded Mantle",
-			legs="Eschite Cuisses"})	
+			back="Grounded Mantle"})
 	sets.TP.Ochain.HighACC = set_combine(sets.TP.Ochain.MidACC,{
 			neck="Subtlety Spec.",
-			ear1="Zwazo Earring +1",
-			body="Found. Breastplate",
-			ring2="Beeline Ring",
-			waist="Dynamic Belt +1"})
+			ear1="Zwazo Earring",
+			ring2="Cacoethic Ring +1",
+			waist="Olseni Belt"})
 
 	-- Aegis TP Sets --
 	sets.TP.Aegis = {
@@ -139,22 +136,21 @@ function get_sets()
 			ear2="Bladeborn Earring",
 			body="Terminal Plate",
 			hands="Founder's Gauntlets",
-			ring1="Apate Ring",
+			ring1="Petrov Ring",
 			ring2="Rajas Ring",
 			back="Bleating Mantle",
 			waist="Windbuffet Belt +1",
-			legs="Founder's Hose",
+			legs={name="Odyssean Cuisses",augments={"Accuracy+19", "Attack+34","Dbl. Atk.+4"}},
 			feet="Founder's Greaves"}	
 	sets.TP.Aegis.MidACC = set_combine(sets.TP.Aegis,{
 			ammo="Amar Cluster",
 			neck="Lissome Necklace",
 			hands="Leyline Gloves",
-			back="Grounded Mantle",
-			legs="Eschite Cuisses"})	
+			back="Grounded Mantle"})	
 	sets.TP.Aegis.HighACC = set_combine(sets.TP.Aegis.MidACC,{
 			neck="Subtlety Spec.",
-			ear1="Zwazo Earring +1",
-			ring1="Cacoethic Ring +1",
+			ear1="Zwazo Earring",
+			ring2="Cacoethic Ring +1",
 			waist="Olseni Belt"})
 			
 	-- Priwen TP Sets --
@@ -162,31 +158,28 @@ function get_sets()
 			main="Burtgang",
 			sub="Priwen",
 			ammo="Ginsen",
-			head="Otomi Helm",
+			head="Founder's Corona",
 			neck="Asperity Necklace",
-			ear1="Trux Earring",
-			ear2="Brutal Earring",
-			body="Acro Surcoat",
-			hands="Acro Gauntlets",
-			ring1="K'ayres Ring",
+			ear1="Steelflash Earring",
+			ear2="Bladeborn Earring",
+			body="Terminal Plate",
+			hands="Founder's Gauntlets",
+			ring1="Petrov Ring",
 			ring2="Rajas Ring",
 			back="Bleating Mantle",
 			waist="Windbuffet Belt +1",
-			legs="Acro Breeches",
-			feet="Acro Leggings"}			
+			legs={name="Odyssean Cuisses",augments={"Accuracy+19", "Attack+34","Dbl. Atk.+4"}},
+			feet="Founder's Greaves"}			
 	sets.TP.Priwen.MidACC = set_combine(sets.TP.Priwen,{
-			head={name="Yorium Barbuta",augments={"Accuracy+21","Dbl. Atk. +2","Damage taken -1%"}},
-			ear2="Zennaroi Earring",
+			ammo="Amar Cluster",
+			neck="Lissome Necklace",
 			hands="Leyline Gloves",
-			ring1="Patricius Ring",
-			back="Grounded Mantle",
-			legs="Eschite Cuisses"})	
+			back="Grounded Mantle"})
 	sets.TP.Priwen.HighACC = set_combine(sets.TP.Priwen.MidACC,{
 			neck="Subtlety Spec.",
-			ear1="Zwazo Earring +1",
-			body="Found. Breastplate",
-			ring2="Beeline Ring",
-			waist="Dynamic Belt +1"})
+			ear1="Zwazo Earring",
+			ring2="Cacoethic Ring +1",
+			waist="Olseni Belt"})
 
 	-- Ragnarok TP Sets --
 	sets.TP.Ragnarok = {}
@@ -203,102 +196,102 @@ function get_sets()
 	sets.PDT = {}
 	sets.PDT.Ochain = {
 			sub="Ochain",
-			ammo="Hasty Pinion +1",
-			head={name="Yorium Barbuta",augments={"Accuracy+21","Dbl. Atk. +2","Damage taken -1%"}}, -- 1 DT -- [Upgrade: Yorium Barbuta -3% DT]
-			neck="Subtlety Spec.",
-			ear1="Zennaroi Earring",
+			ammo="Angha Gem", -- 2 PDT --
+			head="Jumalik Helm", -- 5 PDT --
+			neck="Twilight Torque", -- 5 DT --
+			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
-			body="Cab. Surcoat +1", -- 10 DT [Upgrade: Tartarus Platemail -10% DT] --
-			hands="Souv. Handsch. +1", -- 4 DT 2/5 Souv. Set --
-			ring1="Defending Ring", -- 10 DT --
-			ring2="Vocane Ring", -- 7 DT --
+			body="Souveran Cuirass", -- 9 DT [Upgrade: Tartarus Platemail -10% DT] --
+			hands="Souveran Handschuhs", -- 3 PDT 2/5 Souv. Set --
+			ring1="Dark Ring", -- 4 PDT --
+			ring2="Gelatinous Ring +1", -- 7 PDT --
 			back="Weard Mantle", -- 3 DT --
-			waist="Flume Belt +1", -- 4 --
-			legs="Chev. Cuisses +1", -- 6 --
-			feet="Souveran Schuhs +1"} -- 5 --
-							-- Total -35% DT + -15% PDT = -50% Reduction --
-												-- Primary ACC 873 --
+			waist="Flume Belt +1", -- 4 PDT --
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 PDT --
+			feet="Souveran Schuhs"} -- 4 PDT --
+							-- Total -17% DT + -33% PDT = -50% Reduction --
+												-- Primary ACC 815 --
 	sets.PDT.Aegis = {
 			sub="Aegis",
-			ammo="Hasty Pinion +1",
+			ammo="Angha Gem",
 			head="Jumalik Helm",
 			neck="Twilight Torque",
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
-			body="Souveran Cuirass",
-			hands="Souv. Handsch. +1",
-			ring1="Defending Ring",
-			ring2="Vocane Ring",
-			back="Weard Mantle",
-			waist="Flume Belt",
-			legs="Chev. Cuisses +1",
+			body="Souveran Cuirass", 
+			hands="Souveran Handschuhs", 
+			ring1="Dark Ring", 
+			ring2="Gelatinous Ring +1", 
+			back="Weard Mantle", 
+			waist="Flume Belt +1", 
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}},
 			feet="Souveran Schuhs"}
 			
 	sets.PDT.Priwen = {
 			sub="Priwen",
-			ammo="Hasty Pinion +1",
-			head={name="Yorium Barbuta",augments={"Accuracy+21","Dbl. Atk. +2","Damage taken -1%"}},
-			neck="Subtlety Spec.",
-			ear1="Zennaroi Earring",
+			ammo="Angha Gem",
+			head="Jumalik Helm",
+			neck="Twilight Torque",
+			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
-			body="Cab. Surcoat +1",
-			hands="Souv. Handsch. +1",
-			ring1="Defending Ring",
-			ring2="Vocane Ring",
-			back="Weard Mantle",
-			waist="Flume Belt +1",
-			legs="Chev. Cuisses +1",
-			feet="Souveran Schuhs +1"}
+			body="Souveran Cuirass", 
+			hands="Souveran Handschuhs", 
+			ring1="Dark Ring", 
+			ring2="Gelatinous Ring +1", 
+			back="Weard Mantle", 
+			waist="Flume Belt +1", 
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}},
+			feet="Souveran Schuhs"}
 
 	sets.MDT = {}
 	sets.MDT.Ochain = {
 			sub="Ochain",
 			ammo="Vanir Battery", -- MDB 4 --
-			head="Cizin Helm +1", -- MDB 2 / MDT 3 --
+			head="Terminal Helm", -- MDB 2 / MDT 5 --
 			neck="Twilight Torque", -- 5 DT --
-			ear1="Etiolation Earring", -- MDT 3 --
-			ear2="Merman's Earring", -- MDT 2 --
-			body="Cab. Surcoat +1", -- 10 DT --
-			hands="Souv. Handsch. +1", -- MDB 1 / MDT 5 --
-			ring1="Defending Ring", -- 10 DT --
-			ring2="Shadow Ring",
-			back="Mollusca Mantle", -- 5 DT --
-			waist="Nierenschutz", -- 3 DT --
-			legs={name="Cizin Breeches +1",augments={"Dbl.Atk. +1","Phys. dmg. taken -3%","Magic dmg. taken -3%"}}, -- MDB 3 / MDT 3 --
-			feet="Cab. Leggings +1"} -- MDB 2 / MDT 5 --
-								-- Total -30% DT + -21% MDT = -54%/50% Reduction / +12 MDB --
+			ear1="Merman's Earring", -- MDT 2 --
+			ear2="Ethereal Earring", 
+			body="Souveran Cuirass", -- 9 DT --
+			hands="Souveran Handschuhs", -- MDB 1 / MDT 5 --
+			ring1="Kunaji Ring",
+			ring2="Praan Ring",
+			back="Engulfer Cape +1", -- 4 MDT --
+			waist="Flume Belt",
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- MDB 4 --
+			feet="Amm Greaves"} -- MDB 2 / DT 3 --
+								-- Total -17% DT + -16% MDT = -33% Reduction / +13 MDB --
 
 	sets.MDT.Aegis = {
 			sub="Aegis",
-			ammo="Vanir Battery",
-			head="Terminal Helm",
+			ammo="Vanir Battery", 
+			head="Terminal Helm", 
 			neck="Twilight Torque",
-			ear1="Merman's Earring",
-			ear2="Ethereal Earring",
-			body="Souveran Cuirass",
-			hands="Souv. Handsch. +1",
-			ring1="Defending Ring",
-			ring2="Shadow Ring",
-			back="Engulfer Cape +1",
-			waist="Nierenschutz",
-			legs={name="Cizin Breeches +1",augments={"Dbl.Atk. +1","Phys. dmg. taken -3%","Magic dmg. taken -3%"}},
+			ear1="Merman's Earring", 
+			ear2="Ethereal Earring", 
+			body="Souveran Cuirass", 
+			hands="Souveran Handschuhs", 
+			ring1="Kunaji Ring",
+			ring2="Praan Ring",
+			back="Engulfer Cape +1", 
+			waist="Flume Belt",
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, 
 			feet="Amm Greaves"}
 								
 	sets.MDT.Priwen = {
 			sub="Priwen",
-			ammo="Vanir Battery",
-			head="Cizin Helm +1",
+			ammo="Vanir Battery", 
+			head="Terminal Helm", 
 			neck="Twilight Torque",
-			ear1="Etiolation Earring",
-			ear2="Merman's Earring",
-			body="Cab. Surcoat +1",
-			hands="Souv. Handsch. +1",
-			ring1="Defending Ring",
-			ring2="Shadow Ring",
-			back="Mollusca Mantle",
-			waist="Nierenschutz",
-			legs={name="Cizin Breeches +1",augments={"Dbl.Atk. +1","Phys. dmg. taken -3%","Magic dmg. taken -3%"}},
-			feet="Cab. Leggings +1"}
+			ear1="Merman's Earring", 
+			ear2="Ethereal Earring", 
+			body="Souveran Cuirass", 
+			hands="Souveran Handschuhs", 
+			ring1="Kunaji Ring",
+			ring2="Praan Ring",
+			back="Engulfer Cape +1", 
+			waist="Flume Belt",
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, 
+			feet="Amm Greaves"}
 
 	sets.DT = {}
 	sets.DT.Ochain = {
@@ -391,18 +384,18 @@ function get_sets()
 	-- WS Sets --
 	sets.WS["Chant du Cygne"] = {
 			ammo="Jukukik Feather",
-			head="Quiahuiz Helm",
-			neck="Fotia Gorget",
-			ear1="Moonshade Earring",
+			head="Founder's Corona",
+			neck="Asperity Necklace",
+			ear1="Suppanomimi",
 			ear2="Brutal Earring",
-			body="Mes. Haubergeon",
+			body="Chozoron Coselete",
 			hands="Acro Gauntlets",
-			ring1="Ramuh Ring",
+			ring1="Petrov Ring",
 			ring2="Ramuh Ring",
-			back="Rancorous Mantle",
-			waist="Chiner's Belt +1",
-			legs="Acro Breeches",
-			feet="Acro Leggings"}
+			back="Bleating Mantle",
+			waist="Snow Belt",
+			legs={name="Odyssean Cuisses",augments={"Accuracy+19", "Attack+34","Dbl. Atk.+4"}},
+			feet="Founder's Greaves"}
 	sets.WS["Chant du Cygne"].MidACC = set_combine(sets.WS["Chant du Cygne"],{
 			waist="Fotia Belt"})
 	sets.WS["Chant du Cygne"].HighACC = set_combine(sets.WS["Chant du Cygne"].MidACC,{})
@@ -493,21 +486,21 @@ function get_sets()
 
 	sets.WS["Aeolian Edge"] = {}
 
-	sets.Enmity = { -- +18 from Burtgang iLvl 119 --
-			ammo="Iron Gobbet", -- 2 --
-			head="Cab. Coronet +1", -- 7 --
-			neck="Unmoving Collar +1", -- 10 --
-			ear1="Trux Earring", -- 5 --
-			ear2="Cryptic Earring", -- 4 --
-			body="Chev. Cuirass +1", -- 12 --
-			hands={name="Yorium Gauntlets",augments={"Enmity+10","Weapon skill damage +3%"}}, -- 14 --
-			ring1="Eihwaz Ring", -- 5 --
+	sets.Enmity = { -- +10 from Brilliance  --
+			ammo="Iron Gobbet", -- 2 nd --
+			head="Cab. Coronet +1", -- 7 nd --
+			neck="Unmoving Collar", -- 9 --
+			ear1="Friomisi Earring", -- 2 --
+			ear2="Ethereal Earring", -- 7 --
+			body="Souveran Cuirass", -- 10 --
+			hands="Odyssean Gauntlets", -- 14 --
+			ring1="Apeile Ring", -- 4~8 --
 			ring2="Apeile Ring +1", -- 5~9 --
-			back="Weard Mantle", -- 5 --
-			waist="Creed Baudrier", -- 5 --
-			legs="Cab. Breeches +1", -- 7 --
-			feet={name="Yorium Sabatons",augments={"STR+4 VIT+4","Accuracy+16 Attack+16","Enmity+9"}}} -- 14 --
-									-- Total Enmity+ = 113~117 --
+			back="Weard Mantle", -- 7 --
+			waist="Flume Belt", --  --
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 --
+			feet="Eschite Greaves"} -- 15 --
+									-- Total Enmity+ = 77~85 --
 
 	-- JA Sets --
 	sets.JA = {}
@@ -549,21 +542,21 @@ function get_sets()
 	--Fastcast Set --
 	sets.Precast.FastCast = {
 			ammo="Impatiens",
-			head="Chev. Armet +1",
+			head="Carmine Mask",
 			neck="Orunmila's Torque",
 			ear1="Enchntr. Earring +1",
 			ear2="Loquac. Earring",
-			body="Nuevo Coselete",
+			body="Chozoron Coselete",
 			hands="Leyline Gloves",
 			ring1="Prolix Ring",
-			ring2="Veneficium Ring",
-			back="Repulse Mantle",
+			ring2="Weatherspoon Ring",
+			back="Weard Mantle",
 			waist="Goading Belt",
-			legs="Enif Cosciales",
-			feet="Ejekamal Boots"}
+			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
+			feet="Odyssean Greaves"}
 
 	-- Precast Enhancing Magic --
-	sets.Precast['Enhancing Magic'] = set_combine(sets.Precast.FastCast,{waist="Siegel Sash"})
+	sets.Precast['Enhancing Magic'] = set_combine(sets.Precast.FastCast,{waist="Olympus Sash"})
 
 	-- Cure Precast Set --
 	sets.Precast.Cure = set_combine(sets.Precast.FastCast,{ear2="Nourish. Earring +1"})
@@ -574,28 +567,22 @@ function get_sets()
 	-- Spells Recast --
 	sets.Midcast.Recast = {
 			ammo="Impatiens",
-			head="Chev. Armet +1",
+			head="Carmine Mask",
 			neck="Orunmila's Torque",
 			ear1="Enchntr. Earring +1",
 			ear2="Loquac. Earring",
-			body="Nuevo Coselete",
+			body="Chozoron Coselete",
 			hands="Leyline Gloves",
 			ring1="Prolix Ring",
-			ring2="Veneficium Ring",
-			back="Repulse Mantle",
+			ring2="Weatherspoon Ring",
+			back="Weard Mantle",
 			waist="Goading Belt",
-			legs="Enif Cosciales",
-			feet="Ejekamal Boots"}
+			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
+			feet="Odyssean Greaves"}
 
 	-- Divine Magic --
 	sets.Midcast['Divine Magic'] = set_combine(sets.Midcast.Recast,{
-			neck="Nesanica Torque",
-			ear1="Knight's Earring",
-			ear2="Beatific Earring",
-			body="Rev. Surcoat +1",
-			hands="Eschite Gauntlets",
-			waist="Bishop's Sash",
-			feet="Templar Sabatons"})
+			head="Jumalik Helm",})
 
 	-- Cure Set --
 	sets.Midcast.Cure = {
@@ -607,31 +594,31 @@ function get_sets()
 			body="Jumalik Mail",
 			hands="Macabre Gaunt. +1",
 			ring1="Eihwaz Ring",
-			ring2="Vocane Ring",
+			ring2="Kunaji Ring",
 			back="Fierabras's Mantle",
 			waist="Chuq'aba Belt",
 			legs={name="Yorium Cuisses",augments={"Accuracy+20","Cure potency +5%","Phys. dmg. taken -2%"}},
-			feet={name="Yorium Sabatons",augments={"Cure potency +5%"}}}
+			feet="Souveran Schuhs"}
 
 	-- Self Cure Set --
 	sets.Midcast.SelfCure = set_combine(sets.Midcast.Cure,{})
 
 	-- Flash Set --
-	sets.Midcast.Flash = {
-			ammo="Iron Gobbet", -- 2 --
-			head="Cizin Helm +1", -- 7 --
-			neck="Unmoving Collar +1", -- 10 --
-			ear1="Trux Earring", -- 5 --
-			ear2="Cryptic Earring", -- 4 --
-			body="Rev. Surcoat +1", -- 8 --
-			hands={name="Yorium Gauntlets",augments={"Enmity+10","Weapon skill damage +3%"}}, -- 14 --
-			ring1="Eihwaz Ring", -- 5 --
+	sets.Midcast.Flash = { -- 10 brilliance --
+			ammo="Iron Gobbet", -- 2 nd --
+			head="Cab. Coronet +1", -- 7 nd --
+			neck="Unmoving Collar", -- 9 --
+			ear1="Friomisi Earring", -- 2 --
+			ear2="Ethereal Earring", -- 7 --
+			body="Souveran Cuirass", -- 10 --
+			hands="Odyssean Gauntlets", -- 14 --
+			ring1="Apeile Ring", -- 4~8 --
 			ring2="Apeile Ring +1", -- 5~9 --
-			back="Weard Mantle", -- 5 --
-			waist="Goading Belt", -- 3 --
-			legs="Cab. Breeches +1", -- 7 --
-			feet={name="Yorium Sabatons",augments={"STR+4 VIT+4","Accuracy+16 Attack+16","Enmity+9"}}} -- 14 --
-					-- Total Enmity+ = 107~111 --
+			back="Weard Mantle", -- 7 --
+			waist="Flume Belt", --  --
+			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 --
+			feet="Eschite Greaves"} -- 15 --
+									-- Total Enmity+ = 87~95 --
 
 	-- Enhancing Magic --
 	sets.Midcast['Enhancing Magic'] = set_combine(sets.Midcast.Recast,{
@@ -639,7 +626,7 @@ function get_sets()
 			neck="Colossus's Torque",
 			ear1="Andoaa Earring",
 			ear2="Augment. Earring",
-			body="Shab. Cuirass +1",
+			body="Shabti Cuirass",
 			back="Merciful Cape",
 			waist="Olympus Sash",
 			legs="Rev. Breeches +1"})
@@ -650,18 +637,18 @@ function get_sets()
 	-- Reprisal --
 	sets.Midcast.Reprisal = {
 			ammo="Impatiens",
-			head="Chev. Armet +1",
-			neck="Dualism Collar +1",
-			ear1="Etiolation Earring",
-			ear2="Cryptic Earring",
-			body="Shab. Cuirass +1",
-			hands="Souv. Handsch. +1",
-			ring1="Eihwaz Ring",
-			ring2="Meridian Ring",
-			back="Aenoth. Mantle +1",
+			head="Founder's Corona",
+			neck="Dualism Collar",
+			ear1="Oneiros Earring",
+			ear2="Ethereal Earring",
+			body="Souveran Cuirass",
+			hands="Souveran Handschuhs",
+			ring1="Kunaji Ring",
+			ring2="Praan Ring",
+			back="Aenotherus Mantle",
 			waist="Oneiros Belt",
-			legs="Chev. Cuisses +1",
-			feet="Souveran Schuhs +1"}
+			legs="Eschite Cuisses",
+			feet="Souveran Schuhs"}
 			
 	-- Lock Capa Mantle --
 	sets.Capa = {
@@ -819,7 +806,7 @@ function midcast(spell,action)
 				equipSet = set_combine(equipSet,{ring2="Sheltered Ring"})
 			end
 		elseif spell.english == "Phalanx" then
-			equipSet = set_combine(sets.Midcast['Enhancing Magic'],{head={name="Yorium Barbuta",augments={"Phalanx+2"}},hands="Souv. Handsch. +1",back="Weard Mantle",legs={name="Yorium Cuisses",augments={"Dbl. Atk.+2","Phalanx+2"}},feet="Souveran Schuhs +1"})
+			equipSet = set_combine(sets.Midcast['Enhancing Magic'],{head={name="Yorium Barbuta",augments={"Phalanx+2"}},hands="Souveran Handschuhs",back="Weard Mantle",legs={name="Yorium Cuisses",augments={"Dbl. Atk.+2","Phalanx+2"}},feet="Souveran Schuhs"})
 		elseif spell.english == "Stoneskin" then
 			if buffactive.Stoneskin then
 				send_command('@wait 1.7;cancel stoneskin')
