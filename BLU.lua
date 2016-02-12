@@ -37,13 +37,13 @@ function get_sets()
         Idle_ind = 1                   
        
         sets.Idle.Standard = {ammo="Ginsen",
-                                                  head="Rawhide Mask",neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Brutal Earring",
-                                                  body="Amalric Doublet",hands="Adhemar wristbands",ring1="Epona's Ring",ring2="Petrov ring",
-                                                  back="Cornflower Cape",waist="Windbuffet Belt +1",legs="Crimson Cuisses",feet="Herculean Boots"}
+                                                  head="Rawhide Mask",neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Ethereal Earring",
+                                                  body="Amalric Doublet",hands="Adhemar wristbands",ring1="Sheltered Ring",ring2="Petrov ring",
+                                                  back="Cheviot Cape",waist="Flume Belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
-                                	head="Rawhide Mask",neck="Twilight Torque", ear1="Ethereal earring", ear2="Brutal Earring",
-                                        body="Emet Harness",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Rajas ring",
+                                	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
+                                        body="Emet Harness",hands="Adhemar Wristbands",ring1="Dark Ring",ring2="Gelatinous Ring +1",
                                         back="Cheviot Cape",waist="Flume belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                        
                                                        
@@ -299,7 +299,7 @@ function get_sets()
     head="Helios Band",
     body="Amalric Doublet",
     hands="Amalric Gages",
-    legs="Telchine Braconi",
+    legs="Amalric Slops",
     feet="Helios Boots",
     neck="Sanctity Necklace",
     waist="Salire Belt",
@@ -339,7 +339,7 @@ function get_sets()
         sets.Realmrazer.Attack = {ammo="Hydrocera",
                                                       head="Dampening Tam",neck="Fotia gorget",ear1="Bladeborn earring",ear2="Steelflash Earring",
                                                           body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Rajas ring",ring2="Rufescent ring",
-                                                          back="Buquwik Cape",waist="Fotia belt",legs="Telchine Braconi",feet="Herculean Boots",}
+                                                          back="Buquwik Cape",waist="Fotia belt",legs="Amalric Slops",feet="Herculean Boots",}
                                                          
         sets.Realmrazer.Accuracy = {ammo="Falcon Eye",
                                                         head="Whirlpool mask",neck="Fotia gorget",ear1="Bladeborn earring",ear2="Steelflash earring",
@@ -352,7 +352,7 @@ function get_sets()
     head="Helios Band",
     body="Amalric Doublet",
     hands="Amalric Gages",
-    legs="Telchine Braconi",
+    legs="Amalric Slops",
     feet="Helios Boots",
     neck="Sanctity Necklace",
     waist="Salire Belt",
@@ -453,7 +453,7 @@ function get_sets()
     head="Helios Band",
     body="Amalric Doublet",
     hands="Amalric Gages",
-    legs="Telchine Braconi",
+    legs="Amalric Slops",
     feet="Helios Boots",
     neck="Sanctity Necklace",
     waist="Salire Belt",
@@ -468,7 +468,7 @@ function get_sets()
     head="Helios Band",
     body="Amalric Doublet",
     hands="Amalric Gages",
-    legs="Telchine Braconi",
+    legs="Amalric Slops",
     feet="Helios Boots",
     neck="Sanctity Necklace",
     waist="Salire Belt",
@@ -480,8 +480,8 @@ function get_sets()
 }
                                                  
         sets.BlueMagic.Cures = {ammo="Hydrocera",
-    head="Telchine Cap",
-    body="Telchine Chasuble",
+    head="Amalric Coif",
+    body="Amalric Doublet",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
     feet="Medium's Sabots",
@@ -495,8 +495,8 @@ function get_sets()
 }
                                                        
         sets.BlueMagic.SelfCures = {ammo="Hydrocera",
-    head="Telchine Cap",
-    body="Telchine Chasuble",
+    head="Amalric Coif",
+    body="Amalric Doublet",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
     feet="Medium's Sabots",
@@ -504,7 +504,7 @@ function get_sets()
     waist="Pythia Sash",
     left_ear="Mendi. Earring",
     right_ear="Lifestorm Earring",
-    left_ring="Levia. Ring",
+    left_ring="Kunaji Ring",
     right_ring="Levia. Ring",
     back="Cornflower Cape",
 }
@@ -555,8 +555,8 @@ function get_sets()
 }
        
         sets.BlueMagic.WhiteWind = {ammo="Egoist's Tathlum",
-    head="Telchine Cap",
-    body="Telchine Chasuble",
+    head="Amalric Coif",
+    body="Amalric Doublet",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
     feet="Luhlaza Charuqs",
@@ -570,7 +570,7 @@ function get_sets()
 }
                                                                          
         sets.BlueMagic.MagicAccuracy = {ammo="Ombre Tathlum",
-    head="Helios Band",
+    head="Amalric Coif",
     body="Amalric Doublet",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
@@ -615,11 +615,11 @@ function get_sets()
 }
 
 	sets.BlueMagic.Refresh = {ammo="Sapience Orb",
-    head="Telchine Cap",
-    body="Telchine Chasuble",
+    head="Amalric Coif",
+    body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Psycloth Lappas",
-    feet="Taeon	Boots",
+    feet="Herculean Boots",
     neck="Deviant Necklace",
     waist="Gishdubar Sash",
     left_ear="Gwati Earring",
@@ -733,7 +733,7 @@ function get_sets()
         sets.precast.FC = {}
        
         sets.precast.FC.Standard = {ammo="Sapience Orb",
-    head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+4','Mag. Acc.+4',}},
+    head="Amalric Coif",
     body="Samnuha Coat",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
@@ -748,7 +748,7 @@ function get_sets()
 }
        
         sets.precast.FC.Blue = {ammo="Sapience Orb",
-    head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+4','Mag. Acc.+4',}},
+    head="Amalric Coif",
     body="Hashishin Mintan",
     hands="Hashishin Bazubands",
     legs="Psycloth Lappas",
