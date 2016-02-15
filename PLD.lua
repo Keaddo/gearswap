@@ -80,8 +80,8 @@ function get_sets()
 		--	head="Cab. Coronet +1", --
 		--	body="Councilor's Garb", --
 		--	hands="Souv. Handsch. +1", --
-			ring1="Defending Ring",
-			ring2="Vocane Ring",
+		--	ring1="Defending Ring",
+		--	ring2="Vocane Ring",
 			feet="Souveran Schuhs +1"})
 
 	sets.Resting = set_combine(sets.Idle.Regen)
@@ -206,7 +206,7 @@ function get_sets()
 			ring1="Dark Ring", -- 4 PDT --
 			ring2="Gelatinous Ring +1", -- 7 PDT --
 			back="Weard Mantle", -- 3 DT --
-			waist="Flume Belt +1", -- 4 PDT --
+			waist="Flume Belt", -- 4 PDT --
 			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 PDT --
 			feet="Souveran Schuhs"} -- 4 PDT --
 							-- Total -17% DT + -33% PDT = -50% Reduction --
@@ -488,7 +488,7 @@ function get_sets()
 
 	sets.Enmity = { -- +10 from Brilliance  --
 			ammo="Iron Gobbet", -- 2 nd --
-			head="Cab. Coronet +1", -- 7 nd --
+			head="Bahamut's Mask", -- 7 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
 			ear2="Ethereal Earring", -- 7 --
@@ -500,7 +500,7 @@ function get_sets()
 			waist="Flume Belt", --  --
 			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 --
 			feet="Eschite Greaves"} -- 15 --
-									-- Total Enmity+ = 77~85 --
+									-- Total Enmity+ = 84~92 --
 
 	-- JA Sets --
 	sets.JA = {}
@@ -606,7 +606,7 @@ function get_sets()
 	-- Flash Set --
 	sets.Midcast.Flash = { -- 10 brilliance --
 			ammo="Iron Gobbet", -- 2 nd --
-			head="Cab. Coronet +1", -- 7 nd --
+			head="Bahamut's Mask", -- 7 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
 			ear2="Ethereal Earring", -- 7 --
