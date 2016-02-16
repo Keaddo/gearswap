@@ -106,7 +106,7 @@ function get_sets()
 			neck="Asperity Necklace",
 			ear1="Steelflash Earring",
 			ear2="Bladeborn Earring",
-			body="Terminal Plate",
+			body="Founder's Breastplate",
 			hands="Founder's Gauntlets",
 			ring1="Petrov Ring",
 			ring2="Rajas Ring",
@@ -134,7 +134,7 @@ function get_sets()
 			neck="Asperity Necklace",
 			ear1="Steelflash Earring",
 			ear2="Bladeborn Earring",
-			body="Terminal Plate",
+			body="Founder's Breastplate",
 			hands="Founder's Gauntlets",
 			ring1="Petrov Ring",
 			ring2="Rajas Ring",
@@ -162,7 +162,7 @@ function get_sets()
 			neck="Asperity Necklace",
 			ear1="Steelflash Earring",
 			ear2="Bladeborn Earring",
-			body="Terminal Plate",
+			body="Founder's Breastplate",
 			hands="Founder's Gauntlets",
 			ring1="Petrov Ring",
 			ring2="Rajas Ring",
@@ -197,7 +197,7 @@ function get_sets()
 	sets.PDT.Ochain = {
 			sub="Ochain",
 			ammo="Angha Gem", -- 2 PDT --
-			head="Jumalik Helm", -- 5 PDT --
+			head="Loess Barbuta", -- 5 PDT --
 			neck="Twilight Torque", -- 5 DT --
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
@@ -207,14 +207,14 @@ function get_sets()
 			ring2="Gelatinous Ring +1", -- 7 PDT --
 			back="Weard Mantle", -- 3 DT --
 			waist="Flume Belt", -- 4 PDT --
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 PDT --
+			legs="Souveran Diechlings", -- 4 PDT --
 			feet="Souveran Schuhs"} -- 4 PDT --
 							-- Total -17% DT + -33% PDT = -50% Reduction --
 												-- Primary ACC 815 --
 	sets.PDT.Aegis = {
 			sub="Aegis",
 			ammo="Angha Gem",
-			head="Jumalik Helm",
+			head="Loess Barbuta",
 			neck="Twilight Torque",
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
@@ -224,13 +224,13 @@ function get_sets()
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1", 
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}},
+			legs="Souveran Diechlings",
 			feet="Souveran Schuhs"}
 			
 	sets.PDT.Priwen = {
 			sub="Priwen",
 			ammo="Angha Gem",
-			head="Jumalik Helm",
+			head="Loess Barbuta",
 			neck="Twilight Torque",
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
@@ -240,14 +240,14 @@ function get_sets()
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1", 
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}},
+			legs="Souveran Diechlings",
 			feet="Souveran Schuhs"}
 
 	sets.MDT = {}
 	sets.MDT.Ochain = {
 			sub="Ochain",
 			ammo="Vanir Battery", -- MDB 4 --
-			head="Terminal Helm", -- MDB 2 / MDT 5 --
+			head="Loess Barbuta", -- MDB 2 / MDT 5 --
 			neck="Twilight Torque", -- 5 DT --
 			ear1="Merman's Earring", -- MDT 2 --
 			ear2="Ethereal Earring", 
@@ -257,14 +257,14 @@ function get_sets()
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", -- 4 MDT --
 			waist="Flume Belt",
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- MDB 4 --
+			legs="Souveran Diechlings", -- MDB 4 --
 			feet="Amm Greaves"} -- MDB 2 / DT 3 --
 								-- Total -17% DT + -16% MDT = -33% Reduction / +13 MDB --
 
 	sets.MDT.Aegis = {
 			sub="Aegis",
 			ammo="Vanir Battery", 
-			head="Terminal Helm", 
+			head="Loess Barbuta", 
 			neck="Twilight Torque",
 			ear1="Merman's Earring", 
 			ear2="Ethereal Earring", 
@@ -274,13 +274,13 @@ function get_sets()
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", 
 			waist="Flume Belt",
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, 
+			legs="Souveran Diechlings", 
 			feet="Amm Greaves"}
 								
 	sets.MDT.Priwen = {
 			sub="Priwen",
 			ammo="Vanir Battery", 
-			head="Terminal Helm", 
+			head="Loess Barbuta", 
 			neck="Twilight Torque",
 			ear1="Merman's Earring", 
 			ear2="Ethereal Earring", 
@@ -290,7 +290,7 @@ function get_sets()
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", 
 			waist="Flume Belt",
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, 
+			legs="Souveran Diechlings", 
 			feet="Amm Greaves"}
 
 	sets.DT = {}
@@ -487,8 +487,8 @@ function get_sets()
 	sets.WS["Aeolian Edge"] = {}
 
 	sets.Enmity = { -- +10 from Brilliance  --
-			ammo="Iron Gobbet", -- 2 nd --
-			head="Bahamut's Mask", -- 7 --
+			ammo="Sapience Orb", -- 2 --
+			head="Loess Barbuta", -- 9-14 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
 			ear2="Ethereal Earring", -- 7 --
@@ -498,9 +498,9 @@ function get_sets()
 			ring2="Apeile Ring +1", -- 5~9 --
 			back="Weard Mantle", -- 7 --
 			waist="Flume Belt", --  --
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 --
+			legs="Souveran Diechlings", -- 7 --
 			feet="Eschite Greaves"} -- 15 --
-									-- Total Enmity+ = 84~92 --
+									-- Total Enmity+ = 89~97 --
 
 	-- JA Sets --
 	sets.JA = {}
@@ -597,7 +597,7 @@ function get_sets()
 			ring2="Kunaji Ring",
 			back="Fierabras's Mantle",
 			waist="Chuq'aba Belt",
-			legs={name="Yorium Cuisses",augments={"Accuracy+20","Cure potency +5%","Phys. dmg. taken -2%"}},
+			legs={name="Yorium Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
 			feet="Souveran Schuhs"}
 
 	-- Self Cure Set --
@@ -605,8 +605,8 @@ function get_sets()
 
 	-- Flash Set --
 	sets.Midcast.Flash = { -- 10 brilliance --
-			ammo="Iron Gobbet", -- 2 nd --
-			head="Bahamut's Mask", -- 7 --
+			ammo="Sapience Orb", -- 2 --
+			head="Loess Barbuta", -- 7 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
 			ear2="Ethereal Earring", -- 7 --
@@ -616,9 +616,9 @@ function get_sets()
 			ring2="Apeile Ring +1", -- 5~9 --
 			back="Weard Mantle", -- 7 --
 			waist="Flume Belt", --  --
-			legs={name="Odyssean Cuisses",augments={"VIT+1", "Attack+13", "Phys. dmg. taken -4%"}}, -- 4 --
+			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}}, -- 4 --
 			feet="Eschite Greaves"} -- 15 --
-									-- Total Enmity+ = 87~95 --
+									-- Total Enmity+ = 89~97 --
 
 	-- Enhancing Magic --
 	sets.Midcast['Enhancing Magic'] = set_combine(sets.Midcast.Recast,{

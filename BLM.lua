@@ -157,7 +157,7 @@ function init_gear_sets()
 	back="Bane Cape",
 	waist="Salire Belt",
 	legs="Amalric Slops",
-	Feet="Merlinic's Sabots"}
+	Feet="Merlinic Crackows"}
                                                                              
     sets.midcast['Dark Magic'].Drain =                                      set_combine(sets.midcast['Dark Magic'],{})
                                                                              
@@ -173,8 +173,8 @@ function init_gear_sets()
 	body="Amalric Doublet",
 	hands="Amalric Gages",
 	legs="Amalric Slops",
-	feet="Merlinic's Sabots",
-	neck="Saevus Pendant",
+	feet="Merlinic Crackows",
+	neck="Mizu. Kubikazari",
 	ear1="Friomisi Earring",
 	ear2="Hecate's Earring",
 	ring1="Shiva Ring",
@@ -206,7 +206,7 @@ function init_gear_sets()
 	ring2="Paguroidea Ring",
 	back="Cheviot Cape",
 	legs="Assiduity Pants +1",
-	feet="Merlinic's Sabots"}
+	feet="Merlinic Crackows"}
      
     -- Idle sets
      
