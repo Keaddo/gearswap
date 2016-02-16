@@ -296,7 +296,7 @@ function get_sets()
         sets.WS.SanguineBlade = {}
        
         sets.WS.SanguineBlade = {ammo="Ombre Tathlum",
-    head="Helios Band",
+    head="Amalric Coif",
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
@@ -349,7 +349,7 @@ function get_sets()
         sets.WS.FlashNova = {}
        
         sets.WS.FlashNova = {ammo="Ghastly Tathlum",
-    head="Helios Band",
+    head="Amalric Coif",
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
@@ -450,7 +450,7 @@ function get_sets()
 }
                                                  
         sets.BlueMagic.INT = {ammo="Ombre Tathlum",
-    head="Helios Band",
+    head="Amalric Coif",
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
@@ -465,7 +465,7 @@ function get_sets()
 }
 
 	sets.BlueMagic.Dark = {ammo="Ghastly Tathlum",
-    head="Helios Band",
+    head="Amalric Coif",
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
@@ -574,7 +574,7 @@ function get_sets()
     body="Amalric Doublet",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
-    feet="Herculean Boots",
+    feet="Helios Boots",
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Enchntr. Earring +1",
@@ -669,7 +669,7 @@ function get_sets()
 	
 	sets.Utility.Weather = {waist="Hachirin-no-obi",back="Twilight Cape"}
 
-	sets.Utility.MB = {head="Helios Band",body="Samnuha Coat",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
+	sets.Utility.MB = {head="Amalric Coif",body="Samnuha Coat",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
  
        
         sets.Utility.Stoneskin = {head="Haruspex hat",neck="Stone Gorget",ear1="Loquac. earring",ear2="Earthcry earring",
