@@ -37,7 +37,7 @@ function user_setup()
      
     -- Additional local binds
     send_command('bind ^` input /ma Stun <t>;input /echo Target <t> Stunned')
-    send_command('bind @` gs c toggle MagicBurst')
+    send_command('bind !` gs c toggle MagicBurst')
  
     select_default_macro_book()
 end
@@ -45,7 +45,7 @@ end
 -- Called when this job file is unloaded (eg: job change)
 function user_unload()
     send_command('unbind ^`')
-    send_command('unbind @`')
+    send_command('unbind !`')
 end
  
  
@@ -149,7 +149,7 @@ function init_gear_sets()
 	head="Amalric Coif",
 	neck="Mizu. Kubikazari",
 	ear1="Friomisi Earring",
-	ear2="Hecate's Earring",
+	ear2="Barkarole Earring",
 	body="Amalric Doublet",
 	hands="Amalric Gages",
 	ring1="Shiva Ring",
@@ -174,13 +174,13 @@ function init_gear_sets()
 	hands="Amalric Gages",
 	legs="Amalric Slops",
 	feet="Merlinic Crackows",
-	neck="Mizu. Kubikazari",
+	neck="Saevus Pendant +1",
 	ear1="Friomisi Earring",
-	ear2="Hecate's Earring",
+	ear2="Barkarole Earring",
 	ring1="Shiva Ring",
 	ring2="Shiva Ring",
 	back="Toro Cape",
-	waist="Aswang Sash"
+	waist="Refoccilation Stone"
 	}
  
     sets.midcast.LowTierNuke.Resistant =                                    {
@@ -205,6 +205,7 @@ function init_gear_sets()
 	ring1="Sheltered Ring",
 	ring2="Paguroidea Ring",
 	back="Cheviot Cape",
+	waist="Refoccilation Stone",
 	legs="Assiduity Pants +1",
 	feet="Merlinic Crackows"}
      
