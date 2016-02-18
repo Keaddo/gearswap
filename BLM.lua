@@ -25,7 +25,7 @@ end
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
     state.OffenseMode:options('None', 'Normal')
-    state.CastingMode:options('Normal', 'Resistant', 'TP')
+    state.CastingMode:options('Normal', 'Resistant', 'Spaekona', 'TP')
     state.IdleMode:options('Normal', 'PDT')
     state.MagicBurst = M(false, 'Magic Burst')
      
@@ -183,15 +183,21 @@ function init_gear_sets()
 	waist="Refoccilation Stone"
 	}
  
-    sets.midcast.LowTierNuke.Resistant =                                    {
-	neck="Sanctity Necklace"}
+    sets.midcast.LowTierNuke.Resistant =                                    set_combine(sets.midcast.LowTierNuke,{
+	neck="Sanctity Necklace"})
+	
+	sets.midcast.LowTierNuke.Spaekona =										set_combine(sets.midcast.LowTierNuke,{
+	body="Spae. Coat +1"})
  
     sets.midcast.TP =                                                       {}                                                                          
                                                                              
     sets.midcast.HighTierNuke =                                             set_combine(sets.midcast.LowTierNuke,{})
                                                                              
     sets.midcast.HighTierNuke.Resistant =                                   set_combine(sets.midcast.LowTierNuke.Resistant,{})
-     
+
+	sets.midcast.HighTierNuke.Spaekona =									set_combine(sets.midcast.LowTierNuke,{
+	body="Spae. Coat +1"})
+	
 -- Sets to return to when not performing an action.
     -- Resting sets
     sets.resting =                                                          {
@@ -245,9 +251,11 @@ function init_gear_sets()
      
     sets.buff['Mana Wall'] =                                                {}
  
-    sets.magic_burst =                                                      {
+    sets.magic_burst =                                                      set_combine(sets.midcast.LowTierNuke,{
 	ring1="Mujin Band",
-	neck="Mizu. Kubikazari"}
+	ring2="Locus Ring",
+	neck="Mizu. Kubikazari",
+	back="Seshaw Cape"})
  
     -- Engaged sets
  
