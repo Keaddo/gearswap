@@ -732,7 +732,7 @@ function get_sets()
        
         sets.precast.FC = {}
        
-        sets.precast.FC.Standard = {ammo="Sapience Orb",
+        sets.precast.FC.Standard = {ammo="Impatiens",
     head="Amalric Coif",
     body="Samnuha Coat",
     hands="Leyline Gloves",
@@ -747,7 +747,7 @@ function get_sets()
     back="Swith Cape",
 }
        
-        sets.precast.FC.Blue = {ammo="Sapience Orb",
+        sets.precast.FC.Blue = {ammo="Impatiens",
     head="Amalric Coif",
     body="Hashishin Mintan",
     hands="Hashishin Bazubands",
