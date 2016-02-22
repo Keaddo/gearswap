@@ -305,8 +305,8 @@ function get_sets()
     waist="Salire Belt",
     left_ear="Friomisi Earring",
     right_ear="Hecate's Earring",
-    left_ring="Fenrir Ring",
-    right_ring="Fenrir Ring",
+    left_ring="Shiva Ring",
+    right_ring="Shiva Ring",
     back="Cornflower Cape",
 }
                
@@ -358,8 +358,8 @@ function get_sets()
     waist="Salire Belt",
     left_ear="Friomisi Earring",
     right_ear="Hecate's Earring",
-    left_ring="Fenrir Ring",
-    right_ring="Fenrir Ring",
+    left_ring="Shiva Ring",
+    right_ring="Shiva Ring",
     back="Cornflower Cape",
 }
                                                                
@@ -459,8 +459,8 @@ function get_sets()
     waist="Salire Belt",
     left_ear="Hecate's Earring",
     right_ear="Friomisi Earring",
-    left_ring="Fenrir Ring",
-    right_ring="Fenrir Ring",
+    left_ring="Shiva Ring",
+    right_ring="Shiva Ring",
     back="Cornflower cape",
 }
 
@@ -474,8 +474,8 @@ function get_sets()
     waist="Salire Belt",
     left_ear="Hecate's Earring",
     right_ear="Friomisi Earring",
-    left_ring="Fenrir Ring",
-    right_ring="Fenrir Ring",
+    left_ring="Shiva Ring",
+    right_ring="Shiva Ring",
     back="Cornflower cape",
 }
                                                  
@@ -579,7 +579,7 @@ function get_sets()
     waist="Salire Belt",
     left_ear="Enchntr. Earring +1",
     right_ear="Gwati Earring",
-    left_ring="Fenrir Ring",
+    left_ring="Shiva Ring",
     right_ring="Weatherspoon Ring",
     back="Cornflower cape",
 }

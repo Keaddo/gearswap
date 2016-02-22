@@ -127,7 +127,8 @@ function init_gear_sets()
  
     sets.midcast.Curaga =                                                   sets.midcast.Cure
                                                                              
-    sets.midcast['Enhancing Magic'] =                                       {}
+    sets.midcast['Enhancing Magic'] =                                       {
+	head="Umuthi Hat"}
  
     sets.midcast['Enhancing Magic'].Stoneskin =                             set_combine(sets.midcast['Enhancing Magic'],{})
                                                                              
@@ -146,13 +147,13 @@ function init_gear_sets()
  
     sets.midcast['Dark Magic'] =                                            {
 	ammo="Ombre Tathlum",
-	head="Amalric Coif",
+	head="Merlinic Hood",
 	neck="Mizu. Kubikazari",
 	ear1="Friomisi Earring",
 	ear2="Barkarole Earring",
 	body="Amalric Doublet",
 	hands="Amalric Gages",
-	ring1="Shiva Ring",
+	ring1="Evanescence Ring",
 	ring2="Weatherspoon Ring",	
 	back="Bane Cape",
 	waist="Salire Belt",
@@ -169,7 +170,7 @@ function init_gear_sets()
     -- Elemental Magic sets
     sets.midcast.LowTierNuke =                                              {
 	ammo="Witchstone",
-	head="Amalric Coif",
+	head="Merlinic Hood",
 	body="Amalric Doublet",
 	hands="Amalric Gages",
 	legs="Amalric Slops",
@@ -184,6 +185,7 @@ function init_gear_sets()
 	}
  
     sets.midcast.LowTierNuke.Resistant =                                    set_combine(sets.midcast.LowTierNuke,{
+	head="Amalric Coif",
 	neck="Sanctity Necklace"})
 	
 	sets.midcast.LowTierNuke.Spaekona =										set_combine(sets.midcast.LowTierNuke,{
@@ -202,7 +204,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting =                                                          {
 	ammo="Vanir Battery",
-	head="Amalric Coif",
+	head="Merlinic Hood",
 	neck="Sanctity Necklace",
 	ear1="Merman's Earring",
 	ear2="Ethereal Earring",
@@ -255,6 +257,8 @@ function init_gear_sets()
 	ring1="Mujin Band",
 	ring2="Locus Ring",
 	neck="Mizu. Kubikazari",
+	head="Merlinic Hood",
+	legs="Merlinic Shalwar",
 	back="Seshaw Cape"})
  
     -- Engaged sets

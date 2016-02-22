@@ -197,7 +197,7 @@ function get_sets()
 	sets.PDT.Ochain = {
 			sub="Ochain",
 			ammo="Angha Gem", -- 2 PDT --
-			head="Loess Barbuta", -- 5 PDT --
+			head="Loess Barbuta +1", -- 5 PDT --
 			neck="Twilight Torque", -- 5 DT --
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
@@ -214,7 +214,7 @@ function get_sets()
 	sets.PDT.Aegis = {
 			sub="Aegis",
 			ammo="Angha Gem",
-			head="Loess Barbuta",
+			head="Loess Barbuta +1",
 			neck="Twilight Torque",
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
@@ -230,7 +230,7 @@ function get_sets()
 	sets.PDT.Priwen = {
 			sub="Priwen",
 			ammo="Angha Gem",
-			head="Loess Barbuta",
+			head="Loess Barbuta +1",
 			neck="Twilight Torque",
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
@@ -247,7 +247,7 @@ function get_sets()
 	sets.MDT.Ochain = {
 			sub="Ochain",
 			ammo="Vanir Battery", -- MDB 4 --
-			head="Loess Barbuta", -- MDB 2 / MDT 5 --
+			head="Loess Barbuta +1", -- MDB 2 / MDT 5 --
 			neck="Twilight Torque", -- 5 DT --
 			ear1="Merman's Earring", -- MDT 2 --
 			ear2="Ethereal Earring", 
@@ -264,7 +264,7 @@ function get_sets()
 	sets.MDT.Aegis = {
 			sub="Aegis",
 			ammo="Vanir Battery", 
-			head="Loess Barbuta", 
+			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
 			ear1="Merman's Earring", 
 			ear2="Ethereal Earring", 
@@ -280,7 +280,7 @@ function get_sets()
 	sets.MDT.Priwen = {
 			sub="Priwen",
 			ammo="Vanir Battery", 
-			head="Loess Barbuta", 
+			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
 			ear1="Merman's Earring", 
 			ear2="Ethereal Earring", 
@@ -297,7 +297,7 @@ function get_sets()
 	sets.DT.Ochain = {
 			sub="Ochain",
 			ammo="Vanir Battery", 
-			head="Loess Barbuta", 
+			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
 			ear1="Merman's Earring", 
 			ear2="Ethereal Earring", 
@@ -313,7 +313,7 @@ function get_sets()
 	sets.DT.Aegis = {
 			sub="Aegis",
 			ammo="Vanir Battery", 
-			head="Loess Barbuta", 
+			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
 			ear1="Merman's Earring", 
 			ear2="Ethereal Earring", 
@@ -329,7 +329,7 @@ function get_sets()
 	sets.DT.Priwen = {
 			sub="Priwen",
 			ammo="Vanir Battery", 
-			head="Loess Barbuta", 
+			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
 			ear1="Merman's Earring", 
 			ear2="Ethereal Earring", 
@@ -488,7 +488,7 @@ function get_sets()
 
 	sets.Enmity = { -- +10 from Brilliance  --
 			ammo="Sapience Orb", -- 2 --
-			head="Loess Barbuta", -- 9-14 --
+			head="Loess Barbuta +1", -- 9-14 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
 			ear2="Ethereal Earring", -- 7 --
@@ -497,10 +497,10 @@ function get_sets()
 			ring1="Apeile Ring", -- 4~8 --
 			ring2="Apeile Ring +1", -- 5~9 --
 			back="Weard Mantle", -- 7 --
-			waist="Flume Belt", --  --
+			waist="Sulla Belt", -- 3 --
 			legs="Souveran Diechlings", -- 7 --
 			feet="Eschite Greaves"} -- 15 --
-									-- Total Enmity+ = 89~97 --
+									-- Total Enmity+ = 94~107 --
 
 	-- JA Sets --
 	sets.JA = {}
@@ -606,7 +606,7 @@ function get_sets()
 	-- Flash Set --
 	sets.Midcast.Flash = { -- 10 brilliance --
 			ammo="Sapience Orb", -- 2 --
-			head="Loess Barbuta", -- 7 --
+			head="Loess Barbuta +1", -- 7 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
 			ear2="Ethereal Earring", -- 7 --
