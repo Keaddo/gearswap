@@ -212,7 +212,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting =                                                          {
 	ammo="Vanir Battery",
-	head="Merlinic Hood",
+	head="Amalric Coif",
 	neck="Sanctity Necklace",
 	ear1="Merman's Earring",
 	ear2="Ethereal Earring",
@@ -220,8 +220,8 @@ function init_gear_sets()
 	hands="Amalric Gages",
 	ring1="Sheltered Ring",
 	ring2="Paguroidea Ring",
---	back="Cheviot Cape", --
-	back="Mecisto. Mantle",
+	back="Cheviot Cape", 
+--	back="Mecisto. Mantle", --
 	waist="Refoccilation Stone",
 	legs="Assiduity Pants +1",
 	feet="Merlinic Crackows"}
@@ -279,7 +279,8 @@ function init_gear_sets()
      
     -- Normal melee group
     sets.engaged =                                                          {
-	back="Mecisto. Mantle"}
+--	back="Mecisto. Mantle" --
+} 
 end
  
 -------------------------------------------------------------------------------------------------------------------
