@@ -37,7 +37,7 @@ function get_sets()
         Idle_ind = 1                   
        
         sets.Idle.Standard = {ammo="Ginsen",
-                                                  head="Rawhide Mask",neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Ethereal Earring",
+                                                  head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
                                                   body="Amalric Doublet",hands="Adhemar wristbands",ring1="Sheltered Ring",ring2="Paguroidea ring",
                                                   back="Cheviot Cape",waist="Flume Belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  

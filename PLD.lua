@@ -33,7 +33,7 @@ function get_sets()
 			ammo="Homiliary",
 			head="Jumalik Helm",
 			neck="Coatl Gorget +1",
-			ear1="Merman's Earring",
+			ear1="Infused Earring",
 			ear2="Ethereal Earring",
 			body="Chozoron Coselete",
 			hands="Souveran Handschuhs",
@@ -553,7 +553,8 @@ function get_sets()
 			back="Weard Mantle",
 			waist="Goading Belt",
 			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
-			feet="Odyssean Greaves"}
+			feet={name="Odyssean Greaves",augments={"INT+11", "Fast Cast+5"}}
+			}
 
 	-- Precast Enhancing Magic --
 	sets.Precast['Enhancing Magic'] = set_combine(sets.Precast.FastCast,{waist="Olympus Sash"})
@@ -578,7 +579,8 @@ function get_sets()
 			back="Weard Mantle",
 			waist="Goading Belt",
 			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
-			feet="Odyssean Greaves"}
+			feet={name="Odyssean Greaves",augments={"INT+11", "Fast Cast+5"}}
+			}
 
 	-- Divine Magic --
 	sets.Midcast['Divine Magic'] = set_combine(sets.Midcast.Recast,{

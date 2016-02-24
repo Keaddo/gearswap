@@ -99,7 +99,7 @@ function init_gear_sets()
 	back="Swith Cape",
 	waist="Witful Belt",
 	legs="Psycloth Lappas",
-	feet="Amalric Nails"}
+	feet="Merlinic Crackows"}
                                                                              
     -- Stoneskin
     sets.precast.Stoneskin =                                                set_combine(sets.precast.FC,{
@@ -137,9 +137,17 @@ function init_gear_sets()
  
     sets.midcast['Enfeebling Magic'] =                                      {
 	ammo="Kalboron Stone",
+	head="Amalric Coif",
 	neck="Sanctity Necklace",
+	ear2="Barkarole Earring",
+	body="Amalric DoubleT",
+	hands="Amalric Gages",
+	ring1="Balrahn's Ring",
 	ring2="Weatherspoon Ring",
-	legs="Psycloth Lappas"}
+	back="Refraction Cape",
+	waist="Porous Rope",
+	legs="Psycloth Lappas"
+	feet="Medium's Sabots"}
                                                                              
     sets.midcast['Enfeebling Magic'].Mnd =                                  set_combine(sets.midcast['Enfeebling Magic'],{})
        
