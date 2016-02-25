@@ -146,8 +146,9 @@ function init_gear_sets()
 	ring2="Weatherspoon Ring",
 	back="Refraction Cape",
 	waist="Porous Rope",
-	legs="Psycloth Lappas"
+	legs="Psycloth Lappas",
 	feet="Medium's Sabots"}
+	
                                                                              
     sets.midcast['Enfeebling Magic'].Mnd =                                  set_combine(sets.midcast['Enfeebling Magic'],{})
        
