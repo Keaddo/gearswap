@@ -43,7 +43,7 @@ function get_sets()
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
-                                        body="Emet Harness",hands="Adhemar Wristbands",ring1="Dark Ring",ring2="Gelatinous Ring +1",
+                                        body="Emet Harness",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Gelatinous Ring +1",
                                         back="Cheviot Cape",waist="Flume belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                        
                                                        
@@ -179,11 +179,11 @@ function get_sets()
         sets.TP.DT = {ammo="Vanir Battery",
                                 head="Dampening Tam",
 								neck="Twilight Torque", 
-								ear1="Mernman's earring", 
+								ear1="Merman's earring", 
 								ear2="Ethereal Earring",
                                 body="Emet Harness",
 								hands="Adhemar Wristbands",
-								ring1="Dark ring",
+								ring1="Patricius ring",
 								ring2="Gelatinous Ring +1",
                                 back="Cheviot Cape",
 								waist="Flume belt",
@@ -295,7 +295,7 @@ function get_sets()
                                                            
         sets.WS.SanguineBlade = {}
        
-        sets.WS.SanguineBlade = {ammo="Ombre Tathlum",
+        sets.WS.SanguineBlade = {ammo="Pemphredo Tathlum",
     head="Amalric Coif",
     body="Amalric Doublet",
     hands="Amalric Gages",
@@ -449,7 +449,7 @@ function get_sets()
     back="Cornflower cape",
 }
                                                  
-        sets.BlueMagic.INT = {ammo="Ombre Tathlum",
+        sets.BlueMagic.INT = {ammo="Pemphredo Tathlum",
     head="Amalric Coif",
     body="Amalric Doublet",
     hands="Amalric Gages",
@@ -569,7 +569,7 @@ function get_sets()
     back="Cornflower Cape",
 }
                                                                          
-        sets.BlueMagic.MagicAccuracy = {ammo="Ombre Tathlum",
+        sets.BlueMagic.MagicAccuracy = {ammo="Pemphredo Tathlum",
     head="Amalric Coif",
     body="Amalric Doublet",
     hands="Leyline Gloves",

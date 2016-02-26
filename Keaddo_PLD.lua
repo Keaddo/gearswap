@@ -203,7 +203,7 @@ function get_sets()
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", -- 9 DT [Upgrade: Tartarus Platemail -10% DT] --
 			hands="Souveran Handschuhs", -- 3 PDT 2/5 Souv. Set --
-			ring1="Dark Ring", -- 4 PDT --
+			ring1="Patricius Ring", -- 4 PDT --
 			ring2="Gelatinous Ring +1", -- 7 PDT --
 			back="Weard Mantle", -- 3 DT --
 			waist="Flume Belt", -- 4 PDT --
@@ -220,7 +220,7 @@ function get_sets()
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Dark Ring", 
+			ring1="Patricius Ring", 
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1", 
@@ -236,7 +236,7 @@ function get_sets()
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Dark Ring", 
+			ring1="Patricius Ring", 
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1", 
@@ -303,7 +303,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Dark Ring",
+			ring1="Patricius Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
 			waist="Flume Belt",
@@ -319,7 +319,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Dark Ring",
+			ring1="Patricius Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
 			waist="Flume Belt",
@@ -335,7 +335,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Dark Ring",
+			ring1="Patricius Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
 			waist="Flume Belt",

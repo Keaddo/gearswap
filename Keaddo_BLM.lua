@@ -136,7 +136,7 @@ function init_gear_sets()
  
  
     sets.midcast['Enfeebling Magic'] =                                      {
-	ammo="Kalboron Stone",
+	ammo="Pemphredo Tathlum",
 	head="Amalric Coif",
 	neck="Sanctity Necklace",
 	ear2="Barkarole Earring",
@@ -155,7 +155,7 @@ function init_gear_sets()
     sets.midcast.ElementalEnfeeble =                                        sets.midcast['Enfeebling Magic']
  
     sets.midcast['Dark Magic'] =                                            {
-	ammo="Ombre Tathlum",
+	ammo="Pemphredo Tathlum",
 	head="Merlinic Hood",
 	neck="Mizu. Kubikazari",
 	ear1="Friomisi Earring",
@@ -178,7 +178,7 @@ function init_gear_sets()
  
     -- Elemental Magic sets
     sets.midcast.LowTierNuke =                                              {
-	ammo="Witchstone",
+	ammo="Pemphredo Tathlum",
 	head="Merlinic Hood",
 	body="Amalric Doublet",
 	hands="Amalric Gages",
@@ -204,7 +204,9 @@ function init_gear_sets()
                                                                              
     sets.midcast.HighTierNuke =                                             set_combine(sets.midcast.LowTierNuke,{})
                                                                              
-    sets.midcast.HighTierNuke.Resistant =                                   set_combine(sets.midcast.LowTierNuke.Resistant,{})
+    sets.midcast.HighTierNuke.Resistant =                                   set_combine(sets.midcast.LowTierNuke.Resistant,{
+	ear1="Digni.Earring"
+	})
 
 	sets.midcast.HighTierNuke.Spaekona =									set_combine(sets.midcast.LowTierNuke,{
 	body="Spae. Coat +1"})
@@ -212,7 +214,7 @@ function init_gear_sets()
 -- Sets to return to when not performing an action.
     -- Resting sets
     sets.resting =                                                          {
-	ammo="Vanir Battery",
+	ammo="Pemphredo Tathlum",
 	head="Amalric Coif",
 	neck="Sanctity Necklace",
 	ear1="Merman's Earring",
