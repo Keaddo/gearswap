@@ -103,7 +103,7 @@ function init_gear_sets()
                                                                              
     -- Stoneskin
     sets.precast.Stoneskin =                                                set_combine(sets.precast.FC,{
-	waist="Siegel Sash"})
+})
      
     -- Cure Magic
     sets.precast.Cure =                                                     set_combine(sets.precast.FC,{
@@ -130,7 +130,8 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic'] =                                       {
 	head="Umuthi Hat"}
  
-    sets.midcast['Enhancing Magic'].Stoneskin =                             set_combine(sets.midcast['Enhancing Magic'],{})
+    sets.midcast['Enhancing Magic'].Stoneskin =                             set_combine(sets.midcast['Enhancing Magic'],{
+		waist="Siegel Sash"})
                                                                              
     sets.midcast['Enhancing Magic'].Aquaveil =                              set_combine(sets.midcast['Enhancing Magic'],{})                                                                         
  
@@ -217,7 +218,7 @@ function init_gear_sets()
 	ammo="Pemphredo Tathlum",
 	head="Amalric Coif",
 	neck="Sanctity Necklace",
-	ear1="Merman's Earring",
+	ear1="Infused Earring",
 	ear2="Ethereal Earring",
 	body="Amalric Doublet",
 	hands="Amalric Gages",
@@ -267,11 +268,12 @@ function init_gear_sets()
  
     sets.magic_burst =                                                      set_combine(sets.midcast.LowTierNuke,{
 	ring1="Mujin Band",
-	ring2="Locus Ring",
+--	ring2="Locus Ring", --
 	neck="Mizu. Kubikazari",
 	head="Merlinic Hood",
-	legs="Merlinic Shalwar",
-	back="Seshaw Cape"})
+	legs="Merlinic Shalwar"
+--	back="Seshaw Cape" --
+	})
  
     -- Engaged sets
  

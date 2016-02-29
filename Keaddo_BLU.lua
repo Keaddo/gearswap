@@ -38,12 +38,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
-                                                  body="Amalric Doublet",hands="Adhemar wristbands",ring1="Sheltered Ring",ring2="Paguroidea ring",
+                                                  body="Amalric Doublet",hands="Herculean Gloves",ring1="Sheltered Ring",ring2="Paguroidea ring",
                                                   back="Cheviot Cape",waist="Flume Belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
-                                        body="Emet Harness",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Gelatinous Ring +1",
+                                        body="Emet Harness",hands="Herculean Gloves",ring1="Patricius Ring",ring2="Gelatinous Ring +1",
                                         back="Cheviot Cape",waist="Flume belt",legs="Crimson Cuisses",feet="Herculean Boots"}
                                                        
                                                        
@@ -61,7 +61,7 @@ function get_sets()
         sets.TP.Standard = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Adhemar Wristbands",
+    hands="Herculean Gloves",
     legs="Samnuha Tights",
     feet="Herculean Boots",
     neck="Asperity Necklace",
@@ -76,7 +76,7 @@ function get_sets()
         sets.TP.Solo = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Adhemar Wristbands",
+    hands="Herculean Gloves",
     legs="Samnuha Tights",
     feet="Herculean Boots",
     neck="Asperity Necklace",
@@ -91,7 +91,7 @@ function get_sets()
         sets.TP.Safe = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Adhemar Wristbands",
+    hands="Herculean Gloves",
     legs="Samnuha Tights",
     feet="Herculean Boots",
     neck="Asperity Necklace",
