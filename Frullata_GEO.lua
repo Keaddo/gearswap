@@ -253,7 +253,7 @@ function job_aftercast(spell, action, spellMap, eventArgs)
             send_command('@timers c "'..spell.english..' ['..spell.target.name..']" 90 down spells/00220.png')
         end
     elseif not player.indi then
-        classes.CustomIdleGroups:cear1()
+        classes.CustomIdleGroups:clear()
     end
 end
 
@@ -270,7 +270,7 @@ function job_buff_change(buff, gain)
         classes.CustomIdleGroups:append('Indi')
         handle_equipping_gear(player.status)
     elseif classes.CustomIdleGroups:contains('Indi') and not player.indi then
-        classes.CustomIdleGroups:cear1()
+        classes.CustomIdleGroups:clear()
         handle_equipping_gear(player.status)
     end
 end
@@ -314,7 +314,7 @@ end
 
 -- Called by the 'update' self-command.
 function job_update(cmdParams, eventArgs)
-    classes.CustomIdleGroups:cear1()
+    classes.CustomIdleGroups:clear()
     if player.indi then
         classes.CustomIdleGroups:append('Indi')
     end
