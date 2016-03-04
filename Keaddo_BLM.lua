@@ -271,6 +271,7 @@ function init_gear_sets()
 --	ring2="Locus Ring", --
 	neck="Mizu. Kubikazari",
 	head="Merlinic Hood",
+	body="Spae. Coat +1",
 	legs="Merlinic Shalwar"
 --	back="Seshaw Cape" --
 	})
