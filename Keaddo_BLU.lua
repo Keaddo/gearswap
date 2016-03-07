@@ -39,12 +39,12 @@ function get_sets()
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
                                                   body="Amalric Doublet",hands="Herculean Gloves",ring1="Sheltered Ring",ring2="Paguroidea ring",
-                                                  back="Cheviot Cape",waist="Flume Belt",legs="Crimson Cuisses",feet="Herculean Boots"}
+                                                  back="Cheviot Cape",waist="Flume Belt",legs="Crimson Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
                                         body="Emet Harness",hands="Herculean Gloves",ring1="Patricius Ring",ring2="Gelatinous Ring +1",
-                                        back="Cheviot Cape",waist="Flume belt",legs="Crimson Cuisses",feet="Herculean Boots"}
+                                        back="Cheviot Cape",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                        
                                                        
                                                        
@@ -63,7 +63,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Herculean Gloves",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
@@ -78,7 +78,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Herculean Gloves",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
@@ -93,7 +93,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Herculean Gloves",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
@@ -108,7 +108,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Lissome Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
@@ -122,7 +122,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Steelflash Earring",
@@ -137,7 +137,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Steelflash Earring",
@@ -152,7 +152,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Olseni Belt",
     left_ear="Steelflash Earring",
@@ -166,7 +166,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Olseni Belt",
     left_ear="Steelflash Earring",
@@ -188,7 +188,7 @@ function get_sets()
                                 back="Cheviot Cape",
 								waist="Flume belt",
 								legs="Herculean Trousers",
-								feet="Herculean Boots",
+								feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 }
                                  
         sets.TP.DTAccuracy = {ammo="Vanir Battery",
@@ -203,12 +203,12 @@ function get_sets()
                                 back="Cheviot Cape",
 								waist="Flume belt",
 								legs="Herculean Trousers",
-								feet="Herculean Boots",
+								feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 }
         sets.TP.MDTAccuracy = {ammo="Vanir Battery",
                                 head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
                                         body="Emet Harness",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Fortified ring",ring2="Yacuruna ring",
-                                        back="Mubvumbamiri Mantle",waist="Flume belt",legs="Herculean Trousers",feet="Herculean Boots",
+                                        back="Mubvumbamiri Mantle",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
 }
        
        
@@ -228,7 +228,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Santity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
@@ -253,7 +253,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
     waist="Snow Belt",
     left_ear="Suppanomimi",
@@ -268,7 +268,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Snow Belt",
     left_ear="Suppanomimi",
@@ -283,7 +283,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Snow Belt",
     left_ear="Steelflash Earring",
@@ -315,14 +315,14 @@ function get_sets()
         sets.WS.CircleBlade = {ammo="Mantoptera Eye",
                                                    head="Adhemar Bonnet",neck="Caro Necklace",ear1="Ishvara earring",ear2="Moonshade earring",
                                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Rufescent ring",
-                                                   back="Buquwik Cape",waist="Prosilio Belt",legs="Samnuha Tights",feet="Herculean Boots",}
+                                                   back="Buquwik Cape",waist="Prosilio Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}}
                                                    
         sets.WS.Expiacion = {}         
                        
         sets.WS.Expiacion = {ammo="Mantoptera Eye",
                                                    head="Adhemar Bonnet",neck="Caro Necklace",ear1="Ishvara earring",ear2="Moonshade earring",
                                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Rufescent ring",
-                                                   back="Buquwik Cape",waist="Prosilio Belt",legs="Samnuha Tights",feet="Herculean Boots",}
+                                                   back="Buquwik Cape",waist="Prosilio Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}}
 
 	sets.WS.VorpalBlade = {}
 	
@@ -339,7 +339,7 @@ function get_sets()
         sets.Realmrazer.Attack = {ammo="Hydrocera",
                                                       head="Dampening Tam",neck="Fotia gorget",ear1="Bladeborn earring",ear2="Steelflash Earring",
                                                           body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Rajas ring",ring2="Rufescent ring",
-                                                          back="Buquwik Cape",waist="Fotia belt",legs="Amalric Slops",feet="Herculean Boots",}
+                                                          back="Buquwik Cape",waist="Fotia belt",legs="Amalric Slops",feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}}
                                                          
         sets.Realmrazer.Accuracy = {ammo="Falcon Eye",
                                                         head="Whirlpool mask",neck="Fotia gorget",ear1="Bladeborn earring",ear2="Steelflash earring",
@@ -379,7 +379,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Caro Necklace",
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
@@ -394,7 +394,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Caro Necklace",
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
@@ -409,7 +409,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Caro Necklace",
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
@@ -424,7 +424,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Caro Necklace",
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
@@ -439,7 +439,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Caro Necklace",
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
@@ -514,7 +514,7 @@ function get_sets()
     body="Amalric Doublet",
     hands="Rawhide Gloves",
     legs="Miasmic Pants",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Eschan Stone",
     left_ear="Gwati Earring",
@@ -529,7 +529,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Rawhide Gloves",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Subtlety Spec.",
     waist="Chuq'aba Belt",
     left_ear="Heartseeker Earring",
@@ -604,7 +604,7 @@ function get_sets()
     body="Amalric Doublet",
     hands="Leyline Gloves",
     legs="Miasmic Pants",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Deviant Necklace",
     waist="Pythia Sash",
     left_ear="Gwati Earring",
@@ -619,7 +619,7 @@ function get_sets()
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Psycloth Lappas",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Deviant Necklace",
     waist="Gishdubar Sash",
     left_ear="Gwati Earring",
@@ -685,7 +685,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Rawhide Gloves",
     legs="Samnuha Tights",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Subtlety Spec.",
     waist="Chaac Belt",
     left_ear="Heartseeker Earring",
@@ -737,7 +737,7 @@ function get_sets()
     body="Samnuha Coat",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Voltsurge Torque",
     waist="Witful Belt",
     left_ear="Enchntr. Earring +1",
@@ -752,7 +752,7 @@ function get_sets()
     body="Hashishin Mintan",
     hands="Hashishin Bazubands",
     legs="Psycloth Lappas",
-    feet="Herculean Boots",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Voltsurge Torque",
     waist="Witful Belt",
     left_ear="Enchntr. Earring +1",

@@ -225,7 +225,6 @@ function init_gear_sets()
 	ring1="Sheltered Ring",
 	ring2="Paguroidea Ring",
 	back="Cheviot Cape", 
---	back="Mecisto. Mantle", --
 	waist="Refoccilation Stone",
 	legs="Assiduity Pants +1",
 	feet="Merlinic Crackows"}
@@ -285,7 +284,6 @@ function init_gear_sets()
      
     -- Normal melee group
     sets.engaged =                                                          {
---	back="Mecisto. Mantle" --
 } 
 end
  
