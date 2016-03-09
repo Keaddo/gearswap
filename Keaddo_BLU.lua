@@ -43,7 +43,7 @@ function get_sets()
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
-                                        body="Emet Harness",hands="Herculean Gloves",ring1="Patricius Ring",ring2="Gelatinous Ring +1",
+                                        body="Emet Harness",hands="Herculean Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
                                         back="Cheviot Cape",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                        
                                                        
@@ -183,7 +183,7 @@ function get_sets()
 								ear2="Ethereal Earring",
                                 body="Emet Harness",
 								hands="Adhemar Wristbands",
-								ring1="Patricius ring",
+								ring1="Defending Ring",
 								ring2="Gelatinous Ring +1",
                                 back="Cheviot Cape",
 								waist="Flume belt",
@@ -198,7 +198,6 @@ function get_sets()
 								ear2="Brutal Earring",
                                 body="Emet Harness",
 								hands="Adhemar Wristbands",
-    left_ring="Enlivened Ring",
     right_ring="Yacuruna Ring",
                                 back="Cheviot Cape",
 								waist="Flume belt",
@@ -207,7 +206,7 @@ function get_sets()
 }
         sets.TP.MDTAccuracy = {ammo="Vanir Battery",
                                 head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring1="Fortified ring",ring2="Yacuruna ring",
+                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring2="Yacuruna ring",
                                         back="Mubvumbamiri Mantle",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
 }
        
