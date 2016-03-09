@@ -3,7 +3,7 @@ function get_sets()
         send_command('bind f9 gs c toggle TP set')
         send_command('bind f10 gs c toggle Idle set')
         send_command('bind f11 gs c toggle CDC set')
-        send_command('bind f12 gs c toggle Req set')
+        send_command('bind f12 gs c PDT')
         send_command('bind !f12 gs c toggle Rea set')
 	send_command('bind ^` gs c toggle MB set')
        
@@ -29,6 +29,14 @@ function get_sets()
        
  
         end    
+		
+	Cities = S{
+                        "Ru'Lude Gardens","Upper Jeuno","Lower Jeuno","Port Jeuno",
+                        "Port Windurst","Windurst Waters","Windurst Woods","Windurst Walls","Heavens Tower",
+                        "Port San d'Oria","Northern San d'Oria","Southern San d'Oria",
+                        "Port Bastok","Bastok Markets","Bastok Mines","Metalworks",
+                        "Aht Urhgan Whitegate","Nashmau","Tavanazian Safehold",
+                        "Selbina","Mhaura","Norg","Eastern Adoulin","Western Adoulin","Kazham","Tavnazia"}		
                
         --Idle Sets--  
         sets.Idle = {}
@@ -38,14 +46,20 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
-                                                  body="Amalric Doublet",hands="Herculean Gloves",ring1="Sheltered Ring",ring2="Paguroidea ring",
+                                                  body="Amalric Doublet",hands={ name="Herculean Gloves", augments={'STR+15','Mag. Acc.+10','Damage Taken -3%','Pet: Accuracy+6','Pet: Rng. Acc.+6',}},ring1="Sheltered Ring",ring2="Paguroidea ring",
                                                   back="Cheviot Cape",waist="Flume Belt",legs="Crimson Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
-                                        body="Emet Harness",hands="Herculean Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},ring1="Defending Ring",ring2="Gelatinous Ring +1",
                                         back="Cheviot Cape",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
-                                                       
+ 
+		sets.Town = set_combine(sets.Idle.Standard,{
+		ring1="Defending Ring",
+		ring2="Weatherspoon Ring",
+		back="Cornflower Cape",
+		waist="Windbuffet Belt +1"
+		})
                                                        
                                                        
                                                        
@@ -61,7 +75,7 @@ function get_sets()
         sets.TP.Standard = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Herculean Gloves",
+    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
@@ -76,7 +90,7 @@ function get_sets()
         sets.TP.Solo = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Herculean Gloves",
+    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
@@ -91,7 +105,7 @@ function get_sets()
         sets.TP.Safe = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Herculean Gloves",
+    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
@@ -106,7 +120,7 @@ function get_sets()
         sets.TP.AccuracyLite = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Adhemar Wristbands",
+    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Lissome Necklace",
@@ -182,7 +196,7 @@ function get_sets()
 								ear1="Merman's earring", 
 								ear2="Ethereal Earring",
                                 body="Emet Harness",
-								hands="Adhemar Wristbands",
+								hands={ name="Herculean Gloves", augments={'STR+15','Mag. Acc.+10','Damage Taken -3%','Pet: Accuracy+6','Pet: Rng. Acc.+6',}},
 								ring1="Defending Ring",
 								ring2="Gelatinous Ring +1",
                                 back="Cheviot Cape",
@@ -206,7 +220,7 @@ function get_sets()
 }
         sets.TP.MDTAccuracy = {ammo="Vanir Battery",
                                 head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring2="Yacuruna ring",
+                                        body="Emet Harness",hands={ name={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}}, augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring2="Yacuruna ring",
                                         back="Mubvumbamiri Mantle",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
 }
        
@@ -255,11 +269,11 @@ function get_sets()
     feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
     waist="Snow Belt",
-    left_ear="Suppanomimi",
-    right_ear="Brutal Earring",
+    left_ear="Steelflash Earring",
+    right_ear="Bladeborn Earring",
     left_ring="Epona's Ring",
-    right_ring="Ramuh Ring",
-    back="Bleating Mantle",
+    right_ring="Apate Ring",
+    back="Rancorous Mantle",
 }
                                                            
         sets.ChantDuCygne.Accuracy = {ammo="Falcon Eye",
@@ -295,11 +309,11 @@ function get_sets()
         sets.WS.SanguineBlade = {}
        
         sets.WS.SanguineBlade = {ammo="Pemphredo Tathlum",
-    head="Amalric Coif",
+    head="Herculean Helm",
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
-    feet="Helios Boots",
+    feet="Amalric Nails",
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Friomisi Earring",
@@ -352,7 +366,7 @@ function get_sets()
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
-    feet="Helios Boots",
+    feet="Amalric Nails",
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Friomisi Earring",
@@ -376,9 +390,9 @@ function get_sets()
         sets.BlueMagic.STR = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands="Adhemar Wristbands",
+    hands={ name="Herculean Gloves", augments={'STR+15','Mag. Acc.+10','Damage Taken -3%','Pet: Accuracy+6','Pet: Rng. Acc.+6',}},
     legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
+    feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}},
     neck="Caro Necklace",
     waist="Prosilio Belt",
     left_ear="Bladeborn Earring",
@@ -449,11 +463,11 @@ function get_sets()
 }
                                                  
         sets.BlueMagic.INT = {ammo="Pemphredo Tathlum",
-    head="Amalric Coif",
+    head="Herculean Helm",
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
-    feet="Helios Boots",
+    feet="Amalric Nails",
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Hecate's Earring",
@@ -468,7 +482,7 @@ function get_sets()
     body="Amalric Doublet",
     hands="Amalric Gages",
     legs="Amalric Slops",
-    feet="Helios Boots",
+    feet="Amalric Nails",
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Hecate's Earring",
@@ -573,7 +587,7 @@ function get_sets()
     body="Amalric Doublet",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
-    feet="Helios Boots",
+    feet="Amalric Nails",
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Enchntr. Earring +1",
@@ -668,7 +682,7 @@ function get_sets()
 	
 	sets.Utility.Weather = {waist="Hachirin-no-obi",back="Twilight Cape"}
 
-	sets.Utility.MB = {head="Amalric Coif",body="Samnuha Coat",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
+	sets.Utility.MB = {head="Herculean Helm",body="Samnuha Coat",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
  
        
         sets.Utility.Stoneskin = {head="Haruspex hat",neck="Stone Gorget",ear1="Loquac. earring",ear2="Earthcry earring",
@@ -969,8 +983,10 @@ end
 function aftercast(spell)
         if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
+			elseif Cities:contains(world.area) then
+						equip(sets.Town)
+					else
+						equip(sets.Idle[sets.Idle.index[Idle_ind]])
         end
        
         if spell.action_type == 'Weaponskill' then
@@ -981,8 +997,10 @@ end
 function status_change(new,old)
         if new == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
+			elseif Cities:contains(world.area) then
+						equip(sets.Town)
+					else
+						equip(sets.Idle[sets.Idle.index[Idle_ind]])
         end
 end
  
@@ -992,6 +1010,16 @@ function self_command(command)
                 if TP_ind > #sets.TP.index then TP_ind = 1 end
                 send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
                 equip(sets.TP[sets.TP.index[TP_ind]])
+        elseif command == 'PDT' then
+                if TP_ind == 9 then
+					TP_ind = 1
+                send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
+				equip(sets.TP[sets.TP.index[TP_ind]])
+                else
+					TP_ind = 9
+                send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
+                equip(sets.TP[sets.TP.index[TP_ind]])
+				end
         elseif command == 'toggle Idle set' then
                 Idle_ind = Idle_ind +1
                 if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
