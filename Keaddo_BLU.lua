@@ -46,13 +46,13 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
-                                                  body="Amalric Doublet",hands={ name="Herculean Gloves", augments={'STR+15','Mag. Acc.+10','Damage Taken -3%','Pet: Accuracy+6','Pet: Rng. Acc.+6',}},ring1="Sheltered Ring",ring2="Paguroidea ring",
-                                                  back="Cheviot Cape",waist="Flume Belt",legs="Crimson Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
+                                                  body="Amalric Doublet",hands={ name="Herculean Gloves", augments={'STR+15','Pet: Accuracy+6 Pet: Rng. Acc.+6','Damage taken-3%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},ring1="Sheltered Ring",ring2="Paguroidea ring",
+                                                  back="Cheviot Cape",waist="Flume Belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
                                         body="Emet Harness",hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},ring1="Defending Ring",ring2="Gelatinous Ring +1",
-                                        back="Cheviot Cape",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
+                                        back="Cheviot Cape",waist="Flume belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
  
 		sets.Town = set_combine(sets.Idle.Standard,{
 		ring1="Defending Ring",
@@ -196,7 +196,7 @@ function get_sets()
 								ear1="Merman's earring", 
 								ear2="Ethereal Earring",
                                 body="Emet Harness",
-								hands={ name="Herculean Gloves", augments={'STR+15','Mag. Acc.+10','Damage Taken -3%','Pet: Accuracy+6','Pet: Rng. Acc.+6',}},
+								hands={ name="Herculean Gloves", augments={'STR+15','Pet: Accuracy+6 Pet: Rng. Acc.+6','Damage taken-3%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
 								ring1="Defending Ring",
 								ring2="Gelatinous Ring +1",
                                 back="Cheviot Cape",
@@ -390,7 +390,7 @@ function get_sets()
         sets.BlueMagic.STR = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands={ name="Herculean Gloves", augments={'STR+15','Mag. Acc.+10','Damage Taken -3%','Pet: Accuracy+6','Pet: Rng. Acc.+6',}},
+    hands={ name="Herculean Gloves", augments={'STR+15','Pet: Accuracy+6 Pet: Rng. Acc.+6','Damage taken-3%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}},
     neck="Caro Necklace",
