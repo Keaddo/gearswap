@@ -238,13 +238,15 @@ function init_gear_sets()
     sets.idle.PDT =                                                         set_combine(sets.resting,{
 	neck="Twilight Torque",
 	ring1="Gelatinous Ring +1",
-	ring2="Dark Ring"})
+	ring2="Defending Ring"})
  
     -- Idle mode when weak.
     sets.idle.Weak =                                                        sets.idle.PDT
      
     -- Town gear.
     sets.idle.Town =                                                        set_combine(sets.resting,{
+	ring1="Defending Ring",
+	ring2="Weatherspoon Ring",
 	feet="Herald's Gaiters"})
          
     -- Defense sets
@@ -252,7 +254,7 @@ function init_gear_sets()
     sets.defense.PDT =                                                      set_combine(sets.resting,{
 	neck="Twilight Torque",
 	ring1="Gelatinous Ring +1",
-	ring2="Dark Ring"})
+	ring2="Defending Ring"})
  
     sets.defense.MDT =                                                      set_combine(sets.resting,{})
  
