@@ -57,7 +57,7 @@ function get_sets()
 		sets.Town = set_combine(sets.Idle.Standard,{
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
-		back="Cornflower Cape",
+		back="Lupine Cape",
 		waist="Windbuffet Belt +1"
 		})
                                                        
@@ -158,7 +158,7 @@ function get_sets()
     right_ear="Bladeborn Earring",
     left_ring="Cacoethic Ring +1",
     right_ring="Petrov Ring",
-    back="Kayapa Mantle",
+    back="Lupine Cape",
 }
                                                        
         sets.TP.AccuracyExtreme = {ammo="Amar Cluster",

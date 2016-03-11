@@ -41,7 +41,7 @@ function get_sets()
 			ring2="Sheltered Ring",
 			back="Weard Mantle",
 			waist="Flume Belt",
-			legs="Crimson Cuisses",
+			legs="Carmine Cuisses",
 			feet="Amm Greaves"}
 	sets.Idle.Regen.Ochain = set_combine(sets.Idle.Regen,{
 			main="Burtgang",
@@ -80,7 +80,7 @@ function get_sets()
 		--	head="Cab. Coronet +1", --
 		--	body="Councilor's Garb", --
 		--	hands="Souv. Handsch. +1", --
-		--	ring1="Defending Ring",
+		 	ring1="Defending Ring",
 		--	ring2="Vocane Ring",
 			feet="Souveran Schuhs +1"})
 
@@ -92,7 +92,7 @@ function get_sets()
 			neck="Coatl Gorget +1",
 			ring2="Sheltered Ring",
 			back="Weard Mantle",
-			legs="Crimson Cuisses"})
+			legs="Carmine Cuisses"})
 			
 	-- TP Base Set --
 	sets.TP = {}
@@ -203,7 +203,7 @@ function get_sets()
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", -- 9 DT [Upgrade: Tartarus Platemail -10% DT] --
 			hands="Souveran Handschuhs", -- 3 PDT 2/5 Souv. Set --
-			ring1="Patricius Ring", -- 4 PDT --
+			ring1="Defending Ring", -- 4 PDT --
 			ring2="Gelatinous Ring +1", -- 7 PDT --
 			back="Weard Mantle", -- 3 DT --
 			waist="Flume Belt", -- 4 PDT --
@@ -220,7 +220,7 @@ function get_sets()
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Patricius Ring", 
+			ring1="Defending Ring", 
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1", 
@@ -236,7 +236,7 @@ function get_sets()
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Patricius Ring", 
+			ring1="Defending Ring", 
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1", 
@@ -253,7 +253,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", -- 9 DT --
 			hands="Souveran Handschuhs", -- MDB 1 / MDT 5 --
-			ring1="Kunaji Ring",
+			ring1="Defending Ring",
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", -- 4 MDT --
 			waist="Flume Belt",
@@ -270,7 +270,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Kunaji Ring",
+			ring1="Defending Ring",
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", 
 			waist="Flume Belt",
@@ -286,7 +286,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Kunaji Ring",
+			ring1="Defending Ring",
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", 
 			waist="Flume Belt",
@@ -303,7 +303,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Patricius Ring",
+			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
 			waist="Flume Belt",
@@ -319,7 +319,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Patricius Ring",
+			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
 			waist="Flume Belt",
@@ -335,7 +335,7 @@ function get_sets()
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
-			ring1="Patricius Ring",
+			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
 			waist="Flume Belt",
@@ -349,9 +349,9 @@ function get_sets()
 	sets.Weakness.Priwen = set_combine(sets.PDT.Priwen,{})
 
 	sets.Kiting = {}
-	sets.Kiting.Ochain = set_combine(sets.PDT.Ochain,{legs="Crimson Cuisses"})
-	sets.Kiting.Aegis = set_combine(sets.PDT.Aegis,{legs="Crimson Cuisses"})
-	sets.Kiting.Priwen = set_combine(sets.PDT.Priwen,{legs="Crimson Cuisses"})
+	sets.Kiting.Ochain = set_combine(sets.PDT.Ochain,{legs="Carmine Cuisses"})
+	sets.Kiting.Aegis = set_combine(sets.PDT.Aegis,{legs="Carmine Cuisses"})
+	sets.Kiting.Priwen = set_combine(sets.PDT.Priwen,{legs="Carmine Cuisses"})
 
 	sets.Repulse = {}
 	sets.Repulse.Ochain = {sub="Ochain",back="Repulse Mantle"}
