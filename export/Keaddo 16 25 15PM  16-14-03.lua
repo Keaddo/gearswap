@@ -1,0 +1,17 @@
+sets.exported={
+    main="Tanmogayi +1",
+    sub={ name="Colada", augments={'"Dbl.Atk."+3','Accuracy+4','Attack+12','DMG:+16',}},
+    ammo="Ginsen",
+    head="Rawhide Mask",
+    body={ name="Amalric Doublet", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    hands={ name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}},
+    legs="Carmine Cuisses",
+    feet={ name="Herculean Boots", augments={'Accuracy+3','"Blood Pact" ability delay -4','Quadruple Attack +2','Accuracy+7 Attack+7','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
+    neck="Sanctity Necklace",
+    waist="Windbuffet Belt +1",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Defending Ring",
+    right_ring="Weather. Ring",
+    back="Lupine Cape",
+}

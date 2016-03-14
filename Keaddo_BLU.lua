@@ -46,12 +46,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
-                                                  body="Amalric Doublet",hands={ name="Herculean Gloves", augments={'STR+15','Pet: Accuracy+6 Pet: Rng. Acc.+6','Damage taken-3%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},ring1="Sheltered Ring",ring2="Paguroidea ring",
+                                                  body="Amalric Doublet",hands="Herculean Gloves",ring1="Sheltered Ring",ring2="Paguroidea ring",
                                                   back="Cheviot Cape",waist="Flume Belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
-                                        body="Emet Harness",hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},ring1="Defending Ring",ring2="Gelatinous Ring +1",
+                                        body="Emet Harness",hands="Herculean Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
                                         back="Cheviot Cape",waist="Flume belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
  
 		sets.Town = set_combine(sets.Idle.Standard,{
@@ -60,24 +60,21 @@ function get_sets()
 		back="Lupine Cape",
 		waist="Windbuffet Belt +1"
 		})
-                                                       
-                                                       
-                                                       
-       
+
        
         --TP Sets--
         sets.TP = {}
  
-        sets.TP.index = {'Standard', 'Solo', 'Safe', 'AccuracyLite', 'AccuracyMedium', 'AccuracyFull', 'AccuracyExtreme', 'CantHitShit', 'DT', 'DTAccuracy', 'MDTAccuracy'}
+        sets.TP.index = {'Standard', 'AccuracyLite', 'AccuracyMedium', 'AccuracyFull', 'AccuracyExtreme', 'CantHitShit', 'DT', 'DTAccuracy', 'MDTAccuracy'}
         --1=Standard, 2=Solo, 3=Marches, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DTAccuracy--
         TP_ind = 1
        
         sets.TP.Standard = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
+    hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+3','"Blood Pact" ability delay -4','Quadruple Attack +2','Accuracy+7 Attack+7','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
     neck="Asperity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
@@ -86,41 +83,11 @@ function get_sets()
     right_ring="Petrov Ring",
     back="Bleating Mantle",
 }
-                                               
-        sets.TP.Solo = {ammo="Ginsen",
-    head="Adhemar Bonnet",
-    body="Adhemar Jacket",
-    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
-    legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
-    neck="Asperity Necklace",
-    waist="Windbuffet Belt +1",
-    left_ear="Suppanomimi",
-    right_ear="Brutal Earring",
-    left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
-    back="Cornflower Cape",
-}
-                                       
-        sets.TP.Safe = {ammo="Ginsen",
-    head="Adhemar Bonnet",
-    body="Adhemar Jacket",
-    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
-    legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
-    neck="Asperity Necklace",
-    waist="Windbuffet Belt +1",
-    left_ear="Suppanomimi",
-    right_ear="Brutal Earring",
-    left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
-    back="Cornflower Cape",
-}
                                        
         sets.TP.AccuracyLite = {ammo="Ginsen",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}},
+    hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Lissome Necklace",
@@ -225,8 +192,13 @@ function get_sets()
 }
        
        
-       
-       
+		sets.TH = {}
+		sets.TH.index = {'TH'}
+		TH_ind = 1        
+		sets.TH = set_combine(sets.TP.Standard, {
+		hands={ name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}},
+		feet={ name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
+		})       
        
         --Weaponskill Sets--
         sets.WS = {}
@@ -1011,15 +983,16 @@ function self_command(command)
                 send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
                 equip(sets.TP[sets.TP.index[TP_ind]])
         elseif command == 'PDT' then
-                if TP_ind == 9 then
+                if TP_ind == 7 then
 					TP_ind = 1
                 send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
 				equip(sets.TP[sets.TP.index[TP_ind]])
                 else
-					TP_ind = 9
+					TP_ind = 7
                 send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
                 equip(sets.TP[sets.TP.index[TP_ind]])
 				end
+                send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
         elseif command == 'toggle Idle set' then
                 Idle_ind = Idle_ind +1
                 if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
