@@ -55,6 +55,7 @@ function get_sets()
                                         back="Cheviot Cape",waist="Flume belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
  
 		sets.Town = set_combine(sets.Idle.Standard,{
+		ear1="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
 		back="Lupine Cape",
@@ -65,7 +66,7 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-        sets.TP.index = {'Standard', 'AccuracyLite', 'AccuracyMedium', 'AccuracyFull', 'AccuracyExtreme', 'CantHitShit', 'DT', 'DTAccuracy', 'MDTAccuracy'}
+        sets.TP.index = {'Standard', 'AccuracyLite', 'AccuracyMedium', 'AccuracyFull', 'AccuracyExtreme', 'CantHitShit', 'DT', 'DTAccuracy', 'MDTAccuracy','TH'}
         --1=Standard, 2=Solo, 3=Marches, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DTAccuracy--
         TP_ind = 1
        
@@ -74,7 +75,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Accuracy+3','"Blood Pact" ability delay -4','Quadruple Attack +2','Accuracy+7 Attack+7','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Asperity Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
@@ -163,7 +164,7 @@ function get_sets()
 								ear1="Merman's earring", 
 								ear2="Ethereal Earring",
                                 body="Emet Harness",
-								hands={ name="Herculean Gloves", augments={'STR+15','Pet: Accuracy+6 Pet: Rng. Acc.+6','Damage taken-3%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
+								hands="Herculean Gloves",
 								ring1="Defending Ring",
 								ring2="Gelatinous Ring +1",
                                 back="Cheviot Cape",
@@ -187,15 +188,11 @@ function get_sets()
 }
         sets.TP.MDTAccuracy = {ammo="Vanir Battery",
                                 head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation earring", ear2="Cryptic Earring",
-                                        body="Emet Harness",hands={ name={ name="Herculean Gloves", augments={'CHR+3','Accuracy+28','Attack+10','Triple Atk.+3',}}, augments={'Accuracy+10','Damage taken-4%','AGI+1',}},ring2="Yacuruna ring",
+                                        body="Emet Harness",hands="Herculean Gloves",ring2="Yacuruna ring",
                                         back="Mubvumbamiri Mantle",waist="Flume belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
 }
-       
-       
-		sets.TH = {}
-		sets.TH.index = {'TH'}
-		TH_ind = 1        
-		sets.TH = set_combine(sets.TP.Standard, {
+            
+		sets.TP.TH = set_combine(sets.TP.Standard, {
 		hands={ name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}},
 		feet={ name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
 		})       
@@ -362,7 +359,7 @@ function get_sets()
         sets.BlueMagic.STR = {ammo="Mantoptera Eye",
     head="Adhemar Bonnet",
     body="Adhemar Jacket",
-    hands={ name="Herculean Gloves", augments={'STR+15','Pet: Accuracy+6 Pet: Rng. Acc.+6','Damage taken-3%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
+    hands="Herculean Gloves",
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}},
     neck="Caro Necklace",
@@ -992,7 +989,6 @@ function self_command(command)
                 send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
                 equip(sets.TP[sets.TP.index[TP_ind]])
 				end
-                send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
         elseif command == 'toggle Idle set' then
                 Idle_ind = Idle_ind +1
                 if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
