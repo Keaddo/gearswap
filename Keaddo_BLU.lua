@@ -235,7 +235,7 @@ function get_sets()
     body="Adhemar Jacket",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
+    feet="Thereoid Greaves",
     neck="Asperity Necklace",
     waist="Snow Belt",
     left_ear="Steelflash Earring",
