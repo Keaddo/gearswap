@@ -249,7 +249,7 @@ function get_sets()
 			ammo="Vanir Battery", -- MDB 4 --
 			head="Loess Barbuta +1", -- MDB 2 / MDT 5 --
 			neck="Twilight Torque", -- 5 DT --
-			ear1="Merman's Earring", -- MDT 2 --
+			ear1="Odnowa Earring +1", -- MDT 2 --
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", -- 9 DT --
 			hands="Souveran Handschuhs", -- MDB 1 / MDT 5 --
@@ -266,7 +266,7 @@ function get_sets()
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
-			ear1="Merman's Earring", 
+			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
@@ -282,7 +282,7 @@ function get_sets()
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
-			ear1="Merman's Earring", 
+			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
@@ -299,7 +299,7 @@ function get_sets()
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
-			ear1="Merman's Earring", 
+			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
@@ -315,7 +315,7 @@ function get_sets()
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
-			ear1="Merman's Earring", 
+			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
@@ -331,7 +331,7 @@ function get_sets()
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
 			neck="Twilight Torque",
-			ear1="Merman's Earring", 
+			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 

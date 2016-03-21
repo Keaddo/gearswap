@@ -99,7 +99,7 @@ function init_gear_sets()
 	back="Swith Cape",
 	waist="Witful Belt",
 	legs="Psycloth Lappas",
-	feet="Merlinic Crackows"}
+	feet={ name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}}
                                                                              
     -- Stoneskin
     sets.precast.Stoneskin =                                                set_combine(sets.precast.FC,{
@@ -168,7 +168,7 @@ function init_gear_sets()
 	back="Bane Cape",
 	waist="Salire Belt",
 	legs="Amalric Slops",
-	Feet="Merlinic Crackows"}
+	Feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}}
                                                                              
     sets.midcast['Dark Magic'].Drain =                                      set_combine(sets.midcast['Dark Magic'],{})
                                                                              
@@ -184,7 +184,7 @@ function init_gear_sets()
 	body="Amalric Doublet",
 	hands="Amalric Gages",
 	legs="Amalric Slops",
-	feet="Merlinic Crackows",
+	feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}},
 	neck="Saevus Pendant +1",
 	ear1="Friomisi Earring",
 	ear2="Barkarole Earring",
@@ -227,7 +227,7 @@ function init_gear_sets()
 	back="Cheviot Cape", 
 	waist="Refoccilation Stone",
 	legs="Assiduity Pants +1",
-	feet="Merlinic Crackows"}
+	feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}}
      
     -- Idle sets
      
@@ -272,9 +272,9 @@ function init_gear_sets()
 --	ring2="Locus Ring", --
 	neck="Mizu. Kubikazari",
 	head="Merlinic Hood",
-	body="Spae. Coat +1",
-	legs="Merlinic Shalwar"
---	back="Seshaw Cape" --
+--	body="Spae. Coat +1",
+	legs="Merlinic Shalwar",
+	back="Seshaw Cape"
 	})
  
     -- Engaged sets

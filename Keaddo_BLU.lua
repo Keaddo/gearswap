@@ -46,13 +46,13 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
-                                                  body="Amalric Doublet",hands="Herculean Gloves",ring1="Sheltered Ring",ring2="Paguroidea ring",
-                                                  back="Cheviot Cape",waist="Flume Belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
+                                                  body="Vrikodara Jupon",hands="Herculean Gloves",ring1="Sheltered Ring",ring2="Paguroidea ring",
+                                                  back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
                                         body="Emet Harness",hands="Herculean Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-                                        back="Cheviot Cape",waist="Flume belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
+                                        back="Solemnity Cape",waist="Flume belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
  
 		sets.Town = set_combine(sets.Idle.Standard,{
 		ear1="Odnowa Earring +1",
@@ -122,8 +122,8 @@ function get_sets()
     feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
     neck="Sanctity Necklace",
     waist="Windbuffet Belt +1",
-    left_ear="Steelflash Earring",
-    right_ear="Bladeborn Earring",
+    left_ear="Suppanomimi",
+    right_ear="Dignitary Earring",
     left_ring="Cacoethic Ring +1",
     right_ring="Petrov Ring",
     back="Lupine Cape",
@@ -140,7 +140,7 @@ function get_sets()
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
     left_ring="Cacoethic Ring +1",
-    right_ring="Petrov Ring",
+    right_ring="Rajas Ring",
     back="Kayapa Cape",
 }
 	sets.TP.CantHitShit = {ammo="Amar Cluster",
@@ -167,7 +167,7 @@ function get_sets()
 								hands="Herculean Gloves",
 								ring1="Defending Ring",
 								ring2="Gelatinous Ring +1",
-                                back="Cheviot Cape",
+                                back="Solemnity Cape",
 								waist="Flume belt",
 								legs="Herculean Trousers",
 								feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
@@ -181,7 +181,7 @@ function get_sets()
                                 body="Emet Harness",
 								hands="Adhemar Wristbands",
     right_ring="Yacuruna Ring",
-                                back="Cheviot Cape",
+                                back="Solemnity Cape",
 								waist="Flume belt",
 								legs="Herculean Trousers",
 								feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
@@ -463,7 +463,7 @@ function get_sets()
                                                  
         sets.BlueMagic.Cures = {ammo="Hydrocera",
     head="Amalric Coif",
-    body="Amalric Doublet",
+    body="Vrikodara Jupon",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
     feet="Medium's Sabots",
@@ -473,12 +473,12 @@ function get_sets()
     right_ear="Lifestorm Earring",
     left_ring="Levia. Ring",
     right_ring="Levia. Ring",
-    back="Cornflower Cape",
+    back="Solemnity Cape",
 }
                                                        
         sets.BlueMagic.SelfCures = {ammo="Hydrocera",
     head="Amalric Coif",
-    body="Amalric Doublet",
+    body="Vrikodara Jupon",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
     feet="Medium's Sabots",
@@ -488,7 +488,7 @@ function get_sets()
     right_ear="Lifestorm Earring",
     left_ring="Kunaji Ring",
     right_ring="Levia. Ring",
-    back="Cornflower Cape",
+    back="Solemnity Cape",
 }
                                                        
         sets.BlueMagic.Stun = {ammo="Falcon Eye",
@@ -538,7 +538,7 @@ function get_sets()
        
         sets.BlueMagic.WhiteWind = {ammo="Egoist's Tathlum",
     head="Amalric Coif",
-    body="Amalric Doublet",
+    body="Vrikodara Jupon",
     hands="Telchine Gloves",
     legs="Psycloth Lappas",
     feet="Luhlaza Charuqs",
@@ -716,7 +716,7 @@ function get_sets()
        
         sets.precast.FC.Standard = {ammo="Impatiens",
     head="Amalric Coif",
-    body="Samnuha Coat",
+    body="Vrikodara Jupon",
     hands="Leyline Gloves",
     legs="Psycloth Lappas",
     feet="Amalric Nails",
