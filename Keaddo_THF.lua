@@ -72,7 +72,7 @@ function init_gear_sets()
    -- "Adhemar Wristbands" = {hands="Adhemar Wristbands"}
    -- "Adhemar Wristbands" = {hands="Adhemar Wristbands"}
 
-	sets.TreasureHunter = {hands="Plunderer's Armlets", feet="Skulker's Poulaines"}
+	sets.TreasureHunter = {hands={ name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}}, feet={ name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}}
     sets.ExtraRegen = { head="Ocelomeh Headpiece +1" }
     sets.CapacityMantle = {back="Aptitude Mantle"}
 
@@ -138,7 +138,7 @@ function init_gear_sets()
     }
 	-- TH actions
 	sets.precast.Step = {
-        head="Teon Chapeau",
+        head="Adhemar Bonnet",
         neck="Lissome Necklace",
         ear1="Dudgeon Earring",
         ear2="Heartseeker Earring",
@@ -198,8 +198,8 @@ function init_gear_sets()
 		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         ring1="Epona's Ring",
-        ring2="Rajas Ring",
-		back="Bleating Mantle",
+        ring2="Petrov Ring",
+		back="Lupine Cape",
         waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
         feet="Herculean Boots"
@@ -273,16 +273,6 @@ function init_gear_sets()
 	sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Mid, {neck="Shadow Gorget"})
 	
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
-        head="Adhemar Bonnet",
-        neck="Moepapa Medal",
-        hands="Adhemar Wristbands",
-        body="Dread Jupon",
-        ring1="Ramuh Ring",
-        ring2="Karieyh Ring",
-        waist="Windbuffet Belt +1",
-        legs="Samnuha Tights",
-        back="Kayapa Cape",
-        feet="Plunderer's Poulaines"
     })
 	sets.precast.WS["Rudra's Storm"].Mid = set_combine(sets.precast.WS["Rudra's Storm"], {back="Canny Cape"})
 	sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {
@@ -361,8 +351,8 @@ function init_gear_sets()
         neck="Lissome Necklace",
         body="Councilor's Garb",
         hands="Adhemar Wristbands",
-        ring1="Karieyh Ring",
-        ring2="Epona's Ring",
+        ring1="Defending Ring",
+        ring2="Weatherspoon Ring",
         legs="Samnuha Tights",
         waist="Windbuffet Belt +1",
     })
@@ -430,7 +420,7 @@ function init_gear_sets()
 		--body="Skadi's Cuirie +1",
 		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
-        ring1="Rajas Ring",
+        ring1="Petrov Ring",
         ring2="Epona's Ring",
 		back="Canny Cape",
         waist="Windbuffet Belt +1",
@@ -439,7 +429,6 @@ function init_gear_sets()
     }
     sets.engaged.Mid = set_combine(sets.engaged, {
         neck="Lissome Necklace",
-        ring1="Rajas Ring",
     })
 	sets.engaged.Acc = set_combine(sets.engaged.Mid, {
 		body="Adhemar Jacket",
@@ -484,53 +473,26 @@ function init_gear_sets()
     
     -- Haste 43%
     sets.engaged.Haste_43 = set_combine(sets.engaged, {
-        head="Adhemar Bonnet",
-        ear1="Trux Earring",
-        ear2="Brutal Earring",
-        body="Qaaxo Harness",
-        hands="Adhemar Wristbands",
-        back="Bleating Mantle",
-        waist="Windbuffet Belt +1",
-        legs="Samnuha Tights",
-        feet="Herculean Boots"
     })
     sets.engaged.Mid.Haste_43 = set_combine(sets.engaged.Haste_43, { 
-        body="Taeon Tabard",
-        ring1="Patricius Ring",
-        feet="Herculean Boots"
+
     })
     sets.engaged.Acc.Haste_43 = set_combine(sets.engaged.Haste_43, {
-        body="Taeon Tabard",
-        neck="Lissome Necklace",
-        hands="Adhemar Wristbands",
-        ear1="Zennaroi Earring",
-        ear2="Steelflash Earring",
-        ring1="Mars's Ring",
-        ring2="Patricius Ring",
-        waist="Olseni Belt",
-        back="Canny Cape"
+
     })
     sets.engaged.Evasion.Haste_43 = set_combine(sets.engaged.Haste_43, { body="Qaaxo Harness", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_43 = set_combine(sets.engaged.Haste_43, {
-		    head="Iuitl Headgear +1",
-            neck="Twilight Torque", 
-            body="Qaaxo Harness", 
-            ring1="Patricius Ring", 
-            ring2="Dark Ring", 
-            back="Repulse Mantle", 
-            legs="Iuitl Tights +1", 
-            feet="Herculean Boots" 
+
     })
     
      -- 40
     sets.engaged.Haste_40 = set_combine(sets.engaged.Haste_43, {
-		body="Adhemar Jacket",
-        ear1="Suppanomimi",
+
     })
     sets.engaged.Mid.Haste_40 = set_combine(sets.engaged.Haste_40, { body="Adhemar Jacket" })
 
     sets.engaged.Acc.Haste_40 = set_combine(sets.engaged.Acc.Haste_43, {
-        ear1="Suppanomimi"
+
     })
     sets.engaged.Evasion.Haste_40 = set_combine(sets.engaged.Haste_40, { body="Qaaxo Harness", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_40 = set_combine(sets.engaged.Haste_40, { head="Lithelimb Cap", neck="Twilight Torque", 
@@ -538,20 +500,13 @@ function init_gear_sets()
 
      -- 30
     sets.engaged.Haste_30 = set_combine(sets.engaged.Haste_40, {
-        waist="Patentia Sash",
-		body="Adhemar Jacket",
-        hands="Adhemar Wristbands",
-        back="Canny Cape",
-        feet="Herculean Boots"
+
     })
     sets.engaged.Mid.Haste_30 = set_combine(sets.engaged.Haste_30, { 
-		body="Adhemar Jacket",
-        feet="Herculean Boots"
+
     })
     sets.engaged.Acc.Haste_30 = set_combine(sets.engaged.Acc.Haste_40, {
-        waist="Patentia Sash",
-        back="Canny Cape",
-        feet="Herculean Boots"
+
     })
     sets.engaged.Evasion.Haste_30 = set_combine(sets.engaged.Haste_30, { body="Adhemar Jacket", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_30 = set_combine(sets.engaged.Haste_30, { head="Lithelimb Cap", neck="Twilight Torque", 
@@ -559,13 +514,10 @@ function init_gear_sets()
 
      -- 25
     sets.engaged.Haste_25 = set_combine(sets.engaged.Haste_30, {
-        hands="Adhemar Wristbands",
-        ear1="Heartseeker Earring",
-        ear2="Dudgeon Earring"
+
     })
     sets.engaged.Acc.Haste_25 = set_combine(sets.engaged.Acc.Haste_30, {
-        ear1="Heartseeker Earring",
-        ear2="Dudgeon Earring"
+
     })
     sets.engaged.Mid.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Adhemar Jacket" })
     sets.engaged.Evasion.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Adhemar Jacket", ring1="Beeline Ring", feet="Herculean Boots"})
