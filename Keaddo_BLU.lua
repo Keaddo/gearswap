@@ -50,7 +50,7 @@ function get_sets()
                                                   back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
-                                	head="Dampening Tam",neck="Twilight Torque", ear1="Merman's Earring", ear2="Ethereal Earring",
+                                	head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation Earring", ear2="Ethereal Earring",
                                         body="Emet Harness",hands="Herculean Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
                                         back="Solemnity Cape",waist="Flume belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
  
@@ -161,7 +161,7 @@ function get_sets()
         sets.TP.DT = {ammo="Vanir Battery",
                                 head="Dampening Tam",
 								neck="Twilight Torque", 
-								ear1="Merman's earring", 
+								ear1="Etiolation Earring", 
 								ear2="Ethereal Earring",
                                 body="Emet Harness",
 								hands="Herculean Gloves",
@@ -722,7 +722,7 @@ function get_sets()
     feet="Amalric Nails",
     neck="Voltsurge Torque",
     waist="Witful Belt",
-    left_ear="Enchntr. Earring +1",
+    left_ear="Etiolation Earring",
     right_ear="Loquac. Earring",
     left_ring="Prolix Ring",
     right_ring="Weatherspoon Ring",
@@ -737,7 +737,7 @@ function get_sets()
     feet="Amalric Nails",
     neck="Voltsurge Torque",
     waist="Witful Belt",
-    left_ear="Enchntr. Earring +1",
+    left_ear="Etiolation Earring",
     right_ear="Loquac. Earring",
     left_ring="Prolix Ring",
     right_ring="Weatherspoon Ring",
