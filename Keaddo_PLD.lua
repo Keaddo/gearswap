@@ -41,7 +41,7 @@ function get_sets()
 			ring2="Sheltered Ring",
 			back="Weard Mantle",
 			waist="Flume Belt",
-			legs="Carmine Cuisses",
+			legs="Carmine Cuisses +1",
 			feet="Amm Greaves"}
 	sets.Idle.Regen.Ochain = set_combine(sets.Idle.Regen,{
 			main="Burtgang",
@@ -92,7 +92,7 @@ function get_sets()
 			neck="Coatl Gorget +1",
 			ring2="Sheltered Ring",
 			back="Weard Mantle",
-			legs="Carmine Cuisses"})
+			legs="Carmine Cuisses +1"})
 			
 	-- TP Base Set --
 	sets.TP = {}
@@ -349,9 +349,9 @@ function get_sets()
 	sets.Weakness.Priwen = set_combine(sets.PDT.Priwen,{})
 
 	sets.Kiting = {}
-	sets.Kiting.Ochain = set_combine(sets.PDT.Ochain,{legs="Carmine Cuisses"})
-	sets.Kiting.Aegis = set_combine(sets.PDT.Aegis,{legs="Carmine Cuisses"})
-	sets.Kiting.Priwen = set_combine(sets.PDT.Priwen,{legs="Carmine Cuisses"})
+	sets.Kiting.Ochain = set_combine(sets.PDT.Ochain,{legs="Carmine Cuisses +1"})
+	sets.Kiting.Aegis = set_combine(sets.PDT.Aegis,{legs="Carmine Cuisses +1"})
+	sets.Kiting.Priwen = set_combine(sets.PDT.Priwen,{legs="Carmine Cuisses +1"})
 
 	sets.Repulse = {}
 	sets.Repulse.Ochain = {sub="Ochain",back="Repulse Mantle"}

@@ -47,12 +47,12 @@ function get_sets()
         sets.Idle.Standard = {ammo="Ginsen",
                                                   head="Rawhide Mask",neck="Sanctity Necklace", ear1="Infused Earring", ear2="Ethereal Earring",
                                                   body="Vrikodara Jupon",hands="Herculean Gloves",ring1="Sheltered Ring",ring2="Paguroidea ring",
-                                                  back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
+                                                  back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
                                                  
         sets.Idle.DT = {ammo="Vanir Battery",
                                 	head="Dampening Tam",neck="Twilight Torque", ear1="Etiolation Earring", ear2="Ethereal Earring",
                                         body="Emet Harness",hands="Herculean Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-                                        back="Solemnity Cape",waist="Flume belt",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
+                                        back="Solemnity Cape",waist="Flume belt",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}}
  
 		sets.Town = set_combine(sets.Idle.Standard,{
 		ear1="Odnowa Earring +1",

@@ -93,8 +93,10 @@ function init_gear_sets()
     sets.precast.FC =                                                       {
 	ammo="Impatiens",
 	head="Amalric Coif",
-	ear1="Loquacious Earring",
+	ear1="Etiolation Earring",
+	ear2="Loquacious Earring",
 	body="Helios Jacket",
+	ring1="Prolix Ring",
 	ring2="Weatherspoon Ring",
 	back="Swith Cape",
 	waist="Witful Belt",
@@ -123,7 +125,9 @@ function init_gear_sets()
     sets.midcast.FastRecast =                                               {}
      
     -- Cure
-    sets.midcast.Cure =                                                     {}
+    sets.midcast.Cure =                                                     {
+	body="Vrikodara Jupon",
+	back="Solemnity Cape"}
  
     sets.midcast.Curaga =                                                   sets.midcast.Cure
                                                                              
@@ -140,8 +144,9 @@ function init_gear_sets()
 	ammo="Pemphredo Tathlum",
 	head="Amalric Coif",
 	neck="Sanctity Necklace",
+	ear1="Digni. Earring",
 	ear2="Barkarole Earring",
-	body="Amalric DoubleT",
+	body="Amalric Doublet",
 	hands="Amalric Gages",
 	ring1="Balrahn's Ring",
 	ring2="Weatherspoon Ring",
@@ -220,11 +225,11 @@ function init_gear_sets()
 	neck="Sanctity Necklace",
 	ear1="Infused Earring",
 	ear2="Ethereal Earring",
-	body="Amalric Doublet",
+	body="Vrikodara Jupon",
 	hands="Amalric Gages",
 	ring1="Sheltered Ring",
 	ring2="Paguroidea Ring",
-	back="Cheviot Cape", 
+	back="Solemnity Cape", 
 	waist="Refoccilation Stone",
 	legs="Assiduity Pants +1",
 	feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}}
