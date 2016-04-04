@@ -205,11 +205,11 @@ function init_gear_sets()
         legs="Kasuga Haidate +1",
     })
     sets.precast.WS['Tachi: Fudo'].Mid = set_combine(sets.precast.WS['Tachi: Fudo'], {
-        head="Rao Kabuto",
         body="Acro Surcoat",
         --waist="Light Belt"
     })
     sets.precast.WS['Tachi: Fudo'].Acc = set_combine(sets.precast.WS['Tachi: Fudo'].Mid, {
+        head="Valorous Mask",
         body="Acro Surcoat",
         back="Takaha Mantle"
     })
@@ -288,14 +288,14 @@ function init_gear_sets()
     sets.idle.Town = {
         --main="Anahera Blade", 
         --sub="Pole Grip",
-        head="Rao Kabuto",
+        head="Valorous Mask",
         neck="Ganesha's Mala",
-        ear1="Lugra Earring +1",
+        ear1="Cessance Earring",
         ear2="Tripudio Earring",
         body="Councilor's Garb",
         hands="Ryuo Tekko",
         ring1="Karieyh Ring",
-        ring2="Ifrit Ring +1",
+        ring2="Defending Ring",
         back="Bleating Mantle",
         waist="Windbuffet Belt +1",
         legs="Kasuga Haidate +1",
@@ -306,23 +306,23 @@ function init_gear_sets()
     })
     
     sets.idle.Field = set_combine(sets.idle.Town, {
-        neck="Lissome Necklace",
+        neck="Twilight Torque",
         ring2="Patricius Ring",
         ear1="Zennaroi Earring",
         ear2="Lugra Earring +1",
    	    body="Founder's Breastplate",
         hands="Crusher Gauntlets",
-        back="Engulfer Cape +1",
+    	back="Solemnity Cape",
         waist="Flume Belt",
         feet="Danzo Sune-ate"
     })
 
     sets.idle.Regen = set_combine(sets.idle.Town, {
-        neck="Twilight Torque",
+        neck="Sanctity Necklace",
         ring2="Paguroidea Ring",
-        head="Twilight Helm",
+        head="Valorous Mask",
         body="Kumarbi's Akar",
-        back="Repulse Mantle",
+    	back="Solemnity Cape",
         feet="Danzo Sune-ate"
     })
     
@@ -343,8 +343,8 @@ function init_gear_sets()
    	    body="Founder's Breastplate",
         hands="Otronif Gloves +1",
         ring1="Dark Ring",
-        ring2="Patricius Ring",
-        back="Repulse Mantle",
+        ring2="Defending Ring",
+    	back="Solemnity Cape",
         waist="Flume Belt",
         legs="Otronif Brais +1",
         feet="Otronif Boots +1"
@@ -357,7 +357,7 @@ function init_gear_sets()
     
     sets.defense.MDT = set_combine(sets.defense.PDT, {
          neck="Twilight Torque",
-         back="Engulfer Cape +1"
+      	 back="Solemnity Cape",
     })
     
     sets.Kiting = {feet="Danzo Sune-ate"}
@@ -378,8 +378,8 @@ function init_gear_sets()
         ammo=gear.RAarrow,
         head="Otomi Helm",
         neck="Ganesha's Mala",
-        ear1="Brutal Earring",
-        ear2="Lugra Earring +1",
+        ear1="Cessance Earring",
+        ear2="Tripudio Earring",
         body="Vatic Byrnie",
         hands=Acro.Hands.STP,
         ring1="Rajas Ring", 
@@ -394,15 +394,14 @@ function init_gear_sets()
         head="Acro Helm",
         body="Acro Surcoat",
         hands="Ryuo Tekko",
-        ear1="Bladeborn Earring",
-        ear2="Steelflash Earring",
         feet="Loyalist Sabatons"
     })
     
     sets.engaged.Acc = set_combine(sets.engaged.Mid, { 
-        head="Gavialis Helm",
+        head="Valorous Mask",
         neck="Lissome Necklace",
         body="Mes'yohi Haubergeon",
+        back="Grounded Mantle +1",
         ear1="Zennaroi Earring",
         ring1="Mars's Ring",
         legs="Acro Breeches",
@@ -421,11 +420,13 @@ function init_gear_sets()
     })
     
     sets.engaged.Yoichi.Acc = set_combine(sets.engaged.Yoichi.Mid, {
+        head="Valorous Mask",
         neck="Lissome Necklace",
         ear1="Zennaroi Earring",
         ring1="Patricius Ring",
         ring2="Mars's Ring",
         legs="Acro Breeches",
+        back="Grounded Mantle +1",
         feet=Acro.Feet.WSD
     })
     
@@ -435,7 +436,7 @@ function init_gear_sets()
         neck="Agitator's Collar",
         hands="Crusher Gauntlets",
         ring1="Patricius Ring",
-        back="Repulse Mantle",
+    	back="Solemnity Cape",
         waist="Flume Belt",
         feet="Loyalist Sabatons"
     })
@@ -449,13 +450,12 @@ function init_gear_sets()
          head="Lithelimb Cap",
          neck="Agitator's Collar",
          ring1="Patricius Ring",
-         ring2="Dark Ring"
+         ring2="Defending Ring"
     })
     
     sets.engaged.Reraise = set_combine(sets.engaged.PDT, {
         head="Twilight Helm", 
         body="Twilight Mail",
-        ring2="Paguroidea Ring"
     })
     
     sets.engaged.Reraise.Yoichi = set_combine(sets.engaged.Reraise, {
@@ -484,8 +484,8 @@ function init_gear_sets()
         ammo=gear.RAarrow,
         head="Otomi Helm",
         neck="Ganesha's Mala", -- 3
-        ear1="Brutal Earring", -- 1 
-        ear2="Trux Earring", -- 1
+        ear1="Cessance Earring", -- 1 
+        ear2="Brutal Earring", -- 1
         body="Acro Surcoat", -- 3
         hands=Acro.Hands.STP,
         ring1="Rajas Ring", -- 5
@@ -497,18 +497,16 @@ function init_gear_sets()
     }
     sets.engaged.Adoulin.Mid = set_combine(sets.engaged.Adoulin, { -- 840.5 accuracy
         head="Acro Helm",
-        ear1="Bladeborn Earring",
-        ear2="Steelflash Earring",
         hands=Acro.Hands.Haste,
     })
     
     sets.engaged.Adoulin.Acc = set_combine(sets.engaged.Adoulin.Mid, { 
-        head="Acro Helm",
+        head="Valorous Mask",
         neck="Defiant Collar",
         ring2="Mars's Ring",
         hands=Acro.Hands.Haste,
         waist="Olseni Belt",
-        back="Takaha Mantle",
+        back="Grounded Mantle +1",
         legs="Acro Breeches",
         feet=Acro.Feet.STP
     })
@@ -519,8 +517,8 @@ function init_gear_sets()
    	    body="Founder's Breastplate",
         hands="Otronif Gloves +1",
         ring1="Patricius Ring",
-        ring2="Dark Ring",
-        back="Repulse Mantle",
+        ring2="Defending Ring",
+    	back="Solemnity Cape",
         legs="Otronif Brais +1",
         feet="Loyalist Sabatons"
     })
@@ -530,6 +528,7 @@ function init_gear_sets()
         neck="Agitator's Collar",
         ring1="Patricius Ring",
         legs="Otronif Brais +1",
+        back="Grounded Mantle +1",
         feet="Loyalist Sabatons"
     })
     
@@ -539,8 +538,8 @@ function init_gear_sets()
         ammo=gear.RAarrow,
         head="Otomi Helm",
         neck="Asperity Necklace", -- 3
-        ear1="Bladeborn Earring", -- 1 
-        ear2="Steelflash Earring", -- 1
+        ear1="Cessance Earring", -- 1 
+        ear2="Tripudio Earring", -- 1
         body="Acro Surcoat", -- 8
         hands="Wakido Kote +1", -- 5
         ring1="Rajas Ring", -- 5
@@ -562,6 +561,7 @@ function init_gear_sets()
     
     sets.engaged.Adoulin.Yoichi.Acc = set_combine(sets.engaged.Adoulin.Yoichi.Mid, {
         ammo=gear.RAarrow,
+        head="Valorous Mask",
         ring1="Patricius Ring",
         ring2="Mars's Ring",
         back="Takaha Mantle",
@@ -576,7 +576,7 @@ function init_gear_sets()
     sets.engaged.Adoulin.Yoichi.Acc.PDT = set_combine(sets.engaged.Adoulin.Yoichi.Acc, { 
         head="Lithelimb Cap",
         neck="Agitator's Collar",
-        ring2="Dark Ring"
+        ring2="Defending Ring"
     })
     
     sets.engaged.Adoulin.Reraise = set_combine(sets.engaged.Adoulin, {

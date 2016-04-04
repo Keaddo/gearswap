@@ -70,7 +70,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-        main="Marin Staff",
+        main="Nehushtan",
         head="Welkin Crown",
         ear2="Loquacious Earring",
         hands="Magavan Mitts",
@@ -107,24 +107,19 @@ function init_gear_sets()
         ring2="Ifrit Ring +1",
         back="Buquwik Cape",
         waist=gear.ElementalBelt,
-        --legs="Hagondes Pants",
-        feet="Hagondes Sabots"
     }
 
     sets.precast.WS['Flash Nova'] = {
         --ammo="Dosis Tathlum",
-        head="Hagondes Hat",
+        head="Welkin Crown",
         neck="Eddy Necklace",
         ear1="Friomisi Earring",
         ear2="Crematio Earring",
-        --body="Hagondes Coat",
         --hands="Yaoyotl Gloves",
         ring1="Acumen Ring",
         --ring2="Strendu Ring",
         back="Toro Cape",
         --waist="Snow Belt",
-        --legs="Hagondes Pants",
-        feet="Hagondes Sabots"
     }
 
     sets.precast.WS['Starlight'] = {ear2="Moonshade Earring"}
@@ -147,9 +142,19 @@ function init_gear_sets()
         waist="Witful Belt", -- 4%
         legs="Geomancy Pants +1", -- 5%
     }
+    sets.midcast.Trust =  {
+         head="Azimuth hood +1",
+         hands="Geomancy Mitaines +1",
+         body="Azimuth Coat +1",
+         legs="Azimuth Tights +1",
+         feet="Helios Boots"
+    }
+     sets.midcast["Apururu (UC)"] = set_combine(sets.midcast.Trust, {
+         body="Apururu Unity shirt",
+     })
 
     sets.midcast.Geomancy = {
-        main="Marin Staff",
+        main="Serenity",
         sub="Giuoco Grip",
         range="Dunna", 
         head="Azimuth Hood +1", -- 10
@@ -168,18 +173,12 @@ function init_gear_sets()
     })
 
     sets.midcast.Cure = set_combine(sets.midcast.FastRecast, {
+        main="Serenity",
         neck="Incanter's Torque",
         hands="Telchine Gloves",
+    	back="Solemnity Cape",
         legs="Telchine Braconi"
     })
-        --main="Tamaxchi",
-        --sub="Genbu's Shield",
-        --body="Heka's Kalasiris",
-        --ring1="Haoma Ring",
-        --ring2="Sirona's Ring",
-        --back="Swith Cape +1",
-        --legs="Nares Trews",
-        --feet="Hagondes Sabots"
     
     sets.midcast.Curaga = sets.midcast.Cure
 
@@ -188,31 +187,31 @@ function init_gear_sets()
     --sets.midcast.Shellra = {ring1="Sheltered Ring"}
 
     sets.midcast.HighTierNuke = {
-        main="Marin Staff",
-        sub="Mephitis Grip",
+        main="Serenity",
+        sub="Niobid Strap",
         --sub="Wizzan Grip",
         --ammo="Witchstone",
         head="Welkin Crown",
         neck="Eddy Necklace",
         ear1="Friomisi Earring",
-        ear2="Hecate's Earring",
+        ear2="Crematio Earring",
         body="Azimuth Coat +1",
         hands="Helios Gloves",
         ring1="Shiva Ring",
-        ring2="Shiva Ring",
+        ring2="Resonance Ring",
         back="Toro Cape",
         waist="Refoccilation Stone", 
-        legs="Azimuth Tights +1",
+        legs="Merlinic Shalwar",
         feet="Helios Boots"
     }
     
     sets.midcast.HighTierNuke.Resistant = set_combine(sets.midcast.HighTierNuke, {
-        head="Hagondes Hat",
+        head="Welkin Crown",
         ear1="Friomisi Earring",
         ear2="Gwati Earring", 
-        hands="Azimuth Gloves",
+        hands="Psycloth Manillas",
         back="Refraction Cape",
-        legs="Azimuth Tights +1",
+        legs="Merlinic SHalwar",
         feet="Helios Boots"
         --feet="Bokwus Boots"
     })
@@ -230,29 +229,30 @@ function init_gear_sets()
     })
     
     sets.midcast.LowTierNuke.Resistant = set_combine(sets.midcast.LowTierNuke, {
-        head="Hagondes Hat",
+        head="Welkin Crown",
         ear1="Friomisi Earring",
         ear2="Gwati Earring", 
-        legs="Azimuth Tights +1",
-        ring2="Sangoma Ring",
+        legs="Merlinic SHalwar",
+        ring1="Sangoma Ring",
+        ring2="Resonance Ring",
         back="Refraction Cape",
         feet="Helios Boots"
     })
 
     sets.midcast.Macc = { 
-        main="Marin Staff",
-        sub="Mephitis Grip", 
+        main="Serenity",
+        sub="Niobid Strap", 
         ammo="Plumose Sachet",
         head="Bagua Galero",
         neck="Eddy Necklace", 
         ear1="Lifestorm Earring", 
         ear2="Psystorm Earring",
         body="Azimuth Coat +1",
-        hands="Helios Gloves",
+        hands="Psycloth Manillas",
         ring1="Perception Ring", 
         ring2="Sangoma Ring",
         back="Refraction Cape",
-        legs="Azimuth Tights +1",
+        legs="Merlinic SHalwar",
         waist="Yamabuki-no-obi", 
         feet="Helios Boots"
     }
@@ -262,9 +262,9 @@ function init_gear_sets()
         neck="Incanter's Torque", 
         ear1="Gwati Earring",
         ear2="Hirudinea Earring",
-        ring1="Excelsis Ring",
+        ring1="Evanescence Ring",
+        ring2="Excelsis Ring",
         body="Geomancy tunic +1",
-        waist="Fucho-no-obi",
         legs="Azimuth Tights +1",
     })
     sets.midcast.Drain = sets.midcast.Aspir
@@ -313,23 +313,22 @@ function init_gear_sets()
         sub="Genbu's Shield",
         range="Dunna",
         head="Azimuth Hood +1",
-        neck="Lissome Necklace",
+        neck="Twilight Torque",
         ear1="Friomisi Earring",
         ear2="Crematio Earring",
         body="Azimuth Coat +1",
         hands="Bagua Mitaines",
         ring1="Dark Ring",
-        ring2="Paguroidea Ring",
-        back="Repulse Mantle",
+        ring2="Defending Ring",
+    	back="Solemnity Cape",
         waist="Fucho-no-obi",
         legs="Azimuth Tights +1",
         feet="Geomancy Sandals"
     }
     sets.idle.PDT = set_combine(sets.idle, {
-        head="Hagondes Hat",
+        head="Hike Khat +1",
         hands="Geomancy Mitaines +1",
-        ring2="Patricius Ring",
-        back="Repulse Mantle",
+    	back="Solemnity Cape",
         feet="Azimuth Gaiters"
     })
 
@@ -382,15 +381,14 @@ function init_gear_sets()
 
     sets.defense.PDT = {
         range="Dunna",
-        head="Hagondes Hat",
+        head="Welkin Crown",
         neck="Twilight Torque",
         ear1="Zennaroi Earring",
         body="Azimuth Coat +1",
         hands="Geomancy Mitaines +1",
-        ring1="Patricius Ring",
-        ring2="Dark Ring",
+        ring1="Dark Ring",
+        ring2="Defending Ring",
         --back="Umbra Cape",
-        --legs="Hagondes Pants",
         feet="Azimuth Gaiters"
     }
 
@@ -407,7 +405,6 @@ function init_gear_sets()
         --back="Umbra Cape",
         waist="Yamabuki-no-Obi",
         --legs="Bokwus Slops",
-        --feet="Hagondes Sabots"
     }
 
     sets.Kiting = {}
@@ -544,8 +541,10 @@ function job_get_spell_map(spell, default_spell_map)
             else
                 return 'HighTierNuke'
             end
-        end
+        elseif spell.type == 'Trust' then
+            return 'Trust'
 
+        end
     end
 end
 

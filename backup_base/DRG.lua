@@ -99,7 +99,7 @@ function init_gear_sets()
         ammo="Ginsen",
 		head="Acro Helm",
         neck="Ganesha's Mala",
-        ear1="Brutal Earring",
+        ear1="Cessance Earring",
         ear2="Tripudio Earring",
 		body="Peltast's Plackart +1",
         hands="Crusher Gauntlets",
@@ -140,8 +140,8 @@ function init_gear_sets()
         ammo="Ginsen",
 		head="Wyrm Armet",
         neck="Lancer's Torque",
-        ear1="Steelflash Earring",
-        ear2="Bladeborn Earring",
+        ear1="Cessance Earring",
+        ear2="Tripudio Earring",
 		body="Acro Surcoat",
         hands="Crusher Gauntlets",
         ring1="Dark Ring",
@@ -185,7 +185,7 @@ function init_gear_sets()
 
 	sets.precast.WS = {
         ammo="Thew Bomblet",
-		head="Otomi Helm",
+        head="Valorous Mask",
         neck="Ganesha's Mala",
         ear1="Brutal Earring",
         ear2="Moonshade Earring",
@@ -200,7 +200,7 @@ function init_gear_sets()
     }
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {
         back="Updraft Mantle",
-        head="Yaoyotl Helm",
+        head="Valorous Mask",
         legs="Acro Breeches"
     })
 	
@@ -210,7 +210,7 @@ function init_gear_sets()
         waist="Soil Belt"
     })
 	sets.precast.WS['Stardiver'].Mid = set_combine(sets.precast.WS['Stardiver'], {
-        head="Yaoyotl Helm",
+        head="Valorous Mask",
         back="Updraft Mantle",
     })
 	sets.precast.WS['Stardiver'].Acc = set_combine(sets.precast.WS.Acc, {neck="Shadow Gorget",waist="Soil Belt"})
@@ -270,9 +270,9 @@ function init_gear_sets()
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle.Town = {
         ammo="Ginsen",
-		head="Otomi Helm",
+        head="Valorous Mask",
         neck="Ganesha's Mala",
-        ear1="Brutal Earring",
+        ear1="Cessance Earring",
         ear2="Tripudio Earring",
 		body="Peltast's Plackart +1",
         hands="Crusher Gauntlets",
@@ -285,7 +285,7 @@ function init_gear_sets()
     }
 	
 	sets.idle.Field = set_combine(sets.idle.Town, {
-        head="Ighwa Cap",
+        head="Valorous Mask",
         neck="Lissome Necklace",
 		body="Founder's Breastplate",
         ring1="Karieyh Ring",
@@ -295,7 +295,7 @@ function init_gear_sets()
     })
 
     sets.idle.Regen = set_combine(sets.idle.Field, {
-        head="Twilight Helm",
+        head="Valorous Mask",
 		body="Kumarbi's Akar",
         neck="Lissome Necklace",
     })
@@ -310,8 +310,8 @@ function init_gear_sets()
         ammo="Ginsen",
 		head="Ighwa Cap",
         neck="Twilight Torque",
-        ear1="Bladeborn Earring",
-        ear2="Steelflash Earring",
+        ear1="Cessance Earring",
+        ear2="Tripudio Earring",
         body="Jumalik Mail",
         hands="Crusher Gauntlets",
         ring1="Patricius Ring",
@@ -347,7 +347,7 @@ function init_gear_sets()
         ammo="Ginsen",
 		head="Otomi Helm",
         neck="Ganesha's Mala",
-        ear1="Brutal Earring",
+        ear1="Cessance Earring",
         ear2="Tripudio Earring",
 		body="Peltast's Plackart +1", -- 3%
         hands=Acro.Hands.STP, -- 4%
@@ -360,8 +360,8 @@ function init_gear_sets()
     }
 
 	sets.engaged.Mid = set_combine(sets.engaged, {
-        head="Yaoyotl Helm",
-        ear1="Zennaroi Earring",
+        head="Valorous Mask",
+        ear2="Zennaroi Earring",
         hands=Acro.Hands.Haste,
         legs="Acro Breeches"
     })
@@ -371,9 +371,9 @@ function init_gear_sets()
         neck="Lissome Necklace",
         waist="Olseni Belt",
         ring1="Mars's Ring",
-        body="Ravenous Breastplate",
+        body="Acro Surcoat",
         hands="Leyline Gloves",
-        back={name="Updraft Mantle", augments={'STR+2','Weapon skill damage +3%','Pet: Damage taken -3%'}},
+        back="Grounded Mantle +1"
         legs="Acro Breeches"
     })
 
