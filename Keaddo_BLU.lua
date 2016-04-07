@@ -361,7 +361,7 @@ function get_sets()
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Apate Ring",
-    back="Rancorous Mantle"}
+    back="Rosmerta's Cape"}
 
     sets.precast.WS['Expiacion'] = {
 		ammo="Amar Cluster",
@@ -373,7 +373,7 @@ function get_sets()
 		hands="Adhemar Wristbands",
 		ring1="Epona's ring",
 		ring2="Rufescent ring",
-		back="Lupine Cape",
+		back="Rosmerta's Cape",
 		waist="Prosilio Belt +1",
 		legs="Samnuha Tights",
 		feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
@@ -391,7 +391,7 @@ function get_sets()
 		right_ear="Brutal Earring",
 		left_ring="Epona's Ring",
 		right_ring="Rajas Ring",
-		back="Bleating Mantle",
+		back="Rosmerta's Cape",
 	}
 
     sets.precast.WS['Sanguine Blade'] = {
@@ -629,7 +629,7 @@ function get_sets()
 		right_ear="Eabani Earring",
 		left_ring="Epona's Ring",
 		right_ring="Petrov Ring",
-		back="Bleating Mantle"
+		back="Rosmerta's Cape"
 	}
 
     sets.TP['Multiattack']['Normal'] = {
@@ -645,12 +645,12 @@ function get_sets()
 		right_ear="Brutal Earring",
 		left_ring="Epona's Ring",
 		right_ring="Petrov Ring",
-		back="Bleating Mantle"
+		back="Rosmerta's Cape"
 		}
 
     sets.TP['Dual Wield']['Accuracy Mid'] = {
 		ammo="Amar Cluster",
-	    head="Adhemar Bonnet",
+	    head="Dampening Tam",
 		body="Adhemar Jacket",
 		hands="Adhemar Wristbands",
 		legs="Samnuha Tights",
@@ -661,12 +661,12 @@ function get_sets()
 		right_ear="Eabani Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Lupine Mantle"
+		back="Rosmerta's Cape"
 		}
 
     sets.TP['Multiattack']['Accuracy Mid'] = {
 		ammo="Amar Cluster",
-	    head="Adhemar Bonnet",
+	    head="Dampening Tam",
 		body="Adhemar Jacket",
 		hands="Adhemar Wristbands",
 		legs="Samnuha Tights",
@@ -677,7 +677,7 @@ function get_sets()
 		right_ear="Brutal Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Lupine Mantle"
+		back="Rosmerta's Cape"
 		}
 
     sets.TP['Dual Wield']['Accuracy High'] = {
@@ -693,7 +693,7 @@ function get_sets()
 		right_ear="Dignitary Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Lupine Mantle"
+		back="Rosmerta's Cape"
 		}
 
     sets.TP['Multiattack']['Accuracy High'] = {
@@ -709,7 +709,7 @@ function get_sets()
 		right_ear="Dignitary Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Lupine Mantle"
+		back="Rosmerta's Cape"
 		}
 
     sets.idle = {
@@ -738,7 +738,8 @@ function get_sets()
 		ear1="Etiolation Earring",
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
-		waist="Windbuffet Belt +1"
+		waist="Windbuffet Belt +1",
+		back="Rosmerta's Cape"
 		})
 
     -- VARIABLES --
