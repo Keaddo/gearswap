@@ -275,6 +275,15 @@ function get_sets()
             relaxed_play_mode()
         end
     end)
+	
+	-- TREASURE HUNTER
+    windower.register_event('tp change', function(new, old)
+        if TH_ind == 1 then
+            if EngagedTP > -1 and player.tp > (EngagedTP+80) and player.status == 'Engaged' then
+                windower.send_command('gs c TPchange')
+            end
+        end
+    end)
 
 
     -- Start defining actual gear sets to be used below --
@@ -712,6 +721,12 @@ function get_sets()
 		back="Rosmerta's Cape"
 		}
 
+	sets.TH = set_combine(sets.TP['Multiattack']['Normal'],{
+		hands={ name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}},
+		feet={ name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
+		})
+    TH_ind = 1
+	
     sets.idle = {
 			ammo="Ginsen",
 			head="Rawhide Mask",
@@ -1160,6 +1175,19 @@ function self_command(str)
         end
         windower.add_to_chat(8,'Weapon type set to: '..weapon_combo)
     end
+	
+	-- Treasure hunter tag
+    if str == "TPchange" then
+        EngagedTP = -1
+        gear_modes()
+    elseif str == "TH" then
+        if TH_ind == 0 then TH_ind = 1 
+            windower.add_to_chat(8,'----Auto TH swaps activated.----')
+        else TH_ind = 0 
+            windower.add_to_chat(8,'----Auto TH swaps disabled.----')
+        end
+    end
+	
 end
 
 function gear_modes()
@@ -1318,11 +1346,14 @@ end
 function status_change(new,old)
     if T{'Idle','Engaged'}:contains(new) and gear_change_ok then
 		if Cities:contains(world.area) then
-						equip(sets.Town)
-		else
-        gear_modes()
+			equip(sets.Town)
+			elseif new == 'Engaged' and TH_ind == 1 then
+				equip(sets.TH)
+				EngagedTP = player.tp
+			else
+			gear_modes()
 		end
-    end
+	end	
 end
 
 function buff_change(buff,gain)
