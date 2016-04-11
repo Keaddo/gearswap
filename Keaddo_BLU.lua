@@ -309,7 +309,7 @@ function get_sets()
 			ear1="Etiolation Earring", 
 			ear2="Ethereal Earring",
 			body="Emet Harness",
-			hands="Herculean Gloves",
+			hands={ name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}},
 			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Solemnity Cape",
@@ -369,7 +369,7 @@ function get_sets()
     left_ear="Moonshade Earring",
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
-    right_ring="Apate Ring",
+    right_ring="Begrudging Ring",
     back="Rosmerta's Cape"}
 
     sets.precast.WS['Expiacion'] = {
@@ -631,7 +631,7 @@ function get_sets()
 		body="Adhemar Jacket",
 		hands="Adhemar Wristbands",
 		legs="Samnuha Tights",
-		feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
+		feet={ name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}},
 		neck="Asperity Necklace",
 		waist="Windbuffet Belt +1",
 		left_ear="Suppanomimi",
@@ -647,7 +647,7 @@ function get_sets()
 		body="Adhemar Jacket",
 		hands="Adhemar Wristbands",
 		legs="Samnuha Tights",
-		feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
+		feet={ name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}},
 		neck="Asperity Necklace",
 		waist="Windbuffet Belt +1",
 		left_ear="Suppanomimi",
