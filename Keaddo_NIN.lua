@@ -99,9 +99,10 @@ function init_gear_sets()
     TaeonHands.TA = {name="Taeon Gloves", augments={'DEX+6','Accuracy+17 Attack+17','"Triple Atk."+2'}}
 	HercHands = {}
 	HercHands.TH = { name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}}
+	HercHands.DT = { name="Herculean Gloves", augments={'Agi+8','Accuracy+9','Damage taken -3%',}}
 	HercFeet = {}
 	HercFeet.DT = { name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
-	HercFeet.TA = { name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}
+	HercFeet.TA = { name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}}
 	HercFeet.TH = { name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
     
     --------------------------------------
@@ -116,7 +117,7 @@ function init_gear_sets()
         ring1="Supershear Ring",
         feet="Mochizuki Kyahan +1"
     }
-    sets.precast.JA.Sange = { ammo=gear.SangeAmmo, body="Mochizuki Chainmail +1" }
+    sets.precast.JA.Sange = { ammo=gear.SangeAmmo, body="Mochizuki Chainmail" }
     
     -- Waltz (chr and vit)
     sets.precast.Waltz = {
@@ -184,7 +185,7 @@ function init_gear_sets()
     sets.midcast.RA = {
         head="Taeon Chapeau",
         neck="Iqabi Necklace",
-        body="Mochizuki Chainmail +1",
+        body="Mochizuki Chainmail",
         hands="Hachiya Tekko +1",
         ring2="Hajduk Ring",
         back="Yokaze Mantle",
@@ -192,7 +193,7 @@ function init_gear_sets()
         feet="Taeon Boots"
     }
     sets.midcast.RA.Acc = set_combine(sets.midcast.RA, {
-        body="Mochizuki Chainmail +1"
+        body="Mochizuki Chainmail"
     })
     sets.midcast.RA.TH = set_combine(sets.midcast.RA, set.TreasureHunter)
     
@@ -209,7 +210,7 @@ function init_gear_sets()
         legs="Quiahuiz Trousers",
         feet="Mochizuki Kyahan +1" -- special enhancement for casting ninjutsu III
     }
-    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, { neck="Magoraga Beads", body="Mochizuki Chainmail +1" })
+    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, { neck="Magoraga Beads", body="Mochizuki Chainmail"})
     
     -- Midcast Sets
     sets.midcast.FastRecast = {
@@ -238,7 +239,7 @@ function init_gear_sets()
     }
     -- any ninjutsu cast on self
     sets.midcast.SelfNinjutsu = sets.midcast.Ninjutsu
-    sets.midcast.Utsusemi = set_combine(sets.midcast.Ninjutsu, {hands="Mochizuki Tekko +1", feet="Iga Kyahan +2"})
+    sets.midcast.Utsusemi = set_combine(sets.midcast.Ninjutsu, {hands="Koga Tekko +2", feet="Iga Kyahan +2", back="Andartia's Mantle"})
     sets.midcast.Migawari = set_combine(sets.midcast.Ninjutsu, {body="Hattori Ningi +1"})
 
     -- Nuking Ninjutsu (skill & magic attack)
@@ -293,7 +294,7 @@ function init_gear_sets()
         hands="Ryuo Tekko",
         body="Adhemar Jacket",
         legs="Samnuha Tights",
-        back="Yokaze Mantle",
+        back="Andartia's Mantle",
         waist="Windbuffet Belt +1"
     })
     --sets.idle.Town.Adoulin = set_combine(sets.idle.Town, {
@@ -307,7 +308,7 @@ function init_gear_sets()
         head="Dampening Tam",
         neck="Twilight Torque",
         body="Emet Harness",
-        hands="Herculean Gloves",
+        hands=HercHands.DT,
         ring1="Defending Ring",
         ring2="Gelatinous Ring +1",
     	back="Solemnity Cape",

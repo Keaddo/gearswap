@@ -723,16 +723,16 @@ function determine_haste_group()
     -- Advancing March +3/+4/+5   10.9%/12.5%/14%
     -- Embrava 25%
     if (buffactive.embrava or buffactive.haste) and buffactive.march == 2 then
-        add_to_chat(8, '-------------Haste 43%-------------')
+       -- add_to_chat(8, '-------------Haste 43%-------------')
         classes.CustomMeleeGroups:append('Haste_43')
     elseif buffactive.embrava and buffactive.haste then
-        add_to_chat(8, '-------------Haste 40%-------------')
+      --  add_to_chat(8, '-------------Haste 40%-------------')
         classes.CustomMeleeGroups:append('Haste_40')
     elseif (buffactive.haste and buffactive.march == 1) or (buffactive.march == 2 and buffactive['haste samba']) then
-        add_to_chat(8, '-------------Haste 30%-------------')
+      --  add_to_chat(8, '-------------Haste 30%-------------')
         classes.CustomMeleeGroups:append('Haste_30')
     elseif buffactive.embrava or buffactive.march == 2 then
-        add_to_chat(8, '-------------Haste 25%-------------')
+     --   add_to_chat(8, '-------------Haste 25%-------------')
         classes.CustomMeleeGroups:append('Haste_25')
     end
 
