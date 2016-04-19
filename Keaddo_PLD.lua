@@ -40,7 +40,7 @@ function get_sets()
 			ring1="Paguroidea Ring",
 			ring2="Sheltered Ring",
 			back="Weard Mantle",
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Carmine Cuisses +1",
 			feet="Amm Greaves"}
 	sets.Idle.Regen.Ochain = set_combine(sets.Idle.Regen,{
@@ -206,7 +206,7 @@ function get_sets()
 			ring1="Defending Ring", -- 4 PDT --
 			ring2="Gelatinous Ring +1", -- 7 PDT --
 			back="Weard Mantle", -- 3 DT --
-			waist="Flume Belt", -- 4 PDT --
+			waist="Flume Belt +1", -- 4 PDT --
 			legs="Souveran Diechlings", -- 4 PDT --
 			feet="Souveran Schuhs"} -- 4 PDT --
 							-- Total -17% DT + -33% PDT = -50% Reduction --
@@ -223,7 +223,7 @@ function get_sets()
 			ring1="Defending Ring", 
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
-			waist="Flume Belt +1", 
+			waist="Flume Belt +1 +1", 
 			legs="Souveran Diechlings",
 			feet="Souveran Schuhs"}
 			
@@ -239,7 +239,7 @@ function get_sets()
 			ring1="Defending Ring", 
 			ring2="Gelatinous Ring +1", 
 			back="Weard Mantle", 
-			waist="Flume Belt +1", 
+			waist="Flume Belt +1 +1", 
 			legs="Souveran Diechlings",
 			feet="Souveran Schuhs"}
 
@@ -256,7 +256,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", -- 4 MDT --
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Souveran Diechlings", -- MDB 4 --
 			feet="Amm Greaves"} -- MDB 2 / DT 3 --
 								-- Total -17% DT + -16% MDT = -33% Reduction / +13 MDB --
@@ -273,7 +273,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", 
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Souveran Diechlings", 
 			feet="Amm Greaves"}
 								
@@ -289,7 +289,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Praan Ring",
 			back="Engulfer Cape +1", 
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Souveran Diechlings", 
 			feet="Amm Greaves"}
 
@@ -306,7 +306,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Souveran Diechlings", 
 			feet="Souveran Schuhs"}
 			
@@ -322,7 +322,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Souveran Diechlings", 
 			feet="Souveran Schuhs"}
 			
@@ -338,7 +338,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Weard Mantle", 
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Souveran Diechlings", 
 			feet="Souveran Schuhs"}
 
@@ -617,7 +617,7 @@ function get_sets()
 			ring1="Apeile Ring", -- 4~8 --
 			ring2="Apeile Ring +1", -- 5~9 --
 			back="Weard Mantle", -- 7 --
-			waist="Flume Belt", --  --
+			waist="Flume Belt +1", --  --
 			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}}, -- 4 --
 			feet="Eschite Greaves"} -- 15 --
 									-- Total Enmity+ = 89~97 --

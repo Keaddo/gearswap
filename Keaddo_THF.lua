@@ -386,7 +386,7 @@ function init_gear_sets()
         ring1="Patricius Ring",
         ring2="Epona's Ring",
 		back="Repulse Mantle",
-        waist="Flume Belt",
+        waist="Flume Belt +1",
         legs="Iuitl Tights +1",
     }
 
@@ -457,7 +457,7 @@ function init_gear_sets()
 		body="Emet Harness +1",
         ring1="Patricius Ring",
         back="Repulse Mantle",
-        waist="Flume Belt",
+        waist="Flume Belt +1",
         legs="Iuitl Tights +1",
     })
 	sets.engaged.Mid.PDT = set_combine(sets.engaged.PDT, {

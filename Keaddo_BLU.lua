@@ -313,7 +313,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Gelatinous Ring +1",
 			back="Solemnity Cape",
-			waist="Flume belt",
+			waist="Flume Belt +1",
 			legs="Carmine Cuisses +1",
 			feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 			}
@@ -738,7 +738,7 @@ function get_sets()
 			ring1="Sheltered Ring",
 			ring2="Paguroidea ring",
 			back="Solemnity Cape",
-			waist="Flume Belt",
+			waist="Flume Belt +1",
 			legs="Carmine Cuisses +1",
 			feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 			}

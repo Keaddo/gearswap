@@ -274,7 +274,7 @@ function init_gear_sets()
         ring1="Defending Ring",
         ring2="Gelatinous Ring +1",
     	back="Solemnity Cape",
-        waist="Flume Belt",
+        waist="Flume Belt +1",
         legs="Herculean Trousers",
         feet="Danzo Sune-ate"
      }
@@ -312,7 +312,7 @@ function init_gear_sets()
         ring1="Defending Ring",
         ring2="Gelatinous Ring +1",
     	back="Solemnity Cape",
-        waist="Flume Belt",
+        waist="Flume Belt +1",
         legs="Herculean Trousers",
         feet=HercFeet.DT
     }

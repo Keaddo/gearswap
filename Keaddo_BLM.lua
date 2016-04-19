@@ -84,7 +84,8 @@ function init_gear_sets()
                                                                              
 -- Precast sets
     -- Precast sets to enhance JAs
-    sets.precast.JA['Mana Wall'] =                                          {}
+    sets.precast.JA['Mana Wall'] =                                          {
+	back="Taranus's Cape"}
      
     sets.precast.JA['Manafont'] =                                           {}
      
@@ -195,7 +196,7 @@ function init_gear_sets()
 	ear2="Barkarole Earring",
 	ring1="Shiva Ring",
 	ring2="Shiva Ring",
-	back="Toro Cape",
+	back="Taranus's Cape",
 	waist="Refoccilation Stone"
 	}
  
@@ -252,6 +253,7 @@ function init_gear_sets()
     sets.idle.Town =                                                        set_combine(sets.resting,{
 	ring1="Defending Ring",
 	ring2="Weatherspoon Ring",
+	back="Taranus's Cape",
 	feet="Herald's Gaiters"})
          
     -- Defense sets
@@ -278,8 +280,8 @@ function init_gear_sets()
 	neck="Mizu. Kubikazari",
 	head="Merlinic Hood",
 --	body="Spae. Coat +1",
-	legs="Merlinic Shalwar",
-	back="Seshaw Cape"
+	back="Taranus's Cape",
+	legs="Merlinic Shalwar"
 	})
  
     -- Engaged sets
