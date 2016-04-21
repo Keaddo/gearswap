@@ -379,15 +379,17 @@ function init_gear_sets()
     }
 
 	sets.defense.PDT = {
-		head="Iuitl Headgear +1",
+		head="Dampening Tam",
         neck="Twilight Torque",
-		body="Emet Harness +1",
-        hands="Iuitl Wristbands +1",
-        ring1="Patricius Ring",
-        ring2="Epona's Ring",
-		back="Repulse Mantle",
+		body="Emet Harness",
+        ring1="Defending Ring",
+		ring2="Gelatinous Ring +1",
+		hands={ name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}},
+		ear1="Etiolation Earring",
+        back="Solemnity Cape",
         waist="Flume Belt +1",
-        legs="Iuitl Tights +1",
+		legs="Herculean Trousers",
+		feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
     }
 
 	sets.defense.MDT = {
@@ -452,13 +454,17 @@ function init_gear_sets()
         waist="Olseni Belt"
     })
 	sets.engaged.PDT = set_combine(sets.engaged, {
-		head="Iuitl Headgear +1",
+		head="Dampening Tam",
         neck="Twilight Torque",
-		body="Emet Harness +1",
-        ring1="Patricius Ring",
-        back="Repulse Mantle",
+		body="Emet Harness",
+        ring1="Defending Ring",
+		ring2="Gelatinous Ring +1",
+		hands={ name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}},
+		ear1="Etiolation Earring",
+        back="Solemnity Cape",
         waist="Flume Belt +1",
-        legs="Iuitl Tights +1",
+		legs="Herculean Trousers",
+		feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
     })
 	sets.engaged.Mid.PDT = set_combine(sets.engaged.PDT, {
         ring1="Patricius Ring",
