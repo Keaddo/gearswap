@@ -297,16 +297,17 @@ function init_gear_sets()
 	sets.precast.WS['Shark Bite'].SATA = set_combine(sets.precast.WS['Shark Bite'].Mid, {neck="Breeze Gorget"})
 
 	sets.precast.WS['Aeolian Edge'] = {
-		neck="Stoicheion Medal",
-        ear1="Crematio Earring",
-        head="Umbani Cap",
-		body="Adhemar Jacket",
-        hands="Adhemar Wristbands",
-        ring1="Acumen Ring",
-        ring2="Garuda Ring",
-		back="Argochampsa Mantle",
-        waist="Thunder Belt",
-        legs="Limbo Trousers",
+		neck="Sanctity Necklace",
+        ear1="Friomisi Earring",
+		ear2="Moonshade Earring",
+        head="Herculean Helm",
+		body="Samnuha Coat",
+        hands="Leyline Gloves",
+        ring1="Shiva Ring",
+        ring2="Shiva Ring",
+		back="Toro Cape",
+        waist="Fotia Belt",
+        legs="Herculean Trousers",
         feet="Herculean Boots"
     }
 	
