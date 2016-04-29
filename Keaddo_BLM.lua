@@ -242,7 +242,7 @@ function init_gear_sets()
  
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
     sets.idle.PDT =                                                         set_combine(sets.resting,{
-	neck="Twilight Torque",
+	neck="Loricate Torque +1",
 	ring1="Gelatinous Ring +1",
 	ring2="Defending Ring"})
  
@@ -259,7 +259,7 @@ function init_gear_sets()
     -- Defense sets
  
     sets.defense.PDT =                                                      set_combine(sets.resting,{
-	neck="Twilight Torque",
+	neck="Loricate Torque +1",
 	ring1="Gelatinous Ring +1",
 	ring2="Defending Ring"})
  

@@ -305,7 +305,7 @@ function get_sets()
     sets.misc.DT.Active = {
 			ammo="Vanir Battery",
 			head="Dampening Tam",
-			neck="Twilight Torque", 
+			neck="Loricate Torque +1", 
 			ear1="Etiolation Earring", 
 			ear2="Ethereal Earring",
 			body="Emet Harness",
@@ -364,7 +364,7 @@ function get_sets()
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Thereoid Greaves",
-    neck="Asperity Necklace",
+    neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Moonshade Earring",
     right_ear="Brutal Earring",
@@ -374,10 +374,10 @@ function get_sets()
 
     sets.precast.WS['Expiacion'] = {
 		ammo="Amar Cluster",
-		head="Adhemar Bonnet",
+		head="Lilitu Headpiece",
 		neck="Caro Necklace",
-		ear1="Ishvara earring",
-		ear2="Moonshade earring",
+		ear1="Moonshade earring",
+		ear2="Ishvara earring",
 		body="Adhemar Jacket",
 		hands="Adhemar Wristbands",
 		ring1="Epona's ring",
@@ -389,14 +389,14 @@ function get_sets()
 		}
 
     sets.precast.WS['Requiescat'] = {
-		head="Adhemar Bonnet",
+		head="Carmine Mask",
 		body="Adhemar Jacket",
-		hands="Adhemar Wristbands",
-		legs="Samnuha Tights",
-		feet={ name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}},
-		neck="Santity Necklace",
+		hands="Carmine Finger Gauntlets",
+		legs="Carmine Cuisses +1",
+		feet="Carmine Greaves",
+		neck="Fotia Gorget",
 		waist="Fotia Belt",
-		left_ear="Suppanomimi",
+		left_ear="Moonshade Earring",
 		right_ear="Brutal Earring",
 		left_ring="Epona's Ring",
 		right_ring="Rajas Ring",
@@ -602,7 +602,7 @@ function get_sets()
     sets.midcast.BlueMagic.HealingMAXHP =
             set_combine(sets.midcast.BlueMagic.Healing, {
         ammo="Egoist's Tathlum",
-        head="Luh. Keffiyeh +1",
+        head="Rawhide Mask",
         lear="Odnowa Earring +1",
         rear="Etiolation Earring",
         lring="Meridian Ring",
@@ -751,6 +751,7 @@ function get_sets()
 		
 		sets.Town = set_combine(sets.Idle,{
 		ear1="Etiolation Earring",
+		neck="Loricate Torque +1",
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
 		waist="Windbuffet Belt +1",

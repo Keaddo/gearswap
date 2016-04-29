@@ -306,7 +306,7 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {
         head="Dampening Tam",
-        neck="Twilight Torque",
+        neck="Loricate Torque +1",
         body="Emet Harness",
         hands=HercHands.DT,
         ring1="Defending Ring",

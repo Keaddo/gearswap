@@ -198,7 +198,7 @@ function get_sets()
 			sub="Ochain",
 			ammo="Angha Gem", -- 2 PDT --
 			head="Loess Barbuta +1", -- 5 PDT --
-			neck="Twilight Torque", -- 5 DT --
+			neck="Loricate Torque +1", -- 5 DT --
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", -- 9 DT [Upgrade: Tartarus Platemail -10% DT] --
@@ -215,7 +215,7 @@ function get_sets()
 			sub="Aegis",
 			ammo="Angha Gem",
 			head="Loess Barbuta +1",
-			neck="Twilight Torque",
+			neck="Loricate Torque +1",
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", 
@@ -231,7 +231,7 @@ function get_sets()
 			sub="Priwen",
 			ammo="Angha Gem",
 			head="Loess Barbuta +1",
-			neck="Twilight Torque",
+			neck="Loricate Torque +1",
 			ear1="Zwazo Earring",
 			ear2="Ethereal Earring",
 			body="Souveran Cuirass", 
@@ -248,7 +248,7 @@ function get_sets()
 			sub="Ochain",
 			ammo="Vanir Battery", -- MDB 4 --
 			head="Loess Barbuta +1", -- MDB 2 / MDT 5 --
-			neck="Twilight Torque", -- 5 DT --
+			neck="Loricate Torque +1", -- 5 DT --
 			ear1="Odnowa Earring +1", -- MDT 2 --
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", -- 9 DT --
@@ -265,7 +265,7 @@ function get_sets()
 			sub="Aegis",
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
-			neck="Twilight Torque",
+			neck="Loricate Torque +1",
 			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
@@ -281,7 +281,7 @@ function get_sets()
 			sub="Priwen",
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
-			neck="Twilight Torque",
+			neck="Loricate Torque +1",
 			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
@@ -298,7 +298,7 @@ function get_sets()
 			sub="Ochain",
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
-			neck="Twilight Torque",
+			neck="Loricate Torque +1",
 			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
@@ -314,7 +314,7 @@ function get_sets()
 			sub="Aegis",
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
-			neck="Twilight Torque",
+			neck="Loricate Torque +1",
 			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
@@ -330,7 +330,7 @@ function get_sets()
 			sub="Priwen",
 			ammo="Vanir Battery", 
 			head="Loess Barbuta +1", 
-			neck="Twilight Torque",
+			neck="Loricate Torque +1",
 			ear1="Odnowa Earring +1", 
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 
