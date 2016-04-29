@@ -24,9 +24,9 @@ end
  
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('None', 'Normal')
-    state.CastingMode:options('Normal', 'Resistant', 'Spaekona', 'TP')
-    state.IdleMode:options('Normal', 'PDT')
+  --  state.OffenseMode:options('None', 'Normal')
+    state.CastingMode:options('Normal', 'Resistant', 'Spaekona', 'HighMP')
+    state.IdleMode:options('Normal', 'PDT', 'HighMP')
     state.MagicBurst = M(false, 'Magic Burst')
      
     lowTierNukes = S{'Stone', 'Water', 'Aero', 'Fire', 'Blizzard', 'Thunder',
@@ -96,13 +96,29 @@ function init_gear_sets()
 	head="Amalric Coif",
 	ear1="Etiolation Earring",
 	ear2="Loquacious Earring",
-	body="Helios Jacket",
+	body="Vrikodara Jupon",
 	ring1="Prolix Ring",
 	ring2="Weatherspoon Ring",
 	back="Swith Cape",
-	waist="Witful Belt",
 	legs="Psycloth Lappas",
 	feet={ name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}}
+	
+    sets.precast.FC.HighMP = {
+        ammo="Impatiens",
+        head="Merlinic Hood",
+		body="Vrikodara Jupon",
+        hands={name="Amalric Gages", priority=13},
+        legs="Psycloth Lappas",
+		feet={ name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}},
+        neck={name="Orunmila's Torque", priority=12},
+		waist="Witful Belt",
+        left_ear={name="Etiolation Earring", priority=16},
+        right_ear={name="Loquac. Earring", priority=15},
+        left_ring={name="Mephitas's Ring", priority=14},
+        right_ring={name="Mephitas's Ring +1", priority=8},
+        back="Bane Cape",
+    }
+	
                                                                              
     -- Stoneskin
     sets.precast.Stoneskin =                                                set_combine(sets.precast.FC,{
@@ -136,9 +152,12 @@ function init_gear_sets()
 	head="Umuthi Hat"}
  
     sets.midcast['Enhancing Magic'].Stoneskin =                             set_combine(sets.midcast['Enhancing Magic'],{
+		legs="Shedir Seraweels",
 		waist="Siegel Sash"})
                                                                              
-    sets.midcast['Enhancing Magic'].Aquaveil =                              set_combine(sets.midcast['Enhancing Magic'],{})                                                                         
+    sets.midcast['Enhancing Magic'].Aquaveil =                              set_combine(sets.midcast['Enhancing Magic'],{
+	head="Amalric Coif",
+	legs="Shedir Seraweels"})                                                                         
  
  
     sets.midcast['Enfeebling Magic'] =                                      {
@@ -149,7 +168,7 @@ function init_gear_sets()
 	ear2="Barkarole Earring",
 	body="Amalric Doublet",
 	hands="Amalric Gages",
-	ring1="Balrahn's Ring",
+	ring1="Metamorph Ring",
 	ring2="Weatherspoon Ring",
 	back="Refraction Cape",
 	waist="Porous Rope",
@@ -163,22 +182,29 @@ function init_gear_sets()
  
     sets.midcast['Dark Magic'] =                                            {
 	ammo="Pemphredo Tathlum",
-	head="Merlinic Hood",
+	head="Pixie Hairpin +1",
 	neck="Mizu. Kubikazari",
-	ear1="Friomisi Earring",
+	ear1="Hirudinea Earring",
 	ear2="Barkarole Earring",
 	body="Amalric Doublet",
 	hands="Amalric Gages",
 	ring1="Evanescence Ring",
 	ring2="Weatherspoon Ring",	
 	back="Bane Cape",
-	waist="Salire Belt",
-	legs="Amalric Slops",
+	waist="Fucho-no-Obi",
+	legs="Merlinic Shalwar",
 	Feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}}
                                                                              
     sets.midcast['Dark Magic'].Drain =                                      set_combine(sets.midcast['Dark Magic'],{})
                                                                              
-    sets.midcast['Dark Magic'].Aspir =                                      sets.midcast['Dark Magic'].Drain                                        
+    sets.midcast['Dark Magic'].Aspir =                                      sets.midcast['Dark Magic'].Drain    
+
+	sets.midcast['Dark Magic'].Aspir.HighMP =								set_combine(sets.midcast['Dark Magic'].Aspir,{
+		ammo="Psilomene",
+		neck="Incanter's Torque",
+		legs="Amalric Slops",
+		ring2="Mephitas Ring +1"
+	})
                                                                              
  
     sets.midcast['Dark Magic'].Stun =                                       set_combine(sets.midcast['Dark Magic'],{})
@@ -202,12 +228,11 @@ function init_gear_sets()
  
     sets.midcast.LowTierNuke.Resistant =                                    set_combine(sets.midcast.LowTierNuke,{
 	head="Amalric Coif",
-	neck="Sanctity Necklace"})
+	neck="Sanctity Necklace",
+	ring1="Weatherspoon Ring"})
 	
 	sets.midcast.LowTierNuke.Spaekona =										set_combine(sets.midcast.LowTierNuke,{
-	body="Spae. Coat +1"})
- 
-    sets.midcast.TP =                                                       {}                                                                          
+	body="Spae. Coat +1"})                                                                         
                                                                              
     sets.midcast.HighTierNuke =                                             set_combine(sets.midcast.LowTierNuke,{})
                                                                              
@@ -217,6 +242,54 @@ function init_gear_sets()
 
 	sets.midcast.HighTierNuke.Spaekona =									set_combine(sets.midcast.LowTierNuke,{
 	body="Spae. Coat +1"})
+	
+    sets.midcast.Death = {
+        ammo="Pemphredo Tathlum",
+        head="Pixie Hairpin +1",
+        body="Amalric Doublet",
+        hands="Amalric Gages",
+        legs="Amalric Slops",
+		feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}},
+        neck="Saevus Pendant +1",
+        waist="Refoccilation Stone",
+        left_ear="Barkaro. Earring",
+        right_ear="Friomisi Earring",
+        left_ring="Archon Ring",
+        right_ring="Mephitas's Ring +1",
+        back="Taranus's Cape",
+    }
+ 
+    sets.midcast.Death.HighMP = {
+        ammo="Pemphredo Tathlum",
+        head="Pixie Hairpin +1",
+        body="Amalric Doublet",
+        hands="Amalric Gages",
+        legs="Amalric Slops",
+		feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}},
+        neck="Saevus Pendant +1",
+        waist="Refoccilation Stone",
+        left_ear="Barkaro. Earring",
+        right_ear="Friomisi Earring",
+        left_ring="Archon Ring",
+        right_ring="Mephitas's Ring +1",
+        back="Taranus's Cape",
+    }
+	
+    sets.midcast.Myrkr = {
+        ammo="Psilomene",
+        head="Amalric Coif",
+        neck="Sanctity Necklace",
+        ear1="Etiolation Earring",
+        ear2="Loquacious Earring",
+        body="Amalric Doublet",
+        hands="Amalric Gages",
+        ring1="Mephitas's Ring",
+        ring2="Mephitas's Ring +1",
+        back="Bane Cape",
+        waist="Refoccilation Stone",
+        legs="Amalric Slops",
+        feet="Amalric Nails",
+    }
 	
 -- Sets to return to when not performing an action.
     -- Resting sets
@@ -255,6 +328,24 @@ function init_gear_sets()
 	ring2="Weatherspoon Ring",
 	back="Taranus's Cape",
 	feet="Herald's Gaiters"})
+	
+	-- DEATH idle set --
+	
+	sets.idle.HighMP = {													
+        ammo="Psilomene",
+        head="Amalric Coif",
+        neck="Loricate Torque +1",
+        ear1="Etiolation Earring",
+        ear2="Loquacious Earring",
+        body="Amalric Doublet",
+        hands="Amalric Gages",
+        ring1="Defending Ring",
+        ring2="Gelatinous Ring +1",
+        back="Bane Cape",
+        waist="Fucho-no-Obi",
+        legs="Amalric Slops",
+        feet="Amalric Nails",
+	}
          
     -- Defense sets
  
@@ -272,17 +363,40 @@ function init_gear_sets()
  
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
      
-    sets.buff['Mana Wall'] =                                                {}
+    sets.buff['Mana Wall'] =                                                {
+	back="Taranus's Cape"}
  
     sets.magic_burst =                                                      set_combine(sets.midcast.LowTierNuke,{
 	ring1="Mujin Band",
 --	ring2="Locus Ring", --
 	neck="Mizu. Kubikazari",
 	head="Merlinic Hood",
---	body="Spae. Coat +1",
 	back="Taranus's Cape",
 	legs="Merlinic Shalwar"
 	})
+	
+	sets.magic_burst.Spaekona =												set_combine(sets.magic_burst, {
+	
+	body="Spae. Coat +1"
+	})
+	
+    sets.magic_burst.Death = {
+        neck="Mizukage-no-Kubikazari",
+        ring2="Locus Ring",
+    }
+ 
+    sets.magic_burst.Death.HighMP = {
+        neck="Mizukage-no-Kubikazari",
+    }
+	
+    sets.magic_burst.Aspir = {
+        neck="Mizukage-no-Kubikazari",
+        back="Taranus's Cape",
+    }
+   
+    sets.magic_burst.Aspir.HighMP = {
+        neck="Mizukage-no-Kubikazari",
+    }
  
     -- Engaged sets
  
@@ -292,8 +406,8 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
      
     -- Normal melee group
-    sets.engaged =                                                          {
-} 
+    sets.engaged = sets.idle
+    sets.engaged.HighMP = sets.idle.HighMP
 end
  
 -------------------------------------------------------------------------------------------------------------------
@@ -391,6 +505,33 @@ function job_get_spell_map(spell, default_spell_map)
             return 'LowTierNuke'
         else
             return 'HighTierNuke'
+        end
+    end
+end
+ 
+ 
+-- death function
+function job_post_midcast(spell, action, spellMap, eventArgs)
+    if state.MagicBurst.value and not (spell.name == 'Impact') then
+        if spell.skill == 'Elemental Magic' then
+            if spell.name == 'Comet' then
+                equip(sets.magic_burst['Elemental Magic'].Comet)
+            else
+                equip(sets.magic_burst['Elemental Magic'])
+            end
+        elseif spell.name == 'Death' then
+            if state.CastingMode.current == 'Normal' then
+                equip(sets.magic_burst.Death)
+            else
+                equip(sets.magic_burst.Death.HighMP)
+            end
+        end
+        if spellMap == 'Aspir' or spellMap == 'Drain' then
+            if state.CastingMode.current == 'Normal' then
+                equip(sets.magic_burst.Aspir)
+            else
+                equip(sets.magic_burst.Aspir.HighMP)
+            end
         end
     end
 end
