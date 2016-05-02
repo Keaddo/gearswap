@@ -97,7 +97,7 @@ function init_gear_sets()
 		back="Taranus's Cape",
 		feet="Herald's Gaiters"})
 		
-    sets.defense.PDT =                                                      set_combine(sets.resting,{
+    sets.defense.PDT =                                                      set_combine(sets.idle,{
 		neck="Loricate Torque +1",
 		ear1="Etiolation Earring",
 		ring1="Gelatinous Ring +1",
