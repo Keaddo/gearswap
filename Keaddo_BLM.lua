@@ -100,8 +100,8 @@ function init_gear_sets()
     sets.defense.PDT =                                                      set_combine(sets.idle,{
 		neck="Loricate Torque +1",
 		ear1="Etiolation Earring",
-		ring1="Gelatinous Ring +1",
-		ring2="Defending Ring"
+		ring2="Gelatinous Ring +1",
+		ring1="Defending Ring"
 		})
 
     ---- Precast Sets ----
