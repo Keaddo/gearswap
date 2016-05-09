@@ -360,7 +360,7 @@ function get_sets()
     sets.precast.WS = {}
     sets.precast.WS['Chant du Cygne'] = {
     head="Adhemar Bonnet",
-    body="Adhemar Jacket",
+    body="Abnoba Kaftan",
     hands="Adhemar Wristbands",
     legs="Samnuha Tights",
     feet="Thereoid Greaves",
@@ -750,6 +750,7 @@ function get_sets()
         waist="Fucho-no-Obi"}
 		
 		sets.Town = set_combine(sets.Idle,{
+		body="Abnoba Kaftan",
 		ear1="Etiolation Earring",
 		neck="Loricate Torque +1",
 		ring1="Defending Ring",

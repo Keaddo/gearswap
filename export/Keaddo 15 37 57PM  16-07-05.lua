@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+    sub="Niobid Strap",
+    ammo="Pemphredo Tathlum",
+    head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}},
+    body="Vrikodara Jupon",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','INT+10',}},
+    feet="Herald's Gaiters",
+    neck="Sanctity Necklace",
+    waist="Refoccilation Stone",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Defending Ring",
+    right_ring="Weather. Ring",
+    back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+}

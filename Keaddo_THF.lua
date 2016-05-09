@@ -343,7 +343,7 @@ function init_gear_sets()
 		back="Canny Cape",
         waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
-        feet="Trotter Boots"
+        feet="Jute Boots +1"
     }
 
 	sets.idle.Town = set_combine(sets.idle, {

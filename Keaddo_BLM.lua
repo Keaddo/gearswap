@@ -34,14 +34,14 @@ function user_setup()
     gear.aspir_hands = {name="Merlinic Dastanas", augments={'Mag. Acc.+6','"Drain" and "Aspir" potency +11','CHR+10',}}
     gear.aspir_legs = "Merlinic Shalwar"
     gear.aspir_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
-	gear.fc_head = "Merlinic Hood"
+	gear.fc_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','Mag. Acc.+5',}}
 	gear.fc_feet = { name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}
-	gear.nuke_head = "Merlinic Hood"
+	gear.nuke_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
 	gear.nuke_body = "Amalric Doublet"
 	gear.nuke_legs = "Amalric Slops"
 	gear.nuke_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
-	gear.burst_head = "Merlinic Hood"
-	gear.burst_legs = "Merlinic Shalwar"
+	gear.burst_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
+	gear.burst_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst mdg.+4%','MND+3',}}
 	gear.burst_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
     select_default_macro_book()
 end
@@ -106,11 +106,12 @@ function init_gear_sets()
 
     ---- Precast Sets ----
     sets.precast.FC = {
-		ammo="Impatiens",
+		ammo="Sapience Orb",
 		head=gear.fc_head,
-		ear1="Etiolation Earring",
-		ear2="Loquacious Earring",
+		ear2="Etiolation Earring",
+		ear1="Loquacious Earring",
 		body="Vrikodara Jupon",
+		hands="Merlinic Dastanas",
 		ring1="Prolix Ring",
 		ring2="Weatherspoon Ring",
 		back="Swith Cape",
@@ -121,22 +122,26 @@ function init_gear_sets()
     sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty, body="Twilight Cloak"})
 
     sets.precast.FC.HighMP = {
-        ammo="Impatiens",
-        head="Merlinic Hood",
+        ammo="Psilomene",
+        head=gear.fc_head,
 		body="Vrikodara Jupon",
         hands="Amalric Gages",
         legs="Psycloth Lappas",
-		feet={ name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}},
+		feet=gear.fc_feet,
         neck="Orunmila's Torque",
 		waist="Witful Belt",
-        left_ear="Etiolation Earring",
-        right_ear="Loquac. Earring",
+        ear2="Etiolation Earring",
+        ear1="Loquac. Earring",
         left_ring="Mephitas's Ring",
         right_ring="Mephitas's Ring +1",
         back="Bane Cape",
     }
 
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {})
+    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
+		ear2="Barkarole Earring",
+		neck="Stoicheion Medal"
+		
+	})
     sets.precast.FC['Elemental Magic'].HighMP = set_combine(sets.precast.FC, {})
 
     ---- Midcast Sets ----
@@ -317,7 +322,7 @@ function init_gear_sets()
 		head=gear.burst_head,
 		neck="Mizukage-no-Kubikazari",
 		ring1="Mujin Band",
---		ring2="Locus Ring",
+		ring2="Locus Ring",
 		back="Taranus's Cape",
 		legs=gear.burst_legs
 	}
