@@ -418,8 +418,8 @@ function init_gear_sets()
 	sets.engaged = {
 		head="Adhemar Bonnet",
         neck="Asperity Necklace",
-        ear1="Steelflash Earring",
-        ear2="Bladeborn Earring",
+        ear1="Suppanomimi",
+        ear2="Eabani Earring",
 		--body="Skadi's Cuirie +1",
 		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
@@ -428,7 +428,7 @@ function init_gear_sets()
 		back="Canny Cape",
         waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
-        feet="Herculean Boots"
+        feet={ name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}}
     }
     sets.engaged.Mid = set_combine(sets.engaged, {
         neck="Lissome Necklace",
