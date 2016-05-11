@@ -231,6 +231,7 @@
     button to F10 for fast weaponskills
 *****************************************************************************]]
 
+
 function get_sets()
     -- Spell maps are moved to their own function to assit in easier navigation
     get_maps()
@@ -259,6 +260,7 @@ function get_sets()
                         "Port Bastok","Bastok Markets","Bastok Mines","Metalworks",
                         "Aht Urhgan Whitegate","Nashmau","Tavanazian Safehold",
                         "Selbina","Mhaura","Norg","Eastern Adoulin","Western Adoulin","Kazham","Tavnazia"}			
+						
 
     windower.register_event('tp change', function(new, old)
         if new > 349
@@ -285,6 +287,11 @@ function get_sets()
         end
     end)
 
+	
+	-- local binds
+	    cdc_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
+		tp_back = { name="Rosmerta's Cape", augments={'DEX+3','Accuracy+18 Attack+18','"Store TP"+10',}}
+	
 
     -- Start defining actual gear sets to be used below --
     -- WEAPON TYPES --
@@ -370,7 +377,7 @@ function get_sets()
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Begrudging Ring",
-    back="Rosmerta's Cape"}
+    back=cdc_back}
 
     sets.precast.WS['Expiacion'] = {
 		ammo="Amar Cluster",
@@ -382,7 +389,7 @@ function get_sets()
 		hands="Adhemar Wristbands",
 		ring1="Epona's ring",
 		ring2="Rufescent ring",
-		back="Rosmerta's Cape",
+		back=cdc_back,
 		waist="Prosilio Belt +1",
 		legs="Samnuha Tights",
 		feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
@@ -400,7 +407,7 @@ function get_sets()
 		right_ear="Brutal Earring",
 		left_ring="Epona's Ring",
 		right_ring="Rajas Ring",
-		back="Rosmerta's Cape",
+		back=cdc_back,
 	}
 
     sets.precast.WS['Sanguine Blade'] = {
@@ -638,7 +645,7 @@ function get_sets()
 		right_ear="Eabani Earring",
 		left_ring="Epona's Ring",
 		right_ring="Petrov Ring",
-		back="Rosmerta's Cape"
+		back=tp_back
 	}
 
     sets.TP['Multiattack']['Normal'] = {
@@ -654,7 +661,7 @@ function get_sets()
 		right_ear="Brutal Earring",
 		left_ring="Epona's Ring",
 		right_ring="Petrov Ring",
-		back="Rosmerta's Cape"
+		back=tp_back
 		}
 
     sets.TP['Dual Wield']['Accuracy Mid'] = {
@@ -670,7 +677,7 @@ function get_sets()
 		right_ear="Eabani Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Rosmerta's Cape"
+		back=tp_back
 		}
 
     sets.TP['Multiattack']['Accuracy Mid'] = {
@@ -686,7 +693,7 @@ function get_sets()
 		right_ear="Brutal Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Rosmerta's Cape"
+		back=tp_back
 		}
 
     sets.TP['Dual Wield']['Accuracy High'] = {
@@ -702,7 +709,7 @@ function get_sets()
 		right_ear="Dignitary Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Rosmerta's Cape"
+		back=tp_back
 		}
 
     sets.TP['Multiattack']['Accuracy High'] = {
@@ -718,7 +725,7 @@ function get_sets()
 		right_ear="Dignitary Earring",
 		left_ring="Cacoethic Ring +1",
 		right_ring="Petrov Ring",
-		back="Rosmerta's Cape"
+		back=tp_back
 		}
 
 	sets.TH = set_combine(sets.TP['Multiattack']['Normal'],{
@@ -756,7 +763,7 @@ function get_sets()
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
 		waist="Windbuffet Belt +1",
-		back="Rosmerta's Cape"
+		back=cdc_back
 		})
 
     -- VARIABLES --

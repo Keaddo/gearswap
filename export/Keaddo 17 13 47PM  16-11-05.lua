@@ -1,0 +1,17 @@
+sets.exported={
+    main="Almace",
+    sub={ name="Colada", augments={'"Store TP"+4','DEX+6','Accuracy+25','DMG:+14',}},
+    ammo="Ginsen",
+    head="Rawhide Mask",
+    body="Vrikodara Jupon",
+    hands={ name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Herculean Boots", augments={'STR+14','Rng.Atk.+20','Damage taken-4%',}},
+    neck="Sanctity Necklace",
+    waist="Flume Belt +1",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Paguroidea Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+}

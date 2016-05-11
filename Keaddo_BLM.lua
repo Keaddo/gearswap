@@ -43,6 +43,8 @@ function user_setup()
 	gear.burst_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
 	gear.burst_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst mdg.+4%','MND+3',}}
 	gear.burst_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
+	gear.nuke_back = { name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
+	gear.death_back = { name="Taranus's Cape", augments={'MP+60','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
     select_default_macro_book()
 end
 
@@ -85,7 +87,7 @@ function init_gear_sets()
         hands="Amalric Gages",
         ring1="Defending Ring",
         ring2="Gelatinous Ring +1",
-        back="Bane Cape",
+        back=gear.death_back,
         waist=gear.ElementalObi,
         legs="Amalric Slops",
         feet="Amalric Nails",
@@ -94,7 +96,7 @@ function init_gear_sets()
     sets.idle.Town =                                                        set_combine(sets.idle,{
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
-		back="Taranus's Cape",
+		back=gear.nuke_back,
 		feet="Herald's Gaiters"})
 		
     sets.defense.PDT =                                                      set_combine(sets.idle,{
@@ -242,7 +244,7 @@ function init_gear_sets()
 		ear2="Barkarole Earring",
 		ring1="Shiva Ring",
 		ring2="Shiva Ring",
-		back="Taranus's Cape",
+		back=gear.nuke_back,
 		waist=gear.ElementalObi
     }
 
@@ -258,7 +260,7 @@ function init_gear_sets()
         right_ear="Telos Earring",
         left_ring="Petrov Ring",
         right_ring="Rajas Ring",
-        back="Taranus's Cape",
+        back=gear.nuke_back,
     }
         
     sets.midcast['Elemental Magic'].Comet = set_combine(sets.midcast['Elemental Magic'], {
@@ -281,7 +283,7 @@ function init_gear_sets()
         right_ear="Friomisi Earring",
         left_ring="Archon Ring",
         right_ring="Mephitas's Ring +1",
-        back="Taranus's Cape",
+        back=gear.death_back,
     }
 
     sets.midcast.Death.HighMP = {
@@ -297,7 +299,7 @@ function init_gear_sets()
         right_ear="Friomisi Earring",
         left_ring="Archon Ring",
         right_ring="Mephitas's Ring +1",
-        back="Taranus's Cape",
+        back=gear.death_back,
     }
     
     sets.midcast.Stun = {
@@ -313,7 +315,7 @@ function init_gear_sets()
         right_ear="Digni. Earring",
         left_ring="Evanescence Ring",
         right_ring="Vertigo Ring",
-        back="Taranus's Cape",
+        back=gear.nuke_back,
     }
 
     ---- Magic Burst Sets ----
@@ -323,14 +325,14 @@ function init_gear_sets()
 		neck="Mizukage-no-Kubikazari",
 		ring1="Mujin Band",
 		ring2="Locus Ring",
-		back="Taranus's Cape",
+		back=gear.nuke_back,
 		legs=gear.burst_legs
 	}
     
     sets.magic_burst['Elemental Magic'].Comet = {
 		neck="Mizukage-no-Kubikazari",
 		ring2="Locus Ring",
-		back="Taranus's Cape"
+		back=gear.nuke_back
 	}
 
     sets.magic_burst.Death = {
@@ -344,7 +346,7 @@ function init_gear_sets()
     
     sets.magic_burst.Aspir = {
         neck="Mizukage-no-Kubikazari",
-        back="Taranus's Cape",
+        back=gear.nuke_back,
     }
     
     sets.magic_burst.Aspir.HighMP = {
@@ -420,7 +422,7 @@ end
 
 function customize_idle_set(idleSet)
     if buffactive['Mana Wall'] then 
-        return set_combine(idleSet, {feet='Wicce Sabots +1', back="Taranus's Cape"})
+        return set_combine(idleSet, {feet='Wicce Sabots +1', back=gear.nuke_back})
     else
         return idleSet
     end
@@ -428,7 +430,7 @@ end
 
 function customize_melee_set(meleeSet)
     if buffactive['Mana Wall'] then 
-        return set_combine(meleeSet, {feet='Wicce Sabots +1', back="Taranus's Cape"})
+        return set_combine(meleeSet, {feet='Wicce Sabots +1', back=gear.nuke_back})
     else
         return meleeSet
     end
