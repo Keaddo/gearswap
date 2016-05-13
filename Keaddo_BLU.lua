@@ -290,7 +290,7 @@ function get_sets()
 	
 	-- local binds
 	    cdc_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
-		tp_back = { name="Rosmerta's Cape", augments={'DEX+3','Accuracy+18 Attack+18','"Store TP"+10',}}
+		tp_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	
 
     -- Start defining actual gear sets to be used below --
