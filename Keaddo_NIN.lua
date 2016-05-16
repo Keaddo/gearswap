@@ -596,6 +596,8 @@ function init_gear_sets()
     
     -- BLADE: HI
     sets.precast.WS['Blade: Hi'] = set_combine(sets.precast.WS, {
+	body="Abnoba Kaftan",
+	hands="Kobo Kote"
     })
 
     sets.precast.WS['Blade: Hi'].Low = set_combine(sets.precast.WS['Blade: Hi'], {
