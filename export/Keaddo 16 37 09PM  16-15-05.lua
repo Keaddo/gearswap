@@ -1,0 +1,17 @@
+sets.exported={
+    main="Almace",
+    sub="Ochain",
+    ammo="Vanir Battery",
+    head="Sulevia's Mask +1",
+    body="Sulevia's Plate. +1",
+    hands="Sulev. Gauntlets +1",
+    legs="Sulevi. Cuisses +1",
+    feet="Sulev. Leggings +1",
+    neck="Lissome Necklace",
+    waist="Tempus Fugit",
+    left_ear="Digni. Earring",
+    right_ear="Brutal Earring",
+    left_ring="Petrov Ring",
+    right_ring="Rajas Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+32%','HP+10','Rng.Acc.+2','DEF+4',}},
+}

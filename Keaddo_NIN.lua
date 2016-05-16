@@ -31,6 +31,8 @@ function job_setup()
     
     gear.RegularAmmo = 'Happo Shuriken'
     gear.SangeAmmo = 'Happo Shuriken'
+	
+	
     
     wsList = S{'Blade: Hi'}
 
@@ -354,6 +356,9 @@ function init_gear_sets()
     })
 
     sets.engaged.Acc = set_combine(sets.engaged.Mid, {
+	ear2="Dignitary's Earring",
+	neck="Lissome necklace",
+	ring2="Cacoethic Ring +1"
     })
     
     sets.engaged.Innin = set_combine(sets.engaged, {
@@ -395,7 +400,7 @@ function init_gear_sets()
     -- Delay Cap from spell + songs alone
     sets.engaged.MaxHaste = set_combine(sets.engaged, {
         head="Adhemar Bonnet",
-        ear1="Cessance Earring",
+      --  ear1="Cessance Earring",
         ear2="Brutal Earring",
         back="Bleating Mantle",
         waist="Windbuffet Belt +1",
@@ -549,9 +554,9 @@ function init_gear_sets()
     -- Weaponskills 
     sets.precast.WS = {
         head="Adhemar Bonnet",
-        neck="Asperity Necklace",
-        ear1="Brutal Earring",
-        ear2="Moonshade Earring",
+        neck="Fotia Gorget",
+        ear2="Brutal Earring",
+        ear1="Moonshade Earring",
         body="Adhemar Jacket",
         hands="Ryuo Tekko",
         ring1="Apate Ring",
