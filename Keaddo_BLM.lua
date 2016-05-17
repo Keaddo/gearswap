@@ -74,7 +74,7 @@ function init_gear_sets()
 		back="Solemnity Cape", 
 		waist="Refoccilation Stone",
 		legs="Assiduity Pants +1",
-		feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
+		feet=gear.nuke_feet
 	}
 
     sets.idle.HighMP = {
@@ -145,6 +145,19 @@ function init_gear_sets()
 		
 	})
     sets.precast.FC['Elemental Magic'].HighMP = set_combine(sets.precast.FC, {})
+	
+	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
+		head="Vanya Hood",
+		body="Vanya Robe",
+		hands="Telchine Gloves",
+		legs="Vanya Slops",
+		feet="Vanya Clogs",
+		ear1="Mendicant's Earring"
+	})
+	
+	sets.precast.FC.Stoneskin = set_combine(sets.precast.FC, {
+				head="Umuthi Hat",
+	})
 
     ---- Midcast Sets ----
     sets.midcast.Myrkr = {
@@ -164,28 +177,39 @@ function init_gear_sets()
     }
 
     sets.midcast.Cure = {
-	body="Vrikodara Jupon",
-	back="Solemnity Cape",
-	waist=gear.ElementalObi
+		head="Vanya Hood",
+		body="Vanya Robe",
+		hands="Telchine Gloves",
+		legs="Vanya Slops",
+		feet="Vanya Clogs",
+		back="Solemnity Cape",
+		waist=gear.ElementalObi
 	}
 
     sets.midcast.Curaga = sets.midcast.Cure
 
-    sets.midcast.Stoneskin = {
-		head="Umuthi Hat",
+	sets.midcast['Enhancing Magic'] = {
+		head="Telchine Cap",
+		body="Telchine Chasuble",
+		hands="Telchine Gloves",
+		legs="Telchine Braconi",
+		feet="Telchine Pigaches",
+	}
+	
+    sets.midcast['Enhancing Magic'].Stoneskin = set_combine(sets.midcast['Enhancing Magic'],{
 		legs="Shedir Seraweels",
-		waist="Siegel Sash"}
+		waist="Siegel Sash"})
 
-    sets.midcast.Stoneskin.HighMP = set_combine(sets.midcast.Stoneskin, {
+    sets.midcast['Enhancing Magic'].Stoneskin.HighMP = set_combine(sets.midcast.Stoneskin, {
         back="Bane Cape"
     })
     
-    sets.midcast.Aquaveil = {
+    sets.midcast['Enhancing Magic'].Aquaveil = set_combine(sets.midcast['Enhancing Magic'],{
 		head="Amalric Coif",
 		legs="Shedir Seraweels"
-	}
+	})
     
-    sets.midcast.Aquaveil.HighMP = set_combine(sets.midcast.Aquaveil, {
+    sets.midcast['Enhancing Magic'].Aquaveil.HighMP = set_combine(sets.midcast.Aquaveil, {
         back="Bane Cape"
     })
 
@@ -195,7 +219,7 @@ function init_gear_sets()
 	neck="Sanctity Necklace",
 	ear1="Digni. Earring",
 	ear2="Barkarole Earring",
-	body="Amalric Doublet",
+	body="Vanya Robe",
 	hands="Amalric Gages",
 	ring1="Metamorph Ring",
 	ring2="Weatherspoon Ring",

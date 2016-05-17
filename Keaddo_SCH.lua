@@ -65,45 +65,46 @@ function user_setup()
     info.mid_nukes = S{}
     info.high_nukes = S{}
 
-    send_command('bind ` input /ma Stun <t>; wait 0.5; input /p Casting STUN → «¶«<t>«¶«.')
-	send_command('bind ^` gs c toggle MagicBurst')
-	send_command('bind !` gs c scholar skillchain')
+ --   send_command('bind ` input /ma Stun <t>; wait 0.5; input /p Casting STUN → «¶«<t>«¶«.')
+	send_command('bind !` gs c toggle MagicBurst')
+	send_command('bind ^` gs c scholar skillchain')
 	send_command('bind ^- gs c scholar light')
 	send_command('bind ^= gs c scholar dark')
-	send_command('bind delete gs c scholar speed')
-	send_command('bind Home gs c scholar duration')
-	send_command('bind End gs c scholar aoe')
+	send_command('bind !delete gs c scholar speed')
+	send_command('bind !Home gs c scholar duration')
+	send_command('bind !End gs c scholar aoe')
 
     select_default_macro_book()
 end
 
 function user_unload()
-	send_command('unbind `')
+--	send_command('unbind `')
 	send_command('unbind ^`')
 	send_command('unbind !`')
 	send_command('unbind ^-')
 	send_command('unbind ^=')
-	send_command('unbind delete')
-	send_command('unbind end')
-	send_command('unbind home')
+	send_command('unbind !delete')
+	send_command('unbind !end')
+	send_command('unbind !home')
 end
 
 -- Define sets and vars used by this job file.
 function init_gear_sets()
 
-	aspir_body = "Amalric Doublet"
-    aspir_hands = {name="Merlinic Dastanas", augments={'Mag. Acc.+6','"Drain" and "Aspir" potency +11','CHR+10',}}
-    aspir_legs = "Merlinic Shalwar"
-    aspir_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
-	fc_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','Mag. Acc.+5',}}
-	fc_feet = { name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}
-	nuke_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
-	nuke_body = "Amalric Doublet"
-	nuke_legs = "Amalric Slops"
-	nuke_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
-	burst_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
-	burst_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst mdg.+4%','MND+3',}}
-	burst_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
+    gear.aspir_body = "Amalric Doublet"
+    gear.aspir_hands = {name="Merlinic Dastanas", augments={'Mag. Acc.+6','"Drain" and "Aspir" potency +11','CHR+10',}}
+    gear.aspir_legs = "Merlinic Shalwar"
+    gear.aspir_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
+	gear.fc_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','Mag. Acc.+5',}}
+	gear.fc_feet = { name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}
+	gear.nuke_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
+	gear.nuke_body = "Amalric Doublet"
+	gear.nuke_legs = "Amalric Slops"
+	gear.nuke_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
+	gear.burst_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
+	gear.burst_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst mdg.+4%','MND+3',}}
+	gear.burst_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
+	gear.nuke_back = "Bookworm's Cape"
 	--------------------------------------
 	-- Start defining the sets
 	--------------------------------------
@@ -138,11 +139,12 @@ function init_gear_sets()
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
 		main="Serenity",
-		head="Paean Mitra",
+		head="Vanya Hood",
 		ear1="Mendicant's Earring",
 		body="Vanya Robe",
 		hands="Gendewitha Gages +1",
 		back="Pahtli Cape",
+		legs="Vanya Slops",
 		feet="Vanya Clogs"
 	})
 	
@@ -153,7 +155,8 @@ function init_gear_sets()
 	
 	sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
 		neck="Stoicheion Medal",
-		ear1="Barkarole Earring"})
+		ear1="Barkarole Earring"
+	})
 	sets.precast.FC.Impact = set_combine(sets.precast.FC['Elemental Magic'], {
 		head=empty,
 		body="Twilight Cloak"
@@ -169,19 +172,19 @@ function init_gear_sets()
     sets.precast.WS['Myrkr'] = {
 		main="Akademos",
 		sub="Niobid Strap",
-		ammo="Ghastly Tathlum +1",
-		head="Kaabnax Hat",
-		neck="Sanctity Necklace",
-		ear1="Moonshade Earring",
-		ear2="Etiolation Earring",
-		body="Amalric Doublet",
-		hands="Otomi Gloves",
-		ring1="Mephitas's Ring +1",
-		ring2="Mephitas's Ring",
-		back="Pahtli Cape",
-		waist="Luminary Sash",
-		legs="Amalric Slops",
-		feet="Medium's Sabots"
+        ammo="Psilomene",
+        head="Amalric Coif",
+        neck="Sanctity Necklace",
+        ear1="Etiolation Earring",
+        ear2="Loquacious Earring",
+        body="Amalric Doublet",
+        hands="Amalric Gages",
+        ring1="Mephitas's Ring",
+        ring2="Mephitas's Ring +1",
+        back="Bane Cape",
+        waist="Refoccilation Stone",
+        legs="Amalric Slops",
+        feet="Amalric Nails",
 	}
 
 
@@ -198,17 +201,17 @@ function init_gear_sets()
 	main="Serenity",
 	sub="Curatio Grip",
 	ammo="Hydrocera",
-	head="Kaykaus Mitra",
+	head="Vanya Hood",
 	neck="Incanter's Torque",
 	ear1="Lifestorm Earring",
 	ear2="Loquacious Earring",
-	body="Kaykaus Bliaut",
-	hands="Pedagogy Bracers +1",
+	body="Vanya Robe",
+	hands="Telchine Gloves",
 	ring1="Haoma's Ring",
 	ring2="Sirona's Ring",
 	back="Tempered Cape +1",
 	waist="Bishop's Sash",
-	legs="Academic's Pants +1",
+	legs="Vanya Slops",
 	feet="Vanya Clogs"}
     
 	-- Potency: +50%, Healing Skill: 562 total inc. Light Arts Bonus, MND: +160, VIT+ 89
@@ -290,17 +293,17 @@ function init_gear_sets()
 		main="Akademos",
 		sub="Mephitis Grip",
 		ammo="Hydrocera",
-		head="Befouled Crown",
-		neck="Imbodla Necklace",
-		ear1="Barkarole Earring",
-		ear2="Dignitary's Earring",
+		head="Amalric Coif",
+		neck="Sanctity Necklace",
+		ear1="Digni. Earring",
+		ear2="Barkarole Earring",
 		body="Vanya Robe",
-		hands="Lurid Mitts",
-		ring1="Vertigo Ring",
-		ring2="Globidonta Ring",
+		hands="Amalric Gages",
+		ring1="Metamorph Ring",
+		ring2="Weatherspoon Ring",
 		back="Refraction Cape",
-		waist="Luminary Sash",
-		legs="Chironic Hose",
+		waist="Porous Rope",
+		legs="Psycloth Lappas",
 		feet="Medium's Sabots"
 	}
 
@@ -325,17 +328,23 @@ function init_gear_sets()
 		back="Bookworm's Cape",
 		waist="Witful Belt",
 		legs="Pedagogy Pants",
-		feet="Medium's Sabots"}
+		feet="Medium's Sabots"
+		}
 
 	sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {
-		ammo="Incantor Stone",
+		ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",
+		neck="Mizu. Kubikazari",
 		ear1="Hirudinea Earring",
-		ear2="Loquacious Earring",
-		body="Chironic Doublet",
-		hands="Helios Gloves",
-		waist="Fucho-no-obi",
-		feet=merl_feet_MAB
+		ear2="Barkarole Earring",
+        body=gear.aspir_body,
+        hands=gear.aspir_hands,
+		ring1="Evanescence Ring",
+		ring2="Weatherspoon Ring",	
+		back="Bane Cape",
+		waist="Fucho-no-Obi",
+        legs=gear.aspir_legs,
+		Feet=gear.aspir_feet
 	})
 
 	sets.midcast.Aspir = sets.midcast.Drain
@@ -343,19 +352,20 @@ function init_gear_sets()
 	sets.midcast.Stun = {
 		main="Keraunos",
 		sub="Arbuda Grip",
-		ammo="Incantor Stone",
-		head="Pedagogy Mortarboard +1",
-		neck="Orunmila's Torque",
-		ear1="Enchanter Earring +1",
-		ear2="Loquac. Earring",
-		body="Shango Robe",
-		hands="Gendewitha Gages +1",
-		ring1="Weatherspoon Ring",
-		ring2="Prolix Ring",
-		back="Swith Cape +1",
-		waist="Ninurta's Sash",
-		legs="Psycloth Lappas",
-		feet="Academic's Loafers +1"}
+        ammo="Pemphredo Tathlum",
+        head=gear.nuke_head,
+        body="Zendik Robe",
+        hands="Hagondes Cuffs +1",
+        legs=gear.nuke_legs,
+        feet=gear.nuke_feet,
+        neck="Incanter's Torque",
+        waist="Refoccilation Stone",
+        left_ear="Barkaro. Earring",
+        right_ear="Digni. Earring",
+        left_ring="Evanescence Ring",
+        right_ring="Vertigo Ring",
+        back=gear.nuke_back,
+}
 
 	sets.midcast.Stun.Resistant = set_combine(sets.midcast.Stun, {})
 
@@ -365,18 +375,18 @@ function init_gear_sets()
 		main="Akademos",
 		sub="Niobid Strap",
 		ammo="Pemphredo Tathlum",
-	    head=merl_head_MAB,
+		head=gear.nuke_head,
+		body="Amalric Doublet",
+		hands="Amalric Gages",
+		legs="Amalric Slops",
+		feet=gear.nuke_feet,
 		neck="Saevus Pendant +1",
-		ear1="Barkarole Earring",
-		ear2="Friomisi Earring",
-		body="Merlinic Jubbah",
-		hands=chiro_hands_MAB,
-		ring1="Shiva Ring +1",
-		ring2="Shiva Ring +1",
-		back="Toro Cape",
-		waist="Refoccilation Stone",
-		legs=merl_legs_MAB,
-		feet=merl_feet_MAB
+		ear1="Friomisi Earring",
+		ear2="Barkarole Earring",
+		ring1="Shiva Ring",
+		ring2="Shiva Ring",
+		back=gear.nuke_back,
+		waist=gear.ElementalObi
 		}
 	--  sub="Zuuxowu Grip",head="Buremte Hat",body="Witching Robe",hands="Otomi Gloves",back="Bookworm's Cape",waist="Tengu-no-Obi",feet="Amalric Nails"
 
@@ -424,55 +434,38 @@ function init_gear_sets()
 
 
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-
-	sets.idle.Town = {
-		main="Akademos",
-		sub="Niobid Strap",
-		ammo="Hydrocera",
-		head=merl_head_MAB,
-		neck="Orunmila's Torque",
-		ear1="Enchanter Earring +1",
-		ear2="Loquacious Earring",
-		body="Merlinic Jubbah",
-		hands="Chironic Gloves",
-		ring1="Shiva Ring +1",
-		ring2="Matrimony Ring",
-		back="Bookworm's Cape",
-		waist="Fucho-no-obi",
-		legs=merl_legs_MAB,
-		feet="Herald's Gaiters"}
-
 	sets.idle.Field = {
-		main="Akademos",
-		sub="Umbra Strap",
+		main="Contemplator",
+		sub="Niobid Strap",
 		ammo="Homiliary",
-		head="Befouled Crown",
-		neck="Loricate Torque +1",
-		ear1="Etiolation Earring",
-		ear2="Loquacious Earring",
-		body="Amalric Doublet",
-		hands=chiro_hands_REF,
-		ring1="Defending Ring",
-		ring2=gear.DarkRing.physical,
-		back="Umbra Cape",
-		waist="Witful Belt",
+		head="Amalric Coif",
+		neck="Sanctity Necklace",
+		ear1="Infused Earring",
+		ear2="Ethereal Earring",
+		body="Vrikodara Jupon",
+		hands="Amalric Gages",
+		ring1="Sheltered Ring",
+		ring2="Paguroidea Ring",
+		back="Solemnity Cape", 
+		waist="Refoccilation Stone",
 		legs="Assiduity Pants +1",
-		feet="Arbatel Loafers +1"
-	}	
+		feet=nuke_Feet
+	}		
+	
+	sets.idle.Town = set_combine(sets.idle.Field,{
+		ring1="Defending Ring",
+		ring2="Weatherspoon Ring",
+		back=nuke_back,
+		feet="Herald's Gaiters"})
 		
-	sets.idle.PDT = {
+	sets.idle.PDT = set_combine(sets.idle.Field,{
 		main="Bolelabunga",
 		sub="Genbu's Shield",
-		ammo="Incantor Stone",
 		neck="Loricate Torque +1",
-		ear1="Ethereal Earring",
-		ring1="Defending Ring",
-		ring2=gear.DarkRing.physical,
-		body="Vanya Robe",
-		hands="Gendewitha Gages +1",
-		back="Umbra Cape",
-		feet="Pedagogy Loafers +1"
-	}	
+		ear1="Etiolation Earring",
+		ring2="Gelatinous Ring +1",
+		ring1="Defending Ring"
+	})	
 
 	sets.idle.Weak = sets.idle.Field
 	
@@ -488,8 +481,8 @@ function init_gear_sets()
 		body="Vanya Robe",
 		hands="Gendewitha Gages +1",
 		ring1="Defending Ring",
-		ring2=gear.DarkRing.physical,
-		back="Umbra Cape",
+		ring2="Gelatinous Ring +1",
+		back="Solemnity Cape",
 		legs="Chironic Hose",
 		feet="Vanya Clogs"}
 
@@ -536,11 +529,13 @@ function init_gear_sets()
 	sets.magic_burst = {
 		main="Akademos",
 		sub="Niobid Strap",
-	    neck="Mizukage-no-Kubikazari",
-		hands="Amalric Gages",
+		head=gear.burst_head,
+		neck="Mizukage-no-Kubikazari",
 		ring1="Mujin Band",
-		legs=merl_legs_MB,
-		feet=merl_feet_MB}
+		ring2="Locus Ring",
+		back=gear.nuke_back,
+		legs=gear.burst_legs
+		}
 	-- Cap: 40%, Cap-breaking: 23% (Gifts: 13%, Mujin: 5%, Amalric Gages: 5%)
     -- Akademos: 10%, Mizukage: 10%, Merlinic Legs: 10%, Merlinic Boots: 10% = 40%
 
