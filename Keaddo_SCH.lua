@@ -243,8 +243,8 @@ function init_gear_sets()
 	-- Enhancing Magic Sets
 	
 	sets.midcast['Enhancing Magic'] = {
-		main="Gada",
-		sub="Genbu's Shield",
+		main="Grioavolr",
+		sub="Niobid Strap",
 		ammo="Savant's Treatise",
 		head="Telchine Cap",
 		body="Telchine Chasuble",
@@ -261,8 +261,8 @@ function init_gear_sets()
 		ring1="Sheltered Ring"
 	})
 	sets.midcast.Haste = set_combine(sets.midcast.FastRecast, {
-		main="Gada",
-		sub="Genbu's Shield",
+		main="Grioavolr",
+		sub="Niobid Strap",
 		head="Telchine Cap",
 		body="Telchine Chasuble",
 		hands="Telchine Gloves",
@@ -280,7 +280,7 @@ function init_gear_sets()
 		back="Tempered Cape +1",
 		waist="Bishop's Sash",
 		legs="Academic's Pants +1",
-		feet="Gendewitha Galoshes +1"}
+		feet="Vanya Clogs"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
 		waist="Siegel Sash"
@@ -314,10 +314,10 @@ function init_gear_sets()
 	})
 
 	sets.midcast['Dark Magic'] = {
-		main="Rubicundity",
-		sub="Genbu's Shield",
+		main="Akademos",
+		sub="Niobid Strap",
 		ammo="Hydrocera",
-		head=merl_head_MAB,
+		head=gear.nuke_head,
 		neck="Incanter's Torque",
 		ear1="Barkarole Earring",
 		ear2="Dignitary's Earring",
@@ -350,8 +350,8 @@ function init_gear_sets()
 	sets.midcast.Aspir = sets.midcast.Drain
 
 	sets.midcast.Stun = {
-		main="Keraunos",
-		sub="Arbuda Grip",
+		main="Akademos",
+		sub="Niobid Strap",
         ammo="Pemphredo Tathlum",
         head=gear.nuke_head,
         body="Zendik Robe",
@@ -435,7 +435,7 @@ function init_gear_sets()
 
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle.Field = {
-		main="Contemplator",
+		main="Akademos",
 		sub="Niobid Strap",
 		ammo="Homiliary",
 		head="Amalric Coif",
@@ -447,7 +447,7 @@ function init_gear_sets()
 		ring1="Sheltered Ring",
 		ring2="Paguroidea Ring",
 		back="Solemnity Cape", 
-		waist="Refoccilation Stone",
+		waist="Fucho-no-Obi",
 		legs="Assiduity Pants +1",
 		feet=nuke_Feet
 	}		
@@ -532,7 +532,7 @@ function init_gear_sets()
 		head=gear.burst_head,
 		neck="Mizukage-no-Kubikazari",
 		ring1="Mujin Band",
-		ring2="Locus Ring",
+	--	ring2="Locus Ring",
 		back=gear.nuke_back,
 		legs=gear.burst_legs
 		}
