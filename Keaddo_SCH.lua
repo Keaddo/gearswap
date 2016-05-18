@@ -253,7 +253,7 @@ function init_gear_sets()
 		feet="Telchine Pigaches",
 		ear1="Andoaa Earring",
 		neck="Incanter's Torque",
-		waist="Cascade Belt"}
+		waist="Olympus Sash"}
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {
 		ring1="Sheltered Ring"
 	})
@@ -514,8 +514,8 @@ function init_gear_sets()
 	-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
 	sets.buff['Ebullience'] = {}
 	sets.buff['Rapture'] = {head="Arbatel Bonnet +1"}
-	sets.buff['Perpetuance'] = {hands="Arbatel Bracers +1"}
-	sets.buff['Immanence'] = {hands="Arbatel Bracers +1"}
+	sets.buff['Perpetuance'] = {hands="Arbatel Bracers"}
+	sets.buff['Immanence'] = {hands="Arbatel Bracers"}
 	sets.buff['Penury'] = {legs="Arbatel Pants +1"}
 	sets.buff['Parsimony'] = {legs="Arbatel Pants +1"}
 	sets.buff['Celerity'] = {feet="Pedagogy Loafers +1"}
