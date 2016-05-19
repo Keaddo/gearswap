@@ -160,14 +160,14 @@ function get_sets()
         body="Respite Cloak",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
-    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
-        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Helios Gloves", ring1="Defending Ring", ring2="Patricius Ring",
-        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Regal Pumps +1"}
+    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="",
+        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Handler's Earring",
+        body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
-        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+	sets.idle.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="",
+        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
    

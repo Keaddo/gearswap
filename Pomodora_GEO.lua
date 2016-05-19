@@ -93,7 +93,7 @@ function get_sets()
 		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Azimuth Gaiters", back="Lifestream Cape"}
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
-        head="Welkin Crown", body="Vanya Robe",hands="Telchine Gloves", ring1="Sirona's ring", ring2="Lebeche ring",
+        head="Vanya Hood", body="Vanya Robe",hands="Telchine Gloves", ring1="Sirona's ring", ring2="Lebeche ring",
         legs="Assiduity Pants +1",feet="Hagondes Sabots"}
     
     sets.midcast.Curaga = sets.midcast.Cure
@@ -155,25 +155,25 @@ function get_sets()
 	
     -- Idle sets
 
-    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
+    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
-    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
+    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Helios Gloves", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Helios Gloves", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Regal Pumps +1"}
 
     -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
+	sets.idle.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
    
-    sets.idle.PDT.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
+    sets.idle.PDT.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Regal Pumps +1"}
 
     -- .Indi sets are for when an Indi-spell is active.
@@ -182,14 +182,14 @@ function get_sets()
     --sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {legs="Bagua Pants"})
     --sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {legs="Bagua Pants"})
 
-    sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
+    sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
-    sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
+    sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.Kiting = {feet="Herald's Gaiters"}
@@ -209,7 +209,7 @@ function get_sets()
     -- Normal melee group
     sets.engaged = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 	
 	
