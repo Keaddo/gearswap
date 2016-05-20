@@ -449,13 +449,13 @@ function init_gear_sets()
 		back="Solemnity Cape", 
 		waist="Fucho-no-Obi",
 		legs="Assiduity Pants +1",
-		feet=nuke_Feet
+		feet=gear.nuke_feet
 	}		
 	
 	sets.idle.Town = set_combine(sets.idle.Field,{
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
-		back=nuke_back,
+		back=gear.nuke_back,
 		feet="Herald's Gaiters"})
 		
 	sets.idle.PDT = set_combine(sets.idle.Field,{
@@ -532,7 +532,7 @@ function init_gear_sets()
 		head=gear.burst_head,
 		neck="Mizukage-no-Kubikazari",
 		ring1="Mujin Band",
-	--	ring2="Locus Ring",
+		ring2="Locus Ring",
 		back=gear.nuke_back,
 		legs=gear.burst_legs
 		}
