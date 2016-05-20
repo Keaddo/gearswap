@@ -1,7 +1,7 @@
 gearswap
 ========
 
-ffxi gearswap lua's for the jobs I play.
+ffxi gearswap luas for the jobs I play.
 
 notes
 ====
