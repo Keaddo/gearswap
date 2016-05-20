@@ -45,7 +45,7 @@ function get_sets()
 
     sets.precast.FastCast = {
 		range="Dunna",
-        head="Nahtirah Hat",ear1="Etiolation Earring", ear2="Loquacious Earring",
+        head="Nahtirah Hat",neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
         body="Vanir Cotehardie", ring2="Weatherspoon Ring", hands="Amalric gages",
         back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps+1"
 		}
@@ -155,7 +155,7 @@ function get_sets()
 	
     -- Idle sets
 
-    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
+    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Respite Cloak",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
@@ -808,14 +808,14 @@ function slot_disabling()
             and again after the cast in gear_modes() ]]
     if player.equipment.back == 'Mecisto. Mantle' then
         disable('back')
-        if count_msg_mecisto == 0 then
-            windower.add_to_chat(8,'REMINDER:  '
-                ..'Mecistopins mantle equiped on back')
-        end
-        count_msg_mecisto = (count_msg_mecisto + 1) % 30
+   --     if count_msg_mecisto == 0 then
+    --        windower.add_to_chat(8,'REMINDER:  '
+      --          ..'Mecistopins mantle equiped on back')
+    --    end
+    --    count_msg_mecisto = (count_msg_mecisto + 1) % 30
     else
         enable('back')
-        count_msg_mecisto = 0
+   --     count_msg_mecisto = 0
     end
 end
 

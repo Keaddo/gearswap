@@ -806,16 +806,16 @@ function slot_disabling()
             reminders that you have slot locked, count is incresed twice by
             most actions due to slot_disabling() being called in precast
             and again after the cast in gear_modes() ]]
-    if player.equipment.back == 'Mecisto. Mantle' then
+    if player.equipment.back == 'Aptitude Mantle' then
         disable('back')
-        if count_msg_mecisto == 0 then
-            windower.add_to_chat(8,'REMINDER:  '
-                ..'Mecistopins mantle equiped on back')
-        end
-        count_msg_mecisto = (count_msg_mecisto + 1) % 30
+   --     if count_msg_mecisto == 1 then
+    --        windower.add_to_chat(8,'REMINDER:  '
+     --           ..'Mecistopins mantle equiped on back')
+   --     end
+   --     count_msg_mecisto = (count_msg_mecisto + 1) % 30
     else
         enable('back')
-        count_msg_mecisto = 0
+  --      count_msg_mecisto = 1
     end
 end
 
