@@ -41,13 +41,16 @@ function get_sets()
 	sets.precast.JA['Full cycle'] = {head="Azimuth Hood"}
     sets.precast.JA['Radial Arcana'] = {feet="Bagua sandals"}
 	
+	fc_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+27','"Fast Cast"+2','INT+1','"Mag.Atk.Bns."+1',}}
+	
     -- Fast cast sets for spells
 
     sets.precast.FastCast = {
+		main="Sucellus", sub="Genbu's Shield",
 		range="Dunna",
         head="Nahtirah Hat",neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
         body="Vanir Cotehardie", ring2="Weatherspoon Ring", hands="Amalric gages",
-        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps+1"
+        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet=fc_feet
 		}
 
     sets.precast.FastCast.Cure = set_combine(sets.precast.FC, {main="Tamaxchi",sub="Sors Shield",back="Pahtli Cape"})
@@ -84,12 +87,12 @@ function get_sets()
         body="Vanir Cotehardie", ring1="Weatherspoon Ring", hands="Amalric gages",
         back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps +1"}
 
-    sets.midcast.Geomancy = {main="Bolelabunga", range="Dunna", 
+    sets.midcast.Geomancy = {main="Solstice", range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
-		neck="Incanter's torque", ring2="Renaye Ring", feet="Azimuth Gaiters", back="Lifestream Cape"}
+		neck="Deceiver's Torque", ring2="Renaye Ring", feet="Azimuth Gaiters", back="Lifestream Cape"}
 		
-    sets.midcast.Geomancy.Indi = {main="Bolelabunga", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's torque",
+    sets.midcast.Geomancy.Indi = {main="Solstice", range="Dunna", 
+		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Deceiver's Torque",
 		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Azimuth Gaiters", back="Lifestream Cape"}
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
@@ -149,14 +152,14 @@ function get_sets()
 	
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood", neck="Incanter's torque", rear="Etiolation Earring", lear="Ethereal Earring",
+				head="Azimuth Hood", neck="Deceiver's Torque", rear="Etiolation Earring", lear="Ethereal Earring",
                 body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters"}
 	
     -- Idle sets
 
     sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="",
-        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Respite Cloak",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
@@ -166,12 +169,12 @@ function get_sets()
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="",
-        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Handler's Earring",
+	sets.idle.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="",
+        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
    
-    sets.idle.PDT.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head=empty,
+    sets.idle.PDT.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head=empty,
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Regal Pumps +1"}

@@ -1,0 +1,16 @@
+sets.exported={
+    main="Bolelabunga",
+    sub={ name="Genbu's Shield", augments={'"Cure" potency +3%','"Cure" spellcasting time -3%',}},
+    range="Dunna",
+    body="Respite Cloak",
+    hands="Geo. Mitaines +1",
+    legs="Assid. Pants +1",
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+27','"Fast Cast"+2','INT+1','"Mag.Atk.Bns."+1',}},
+    neck={ name="Jeweled Collar", augments={'"Fast Cast"+3','MP recovered while healing +3',}},
+    waist="Fucho-no-Obi",
+    left_ear="Etiolation Earring",
+    right_ear="Zennaroi Earring",
+    left_ring="Defending Ring",
+    right_ring="Patricius Ring",
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +1','Indi. eff. dur. +20',}},
+}

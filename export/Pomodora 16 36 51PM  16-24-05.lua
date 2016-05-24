@@ -1,0 +1,15 @@
+sets.exported={
+    main="Solstice",
+    range="Dunna",
+    head={ name="Merlinic Hood", augments={'Mag. Acc.+4','"Fast Cast"+2','CHR+15','"Mag.Atk.Bns."+6',}},
+    body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
+    hands="Geo. Mitaines +1",
+    legs="Assid. Pants +1",
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+17','"Fast Cast"+3','"Mag.Atk.Bns."+2',}},
+    neck="Deceiver's Torque",
+    waist="Slipor Sash",
+    left_ear="Merman's Earring",
+    left_ring="Yacuruna Ring",
+    right_ring="Dim. Ring (Holla)",
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +8','Indi. eff. dur. +19','Pet: Damage taken -5%',}},
+}

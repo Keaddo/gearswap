@@ -40,14 +40,17 @@ function get_sets()
     sets.precast.JA['Life cycle'] = {body="Geomancy Tunic"}
 	sets.precast.JA['Full cycle'] = {head="Azimuth Hood"}
     sets.precast.JA['Radial Arcana'] = {feet="Bagua sandals"}
+
+	fc_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+17','"Fast Cast"+3','"Mag.Atk.Bns."+2',}}
+	fc_head = { name="Merlinic Hood", augments={'Mag. Acc.+4','"Fast Cast"+2','CHR+15','"Mag.Atk.Bns."+6',}}
 	
     -- Fast cast sets for spells
 
     sets.precast.FastCast = {
 		range="Dunna",
-        head="Nahtirah Hat",ear1="Etiolation Earring", ear2="Loquacious Earring",
+        head=fc_head,ear1="Etiolation Earring", ear2="Loquacious Earring",
         body="Vanir Cotehardie", ring2="Weatherspoon Ring", hands="Amalric gages",
-        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps+1"
+        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet=fc_feet
 		}
 
     sets.precast.FastCast.Cure = set_combine(sets.precast.FC, {main="Tamaxchi",sub="Sors Shield",back="Pahtli Cape"})
@@ -84,11 +87,11 @@ function get_sets()
         body="Vanir Cotehardie", ring1="Weatherspoon Ring", hands="Amalric gages",
         back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps +1"}
 
-    sets.midcast.Geomancy = {main="Bolelabunga", range="Dunna", 
+    sets.midcast.Geomancy = {main="Solstice", sub="Genbu's Shield",  range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
 		neck="Incanter's torque", ring2="Renaye Ring", feet="Azimuth Gaiters", back="Lifestream Cape"}
 		
-    sets.midcast.Geomancy.Indi = {main="Bolelabunga", range="Dunna", 
+    sets.midcast.Geomancy.Indi = {main="Solstice", sub="Genbu's Shield", range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's torque",
 		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Azimuth Gaiters", back="Lifestream Cape"}
 
@@ -155,26 +158,41 @@ function get_sets()
 	
     -- Idle sets
 
-    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
+    sets.idle = {
+	main="Terra's Staff", sub="Volos Strap",
+--	main="Bolelabunga", sub="Genbu's Shield", 
+	range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
-    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
+    sets.idle.PDT = {
+	main="Terra's Staff", sub="Volos Strap",
+--	main="Bolelabunga", sub="Genbu's Shield", 
+	range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Helios Gloves", ring1="Defending Ring", ring2="Patricius Ring",
-        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Regal Pumps +1"}
+        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
+		}
 
     -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
+	sets.idle.Pet = {
+	main="Terra's Staff", sub="Volos Strap",
+--	main="Bolelabunga", sub="Genbu's Shield", 
+	range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
-        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
+        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
+		}
    
-    sets.idle.PDT.Pet = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
+    sets.idle.PDT.Pet = {
+	main="Terra's Staff", sub="Volos Strap",
+--	main="Bolelabunga", sub="Genbu's Shield", 
+	range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
-        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Regal Pumps +1"}
+        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
+		}
 
     -- .Indi sets are for when an Indi-spell is active.
     --sets.idle.Indi = set_combine(sets.idle, {legs="Bagua Pants"})
