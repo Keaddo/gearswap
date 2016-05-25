@@ -13,6 +13,7 @@ function get_sets()
     auto_action = 'Off'
 	geo_mode = 'Fury'	
 	blaze = 'Off'
+	simple = 'Off'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -42,13 +43,15 @@ function get_sets()
     sets.precast.JA['Radial Arcana'] = {feet="Bagua sandals"}
 	
 	fc_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+27','"Fast Cast"+2','INT+1','"Mag.Atk.Bns."+1',}}
+	fc_head = "Merlinic Hood"
 	
     -- Fast cast sets for spells
 
     sets.precast.FastCast = {
 		main="Sucellus", sub="Genbu's Shield",
 		range="Dunna",
-        head="Nahtirah Hat",neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
+        head=fc_head,
+		neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
         body="Vanir Cotehardie", ring2="Weatherspoon Ring", hands="Amalric gages",
         back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet=fc_feet
 		}
@@ -82,10 +85,14 @@ function get_sets()
 
     -- Base fast recast for spells
     sets.midcast = {}
-    sets.midcast.FastRecast = {
-        head="Nahtirah Hat",ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Vanir Cotehardie", ring1="Weatherspoon Ring", hands="Amalric gages",
-        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps +1"}
+    sets.midcast.FastRecast = 		{
+		main="Sucellus", sub="Genbu's Shield",
+		range="Dunna",
+        head=fc_head,
+		neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
+        body="Vanir Cotehardie", ring2="Weatherspoon Ring", hands="Amalric gages",
+        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet=fc_feet
+		}
 
     sets.midcast.Geomancy = {main="Solstice", range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
@@ -274,6 +281,7 @@ function job_setup()
     auto_action = 'Off'
 	geo_mode = 'Fury'
 	blaze = 'Off'
+	simple = 'Off'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -318,6 +326,17 @@ function self_command(str)
 		end
 		windower.add_to_chat(8,'Auto fire event set to: '..auto_action)
 		windower.send_command('input /tell Keaddo Auto_action: '..auto_action)
+		
+	elseif str == 'simple' then
+		if simple == 'Off' then
+			simple = 'On'
+				windower.add_to_chat(8,'Simple mode: '..simple)		
+				windower.send_command('input /tell Keaddo Simple mode: '..simple)
+		else
+			simple = 'Off'
+				windower.add_to_chat(8,'Simple mode: '..simple)		
+				windower.send_command('input /tell Keaddo Simple mode: '..simple)
+	end
 		
 	elseif str == 'geo_mode' then
 		if geo_mode == 'Fury' then
@@ -393,9 +412,16 @@ function relaxed_play_mode()
 				windower.send_command('Refresh <me>')
 														
 		--Indi
+		elseif simple == 'On' then
+			if not check_buffs('Attack Boost')
+                and not check_buffs('silence', 'mute')
+                and check_recasts(s('Indi-Fury')) then
+				windower.send_command('Indi-Fury')	
+			end				
 		elseif not check_buffs('Attack Boost')
                 and not check_buffs('silence', 'mute')
 				and geo_mode == 'Fury'
+				and simple == 'Off'
                 and check_recasts(s('Indi-Fury')) then
 				windower.send_command('Indi-Fury')
 			
@@ -446,6 +472,7 @@ function relaxed_play_mode()
 		
 		--Geo
 		elseif not pet.isvalid
+				and simple == 'Off'
 				and not check_buffs('silence', 'mute')
 				and check_recasts(s('Geo-Frailty'))
 				and check_recasts(s('Geo-Vex'))

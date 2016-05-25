@@ -298,11 +298,20 @@ function get_sets()
     sets.weapon = {}
     sets.weapon.Tizona = {
         main="Tizona",
-        sub="Colada"}
-
+        sub="Almace"}
+		
+	sets.weapon.Almace = {
+		main="Almace",
+		sub="Colada"}
+		
     sets.weapon.Medeina = {
         main="Vampirism",
         sub="Vampirism"}
+		
+	sets.weapon.Empty = {
+		main="Ram Staff",
+		ammo="Hydrocera"
+		}
 
 
     -- MISCELLANEOUS SETS --
@@ -1173,16 +1182,22 @@ function self_command(str)
     -- the top of this file
     elseif str == 'tryweaponskill' then
         try_weaponskill()
-
+		
     -- Use an in game macro "/con gs c weapon_combo" to set weapon preference,
     -- Swords or Clubs. Useful when enemy uses TP move to remove them
     elseif str == 'weapon_combo' then
         if weapon_combo == 'Tizona' then
-            weapon_combo = 'Medeina'
+            weapon_combo = 'Almace'
+			windower.send_command('equip main "";wait 0.5;equip main Almace;wait 1;equip sub Colada')
+		elseif weapon_combo == 'Almace' then
+			weapon_combo = 'Medeina'
+			windower.send_command('equip main "";wait 0.5;equip main Vampirism;wait 1;equip sub Vampirism')
         else
             weapon_combo = 'Tizona'
+			windower.send_command('equip main "";wait 0.5;equip main Tizona;wait 1;equip sub Almace')
         end
         windower.add_to_chat(8,'Weapon type set to: '..weapon_combo)
+	--	equip(sets.weapon[weapon_combo])
     end
 	
 	-- Treasure hunter tag
@@ -1260,10 +1275,10 @@ function relaxed_play_mode()
                 and check_recasts(s('Erratic Flutter')) then
             windower.send_command('erratic flutter')
 
-        elseif not check_buffs('Attack Boost')
-                and not check_buffs('silence', 'mute')
-                and check_recasts(s('Nat. Meditation')) then
-            windower.send_command('nat. meditation')
+     --   elseif not check_buffs('Attack Boost')
+       --         and not check_buffs('silence', 'mute')
+         --       and check_recasts(s('Nat. Meditation')) then
+           -- windower.send_command('nat. meditation')
 
         elseif player.equipment.main == 'Tizona'
                 and not check_buffs('Aftermath: Lv.3')

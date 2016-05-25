@@ -13,6 +13,7 @@ function get_sets()
     auto_action = 'Off'
 	geo_mode = 'Fury'	
 	blaze = 'Off'
+	simple = 'Off'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -159,16 +160,16 @@ function get_sets()
     -- Idle sets
 
     sets.idle = {
-	main="Terra's Staff", sub="Volos Strap",
---	main="Bolelabunga", sub="Genbu's Shield", 
+--	main="Terra's Staff", sub="Volos Strap",
+	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.PDT = {
-	main="Terra's Staff", sub="Volos Strap",
---	main="Bolelabunga", sub="Genbu's Shield", 
+--	main="Terra's Staff", sub="Volos Strap",
+	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Helios Gloves", ring1="Defending Ring", ring2="Patricius Ring",
@@ -289,6 +290,7 @@ function job_setup()
     auto_action = 'Off'
 	geo_mode = 'Fury'
 	blaze = 'Off'
+	simple = 'Off'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -333,6 +335,17 @@ function self_command(str)
 		end
 		windower.add_to_chat(8,'Auto fire event set to: '..auto_action)
 		windower.send_command('input /tell Keaddo Auto_action: '..auto_action)
+
+	elseif str == 'simple' then
+		if simple == 'Off' then
+			simple = 'On'
+				windower.add_to_chat(8,'Simple mode: '..simple)		
+				windower.send_command('input /tell Keaddo Simple mode: '..simple)
+		else
+			simple = 'Off'
+				windower.add_to_chat(8,'Simple mode: '..simple)		
+				windower.send_command('input /tell Keaddo Simple mode: '..simple)
+	end
 		
 	elseif str == 'geo_mode' then
 		if geo_mode == 'Fury' then
@@ -408,9 +421,17 @@ function relaxed_play_mode()
 				windower.send_command('Refresh <me>')
 														
 		--Indi
+		elseif simple == 'On' then
+			if not check_buffs('Haste')
+                and not check_buffs('silence', 'mute')
+                and check_recasts(s('Indi-Haste')) then
+				windower.send_command('Indi-Haste')	
+			end				
+
 		elseif not check_buffs('Attack Boost')
                 and not check_buffs('silence', 'mute')
 				and geo_mode == 'Fury'
+				and simple == 'Off'
                 and check_recasts(s('Indi-Fury')) then
 				windower.send_command('Indi-Fury')
 			
@@ -461,6 +482,7 @@ function relaxed_play_mode()
 		
 		--Geo
 		elseif not pet.isvalid
+				and simple == 'Off'
 				and not check_buffs('silence', 'mute')
 				and check_recasts(s('Geo-Frailty'))
 				and check_recasts(s('Geo-Vex'))
