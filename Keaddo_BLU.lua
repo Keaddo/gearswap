@@ -415,8 +415,8 @@ function get_sets()
 		left_ear="Moonshade Earring",
 		right_ear="Brutal Earring",
 		left_ring="Epona's Ring",
-		right_ring="Rajas Ring",
-		back=cdc_back,
+		right_ring="Rufescent Ring",
+		back="Bleating Mantle",
 	}
 
     sets.precast.WS['Sanguine Blade'] = {
