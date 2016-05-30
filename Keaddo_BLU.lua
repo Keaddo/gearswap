@@ -242,6 +242,7 @@ function get_sets()
     windower.send_command('bind f9 gs c tp_mode')
     windower.send_command('bind f10 gs c dt_mode')
     windower.send_command('bind f12 gs c weapon_combo')
+	windower.send_command('bind !` gs c cure')
  --   windower.send_command('input /blockhelp on')
 
 	function file_unload()
@@ -250,6 +251,7 @@ function get_sets()
         send_command('unbind !f10')
         send_command('unbind ^1')
         send_command('unbind !f12')
+		send_command('unbind !`')
 		
 		end
 		
