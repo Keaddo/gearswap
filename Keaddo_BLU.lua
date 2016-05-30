@@ -330,7 +330,7 @@ function get_sets()
 			ring2="Gelatinous Ring +1",
 			back="Solemnity Cape",
 			waist="Flume Belt +1",
-			legs="Carmine Cuisses +1",
+			legs="Herculean Trousers",
 			feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 			}
 

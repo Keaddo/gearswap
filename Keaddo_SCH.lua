@@ -104,7 +104,7 @@ function init_gear_sets()
 	gear.burst_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
 	gear.burst_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst mdg.+4%','MND+3',}}
 	gear.burst_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
-	gear.nuke_back = "Bookworm's Cape"
+	gear.nuke_back = "Lugh's Cape"
 	--------------------------------------
 	-- Start defining the sets
 	--------------------------------------
@@ -401,7 +401,8 @@ function init_gear_sets()
 	
 	sets.midcast.Helix = set_combine(sets.midcast['Elemental Magic'], {
 		neck="Sanctity Necklace",
-		back="Bookworm's Cape"})
+	--	back="Bookworm's Cape"
+	})
 	sets.midcast.Noctohelix = set_combine(sets.midcast.Helix, {
 		head="Pixie Hairpin +1"})
 	sets.midcast.Luminohelix = set_combine(sets.midcast.Helix, {

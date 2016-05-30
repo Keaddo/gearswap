@@ -85,22 +85,22 @@ function get_sets()
 
     -- Base fast recast for spells
     sets.midcast = {}
-    sets.midcast.FastRecast = 		{
-		main="Sucellus", sub="Genbu's Shield",
-		range="Dunna",
-        head=fc_head,
-		neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Vanir Cotehardie", ring2="Weatherspoon Ring", hands="Amalric gages",
-        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet=fc_feet
-		}
+  --  sets.midcast.FastRecast = 		{
+	--	main="Sucellus", sub="Genbu's Shield",
+		--range="Dunna",
+--        head=fc_head,
+	--	neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
+      --  body="Vanir Cotehardie", ring2="Weatherspoon Ring", hands="Amalric gages",
+        --back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet=fc_feet
+		--}
 
     sets.midcast.Geomancy = {main="Solstice", range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
-		neck="Deceiver's Torque", ring2="Renaye Ring", feet="Azimuth Gaiters", back="Lifestream Cape"}
+		neck="Deceiver's Torque", ring2="Renaye Ring", feet="Medium's Sabots", back="Lifestream Cape"}
 		
     sets.midcast.Geomancy.Indi = {main="Solstice", range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Deceiver's Torque",
-		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Azimuth Gaiters", back="Lifestream Cape"}
+		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Medium's Sabots", back="Lifestream Cape"}
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
         head="Welkin Crown", body="Vanya Robe",hands="Telchine Gloves", ring1="Sirona's ring", ring2="Lebeche ring",
@@ -187,10 +187,10 @@ function get_sets()
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Regal Pumps +1"}
 
     -- .Indi sets are for when an Indi-spell is active.
-    --sets.idle.Indi = set_combine(sets.idle, {legs="Bagua Pants"})
-    --sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {legs="Bagua Pants"})
-    --sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {legs="Bagua Pants"})
-    --sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {legs="Bagua Pants"})
+    sets.idle.Indi = set_combine(sets.idle, {})
+    sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {})
+    sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {})
+    sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
     sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
@@ -406,10 +406,10 @@ function relaxed_play_mode()
                 and check_recasts(s('Convert')) then
 				windower.send_command('Convert;wait 1;cure4 <me>')
 				
-		elseif not check_buffs('Refresh')
-                and not check_buffs('silence', 'mute')
-                and check_recasts(s('Refresh')) then
-				windower.send_command('Refresh <me>')
+--		elseif not check_buffs('Refresh')
+  --              and not check_buffs('silence', 'mute')
+    --            and check_recasts(s('Refresh')) then
+		--		windower.send_command('Refresh <me>')
 														
 		--Indi
 		elseif simple == 'On' then

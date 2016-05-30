@@ -1,0 +1,16 @@
+sets.exported={
+    main="Izizoeksi",
+    sub="Skullrender",
+    head={ name="Despair Helm", augments={'Accuracy+8','Pet: VIT+5','Pet: Damage taken -2%',}},
+    body={ name="Despair Mail", augments={'Accuracy+7','Pet: VIT+4','Pet: Damage taken -1%',}},
+    hands={ name="Despair Fin. Gaunt.", augments={'Accuracy+8','Pet: VIT+5','Pet: Damage taken -2%',}},
+    legs={ name="Valor. Hose", augments={'Pet: Accuracy+13 Pet: Rng. Acc.+13','Pet: Phys. dmg. taken -2%','Pet: Attack+13 Pet: Rng.Atk.+13',}},
+    feet={ name="Amm Greaves", augments={'HP+15','VIT+1','Accuracy+5',}},
+    neck="Twilight Torque",
+    waist="Incarnation Sash",
+    left_ear="Domes. Earring",
+    right_ear="Handler's Earring",
+    left_ring="Defending Ring",
+    right_ring="Patricius Ring",
+    back={ name="Pastoralist's Mantle", augments={'STR+1 DEX+1','Accuracy+4','Pet: Accuracy+20 Pet: Rng. Acc.+20',}},
+}
