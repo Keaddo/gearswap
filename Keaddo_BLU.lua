@@ -137,46 +137,46 @@
             <language>English</language>
             <spellsets>
             <dps1200>
-                <slot01>delta thrust</slot01>
-                <slot02>barbed crescent</slot02>
+                <slot01>tail slap</slot01>
+                <slot02>paralyzing triad</slot02>
                 <slot03>empty thrash</slot03>
-                <slot04>heavy strike</slot04>
-                <slot05>thrashing assault</slot05>
-                <slot06>sudden lunge</slot06>
-                <slot07>fantod</slot07>
+                <slot04>barbed crescent</slot04>
+                <slot05>white wind</slot05>
+                <slot06>occultation</slot06>
+                <slot07>sickle slash</slot07>
                 <slot08>diffusion ray</slot08>
-                <slot09>sickle slash</slot09>
-                <slot10>tail slap</slot10>
-                <slot11>sinker drill</slot11>
-                <slot12>paralyzing triad</slot12>
-                <slot13>nat. meditation</slot13>
-                <slot14>erratic flutter</slot14>
-                <slot15>magic fruit</slot15>
-                <slot16>battery charge</slot16>
-                <slot17>subduction</slot17>
-                <slot18>occultation</slot18>
-                <slot19>barrier tusk</slot19>
-                <slot20>blank gaze</slot20>
+                <slot09>sudden lunge</slot09>
+                <slot10>nat. meditation</slot10>
+                <slot11>thrashing assault</slot11>
+                <slot12>subduction</slot12>
+                <slot13>delta thrust</slot13>
+                <slot14>heavy strike</slot14>
+                <slot15>fantod</slot15>
+                <slot16>barrier tusk</slot16>
+                <slot17>erratic flutter</slot17>
+                <slot18>sinker drill</slot18>
+                <slot19>dream flower</slot19>
+                <slot20>cocoon</slot20>
             </dps1200>
-			            <mageybase>
-                <slot01>delta thrust</slot01>
-                <slot02>barbed crescent</slot02>
+            <mageybase>
+                <slot01>retinal glare</slot01>
+                <slot02>tenebral crush</slot02>
                 <slot03>spectral floe</slot03>
-                <slot04>subduction</slot04>
-                <slot05>magic hammer</slot05>
-                <slot06>dream flower</slot06>
-                <slot07>memento mori</slot07>
-                <slot08>sound blast</slot08>
-                <slot09>magic fruit</slot09>
-                <slot10>retinal glare</slot10>
-                <slot11>blinding fulgor</slot11>
-                <slot12>tenebral crush</slot12>
-                <slot13>cursed sphere</slot13>
-                <slot14>barrier tusk</slot14>
-                <slot15>erratic flutter</slot15>
-                <slot16>occultation</slot16>
-                <slot17>entomb</slot17>
-                <slot18>diamondhide</slot18>
+                <slot04>barbed crescent</slot04>
+                <slot05>magic fruit</slot05>
+                <slot06>occultation</slot06>
+                <slot07>entomb</slot07>
+                <slot08>diamondhide</slot08>
+                <slot09>blinding fulgor</slot09>
+                <slot10>sound blast</slot10>
+                <slot11>magic hammer</slot11>
+                <slot12>subduction</slot12>
+                <slot13>delta thrust</slot13>
+                <slot14>memento mori</slot14>
+                <slot15>cursed sphere</slot15>
+                <slot16>barrier tusk</slot16>
+                <slot17>erratic flutter</slot17>
+                <slot18>dream flower</slot18>
                 <slot19>cocoon</slot19>
             </mageybase>
             <tenzen>
@@ -310,11 +310,6 @@ function get_sets()
         main="Vampirism",
         sub="Vampirism"}
 		
-	sets.weapon.Empty = {
-		main="Ram Staff",
-		ammo="Hydrocera"
-		}
-
 
     -- MISCELLANEOUS SETS --
     sets.misc = {}

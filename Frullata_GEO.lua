@@ -364,6 +364,8 @@ function self_command(str)
 		elseif geo_mode == 'Torpor' then
 			geo_mode = 'Languor'
 		elseif geo_mode == 'Languor' then
+			geo_mode = 'None'
+		elseif geo_mode == 'None' then
 			geo_mode = 'Frailty'			
 		end		
 		windower.add_to_chat(8,'Geo set mode: '..geo_mode)		
@@ -433,7 +435,7 @@ function relaxed_play_mode()
 		--Indi		
 		elseif not check_buffs('Attack Boost')
                 and not check_buffs('silence', 'mute')
-				and geo_mode == 'Frailty'
+				and indi_mode == 'Frailty'
                 and check_recasts(s('Indi-Fury')) then
 				windower.send_command('Indi-Fury')
 			
