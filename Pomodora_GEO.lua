@@ -11,9 +11,9 @@ function get_sets()
 	
     -- VARIABLES --
     auto_action = 'Off'
-	geo_mode = 'Fury'	
+	geo_mode = 'Frailty'	
 	blaze = 'Off'
-	simple = 'Off'
+	indi_mode = 'Fury'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -288,9 +288,9 @@ function job_setup()
 	
 	    -- VARIABLES --
     auto_action = 'Off'
-	geo_mode = 'Fury'
+	geo_mode = 'Frailty'
 	blaze = 'Off'
-	simple = 'Off'
+	indi_mode = 'Fury'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -336,28 +336,51 @@ function self_command(str)
 		windower.add_to_chat(8,'Auto fire event set to: '..auto_action)
 		windower.send_command('input /tell Keaddo Auto_action: '..auto_action)
 
-	elseif str == 'simple' then
-		if simple == 'Off' then
-			simple = 'On'
-				windower.add_to_chat(8,'Simple mode: '..simple)		
-				windower.send_command('input /tell Keaddo Simple mode: '..simple)
-		else
-			simple = 'Off'
-				windower.add_to_chat(8,'Simple mode: '..simple)		
-				windower.send_command('input /tell Keaddo Simple mode: '..simple)
-	end
-		
+	elseif str == 'status' then
+		windower.add_to_chat(8, 'Indi mode: '..indi_mode..', Geo mode: '..geo_mode)
+		windower.send_command('input /tell Keaddo Indi mode: '..indi_mode..', Geo Mode: '..geo_mode)
+	
+	elseif str == 'indi_mode' then
+		if indi_mode == 'Fury' then
+			indi_mode = 'Attunement'
+			geo_mode = 'Vex'
+		elseif indi_mode == 'Attunement' then
+			indi_mode = 'Acumen'
+			geo_mode = 'Malaise'
+		elseif indi_mode == 'Acumen' then
+			indi_mode = 'Precision'
+			geo_mode = 'Torpor'
+		elseif indi_mode == 'Precision' then
+			indi_mode = 'Focus'
+			geo_mode = 'Languor'
+		elseif indi_mode == 'Focus' then
+			indi_mode = 'Regen'
+			geo_mode = 'Barrier'
+		elseif indi_mode == 'Regen' then
+			indi_mode = 'Haste'
+			geo_mode = 'None'
+		elseif indi_mode == 'Haste' then
+			indi_mode = 'Fury'
+			geo_mode = 'Frailty'			
+		end		
+		windower.add_to_chat(8,'Indi set mode: '..indi_mode..',Geo set mode: '..geo_mode)		
+		windower.send_command('input /tell Keaddo Indi_mode: '..indi_mode..', Geo_mode: '..geo_mode)
+	
 	elseif str == 'geo_mode' then
-		if geo_mode == 'Fury' then
-			geo_mode = 'Attunement'
-		elseif geo_mode == 'Attunement' then
-			geo_mode = 'Acumen'
-		elseif geo_mode == 'Acumen' then
-			geo_mode = 'Precision'
-		elseif geo_mode == 'Precision' then
-			geo_mode = 'Focus'
-		elseif geo_mode == 'Focus' then
-			geo_mode = 'Fury'			
+		if geo_mode == 'Frailty' then
+			geo_mode = 'Vex'
+		elseif geo_mode == 'Vex' then
+			geo_mode = 'Malaise'
+		elseif geo_mode == 'Malaise' then
+			geo_mode = 'Torpor'
+		elseif geo_mode == 'Torpor' then
+			geo_mode = 'Languor'
+		elseif geo_mode == 'Languor' then
+			geo_mode = 'Barrier'
+		elseif geo_mode == 'Barrier' then
+			geo_mode = 'None'
+		elseif geo_mode == 'None' then
+			geo_mode = 'Frailty'			
 		end		
 		windower.add_to_chat(8,'Geo set mode: '..geo_mode)		
 		windower.send_command('input /tell Keaddo Geo_mode: '..geo_mode)
@@ -406,58 +429,63 @@ function relaxed_play_mode()
     -- This can be used as a mini bot to automate actions
     if not midaction() then
         if player.hpp < 70
+		and player.sub_job == 'RDM'
                 and not check_buffs('silence', 'mute')
                 and check_recasts(s('cure4')) then
 				windower.send_command('cure4 <me>')
 				
 		elseif player.hpp > 90 
+				and player.sub_job == 'RDM'
                 and player.mpp < 10
                 and check_recasts(s('Convert')) then
 				windower.send_command('Convert;wait 1;cure4 <me>')
 				
 		elseif not check_buffs('Refresh')
+				and player.sub_job == 'RDM'
                 and not check_buffs('silence', 'mute')
                 and check_recasts(s('Refresh')) then
 				windower.send_command('Refresh <me>')
 														
-		--Indi
-		elseif simple == 'On' then
-			if not check_buffs('Haste')
-                and not check_buffs('silence', 'mute')
-                and check_recasts(s('Indi-Haste')) then
-				windower.send_command('Indi-Haste')	
-			end				
-
+		--Indi		
 		elseif not check_buffs('Attack Boost')
                 and not check_buffs('silence', 'mute')
-				and geo_mode == 'Fury'
-				and simple == 'Off'
+				and indi_mode == 'Frailty'
                 and check_recasts(s('Indi-Fury')) then
 				windower.send_command('Indi-Fury')
 			
 		elseif not check_buffs('Magic Evasion Boost')
                 and not check_buffs('silence', 'mute')
-				and geo_mode == 'Attunement'
+				and indi_mode == 'Attunement'
                 and check_recasts(s('Indi-Attunement')) then
 				windower.send_command('Indi-Attunement')
 			
 		elseif not check_buffs('Magic Atk. Boost')
                 and not check_buffs('silence', 'mute')
-				and geo_mode == 'Acumen'
+				and indi_mode == 'Acumen'
                 and check_recasts(s('Indi-Acumen')) then
 				windower.send_command('Indi-Acumen')
 
 		elseif not check_buffs('Accuracy Boost')
                 and not check_buffs('silence', 'mute')
-				and geo_mode == 'Precision'
+				and indi_mode == 'Precision'
                 and check_recasts(s('Indi-Precision')) then
 				windower.send_command('Indi-Precision')				
 
 		elseif not check_buffs('Magic Accuracy Boost')
                 and not check_buffs('silence', 'mute')
-				and geo_mode == 'Focus'
+				and indi_mode == 'Focus'
                 and check_recasts(s('Indi-Focus')) then
 				windower.send_command('Indi-Focus')	
+		elseif not check_buffs('Regen')
+				and not check_buffs('silence', 'mute')
+				and indi_mode == 'Regen'
+				and check_recasts(s('Indi-Regen')) then
+				windower.send_command('Indi-Regen')
+		elseif not check_buffs('Haste')
+				and not check_buffs('silence', 'mute')
+				and indi_mode == 'Haste'
+				and check_recasts(s('Indi-Haste')) then
+				windower.send_command('Indi-Haste')
 				
 		--blaze of glory
 		elseif blaze == 'On'
@@ -467,37 +495,43 @@ function relaxed_play_mode()
 				and check_recasts(s('Radial Arcana'))
 				and check_recasts(s('Blaze of Glory'))
 				and check_recasts(s('Dematerialize')) then
-					if geo_mode == 'Fury' then
+					if geo_mode == 'Frailty' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Frailty <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
-					elseif geo_mode == 'Attunement' then
+					elseif geo_mode == 'Vex' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Vex <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
-					elseif geo_mode == 'Acumen' then
+					elseif geo_mode == 'Malaise' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Malaise <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
-					elseif geo_mode == 'Precision' then
+					elseif geo_mode == 'Torpor' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Torpor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
-					elseif geo_mode == 'Focus' then
+					elseif geo_mode == 'Languor' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Languor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
+					elseif geo_mode == 'Barrier' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Barrier <me>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>')
+					elseif geo_mode == 'None' then
 					end
 					blaze = 'Off'
 		
 		--Geo
 		elseif not pet.isvalid
-				and simple == 'Off'
 				and not check_buffs('silence', 'mute')
 				and check_recasts(s('Geo-Frailty'))
 				and check_recasts(s('Geo-Vex'))
 				and check_recasts(s('Geo-Malaise'))
-				and check_recasts(s('Geo-Torpor'))	then
-					if player.mp > 305	and geo_mode == 'Fury' then
-						windower.send_command('wait 1;Geo-Frailty <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')					
-					elseif player.mp > 302	and geo_mode == 'Attunement' then
-						windower.send_command('wait 1;Geo-Vex <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')
-					elseif player.mp > 379 and geo_mode == 'Acumen' then
-						windower.send_command('wait 1;Geo-Malaise <bt>;wait 7;Dia2 <bt>;wait 3;Frazzle <bt>')	
-					elseif player.mp > 203 and geo_mode == 'Precision' then
-						windower.send_command('wait 1;Geo-Torpor <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')
-					elseif player.mp > 249 and geo_mode == 'Focus' then
-						windower.send_command('wait 1;Geo-Languor <bt>;wait 7;Dia2 <bt>;wait 3;Frazzle <bt>')						
+				and check_recasts(s('Geo-Torpor'))
+				and check_recasts(s('Geo-Barrier')) then
+					if player.mp > 305	and geo_mode == 'Frailty' then
+						windower.send_command('wait 2;Geo-Frailty <bt>;wait 7;Dia2 <bt>')					
+					elseif player.mp > 302	and geo_mode == 'Vex' then
+						windower.send_command('wait 2;Geo-Vex <bt>;wait 7;Dia2 <bt>')
+					elseif player.mp > 379 and geo_mode == 'Malaise' then
+						windower.send_command('wait 2;Geo-Malaise <bt>;wait 7;Dia2 <bt>')	
+					elseif player.mp > 203 and geo_mode == 'Torpor' then
+						windower.send_command('wait 2;Geo-Torpor <bt>;wait 7;Dia2 <bt>')
+					elseif player.mp > 249 and geo_mode == 'Languor' then
+						windower.send_command('wait 2;Geo-Languor <bt>;wait 7;Dia2 <bt>')	
+					elseif player.mp > 250 and geo_mode == 'Barrier' then
+						windower.send_command('wait 2;Geo-Barrier <me>')
+					elseif geo_mode == 'None' then
 					end
 		
 		end
@@ -505,6 +539,7 @@ function relaxed_play_mode()
 	
 	if not midaction() then
 		if not check_buffs('Stoneskin')
+			and player.sub_job == 'RDM'
 			and not check_buffs('silence', 'mute')
 			and check_recasts(s('Stoneskin')) then
 			windower.send_command('Stoneskin')	
@@ -662,18 +697,18 @@ function gear_modes()
         equip(sets.engaged)
     elseif player.status == 'Idle' then
         equip(sets.idle)
-        if dt_mode == 'None' then
-            --print(party.count)
-            if party.count > 1 then
-                equip(sets.idle.SphereRefresh)
-            end
-            if player.mpp < 50 then
-                equip(sets.idle.under_50mpp)
-            end
-            if check_buffs('Reive Mark') then
-                equip(sets.misc.Reive)
-            end
-        end
+--      if dt_mode == 'None' then
+  --          --print(party.count)
+    --        if party.count > 1 then
+      --          equip(sets.idle.SphereRefresh)
+        --    end
+          --  if player.mpp < 50 then
+            --    equip(sets.idle.under_50mpp)
+--            end
+  --          if check_buffs('Reive Mark') then
+    --            equip(sets.misc.Reive)
+      --      end
+   --     end
     end
 
    -- Will inform you if no weapon is equiped and re-equip once able
@@ -846,16 +881,16 @@ function slot_disabling()
             reminders that you have slot locked, count is incresed twice by
             most actions due to slot_disabling() being called in precast
             and again after the cast in gear_modes() ]]
-    if player.equipment.back == 'Aptitude Mantle' then
+    if player.equipment.back == 'Mecisto. Mantle' then
         disable('back')
-   --     if count_msg_mecisto == 1 then
+   --     if count_msg_mecisto == 0 then
     --        windower.add_to_chat(8,'REMINDER:  '
-     --           ..'Mecistopins mantle equiped on back')
-   --     end
-   --     count_msg_mecisto = (count_msg_mecisto + 1) % 30
+      --          ..'Mecistopins mantle equiped on back')
+    --    end
+    --    count_msg_mecisto = (count_msg_mecisto + 1) % 30
     else
         enable('back')
-  --      count_msg_mecisto = 1
+   --     count_msg_mecisto = 0
     end
 end
 
