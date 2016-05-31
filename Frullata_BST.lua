@@ -244,10 +244,10 @@ function init_gear_sets()
 --This is your base Ready move set, activating for physical Ready moves. Merlin/D.Tassets are accounted for already. 
 	sets.midcast.Pet.WS = {
     main="Mdomo Axe",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Acro Surcoat",
-    hands="Emicho Gauntlets",
+    hands="Nukumi Manoplas",
     legs="Valor. Hose",
     feet="Acro Leggings",
     neck="Ferine Necklace",
@@ -261,10 +261,10 @@ function init_gear_sets()
 	
 	sets.midcast.Pet.Neutral = set_combine(sets.midcast.Pet.WS, {  
    main="Mdomo Axe",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Acro Surcoat",
-    hands="Emicho Gauntlets",
+    hands="Nukumi Manoplas",
     legs="Valor. Hose",
     feet="Acro Leggings",
     neck="Ferine Necklace",
@@ -279,10 +279,10 @@ function init_gear_sets()
 			
 	sets.midcast.Pet.HighAcc = set_combine(sets.midcast.Pet.WS, {
    main="Mdomo Axe",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Acro Surcoat",
-    hands="Emicho Gauntlets",
+    hands="Nukumi Manoplas",
     legs="Valor. Hose",
     feet="Acro Leggings",
     neck="Ferine Necklace",
@@ -295,10 +295,10 @@ function init_gear_sets()
 			
 	sets.midcast.Pet.MaxAcc = set_combine(sets.midcast.Pet.WS, {
    main="Mdomo Axe",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Acro Surcoat",
-    hands="Emicho Gauntlets",
+    hands="Nukumi Manoplas",
     legs="Valor. Hose",
     feet="Acro Leggings",
     neck="Ferine Necklace",
@@ -311,7 +311,7 @@ function init_gear_sets()
 
 --This will equip for Magical Ready moves like Fireball
 	sets.midcast.Pet.MabReady = set_combine(sets.midcast.Pet.WS, {
-			main="Skullrender",
+			main="Arktoi",
 			head={ name="Taeon Chapeau", augments={'Pet: "Mag.Atk.Bns."+24',}},
 			body={ name="Taeon Tabard", augments={'Pet: "Mag.Atk.Bns."+23','"Fast Cast"+4',}},
 			hands={ name="Acro Gauntlets", augments={'Pet: "Mag.Atk.Bns."+24',}},
@@ -334,7 +334,7 @@ function init_gear_sets()
 		-- Base Idle Set (when you do NOT have a pet out)
     sets.idle = {
     main="Izizoeksi",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Despair Mail",
     hands="Despair Fin. Gaunt.",
@@ -356,9 +356,9 @@ function init_gear_sets()
 		-- Idle Set that equips when you have a pet out and not fighting an enemy.
 	sets.idle.Pet = set_combine(sets.idle, {
     main="Izizoeksi",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
-    body="Despair Mail",
+    body="Emet Harness +1",
     hands="Despair Fin. Gaunt.",
     legs="Valor. Hose",
     feet="Acro Leggings",
@@ -374,7 +374,7 @@ function init_gear_sets()
 		-- Idle set that equips when you have a pet out and ARE fighting an enemy.
 	sets.idle.Pet.Engaged = set_combine(sets.idle, {
     main="Izizoeksi",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Despair Mail",
     hands="Despair Fin. Gaunt.",
@@ -395,7 +395,7 @@ function init_gear_sets()
 	
 	sets.engaged = {
    main="Izizoeksi",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Despair Mail",
     hands="Despair Fin. Gaunt.",
@@ -412,7 +412,7 @@ function init_gear_sets()
 			
 	sets.engaged.PetDT = {
    main="Izizoeksi",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Despair Mail",
     hands="Despair Fin. Gaunt.",
@@ -430,7 +430,7 @@ function init_gear_sets()
 		
 	sets.engaged.DW = {
     main="Izizoeksi",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Despair Mail",
     hands="Despair Fin. Gaunt.",
@@ -448,7 +448,7 @@ function init_gear_sets()
 			
 	sets.engaged.DW.PetDT = {
     main="Izizoeksi",
-    sub="Skullrender",
+    sub="Arktoi",
     head="Despair Helm",
     body="Despair Mail",
     hands="Despair Fin. Gaunt.",

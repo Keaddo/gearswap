@@ -476,7 +476,7 @@ function init_gear_sets()
 		main="Bolelabunga",
 		sub="Genbu's Shield",
 		ammo="Incantor Stone",
-		head="Befouled Crown",
+		head="Vanya hood",
 		neck="Loricate Torque +1",
 		ear1="Ethereal Earring",
 		body="Vanya Robe",
