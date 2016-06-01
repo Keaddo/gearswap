@@ -473,8 +473,8 @@ function init_gear_sets()
 	-- Defense sets
 
 	sets.defense.PDT = {
-		main="Bolelabunga",
-		sub="Genbu's Shield",
+	--	main="Bolelabunga",
+	--	sub="Genbu's Shield",
 		ammo="Incantor Stone",
 		head="Vanya hood",
 		neck="Loricate Torque +1",

@@ -1,6 +1,23 @@
 -- Last Updated: 11/06/2015 --
 
 function get_sets()
+
+    -- VARIABLES --
+    auto_action = 'Off'
+	
+		windower.register_event('tp change', function(new, old)
+        if new > 349
+        and auto_action == 'On' then
+            relaxed_play_mode()
+        end
+    end)
+
+    windower.register_event('time change', function(time)
+        if auto_action == 'On' then
+            relaxed_play_mode()
+        end
+    end)
+
 	include('organizer-lib')
 	AccIndex = 1
 	AccArray = {"LowACC","MidACC","HighACC"} -- Default ACC Set is Low --
@@ -35,13 +52,13 @@ function get_sets()
 			neck="Coatl Gorget +1",
 			ear1="Infused Earring",
 			ear2="Ethereal Earring",
-			body="Chozoron Coselete",
+			body="Chevalier's Cuirass +1",
 			hands="Souveran Handschuhs",
 			ring1="Paguroidea Ring",
 			ring2="Sheltered Ring",
-			back="Weard Mantle",
-			waist="Flume Belt +1",
-			legs="Carmine Cuisses +1",
+			back="Philidor Mantle",
+			waist="Flume Belt",
+			legs="Crimson Cuisses",
 			feet="Amm Greaves"}
 	sets.Idle.Regen.Ochain = set_combine(sets.Idle.Regen,{
 			main="Burtgang",
@@ -92,7 +109,7 @@ function get_sets()
 			neck="Coatl Gorget +1",
 			ring2="Sheltered Ring",
 			back="Weard Mantle",
-			legs="Carmine Cuisses +1"})
+			legs="Crimson Cuisses"})
 			
 	-- TP Base Set --
 	sets.TP = {}
@@ -125,21 +142,9 @@ function get_sets()
 			waist="Olseni Belt"})
 
 	-- Aegis TP Sets --
-	sets.TP.Aegis = {
-			main="Burtgang",
+	sets.TP.Aegis = set_combine(sets.TP.Ochain,{
 			sub="Aegis",
-			ammo="Ginsen",
-    head="Sulevia's Mask +1",
-    body="Sulevia's Plate. +1",
-    hands="Sulev. Gauntlets +1",
-    legs="Sulevi. Cuisses +1",
-    feet="Sulev. Leggings +1",
-    neck="Lissome Necklace",
-    waist="Tempus Fugit",
-    left_ear="Digni. Earring",
-    right_ear="Brutal Earring",
-    left_ring="Petrov Ring",
-    right_ring="Rajas Ring",}
+			})
 	sets.TP.Aegis.MidACC = set_combine(sets.TP.Aegis,{
 			ammo="Amar Cluster",
 			neck="Lissome Necklace",
@@ -152,21 +157,10 @@ function get_sets()
 			waist="Olseni Belt"})
 			
 	-- Priwen TP Sets --
-	sets.TP.Priwen = {
+	sets.TP.Priwen = set_combine(sets.TP.Ochain,{
 			main="Burtgang",
 			sub="Priwen",
-			ammo="Ginsen",
-    head="Sulevia's Mask +1",
-    body="Sulevia's Plate. +1",
-    hands="Sulev. Gauntlets +1",
-    legs="Sulevi. Cuisses +1",
-    feet="Sulev. Leggings +1",
-    neck="Lissome Necklace",
-    waist="Tempus Fugit",
-    left_ear="Digni. Earring",
-    right_ear="Brutal Earring",
-    left_ring="Petrov Ring",
-    right_ring="Rajas Ring",	}		
+			})		
 	sets.TP.Priwen.MidACC = set_combine(sets.TP.Priwen,{
 			ammo="Amar Cluster",
 			neck="Lissome Necklace",
@@ -208,37 +202,11 @@ function get_sets()
 			feet="Souveran Schuhs"} -- 4 PDT --
 							-- Total -17% DT + -33% PDT = -50% Reduction --
 												-- Primary ACC 815 --
-	sets.PDT.Aegis = {
-			sub="Aegis",
-			ammo="Angha Gem",
-			head="Loess Barbuta +1",
-			neck="Loricate Torque +1",
-			ear1="Zwazo Earring",
-			ear2="Ethereal Earring",
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring", 
-			ring2="Gelatinous Ring +1", 
-			back="Weard Mantle", 
-			waist="Flume Belt +1 +1", 
-			legs="Souveran Diechlings",
-			feet="Souveran Schuhs"}
+	sets.PDT.Aegis = set_combine(sets.PDT.Ochain,{
+			sub="Aegis",})
 			
-	sets.PDT.Priwen = {
-			sub="Priwen",
-			ammo="Angha Gem",
-			head="Loess Barbuta +1",
-			neck="Loricate Torque +1",
-			ear1="Zwazo Earring",
-			ear2="Ethereal Earring",
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring", 
-			ring2="Gelatinous Ring +1", 
-			back="Weard Mantle", 
-			waist="Flume Belt +1 +1", 
-			legs="Souveran Diechlings",
-			feet="Souveran Schuhs"}
+	sets.PDT.Priwen = set_combine(sets.PDT.Ochain,{
+			sub="Priwen",})
 
 	sets.MDT = {}
 	sets.MDT.Ochain = {
@@ -258,86 +226,36 @@ function get_sets()
 			feet="Amm Greaves"} -- MDB 2 / DT 3 --
 								-- Total -17% DT + -16% MDT = -33% Reduction / +13 MDB --
 
-	sets.MDT.Aegis = {
-			sub="Aegis",
-			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
-			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Praan Ring",
-			back="Engulfer Cape +1", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Amm Greaves"}
+	sets.MDT.Aegis = set_combine(sets.MDT.Ochain,{
+			sub="Aegis",})
 								
-	sets.MDT.Priwen = {
-			sub="Priwen",
-			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
-			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Praan Ring",
-			back="Engulfer Cape +1", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Amm Greaves"}
+	sets.MDT.Priwen = set_combine(sets.MDT.Ochain,{
+			sub="Priwen",})
 
 	sets.DT = {}
 	sets.DT.Ochain = {
 			sub="Ochain",
 			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
+			head="Reverence Coronet +1", -- 5 PDT  
+			neck="Twilight Torque", -- 5 DT
+			ear1="Etiolation Earring", -- 1 MDT 
 			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Gelatinous Ring +1",
-			back="Weard Mantle", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Souveran Schuhs"}
+			body="Chevalier's Cuirass +1", -- 3-10 DT
+			hands="Souveran Handschuhs",  -- 4 MDT 
+			ring1="Defending Ring", -- 10 DT
+			ring2="Patricius Ring", -- 5 PDT 
+			back="Philidor Mantle", -- 5 DT
+			waist="Flume Belt", -- 4 PDT 
+			legs="Souveran Diechlings", -- 3 DT
+			feet="Souveran Schuhs"} -- 4 PDT 
 			
-	sets.DT.Aegis = {
-			sub="Aegis",
-			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
-			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Gelatinous Ring +1",
-			back="Weard Mantle", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Souveran Schuhs"}
+			-- TOTAL 26/36 DT + 5 MDT + 18 PDT (w/ Brilliance)
 			
-	sets.DT.Priwen = {
-			sub="Priwen",
-			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
-			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Gelatinous Ring +1",
-			back="Weard Mantle", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Souveran Schuhs"}
+	sets.DT.Aegis = set_combine(sets.DT.Ochain,{
+			sub="Aegis",})
+			
+	sets.DT.Priwen = set_combine(sets.DT.Ochain,{
+			sub="Priwen",})
 
 	-- Weakness/Kiting/Repulse Sets --
 	sets.Weakness = {}
@@ -346,9 +264,9 @@ function get_sets()
 	sets.Weakness.Priwen = set_combine(sets.PDT.Priwen,{})
 
 	sets.Kiting = {}
-	sets.Kiting.Ochain = set_combine(sets.PDT.Ochain,{legs="Carmine Cuisses +1"})
-	sets.Kiting.Aegis = set_combine(sets.PDT.Aegis,{legs="Carmine Cuisses +1"})
-	sets.Kiting.Priwen = set_combine(sets.PDT.Priwen,{legs="Carmine Cuisses +1"})
+	sets.Kiting.Ochain = set_combine(sets.PDT.Ochain,{legs="Crimson Cuisses"})
+	sets.Kiting.Aegis = set_combine(sets.PDT.Aegis,{legs="Crimson Cuisses"})
+	sets.Kiting.Priwen = set_combine(sets.PDT.Priwen,{legs="Crimson Cuisses"})
 
 	sets.Repulse = {}
 	sets.Repulse.Ochain = {sub="Ochain",back="Repulse Mantle"}
@@ -478,20 +396,20 @@ function get_sets()
 	sets.WS["Aeolian Edge"] = {}
 
 	sets.Enmity = { -- +10 from Brilliance  --
-			ammo="Sapience Orb", -- 2 --
-			head="Loess Barbuta +1", -- 9-14 --
-			neck="Unmoving Collar", -- 9 --
-			ear1="Friomisi Earring", -- 2 --
-			ear2="Ethereal Earring", -- 7 --
-			body="Souveran Cuirass", -- 10 --
-			hands="Odyssean Gauntlets", -- 14 --
-			ring1="Apeile Ring", -- 4~8 --
-			ring2="Apeile Ring +1", -- 5~9 --
-			back="Weard Mantle", -- 7 --
-			waist="Sulla Belt", -- 3 --
-			legs="Souveran Diechlings", -- 7 --
-			feet="Eschite Greaves"} -- 15 --
-									-- Total Enmity+ = 94~107 --
+			ammo="Incantor Stone",
+			head="Reverence Coronet +1", -- 5
+			neck="Warder's Charm", -- 8 
+			ear1="Cryptic Earring", -- 4 
+			ear2="Trux Earring", -- 5 
+			body="Chevalier's Cuirass +1", -- 12
+			hands="Yorium Gauntlets", -- 10 
+			ring1="Prolix Ring",
+			ring2="Weatherspoon Ring",
+			back="Philidor Mantle", -- 5
+			waist="Flume Belt",
+			legs="Souveran Diechlings", -- 7
+			feet="Yorium Sabatons" } -- 10} 
+									-- Total Enmity+ =  --
 
 	-- JA Sets --
 	sets.JA = {}
@@ -532,19 +450,19 @@ function get_sets()
 	sets.Precast = {}
 	--Fastcast Set --
 	sets.Precast.FastCast = {
-			ammo="Impatiens",
-			head="Carmine Mask",
-			neck="Orunmila's Torque",
-			ear1="Enchntr. Earring +1",
+			ammo="Incantor Stone",
+			head="Chevalier's Armet +1",
+			neck="Jeweled Collar",
+			ear1="Etiolation Earring",
 			ear2="Loquac. Earring",
-			body="Chozoron Coselete",
+			body="Chevalier's Cuirass +1",
 			hands="Leyline Gloves",
 			ring1="Prolix Ring",
 			ring2="Weatherspoon Ring",
-			back="Weard Mantle",
-			waist="Goading Belt",
-			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
-			feet={name="Odyssean Greaves",augments={"INT+11", "Fast Cast+5"}}
+			back="Philidor Mantle",
+			waist="Flume Belt",
+			legs="Souveran Diechlings",
+			feet="Yorium Sabatons"
 			}
 
 	-- Precast Enhancing Magic --
@@ -558,19 +476,19 @@ function get_sets()
 
 	-- Spells Recast --
 	sets.Midcast.Recast = {
-			ammo="Impatiens",
-			head="Carmine Mask",
-			neck="Orunmila's Torque",
-			ear1="Enchntr. Earring +1",
+			ammo="Incantor Stone",
+			head="Chevalier's Armet +1",
+			neck="Jeweled Collar",
+			ear1="Etiolation Earring",
 			ear2="Loquac. Earring",
-			body="Chozoron Coselete",
+			body="Chevalier's Cuirass +1",
 			hands="Leyline Gloves",
 			ring1="Prolix Ring",
 			ring2="Weatherspoon Ring",
-			back="Weard Mantle",
-			waist="Goading Belt",
-			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
-			feet={name="Odyssean Greaves",augments={"INT+11", "Fast Cast+5"}}
+			back="Philidor Mantle",
+			waist="Flume Belt",
+			legs="Souveran Diechlings",
+			feet="Yorium Sabatons"
 			}
 
 	-- Divine Magic --
@@ -598,20 +516,21 @@ function get_sets()
 
 	-- Flash Set --
 	sets.Midcast.Flash = { -- 10 brilliance --
-			ammo="Sapience Orb", -- 2 --
-			head="Loess Barbuta +1", -- 7 --
-			neck="Unmoving Collar", -- 9 --
-			ear1="Friomisi Earring", -- 2 --
-			ear2="Ethereal Earring", -- 7 --
-			body="Souveran Cuirass", -- 10 --
-			hands="Odyssean Gauntlets", -- 14 --
-			ring1="Apeile Ring", -- 4~8 --
-			ring2="Apeile Ring +1", -- 5~9 --
-			back="Weard Mantle", -- 7 --
-			waist="Flume Belt +1", --  --
-			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}}, -- 4 --
-			feet="Eschite Greaves"} -- 15 --
-									-- Total Enmity+ = 89~97 --
+			ammo="Incantor Stone",
+			head="Reverence Coronet +1", -- 5
+			neck="Warder's Charm", -- 8 
+			ear1="Cryptic Earring", -- 4 
+			ear2="Trux Earring", -- 5 
+			body="Chevalier's Cuirass +1", -- 12
+			hands="Yorium Gauntlets", -- 10 
+			ring1="Prolix Ring",
+			ring2="Weatherspoon Ring",
+			back="Philidor Mantle", -- 5
+			waist="Flume Belt",
+			legs="Souveran Diechlings", -- 7
+			feet="Yorium Sabatons" -- 10
+									} 
+									-- Total Enmity+ = 66 --
 
 	-- Enhancing Magic --
 	sets.Midcast['Enhancing Magic'] = set_combine(sets.Midcast.Recast,{
@@ -630,17 +549,17 @@ function get_sets()
 	-- Reprisal --
 	sets.Midcast.Reprisal = {
 			ammo="Impatiens",
-			head="Founder's Corona",
+			head="Chevalier's Armet +1",
 			neck="Dualism Collar",
-			ear1="Oneiros Earring",
-			ear2="Ethereal Earring",
-			body="Souveran Cuirass",
+			ear1="Etiolation Earring",
+			ear2="Cryptic Earring",
+			body="Chevalier Cuirass +1",
 			hands="Souveran Handschuhs",
 			ring1="Kunaji Ring",
 			ring2="Praan Ring",
-			back="Aenotherus Mantle",
+			back="Weard Mantle",
 			waist="Oneiros Belt",
-			legs="Eschite Cuisses",
+			legs="Souveran Diechlings",
 			feet="Souveran Schuhs"}
 			
 	-- Lock Capa Mantle --
@@ -968,128 +887,6 @@ function file_unload()
 --	send_command('unbind f5')
 end
 
-
--- In Game: //gs c (command), Macro: /console gs c (command), Bind: gs c (command) --
-function self_command(command)
-	if command == 'C1' then -- Accuracy Level Toggle --
-		AccIndex = (AccIndex % #AccArray) + 1
-		status_change(player.status)
-		add_to_chat(158,'Accuracy Level: '..AccArray[AccIndex])
-	elseif command == 'C5' then -- Auto Update Gear Toggle --
-		status_change(player.status)
-		add_to_chat(158,'Auto Update Gear')
-	elseif command == 'C2' then -- Shield Type Toggle --
-		ShieldIndex = (ShieldIndex % #ShieldArray) + 1
-		status_change(player.status)
-		add_to_chat(158,'Shield Type: '..ShieldArray[ShieldIndex])
-	elseif command == 'C9' then -- Hybrid Toggle --
-		if Armor == 'Hybrid' then
-			Armor = 'None'
-			add_to_chat(123,'Hybrid Set: [Unlocked]')
-		else
-			Armor = 'Hybrid'
-			add_to_chat(158,'Hybrid Set: '..AccArray[AccIndex])
-		end
-		status_change(player.status)
-	elseif command == 'C7' then -- PDT Toggle --
-		if Armor == 'PDT' then
-			Armor = 'None'
-			add_to_chat(123,'PDT Set: [Unlocked]')
-		else
-			Armor = 'PDT'
-			add_to_chat(158,'PDT Set: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C15' then -- MDT Toggle --
-		if Armor == 'MDT' then
-			Armor = 'None'
-			add_to_chat(123,'MDT Set: [Unlocked]')
-		else
-			Armor = 'MDT'
-			add_to_chat(158,'MDT Set: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C12' then -- Kiting Toggle --
-		if Armor == 'Kiting' then
-			Armor = 'None'
-			add_to_chat(123,'Kiting Set: [Unlocked]')
-		else
-			Armor = 'Kiting'
-			add_to_chat(158,'Kiting Set: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C4' then -- Capa Back Toggle --
-		if Capa == 'ON' then
-			Capa = 'OFF'
-			add_to_chat(123,'Capacity Mantle: [Unlocked]')
-		else
-			Capa = 'ON'
-			add_to_chat(158,'Capacity Mantle: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C10' then -- Weakness Set Toggle --
-		if Armor == 'Weakness' then
-			Armor = 'None'
-			add_to_chat(123,'Weakness Set: [Unlocked]')
-		else
-			Armor = 'Weakness'
-			add_to_chat(158,'Weakness Set: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C17' then -- DT Toggle --
-		if Armor == 'DT' then
-			Armor = 'None'
-			add_to_chat(123,'DT Set: [Unlocked]')
-		else
-			Armor = 'DT'
-			add_to_chat(158,'DT Set: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C16' then -- Repulse Mantle Toggle --
-		if Repulse == 'ON' then
-			Repulse = 'OFF'
-			add_to_chat(123,'Repulse Mantle: [Unlocked]')
-		else
-			Repulse = 'ON'
-			add_to_chat(158,'Repulse Mantle: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C11' then -- Shield Skill Toggle --
-		if Armor == 'ShieldSkill' then
-			Armor = 'None'
-			add_to_chat(123,'Shield Skill Set: [Unlocked]')
-		else
-			Armor = 'ShieldSkill'
-			add_to_chat(158,'Shield Skill Set: [Locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C3' then -- Twilight Toggle --
-		if Twilight == 'Twilight' then
-			Twilight = 'None'
-			add_to_chat(123,'Twilight Set: [Unlocked]')
-		else
-			Twilight = 'Twilight'
-			add_to_chat(158,'Twilight Set: [locked]')
-		end
-		status_change(player.status)
-	elseif command == 'C8' then -- Distance Toggle --
-		if player.target.distance then
-			target_distance = math.floor(player.target.distance*10)/10
-			add_to_chat(158,'Distance: '..target_distance)
-		else
-			add_to_chat(123,'No Target Selected')
-		end
-	elseif command == 'C6' then -- Idle Toggle --
-		IdleIndex = (IdleIndex % #IdleArray) + 1
-		status_change(player.status)
-		add_to_chat(158,'Idle Set: '..IdleArray[IdleIndex])
-	elseif command == 'TP' then
-		add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
-	elseif command:match('^SC%d$') then
-		send_command('//' .. sc_map[command])
-	end
-end
-
 function check_equip_lock() -- Lock Equipment Here --
 	if player.equipment.left_ring == "Warp Ring" or player.equipment.left_ring == "Capacity Ring" or player.equipment.right_ring == "Warp Ring" or player.equipment.right_ring == "Capacity Ring" then
 		disable('ring1','ring2')
@@ -1263,4 +1060,289 @@ function select_default_macro_book()
 	else
 		set_macro_page(1, 13)
 	end
+end
+
+do
+    --[[ Author: Arcon
+            The three next "do" sections are used to aid in checking recast
+            times, can check multiple recast times at once ]]
+    local cache = {}
+
+    function j(str)
+        if not cache[str] then
+            cache[str] = gearswap.res.job_abilities:with('name', str)
+        end
+
+        return cache[str]
+    end
+end
+
+do
+    local cache = {}
+
+    function s(str)
+        if not cache[str] then
+            cache[str] = gearswap.res.spells:with('name', str)
+        end
+
+        return cache[str]
+    end
+end
+
+do
+    local ja_types = S(gearswap.res.job_abilities:map(table.get-{'type'}))
+
+    function check_recasts(...)
+        local spells = S{...}
+
+        for spell in spells:it() do
+            local fn = 'get_' .. (ja_types:contains(spell.type)
+                    and 'ability'
+                    or 'spell') ..'_recasts'
+            if windower.ffxi[fn]()[spell.recast_id] > 0 then
+                return false
+            end
+        end
+
+        return true
+    end
+end
+
+function self_command(str)
+    -- Use an in game macro "/con gs c auto_action" to toggle bot Off and On
+							--macro: "/con send Anukk gs c auto_action"
+    if str == 'auto_action' then
+		if auto_action == 'Off' then
+			auto_action = 'On'
+		else
+			auto_action  = 'Off'
+		end
+		windower.add_to_chat(8,'Auto fire event set to: '..auto_action)
+		windower.send_command('input /tell Keaddo Auto_action: '..auto_action)
+
+	elseif str == 'C1' then -- Accuracy Level Toggle --
+		AccIndex = (AccIndex % #AccArray) + 1
+		status_change(player.status)
+		add_to_chat(158,'Accuracy Level: '..AccArray[AccIndex])
+	elseif str == 'C5' then -- Auto Update Gear Toggle --
+		status_change(player.status)
+		add_to_chat(158,'Auto Update Gear')
+	elseif str == 'C2' then -- Shield Type Toggle --
+		ShieldIndex = (ShieldIndex % #ShieldArray) + 1
+		status_change(player.status)
+		add_to_chat(158,'Shield Type: '..ShieldArray[ShieldIndex])
+	elseif str == 'C9' then -- Hybrid Toggle --
+		if Armor == 'Hybrid' then
+			Armor = 'None'
+			add_to_chat(123,'Hybrid Set: [Unlocked]')
+		else
+			Armor = 'Hybrid'
+			add_to_chat(158,'Hybrid Set: '..AccArray[AccIndex])
+		end
+		status_change(player.status)
+	elseif str == 'C7' then -- PDT Toggle --
+		if Armor == 'PDT' then
+			Armor = 'None'
+			add_to_chat(123,'PDT Set: [Unlocked]')
+		else
+			Armor = 'PDT'
+			add_to_chat(158,'PDT Set: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C15' then -- MDT Toggle --
+		if Armor == 'MDT' then
+			Armor = 'None'
+			add_to_chat(123,'MDT Set: [Unlocked]')
+		else
+			Armor = 'MDT'
+			add_to_chat(158,'MDT Set: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C12' then -- Kiting Toggle --
+		if Armor == 'Kiting' then
+			Armor = 'None'
+			add_to_chat(123,'Kiting Set: [Unlocked]')
+		else
+			Armor = 'Kiting'
+			add_to_chat(158,'Kiting Set: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C4' then -- Capa Back Toggle --
+		if Capa == 'ON' then
+			Capa = 'OFF'
+			add_to_chat(123,'Capacity Mantle: [Unlocked]')
+		else
+			Capa = 'ON'
+			add_to_chat(158,'Capacity Mantle: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C10' then -- Weakness Set Toggle --
+		if Armor == 'Weakness' then
+			Armor = 'None'
+			add_to_chat(123,'Weakness Set: [Unlocked]')
+		else
+			Armor = 'Weakness'
+			add_to_chat(158,'Weakness Set: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C17' then -- DT Toggle --
+		if Armor == 'DT' then
+			Armor = 'None'
+			add_to_chat(123,'DT Set: [Unlocked]')
+		else
+			Armor = 'DT'
+			add_to_chat(158,'DT Set: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C16' then -- Repulse Mantle Toggle --
+		if Repulse == 'ON' then
+			Repulse = 'OFF'
+			add_to_chat(123,'Repulse Mantle: [Unlocked]')
+		else
+			Repulse = 'ON'
+			add_to_chat(158,'Repulse Mantle: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C11' then -- Shield Skill Toggle --
+		if Armor == 'ShieldSkill' then
+			Armor = 'None'
+			add_to_chat(123,'Shield Skill Set: [Unlocked]')
+		else
+			Armor = 'ShieldSkill'
+			add_to_chat(158,'Shield Skill Set: [Locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C3' then -- Twilight Toggle --
+		if Twilight == 'Twilight' then
+			Twilight = 'None'
+			add_to_chat(123,'Twilight Set: [Unlocked]')
+		else
+			Twilight = 'Twilight'
+			add_to_chat(158,'Twilight Set: [locked]')
+		end
+		status_change(player.status)
+	elseif str == 'C8' then -- Distance Toggle --
+		if player.target.distance then
+			target_distance = math.floor(player.target.distance*10)/10
+			add_to_chat(158,'Distance: '..target_distance)
+		else
+			add_to_chat(123,'No Target Selected')
+		end
+	elseif str == 'C6' then -- Idle Toggle --
+		IdleIndex = (IdleIndex % #IdleArray) + 1
+		status_change(player.status)
+		add_to_chat(158,'Idle Set: '..IdleArray[IdleIndex])
+	elseif str == 'TP' then
+		add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
+	elseif str:match('^SC%d$') then
+		send_command('//' .. sc_map[command])
+	end
+end
+	
+function relaxed_play_mode()
+    -- This can be used as a mini bot to automate actions
+    if not midaction()	then
+			if player.hpp < 70
+                and not check_buffs('silence', 'mute')
+                and check_recasts(s('Cure4')) then
+				windower.send_command('cure4 <me>')
+				
+		elseif check_recasts(j('Provoke'))
+				and	player.status == 'Engaged'
+				and not check_buffs('paralyze')	then
+				windower.send_command('provoke')
+				
+		elseif not check_buffs('silence', 'mute')
+				and	player.status == 'Engaged'
+                and check_recasts(s('Flash')) then
+				windower.send_command('flash')
+		
+		elseif check_recasts(j('Defender'))
+				and not check_buffs('paralyze')	then
+				windower.send_command('defender')
+
+		elseif not check_buffs('silence', 'mute')
+				and not check_buffs('phalanx')
+                and check_recasts(s('Phalanx')) then
+				windower.send_command('phalanx')
+
+		elseif not check_buffs('silence', 'mute')
+				and not check_buffs('Enmity Boost')
+                and check_recasts(s('Crusade')) then
+				windower.send_command('crusade')
+
+		elseif not check_buffs('silence', 'mute')
+				and not check_buffs('enlight')
+                and check_recasts(s('Enlight')) then
+				windower.send_command('enlight')				
+
+		elseif	not check_buffs('palisade')
+				and	player.status == 'Engaged'
+				and not check_buffs('sentinel')
+				and not check_buffs('reprisal')
+				and not check_buffs('paralyze')	then
+					if check_recasts(j('Palisade')) then
+						windower.send_command('Palisade')
+					elseif check_recasts(s('Reprisal')) then
+						windower.send_command('reprisal')
+					elseif check_recasts(j('Sentinel')) then
+						windower.send_command('sentinel')
+					end
+		
+		end
+	end
+	
+	if not midaction() then
+		if not check_buffs('Stoneskin')
+			and player.sub_job == 'RDM'
+			and not check_buffs('silence', 'mute')
+			and check_recasts(s('Stoneskin')) then
+			windower.send_command('Stoneskin')	
+		end
+		--if not check_buffs('Phalanx')
+		--	and not check_buffs('silence', 'mute')
+		--	and check_recasts(s('Phalanx')) then
+		--	windower.send_command('Phalanx')	
+		--end		
+	end
+	
+end
+
+function check_buffs(...)
+    --[[ Function Author: Arcon
+            Simple check before attempting to auto activate Job Abilities that
+            check active buffs and debuffs ]]
+    return table.any({...}, table.get+{buffactive})
+end
+
+function relaxed_play_mode2()
+    -- Skillup Elemental/Enfeebling/Dark
+    if not midaction() then
+        if player.hpp < 70
+                and not check_buffs('silence', 'mute')
+                and check_recasts(s('cure4')) then
+				windower.send_command('cure4 <me>')
+
+		elseif player.hpp > 90 
+                and player.mpp < 10
+                and check_recasts(s('Convert')) then
+				windower.send_command('Convert;wait 1;cure4 <me>')
+
+		elseif not check_buffs('Regen')
+                and not check_buffs('silence', 'mute')
+                and check_recasts(s('Indi-Regen')) then
+				windower.send_command('Indi-Regen')				
+     			
+		elseif not pet.isvalid
+                and not check_buffs('silence', 'mute')
+                and check_recasts(s('Geo-Refresh')) then
+				windower.send_command('Geo-Refresh <me>')
+			
+		elseif not check_buffs('silence', 'mute') then
+				--windower.send_command('fire <bt>')
+				--windower.send_command('dia <bt>')
+				windower.send_command('bio <bt>')
+									
+        end
+    end
 end

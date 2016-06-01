@@ -96,10 +96,10 @@ function get_sets()
 
     sets.midcast.Geomancy = {main="Solstice", range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
-		neck="Deceiver's Torque", ring2="Renaye Ring", feet="Medium's Sabots", back="Lifestream Cape"}
+		neck="Incanter's Torque", ring2="Renaye Ring", feet="Medium's Sabots", back="Lifestream Cape"}
 		
     sets.midcast.Geomancy.Indi = {main="Solstice", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Deceiver's Torque",
+		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's Torque",
 		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Medium's Sabots", back="Lifestream Cape"}
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
@@ -132,7 +132,7 @@ function get_sets()
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
     sets.midcast['Dark Magic'] = {main="Marin staff", sub="Niobid Strap", range="Dunna",
-				head="Bagua Galero", neck="Deceiver's torque", ear1="Barkarole Earring", ear2="Friomisi Earring",
+				head="Bagua Galero", neck="Incanter's Torque", ear1="Barkarole Earring", ear2="Friomisi Earring",
                 body="Geomancy Tunic", hands="Amalric gages", ring1="Acumen Ring", ring2="Etana ring",
                 back="Lifestream Cape", waist="Cetl Belt", legs="Amalric slops", feet="Helios boots"}
 
@@ -159,7 +159,7 @@ function get_sets()
 	
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood", neck="Deceiver's Torque", rear="Etiolation Earring", lear="Ethereal Earring",
+				head="Azimuth Hood", neck="Incanter's Torque", rear="Etiolation Earring", lear="Ethereal Earring",
                 body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters"}
 	

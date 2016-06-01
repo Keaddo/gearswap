@@ -432,7 +432,7 @@ function init_gear_sets()
     main="Izizoeksi",
     sub="Arktoi",
     head="Despair Helm",
-    body="Despair Mail",
+    body="Emet Harness +1",
     hands="Despair Fin. Gaunt.",
     legs="Valor. Hose",
     feet="Acro Leggings",

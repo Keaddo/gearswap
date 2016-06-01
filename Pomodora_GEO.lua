@@ -126,7 +126,7 @@ function get_sets()
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
     sets.midcast['Dark Magic'] = {main="Marin staff", sub="Niobid Strap", range="Dunna",
-				head="Bagua Galero", neck="Deceiver's torque", ear1="Barkarole Earring", ear2="Friomisi Earring",
+				head="Bagua Galero", neck="Incanter's Torque", ear1="Barkarole Earring", ear2="Friomisi Earring",
                 body="Geomancy Tunic", hands="Amalric gages", ring1="Acumen Ring", ring2="Etana ring",
                 back="Lifestream Cape", waist="Cetl Belt", legs="Amalric slops", feet="Helios boots"}
 
