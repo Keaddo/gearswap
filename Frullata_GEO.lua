@@ -462,7 +462,7 @@ function relaxed_play_mode()
                 and check_recasts(s('Indi-Precision')) then
 				windower.send_command('Indi-Precision')				
 
-		elseif not check_buffs('Magic Accuracy Boost')
+		elseif not check_buffs('Magic Acc. Boost')
                 and not check_buffs('silence', 'mute')
 				and indi_mode == 'Focus'
                 and check_recasts(s('Indi-Focus')) then

@@ -868,7 +868,7 @@ end
 
 --Macros--
 -- send_command('bind f9 gs c C7') --PDT--
-send_command('bind f8 gs c C17') --DT--
+send_command('bind f9 gs c C17') --DT--
 send_command('bind f7 gs c C2') --Ochain/Aegis/Priwen--
 --send_command('bind f6 gs c C1') --ACC Level--
 --send_command('bind f5 gs c C3') --Twilight--
