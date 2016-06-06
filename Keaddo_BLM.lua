@@ -32,16 +32,16 @@ function user_setup()
     send_command('bind !g gs c toggle Spaekona')
     gear.aspir_body = "Amalric Doublet"
     gear.aspir_hands = {name="Merlinic Dastanas", augments={'Mag. Acc.+6','"Drain" and "Aspir" potency +11','CHR+10',}}
-    gear.aspir_legs = "Merlinic Shalwar"
-    gear.aspir_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
+    gear.aspir_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','CHR+10','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}
+    gear.aspir_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +1','Mag. Acc.+4','"Mag.Atk.Bns."+11',}}
 	gear.fc_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','Mag. Acc.+5',}}
 	gear.fc_feet = { name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}
-	gear.nuke_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
+	gear.nuke_head = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst mdg.+9%','MND+1','Mag. Acc.+1',}}
 	gear.nuke_body = "Amalric Doublet"
-	gear.nuke_legs = "Amalric Slops"
-	gear.nuke_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
-	gear.burst_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+26','Magic burst mdg.+9%','CHR+1','Mag. Acc.+11',}}
-	gear.burst_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst mdg.+4%','MND+3',}}
+	gear.nuke_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','CHR+10','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}
+	gear.nuke_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +1','Mag. Acc.+4','"Mag.Atk.Bns."+11',}}
+	gear.burst_head = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst mdg.+9%','MND+1','Mag. Acc.+1',}}
+	gear.burst_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Magic burst mdg.+9%','Mag. Acc.+12',}}
 	gear.burst_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst mdg.+9%','CHR+6','Mag. Acc.+13',}}
 	gear.nuke_back = { name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
 	gear.death_back = { name="Taranus's Cape", augments={'MP+60','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}

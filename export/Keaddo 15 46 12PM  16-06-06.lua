@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Akademos", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+    sub="Niobid Strap",
+    ammo="Pemphredo Tathlum",
+    head={ name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst mdg.+9%','MND+1','Mag. Acc.+1',}},
+    body="Vrikodara Jupon",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Magic burst mdg.+9%','Mag. Acc.+12',}},
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +1','Mag. Acc.+4','"Mag.Atk.Bns."+11',}},
+    neck="Sanctity Necklace",
+    waist="Fucho-no-Obi",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",
+}
