@@ -1,7 +1,17 @@
 function get_sets()
 
+	Cities = S{
+                        "Ru'Lude Gardens","Upper Jeuno","Lower Jeuno","Port Jeuno",
+                        "Port Windurst","Windurst Waters","Windurst Woods","Windurst Walls","Heavens Tower",
+                        "Port San d'Oria","Northern San d'Oria","Southern San d'Oria",
+                        "Port Bastok","Bastok Markets","Bastok Mines","Metalworks",
+                        "Aht Urhgan Whitegate","Nashmau","Tavanazian Safehold",
+                        "Selbina","Mhaura","Norg","Eastern Adoulin","Western Adoulin","Kazham","Tavnazia"}	
+
+
 	-- gear
-	dt_head = "Herculean Helm"
+	refresh_hands = { name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}}
+	dt_head = { name="Herculean Helm", augments={'Accuracy+3 Attack+3','Phys. dmg. taken -4%','Accuracy+9','Attack+5',}}
 	dt_feet = { name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 	tp_feet = { name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}}
 	tp_acc_feet = { name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}
@@ -9,23 +19,33 @@ function get_sets()
 				--Idle Sets--
 				sets.Idle = {               
 					ammo="Homiliary",
-					head="Futhark Bandeau +1",
-					neck="Loricate Torque +1",
-					ear1="Hearty Earring",
+					head="Rawhide Mask",
+					neck="Sanctity Necklace",
+					ear1="Infused Earring",
 					ear2="Ethereal Earring",   
 					body="Futhark coat +1",
-					hands="Erilaz Gauntlets +1",
-					ring2="Gelatinous Ring +1",
-					ring1="Defending Ring",     
+					hands=refresh_hands,
+					ring2="Paguroidea Ring",
+					ring1="Sheltered Ring",     
 					back="Evasionist's Cape",
 					waist="Flume Belt +1",
 					legs="Carmine Cuisses +1",
 					feet=dt_feet
 				}   
+				
+				sets.Town = set_combine(sets.Idle,{
+					body="Runeist Coat +1",
+					ear1="Etiolation Earring",
+					neck="Loricate Torque +1",
+					ring1="Defending Ring",
+					ring2="Weatherspoon Ring",
+					waist="Flume Belt +1",
+					back="Ogma's Cape"
+				})
                                    
                 --TP Sets--
                 sets.TP = {}
-                sets.TP.index = {'Standard', 'Accuracy', 'DT', 'MDTacc'}
+                sets.TP.index = {'Standard', 'Accuracy', 'DTacc'}
                 TP_ind = 1
 				
                 --offensive melee set
@@ -63,32 +83,40 @@ function get_sets()
 					legs="Taeon Tights",
 					feet=tp_acc_feet
 				}   
-					
-                --full DT melee set
+					                
 				
-                sets.TP.DT = {              
-					ammo="Vanir Battery",          
-					head=dt_head,
-					neck="Loricate Torque +1",
-					ear1="Hearty Earring",
-					ear2="Ethereal Earring",
-					body="Futhark coat +1",
-					hands="Erilaz Gauntlets +1",
-					ring2="Gelatinous Ring +1",
-					ring1="Defending Ring",
-					back="Evasionist's Cape",
-					waist="Flume Belt +1",
-					legs="Erilaz Leg Guards +1",
-					feet="Erilaz Greaves +1"
-				}                  
+                --DT acc melee set
 				
-                --MDT melee set
-				
-                sets.TP.MDTacc = {          ammo="Falcon Eye",          
+                sets.TP.DTacc = {          ammo="Falcon Eye",          
                                     head="Dampening Tam",neck="Twilight Torque",ear1="Steelflash Earring",ear2="Zennaroi Earring",          
                                     body="Rawhide Vest",hands="Erilaz Gauntlets +1",ring1="Shadow Ring",ring2="Defending Ring",         
                                     back="Evasionist's Cape",waist="Olseni Belt",legs="Runeist Trousers +1",feet="Taeon Boots"}         
-                                     
+ 
+    sets.misc = {}
+    sets.misc.DT = {}
+    sets.misc.DT.None = {}
+    sets.misc.DT.Active = {
+					ammo="Vanir Battery",			-- 4 MDEF     
+					head=dt_head,					-- 4 PDT
+					neck="Loricate Torque +1",		-- 6 DT
+					ear1="Hearty Earring",			-- status_ailments
+					ear2="Ethereal Earring",
+					body="Erilaz Surcoat +1",
+					hands="Erilaz Gauntlets +1",	-- status_ailments +6
+					ring2="Gelatinous Ring +1",		-- 7 PDT
+					ring1="Defending Ring",			-- 10 DT
+					back="Evasionist's Cape",		-- 5 DT 3 PDT
+					waist="Flume Belt +1",			-- 4 PDT
+					legs="Erilaz Leg Guards +1",	-- 7 PDT
+					feet="Erilaz Greaves +1"		-- 5 PDT
+				}  
+			
+													-- 21 DT + 30 PDT + 5% PDT2 + 3 DT grip
+			
+    sets.misc.Movement = {
+        legs="Carmine Cuisses +1"}
+
+ 
                 --Weaponskill Sets--
 				
                 sets.WS = {}     
@@ -184,13 +212,20 @@ function get_sets()
 				
                 --full PDT set for when stunned, etc.
 				
-                sets.Utility.PDT =  set_combine(sets.TP.DT,{
+                sets.Utility.PDT =  set_combine(sets.misc.DT.Active,{
 				})       
 				
                 --full MDT set for when stunned, etc
 				
-                sets.Utility.MDT = set_combine(sets.TP.DT,{
-				})       
+                sets.Utility.MDT = set_combine(sets.misc.DT.Active,{
+				})
+				
+				sets.Utility.Enhancing = {
+				head="Erilaz Galea +1",
+				hands="Runeist Mitons +1",
+				waist="Olympus Sash",
+				legs="Futhark Trousers +1"
+				}
                          
                 --Job Ability Sets--
                 sets.JA = {}
@@ -209,7 +244,7 @@ function get_sets()
 					feet="Adhemar Gamashes"
 				}
 				
-                sets.JA.Vallation = {body="Runeist Coat +1",legs="Futhark Trousers +1"}       
+                sets.JA.Vallation = {body="Runeist Coat +1",legs="Futhark Trousers +1", back="Ogma's Cape"}       
                 sets.JA.Gambit = {hands="Runeist mitons +1"}
                 sets.JA.Rayke = {feet="Futhark bottes +1"}  
                 sets.JA.Battuta = {head="Futhark bandeau +1"}      
@@ -217,9 +252,10 @@ function get_sets()
                 sets.JA.Pulse = {head="Erilaz Galea +1",legs="Runeist Trousers +1"}
                                 
                 --Precast Sets--
-                --Fast Cast set
+                -- Cast set
 				
                 sets.precast = {
+					ammo = "Impatiens",
 					head="Runeist bandeau +1",
 					body="Samnuha Coat",
 					hands="Leyline Gloves",
@@ -237,28 +273,44 @@ function get_sets()
 				
                 --Enmity set for high hate generating spells and JAs                
                 sets.Enmity =  {
+					ammo = "Sapience Orb",			-- 2 
 					head="Highwing Helm",
-					neck="Unmoving Collar",
-					ear1="Friomisi earring",         
-					body="Emet Harness",
-					hands="Nilas Gloves",                                    
-					back="Earthcry Mantle",
-					legs="Erilaz Leg Guards",
-					feet="Erilaz Greaves +1",
-					ring1="Petrov Ring"
+					neck="Unmoving Collar",			-- 9
+					ear1="Friomisi earring",		-- 2 
+					body="Emet Harness",			-- 9
+					hands="Nilas Gloves",                     
+					back="Evasionist's Cape",		-- 5 
+					legs="Erilaz Leg Guards +1",	-- 11
+					feet="Erilaz Greaves +1",		-- 6
+					ring1="Petrov Ring",			-- 4
+					ring2="Begrudging Ring"			-- 5 
 				}
 					
+										-- TOTAL ENMITY: 53  
+										
                 --Magic acc for enfeebles, handy for VW
                 sets.MagicAcc = {head="Dampening Tam",ear1="Gwati Earring",
                                 body="Samnuha Coat",hands="Leyline Gloves",
                                 waist="Salire Belt",legs="Runeist Trousers +1",feet="Iuitl Gaiters +1"}             
                  
                 --Toggle TP sets button, change if you want; currently ALT+F9 toggles forward, CTRL+F9 toggles backwards
-                send_command('bind !f9 gs c toggle TP set')
-                send_command('bind ^f9 gs c reverse TP set')
+                send_command('bind f9 gs c toggle TP set')
+				windower.send_command('bind f10 gs c dt_mode')
+               -- send_command('bind ^f9 gs c reverse TP set')
+				dt_mode = 'None'
                 --other stuff, don't touch
                 ShadowType = 'None'
 end
+ 
+ 	function file_unload()
+	
+         send_command('unbind f9')
+        send_command('unbind f10')
+        send_command('unbind ^1')
+        send_command('unbind !f12')
+		send_command('unbind !`')
+		
+		end
  
 --the following section looks at the weather/day to see if the Hachirin-no-Obi is worth using
 --add the following line to a section to have it check the element and equip the obi:
@@ -420,7 +472,7 @@ function midcast(spell,act,arg)
                 equip(sets.Utility.PDT,{head="Runeist bandeau +1"})         
         end  
         if spell.skill == 'Enhancing Magic' then
-                equip({head="Erilaz Galea +1",legs="Futhark Trousers +1"})
+                equip(sets.Utility.Enhancing)
                 if spell.name == "Blink" or spell.name == "Stoneskin" or string.find(spell.name,'Utsusemi') then
                     equip(sets.Utility.PDT,{head="Runeist bandeau +1",hands="Leyline Gloves"})
                 elseif string.find(spell.name,'Bar') or spell.name=="Temper" then
@@ -454,7 +506,11 @@ function midcast(spell,act,arg)
 end
  
 function aftercast(spell)
+	    if Cities:contains(world.area) then
+						equip(sets.Town)
+		else
         equip_current()
+		end
         if string.find(spell.name,'Utsusemi') and not spell.interrupted then
             if spell.name == 'Utsusemi: Ichi' then
             ShadowType = 'Ichi'
@@ -465,7 +521,11 @@ function aftercast(spell)
 end
  
 function status_change(new,old)
-    equip_current()
+		if Cities:contains(world.area) then
+			equip(sets.Town)
+		else
+			equip_current()
+			end
 end 
   
 function equip_TP()
@@ -536,9 +596,9 @@ end
  
 function equip_current()
         if player.status == 'Engaged' then
-        equip_TP()
+        equip(equip_TP(), sets.misc.DT[dt_mode])
         else
-        equip_idle()
+        equip(equip_idle(), sets.misc.DT[dt_mode], sets.misc.Movement)
         end
 end
              
@@ -553,5 +613,13 @@ function self_command(command)
                 if TP_ind == 0 then TP_ind = #sets.TP.index end
                 send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ----->')
                 equip_current()
+		elseif command == 'dt_mode' then
+        if dt_mode == 'None' then
+            dt_mode = 'Active'
+        else
+            dt_mode = 'None'
         end
+        windower.add_to_chat(8,'Damage taken set to: '..dt_mode)
+        equip_current()
+						end
 end

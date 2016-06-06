@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','System: 2 ID: 114 Val: 9',}},
+    sub="Balarama Grip",
+    ammo="Vanir Battery",
+    head="Rune. Bandeau +1",
+    body="Erilaz Surcoat +1",
+    hands={ name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}},
+    legs="Eri. Leg Guards +1",
+    feet="Erilaz Greaves +1",
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Etiolation Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Defending Ring",
+    right_ring="Gelatinous Ring +1",
+    back={ name="Evasionist's Cape", augments={'Enmity+5','"Embolden"+7','Damage taken-5%',}},
+}

@@ -1118,7 +1118,7 @@ function self_command(str)
 			auto_action  = 'Off'
 		end
 		windower.add_to_chat(8,'Auto fire event set to: '..auto_action)
-		windower.send_command('input /tell Keaddo Auto_action: '..auto_action)
+		windower.send_command('input /tell Keaddo Si tanka? '..auto_action)
 
 	elseif str == 'C1' then -- Accuracy Level Toggle --
 		AccIndex = (AccIndex % #AccArray) + 1

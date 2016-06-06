@@ -333,8 +333,8 @@ function self_command(str)
 		else
 			auto_action  = 'Off'
 		end
-		windower.add_to_chat(8,'Auto fire event set to: '..auto_action)
-		windower.send_command('input /tell Keaddo Auto_action: '..auto_action)
+		windower.add_to_chat(8,'Event set to: '..auto_action)
+		windower.send_command('input /tell Keaddo Si mangia? '..auto_action)
 
 	elseif str == 'status' then
 		windower.add_to_chat(8, 'Indi mode: '..indi_mode..', Geo mode: '..geo_mode)

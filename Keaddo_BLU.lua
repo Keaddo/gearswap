@@ -424,7 +424,7 @@ function get_sets()
 		legs="Amalric Slops",
 		feet="Amalric Nails",
 		neck="Sanctity Necklace",
-		waist="Salire Belt",
+		waist="Eschan Stone",
 		left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",
 		left_ring="Shiva Ring",
@@ -517,7 +517,7 @@ function get_sets()
 		legs="Amalric Slops",
 		feet="Amalric Nails",
 		neck="Sanctity Necklace",
-		waist="Salire Belt",
+		waist="Eschan Stone",
 		left_ear="Hecate's Earring",
 		right_ear="Friomisi Earring",
 		left_ring="Shiva Ring",
@@ -544,10 +544,10 @@ function get_sets()
 		legs="Psycloth Lappas",
 		feet="Amalric Nails",
 		neck="Sanctity Necklace",
-		waist="Salire Belt",
+		waist="Eschan Stone",
 		left_ear="Enchntr. Earring +1",
 		right_ear="Dignitary Earring",
-		left_ring="Balrahn Ring",
+		left_ring="Metamorph Ring",
 		right_ring="Weatherspoon Ring",
 		back="Cornflower cape"})
 
@@ -568,7 +568,7 @@ function get_sets()
 		legs="Amalric Slops",
 		feet="Amalric Nails",
 		neck="Sanctity Necklace",
-		waist="Salire Belt",
+		waist="Eschan Stone",
 		left_ear="Hecate's Earring",
 		right_ear="Friomisi Earring",
 		left_ring="Shiva Ring",
@@ -1114,7 +1114,7 @@ function self_command(str)
         else
             auto_action  = 'Off'
         end
-        windower.add_to_chat(8,'Auto fire event set to: '..auto_action)
+        windower.add_to_chat(8,'Si mangia? '..auto_action)
 
     --[[ Use an in game macro "/con gs c cure" to dynamically use currently set
             cure spell
@@ -1185,13 +1185,13 @@ function self_command(str)
     elseif str == 'weapon_combo' then
         if weapon_combo == 'Tizona' then
             weapon_combo = 'Almace'
-			windower.send_command('equip main "";wait 0.5;equip main Almace;wait 1;equip sub Colada')
+			windower.send_command('equip main "";wait 1;equip main Almace;wait 1;equip sub Colada')
 		elseif weapon_combo == 'Almace' then
 			weapon_combo = 'Medeina'
-			windower.send_command('equip main "";wait 0.5;equip main Vampirism;wait 1;equip sub Vampirism')
+			windower.send_command('equip main "";wait 1;equip main Vampirism;wait 1;equip sub Vampirism')
         else
             weapon_combo = 'Tizona'
-			windower.send_command('equip main "";wait 0.5;equip main Tizona;wait 1;equip sub Almace')
+			windower.send_command('equip main "";wait 1;equip main Tizona;wait 1;equip sub Almace')
         end
         windower.add_to_chat(8,'Weapon type set to: '..weapon_combo)
 	--	equip(sets.weapon[weapon_combo])

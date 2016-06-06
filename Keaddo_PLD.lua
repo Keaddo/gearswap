@@ -639,7 +639,7 @@ function get_sets()
 			ring1="Kunaji Ring",
 			ring2="Praan Ring",
 			back="Aenotherus Mantle",
-			waist="Oneiros Belt",
+			waist="Eschan Stone",
 			legs="Eschite Cuisses",
 			feet="Souveran Schuhs"}
 			
