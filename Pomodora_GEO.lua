@@ -696,7 +696,11 @@ function gear_modes()
         end
         equip(sets.engaged)
     elseif player.status == 'Idle' then
-        equip(sets.idle)
+		if pet.isvalid then
+			equip(sets.idle.Pet)
+		else
+			equip(sets.idle)
+		end
 --      if dt_mode == 'None' then
   --          --print(party.count)
     --        if party.count > 1 then
@@ -794,9 +798,9 @@ function midcast(spell,arg)
 	
 	if spell.english:startswith('Indi') or spell.english:startswith('Geo') then
 		equip(sets.midcast.Geomancy)
-
-    if spell.skill == 'Healing Magic' or spell.skill == 'Enhancing Magic'
-            or spell.type == 'Trust' then
+	end
+	
+    if spell.skill == 'Healing Magic' or spell.type == 'Trust' then
         equip(sets.midcast.FastRecast)
         if spell.name:startswith('Cure') then
             equip(sets.midcast.Cure)
@@ -804,14 +808,22 @@ function midcast(spell,arg)
                 equip(sets.midcast.Cure)
             end
         end
-    elseif spell.skill == 'Elemental Magic' then
-        equip(sets.midcast.BlueMagic.Nuke)
+	end
+	if spell.skill == 'Enhancing Magic' then
+		equip(sets.midcast['Enhancing Magic'])
+	end
+    if spell.skill == 'Elemental Magic' then
+        equip(sets.midcast['Elemental Magic'])
     end
-
+	if spell.skill == 'Enfeebling Magic' then
+		equip(sets.midcast['Enfeebling Magic'])
+	end
+	if spell.skill == 'Dark Magic' then
+		equip(sets.midcast['Dark Magic'])
+	end	
     if spell.name:startswith('Utsusemi') then
         equip(sets.misc.DT.Active)
-    end
-end
+	end
 
 end
 

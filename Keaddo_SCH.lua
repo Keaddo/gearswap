@@ -533,7 +533,7 @@ function init_gear_sets()
 		head=gear.burst_head,
 		neck="Mizukage-no-Kubikazari",
 		ring1="Mujin Band",
-		ring2="Locus Ring",
+	--	ring2="Locus Ring",
 		back=gear.nuke_back,
 		legs=gear.burst_legs
 		}
