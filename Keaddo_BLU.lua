@@ -293,6 +293,7 @@ function get_sets()
 	-- local binds
 	    cdc_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
 		tp_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
+		exp_hands = { name="Herculean Gloves", augments={'Accuracy+23 Attack+23','Crit.hit rate+1','STR+10','Attack+5',}}
 	
 
     -- Start defining actual gear sets to be used below --
@@ -374,7 +375,7 @@ function get_sets()
     sets.precast.WS['Chant du Cygne'] = {
     head="Adhemar Bonnet",
     body="Abnoba Kaftan",
-    hands="Adhemar Wristbands",
+    hands=cdc_hands,
     legs="Samnuha Tights",
     feet="Thereoid Greaves",
     neck="Fotia Gorget",
@@ -392,7 +393,7 @@ function get_sets()
 		ear1="Moonshade earring",
 		ear2="Ishvara earring",
 		body="Adhemar Jacket",
-		hands="Adhemar Wristbands",
+		hands=exp_hands,
 		ring1="Epona's ring",
 		ring2="Rufescent ring",
 		back=cdc_back,
@@ -477,7 +478,7 @@ function get_sets()
 		ammo="Amar Cluster",
 		head="Adhemar Bonnet",
 		body="Adhemar Jacket",
-		hands="Herculean Gloves",
+		hands=exp_hands,
 		legs="Samnuha Tights",
 		feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}},
 		neck="Caro Necklace",
