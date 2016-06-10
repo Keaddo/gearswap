@@ -354,9 +354,9 @@ function self_command(str)
 			indi_mode = 'Focus'
 			geo_mode = 'Languor'
 		elseif indi_mode == 'Focus' then
-			indi_mode = 'Regen'
-			geo_mode = 'Barrier'
-		elseif indi_mode == 'Regen' then
+			indi_mode = 'Barrier'
+			geo_mode = 'Wilt'
+		elseif indi_mode == 'Barrier' then
 			indi_mode = 'Haste'
 			geo_mode = 'None'
 		elseif indi_mode == 'Haste' then
@@ -376,8 +376,8 @@ function self_command(str)
 		elseif geo_mode == 'Torpor' then
 			geo_mode = 'Languor'
 		elseif geo_mode == 'Languor' then
-			geo_mode = 'Barrier'
-		elseif geo_mode == 'Barrier' then
+			geo_mode = 'Wilt'
+		elseif geo_mode == 'Wilt' then
 			geo_mode = 'None'
 		elseif geo_mode == 'None' then
 			geo_mode = 'Frailty'			
@@ -449,7 +449,7 @@ function relaxed_play_mode()
 		--Indi		
 		elseif not check_buffs('Attack Boost')
                 and not check_buffs('silence', 'mute')
-				and indi_mode == 'Frailty'
+				and indi_mode == 'Fury'
                 and check_recasts(s('Indi-Fury')) then
 				windower.send_command('Indi-Fury')
 			
@@ -476,11 +476,11 @@ function relaxed_play_mode()
 				and indi_mode == 'Focus'
                 and check_recasts(s('Indi-Focus')) then
 				windower.send_command('Indi-Focus')	
-		elseif not check_buffs('Regen')
+		elseif not check_buffs('Defense Boost')
 				and not check_buffs('silence', 'mute')
-				and indi_mode == 'Regen'
-				and check_recasts(s('Indi-Regen')) then
-				windower.send_command('Indi-Regen')
+				and indi_mode == 'Barrier'
+				and check_recasts(s('Indi-Barrier')) then
+				windower.send_command('Indi-Barrier')
 		elseif not check_buffs('Haste')
 				and not check_buffs('silence', 'mute')
 				and indi_mode == 'Haste'
@@ -505,8 +505,8 @@ function relaxed_play_mode()
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Torpor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
 					elseif geo_mode == 'Languor' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Languor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
-					elseif geo_mode == 'Barrier' then
-						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Barrier <me>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>')
+					elseif geo_mode == 'Wilt' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Wilt <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>')
 					elseif geo_mode == 'None' then
 					end
 					blaze = 'Off'
