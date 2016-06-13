@@ -295,7 +295,8 @@ function get_sets()
 		tp_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 		cdc_hands = "Adhemar Wristbands"
 		exp_hands = { name="Herculean Gloves", augments={'Accuracy+23 Attack+23','Crit.hit rate+1','STR+10','Attack+5',}}
-	
+		th_hands = { name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}}
+		th_feet = { name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
 
     -- Start defining actual gear sets to be used below --
     -- WEAPON TYPES --
@@ -740,6 +741,9 @@ function get_sets()
 		hands={ name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}},
 		feet={ name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
 		})
+	sets.TH.spell = set_combine(sets.midcast.BlueMagic.Nuke,{
+		hands = th_hands,
+		feet = th_feet})
     TH_ind = 1
 	
     sets.idle = {
@@ -1540,6 +1544,9 @@ function midcast(spell,arg)
                     or spell.element == world.weather_element then
                 equip(sets.misc.Cape_Obi)
             end
+			if spell.name:startswith('Subduction') then
+				equip(sets.TH.spell)
+			end
         elseif check_buffs('Diffusion') then
             equip(sets.misc.Diffusion)
         end

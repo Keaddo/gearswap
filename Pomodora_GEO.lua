@@ -113,24 +113,32 @@ function get_sets()
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash", neck="Stone gorget"})
     
-    sets.midcast['Enfeebling Magic'] = {main="Marin staff", sub="Niobid Strap", range="Dunna",
+    sets.midcast['Enfeebling Magic'] = {
+	-- main="Marin staff", sub="Niobid Strap", 
+	range="Dunna",
 				head="Bagua Galero", neck="Sanctity Necklace", ear2="Influx Earring", ear1="Moonshade Earring",
                 body="Vanya Robe", hands="Amalric gages", ring1="Etana ring", ring2="Leviathan ring",
                 back="Lifestream Cape", waist="Ovate Rope", legs="Amalric slops", feet="Bagua Sandals"}
     
-    sets.midcast['Elemental Magic'] = {main="Marin staff", sub="Niobid Strap", ammo="Witchstone",
+    sets.midcast['Elemental Magic'] = {
+	-- main="Marin staff", sub="Niobid Strap", 
+	ammo="Witchstone",
 				head="Welkin Crown", neck="Sanctity Necklace", ear1="Barkarole Earring", ear2="Friomisi Earring",
                 body="Amalric doublet", hands="Amalric gages", ring1="Acumen Ring", ring2="Shiva Ring",
                 back="Toro Cape", waist="Refoccillation Stone", legs="Amalric slops", feet="Helios boots"}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
-    sets.midcast['Dark Magic'] = {main="Marin staff", sub="Niobid Strap", range="Dunna",
+    sets.midcast['Dark Magic'] = {
+	-- main="Marin staff", sub="Niobid Strap", 
+	range="Dunna",
 				head="Bagua Galero", neck="Incanter's Torque", ear1="Barkarole Earring", ear2="Friomisi Earring",
                 body="Geomancy Tunic", hands="Amalric gages", ring1="Acumen Ring", ring2="Etana ring",
                 back="Lifestream Cape", waist="Cetl Belt", legs="Amalric slops", feet="Helios boots"}
 
-    sets.magic_burst = {main="Marin staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
+    sets.magic_burst = {
+	-- main="Marin staff +1", sub="Niobid Strap", 
+	ammo="Ghastly Tathlum",
 				head="Merlinic hood", neck="Mizu. Kubikazari", lear="Barkarole Earring", rear="Friomisi Earring",
                 body="Amalric doublet", hands="Amalric gages", lring="Mujin Band", rring="Locus ring",
                 back="Seshaw cape", waist="Refoccilation Stone", legs="Merlinic shalwar", feet="Merlinic Crackows"}
@@ -178,8 +186,8 @@ function get_sets()
 
     -- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {
-	main="Terra's Staff", sub="Volos Strap",
---	main="Bolelabunga", sub="Genbu's Shield", 
+--	main="Terra's Staff", sub="Volos Strap",
+	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
@@ -187,8 +195,8 @@ function get_sets()
 		}
    
     sets.idle.PDT.Pet = {
-	main="Terra's Staff", sub="Volos Strap",
---	main="Bolelabunga", sub="Genbu's Shield", 
+--	main="Terra's Staff", sub="Volos Strap",
+	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
