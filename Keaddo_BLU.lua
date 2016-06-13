@@ -282,12 +282,14 @@ function get_sets()
 	
 	-- TREASURE HUNTER
     windower.register_event('tp change', function(new, old)
+	    if player.status == 'Engaged' then
         if TH_ind == 1 then
             if EngagedTP > -1 and player.tp > (EngagedTP+80) and player.status == 'Engaged' then
                 windower.send_command('gs c TPchange')
             end
         end
-    end)
+    end
+	end)
 
 	
 	-- local binds
@@ -1267,11 +1269,11 @@ function relaxed_play_mode()
                 and check_recasts(s('White Wind')) then
             windower.send_command('white wind')
 
-        elseif player.target.hpp < 40
-                and player.target.hpp > 15
-                and not check_buffs('silence', 'mute')
-                and player.target.distance < 5 then
-            windower.send_command('sinker drill')
+     --   elseif player.target.hpp < 40
+     --           and player.target.hpp > 15
+     --           and not check_buffs('silence', 'mute')
+     --           and player.target.distance < 5 then
+     --       windower.send_command('sinker drill')
 
         elseif not check_buffs('Haste')
                 and not check_buffs('silence', 'mute')

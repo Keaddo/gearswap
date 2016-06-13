@@ -116,8 +116,8 @@ function get_sets()
     sets.midcast['Enfeebling Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Bagua Galero", neck="Sanctity Necklace", ear2="Influx Earring", ear1="Moonshade Earring",
-                body="Vanya Robe", hands="Amalric gages", ring1="Etana ring", ring2="Leviathan ring",
+				head="Merlinic Hood", neck="Incanter's Torque", ear2="Influx Earring", ear1="Moonshade Earring",
+                body="Vanya Robe", hands="Amalric gages", ring1="Etana ring", ring2="Vertigo ring",
                 back="Lifestream Cape", waist="Ovate Rope", legs="Amalric slops", feet="Bagua Sandals"}
     
     sets.midcast['Elemental Magic'] = {
@@ -189,7 +189,7 @@ function get_sets()
 --	main="Terra's Staff", sub="Volos Strap",
 	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
-        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
 		}
@@ -198,7 +198,7 @@ function get_sets()
 --	main="Terra's Staff", sub="Volos Strap",
 	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
-        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
 		}
