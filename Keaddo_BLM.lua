@@ -30,14 +30,15 @@ function user_setup()
     -- Additional local binds
     send_command('bind !` gs c toggle MagicBurst')
     send_command('bind !g gs c toggle Spaekona')
-    gear.aspir_body = "Amalric Doublet"
+    gear.aspir_body = "Merlinic Jubbah"
     gear.aspir_hands = {name="Merlinic Dastanas", augments={'Mag. Acc.+6','"Drain" and "Aspir" potency +11','CHR+10',}}
     gear.aspir_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','CHR+10','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}
     gear.aspir_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +1','Mag. Acc.+4','"Mag.Atk.Bns."+11',}}
 	gear.fc_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','Mag. Acc.+5',}}
+	gear.fc_body = "Merlinic Jubbah"
 	gear.fc_feet = { name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}
 	gear.nuke_head = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst mdg.+9%','MND+1','Mag. Acc.+1',}}
-	gear.nuke_body = "Amalric Doublet"
+	gear.nuke_body = "Merlinic Jubbah"
 	gear.nuke_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','CHR+10','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}
 	gear.nuke_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +1','Mag. Acc.+4','"Mag.Atk.Bns."+11',}}
 	gear.burst_head = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst mdg.+9%','MND+1','Mag. Acc.+1',}}
@@ -94,12 +95,14 @@ function init_gear_sets()
 	}
 	
     sets.idle.Town =                                                        set_combine(sets.idle,{
+		body = "Merlinic Jubbah",
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",
 		back=gear.nuke_back,
 		feet="Herald's Gaiters"})
 		
     sets.defense.PDT =                                                      set_combine(sets.idle,{
+		body = "Merlinic Jubbah",
 		neck="Loricate Torque +1",
 		ear1="Etiolation Earring",
 		ring2="Gelatinous Ring +1",
@@ -112,7 +115,7 @@ function init_gear_sets()
 		head=gear.fc_head,
 		ear2="Etiolation Earring",
 		ear1="Loquacious Earring",
-		body="Vrikodara Jupon",
+		body=gear.fc_body,
 		hands="Merlinic Dastanas",
 		ring1="Prolix Ring",
 		ring2="Weatherspoon Ring",
@@ -126,7 +129,7 @@ function init_gear_sets()
     sets.precast.FC.HighMP = {
         ammo="Psilomene",
         head=gear.fc_head,
-		body="Vrikodara Jupon",
+		body=gear.fc_body,
         hands="Amalric Gages",
         legs="Psycloth Lappas",
 		feet=gear.fc_feet,
@@ -267,7 +270,7 @@ function init_gear_sets()
 		ear1="Friomisi Earring",
 		ear2="Barkarole Earring",
 		ring1="Shiva Ring",
-		ring2="Shiva Ring",
+		ring2="Shiva Ring +1",
 		back=gear.nuke_back,
 		waist=gear.ElementalObi
     }
@@ -355,7 +358,7 @@ function init_gear_sets()
     
     sets.magic_burst['Elemental Magic'].Comet = {
 		neck="Mizukage-no-Kubikazari",
-		ring2="Locus Ring",
+	--	ring2="Locus Ring",
 		back=gear.nuke_back
 	}
 

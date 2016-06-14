@@ -510,6 +510,7 @@ function relaxed_play_mode()
 		
 		--Geo
 		elseif not pet.isvalid
+				and player.in_combat
 				and not check_buffs('silence', 'mute')
 				and check_recasts(s('Geo-Frailty'))
 				and check_recasts(s('Geo-Vex'))

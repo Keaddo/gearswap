@@ -433,7 +433,7 @@ function get_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",
 		left_ring="Shiva Ring",
-		right_ring="Shiva Ring",
+		right_ring="Shiva Ring +1",
 		back="Cornflower Cape"
 	}
 
@@ -526,7 +526,7 @@ function get_sets()
 		left_ear="Hecate's Earring",
 		right_ear="Friomisi Earring",
 		left_ring="Shiva Ring",
-		right_ring="Shiva Ring",
+		right_ring="Shiva Ring +1",
 		back="Cornflower cape",
         })
 
@@ -577,7 +577,7 @@ function get_sets()
 		left_ear="Hecate's Earring",
 		right_ear="Friomisi Earring",
 		left_ring="Shiva Ring",
-		right_ring="Shiva Ring",
+		right_ring="Shiva Ring +1",
 		back="Cornflower cape",	
 		}
 
@@ -1302,6 +1302,24 @@ function relaxed_play_mode()
             windower.send_command('chant du cygne')
         end
     end
+end
+
+function status_catch_f()
+    -- This can be used as a status catch
+	if catch == 1
+		if player.hpp < 50 then
+			catch = catch + 1
+			windower.send_command('/con send Frullata /cure4 Keaddo')
+		elseif check_buffs('silence', 'mute') then
+            windower.send_command('/con send Frullata /silena Keaddo')
+		elseif check_buffs('paralyze') then
+			windower.send_command('/con send Frullata /paralyna Keaddo')
+		elseif check_buffs('slow') then
+			windower.send_command('/con send Frullata /erase Keaddo')
+		elseif check_buffs('blind') then
+			windower.send_command('/con send Frullata /blindna Keaddo')
+		end
+	end
 end
 
 function try_weaponskill()

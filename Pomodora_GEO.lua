@@ -172,7 +172,7 @@ function get_sets()
 	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.PDT = {
@@ -180,7 +180,7 @@ function get_sets()
 	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Vanya Robe",hands="Helios Gloves", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Helios Gloves", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
 		}
 
@@ -190,7 +190,7 @@ function get_sets()
 	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Handler's Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
 		}
    
@@ -199,7 +199,7 @@ function get_sets()
 	main="Bolelabunga", sub="Genbu's Shield", 
 	range="Dunna",head="Vanya Hood",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Handler's Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
 		}
 
@@ -211,12 +211,12 @@ function get_sets()
 
     sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Vanya Hood",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.Kiting = {feet="Herald's Gaiters"}
@@ -236,7 +236,7 @@ function get_sets()
     -- Normal melee group
     sets.engaged = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 	
 	
@@ -521,6 +521,7 @@ function relaxed_play_mode()
 		
 		--Geo
 		elseif not pet.isvalid
+				and player.in_combat
 				and not check_buffs('silence', 'mute')
 				and check_recasts(s('Geo-Frailty'))
 				and check_recasts(s('Geo-Vex'))
