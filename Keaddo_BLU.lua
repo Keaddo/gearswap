@@ -1304,23 +1304,23 @@ function relaxed_play_mode()
     end
 end
 
-function status_catch_f()
+-- function status_catch_f()
     -- This can be used as a status catch
-	if catch == 1
-		if player.hpp < 50 then
-			catch = catch + 1
-			windower.send_command('/con send Frullata /cure4 Keaddo')
-		elseif check_buffs('silence', 'mute') then
-            windower.send_command('/con send Frullata /silena Keaddo')
-		elseif check_buffs('paralyze') then
-			windower.send_command('/con send Frullata /paralyna Keaddo')
-		elseif check_buffs('slow') then
-			windower.send_command('/con send Frullata /erase Keaddo')
-		elseif check_buffs('blind') then
-			windower.send_command('/con send Frullata /blindna Keaddo')
-		end
-	end
-end
+--	if catch == 1
+--		if player.hpp < 50 then
+--			catch = catch + 1
+--			windower.send_command('/con send Frullata /cure4 Keaddo')
+--		elseif check_buffs('silence', 'mute') then
+ --           windower.send_command('/con send Frullata /silena Keaddo')
+	--	elseif check_buffs('paralyze') then
+		--	windower.send_command('/con send Frullata /paralyna Keaddo')
+--		elseif check_buffs('slow') then
+	--		windower.send_command('/con send Frullata /erase Keaddo')
+		--elseif check_buffs('blind') then
+			--windower.send_command('/con send Frullata /blindna Keaddo')
+--		end
+	--end
+--end
 
 function try_weaponskill()
     --[[ F10 bind:
