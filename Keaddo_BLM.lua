@@ -262,7 +262,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {
 		ammo="Pemphredo Tathlum",
 		head=gear.nuke_head,
-		body="Amalric Doublet",
+		body=gear.nuke_body,
 		hands="Amalric Gages",
 		legs="Amalric Slops",
 		feet=gear.nuke_feet,
