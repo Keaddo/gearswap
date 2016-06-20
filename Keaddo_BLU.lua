@@ -457,8 +457,8 @@ function get_sets()
 
     sets.precast.FastCast.BlueMagic =
             set_combine(sets.precast.FastCast, {
-			body="Hashishin Mintan",
-			hands="Hashishin Bazubands"})
+			body="Hashishin Mintan"
+	})
 
 
     -- MIDCAST SETS --
@@ -584,7 +584,7 @@ function get_sets()
     sets.midcast.BlueMagic.NukeDarkAff =
             set_combine(sets.midcast.BlueMagic.Nuke, {
         head="Pixie Hairpin +1",
-        lring="Evanescence Ring"})
+    })
 
     sets.midcast.BlueMagic.NukeLightAff =
             set_combine(sets.midcast.BlueMagic.Nuke, {
@@ -618,7 +618,7 @@ function get_sets()
         waist="Gishdubar Sash"})
 
     sets.midcast.BlueMagic.HealingMAXHP =
-            set_combine(sets.midcast.BlueMagic.Healing, {
+            set_combine(sets.midcast.BlueMagic.Healing.Self, {
         ammo="Egoist's Tathlum",
         head="Rawhide Mask",
         lear="Odnowa Earring +1",
@@ -629,7 +629,6 @@ function get_sets()
         waist="Oneiros Belt"})
 
     sets.midcast.BlueMagic.Recast = {
-		body="Hashishin Mintan",
 		hands="Hashishin Bazubands"}
 
 

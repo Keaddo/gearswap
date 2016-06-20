@@ -303,7 +303,7 @@ function init_gear_sets()
 		ring1="Metamorph Ring",
 		ring2="Weatherspoon Ring",
 		back="Refraction Cape",
-		waist="Porous Rope",
+		waist="Rumination Sash",
 		legs="Psycloth Lappas",
 		feet="Medium's Sabots"
 	}

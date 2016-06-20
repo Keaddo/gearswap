@@ -116,9 +116,9 @@ function get_sets()
     sets.midcast['Enfeebling Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Merlinic Hood", neck="Incanter's Torque", ear2="Influx Earring", ear1="Moonshade Earring",
+				head="Befouled Crown", neck="Incanter's Torque", ear2="Influx Earring", ear1="Moonshade Earring",
                 body="Vanya Robe", hands="Amalric gages", ring1="Etana ring", ring2="Vertigo ring",
-                back="Lifestream Cape", waist="Ovate Rope", legs="Amalric slops", feet="Bagua Sandals"}
+                back="Lifestream Cape", waist="Rumination Sash", legs="Amalric slops", feet="Bagua Sandals"}
     
     sets.midcast['Elemental Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 

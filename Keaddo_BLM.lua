@@ -215,6 +215,10 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic'].Aquaveil.HighMP = set_combine(sets.midcast.Aquaveil, {
         back="Bane Cape"
     })
+	
+	sets.midcast['Enhancing Magic'].Refresh = set_combine(sets.midcast['Enhancing Magic'],{
+	waist = "Gishdubar Sash"
+	})
 
     sets.midcast['Enfeebling Magic'] = {
 	ammo="Pemphredo Tathlum",
@@ -227,7 +231,7 @@ function init_gear_sets()
 	ring1="Metamorph Ring",
 	ring2="Weatherspoon Ring",
 	back="Refraction Cape",
-	waist="Porous Rope",
+	waist="Rumination Sash",
 	legs="Psycloth Lappas",
 	feet="Medium's Sabots"
     }
