@@ -31,8 +31,8 @@ function user_setup()
     send_command('bind !` gs c toggle MagicBurst')
     send_command('bind !g gs c toggle Spaekona')
     gear.aspir_body = "Merlinic Jubbah"
-    gear.aspir_hands = {name="Merlinic Dastanas", augments={'Mag. Acc.+6','"Drain" and "Aspir" potency +11','CHR+10',}}
-    gear.aspir_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','CHR+10','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}
+    gear.aspir_hands = "Amalric Gages"
+    gear.aspir_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+21','"Drain" and "Aspir" potency +10','"Mag.Atk.Bns."+15',}}
     gear.aspir_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +1','Mag. Acc.+4','"Mag.Atk.Bns."+11',}}
 	gear.fc_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','Mag. Acc.+5',}}
 	gear.fc_body = "Merlinic Jubbah"
@@ -88,7 +88,7 @@ function init_gear_sets()
         hands="Amalric Gages",
         ring1="Defending Ring",
         ring2="Gelatinous Ring +1",
-        back=gear.death_back,
+        back="Fucho-no-Obi",
         waist=gear.ElementalObi,
         legs="Amalric Slops",
         feet="Amalric Nails",
