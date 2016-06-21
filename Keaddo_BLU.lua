@@ -1296,7 +1296,7 @@ function relaxed_play_mode()
             windower.send_command('expiacion')
 
         elseif player.tp > 999
-                and player.target.hpp > 40
+     --           and player.target.hpp > 40
                 and player.target.distance < 5 then
             windower.send_command('chant du cygne')
         end
