@@ -436,12 +436,6 @@ function relaxed_play_mode()
                 and player.mpp < 10
                 and check_recasts(s('Convert')) then
 				windower.send_command('Convert;wait 1;cure4 <me>')
-				
-		elseif not check_buffs('Refresh')
-				and player.sub_job == 'RDM'
-                and not check_buffs('silence', 'mute')
-                and check_recasts(s('Refresh')) then
-				windower.send_command('Refresh <me>')
 														
 		--Indi		
 		elseif not check_buffs('Attack Boost')
@@ -518,17 +512,17 @@ function relaxed_play_mode()
 				and check_recasts(s('Geo-Torpor'))
 				and check_recasts(s('Geo-Wilt')) then
 					if player.mp > 305	and geo_mode == 'Frailty' then
-						windower.send_command('wait 2;Geo-Frailty <bt>;wait 7;Dia2 <bt>')					
+						windower.send_command('wait 2;Geo-Frailty <bt>')					
 					elseif player.mp > 302	and geo_mode == 'Vex' then
-						windower.send_command('wait 2;Geo-Vex <bt>;wait 7;Dia2 <bt>')
+						windower.send_command('wait 2;Geo-Vex <bt>')
 					elseif player.mp > 379 and geo_mode == 'Malaise' then
-						windower.send_command('wait 2;Geo-Malaise <bt>;wait 7;Dia2 <bt>')	
+						windower.send_command('wait 2;Geo-Malaise <bt>')	
 					elseif player.mp > 203 and geo_mode == 'Torpor' then
-						windower.send_command('wait 2;Geo-Torpor <bt>;wait 7;Dia2 <bt>')
+						windower.send_command('wait 2;Geo-Torpor <bt>')
 					elseif player.mp > 249 and geo_mode == 'Languor' then
-						windower.send_command('wait 2;Geo-Languor <bt>;wait 7;Dia2 <bt>')	
+						windower.send_command('wait 2;Geo-Languor <bt>')	
 					elseif player.mp > 250 and geo_mode == 'Wilt' then
-						windower.send_command('wait 2;Geo-Wilt <me>')
+						windower.send_command('wait 2;Geo-Wilt <bt>')
 					elseif geo_mode == 'None' then
 					end
 		
@@ -542,6 +536,13 @@ function relaxed_play_mode()
 			and check_recasts(s('Stoneskin')) then
 			windower.send_command('Stoneskin')	
 		end
+
+	elseif not check_buffs('Refresh')
+			and player.sub_job == 'RDM'
+            and not check_buffs('silence', 'mute')
+            and check_recasts(s('Refresh')) then
+			windower.send_command('Refresh <me>')
+
 		--if not check_buffs('Phalanx')
 		--	and not check_buffs('silence', 'mute')
 		--	and check_recasts(s('Phalanx')) then
