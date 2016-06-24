@@ -39,7 +39,7 @@ function get_sets()
     sets.precast.JA = {}	
     sets.precast.JA.Bolster = {body="Bagua Tunic"}
     sets.precast.JA['Life cycle'] = {body="Geomancy Tunic"}
-	sets.precast.JA['Full cycle'] = {head="Azimuth Hood"}
+	sets.precast.JA['Full cycle'] = {head="Azimuth Hood +1"}
     sets.precast.JA['Radial Arcana'] = {feet="Bagua sandals"}
 	
 	fc_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+27','"Fast Cast"+2','INT+1','"Mag.Atk.Bns."+1',}}
@@ -95,11 +95,11 @@ function get_sets()
 		--}
 
     sets.midcast.Geomancy = {main="Solstice", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
-		neck="Incanter's Torque", ring2="Renaye Ring", feet="Medium's Sabots", back="Lifestream Cape"}
+		head="Azimuth Hood +1", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
+		neck="Incanter's Torque", ring2="Renaye Ring", legs="Azimuth Tights +1", feet="Medium's Sabots", back="Lifestream Cape"}
 		
     sets.midcast.Geomancy.Indi = {main="Solstice", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's Torque",
+		head="Azimuth Hood +1", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's Torque",
 		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Medium's Sabots", back="Lifestream Cape"}
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
@@ -165,7 +165,7 @@ function get_sets()
 	
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood", neck="Incanter's Torque", rear="Etiolation Earring", lear="Ethereal Earring",
+				head="Azimuth Hood +1", neck="Incanter's Torque", rear="Etiolation Earring", lear="Ethereal Earring",
                 body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters"}
 	
@@ -182,9 +182,9 @@ function get_sets()
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="",
+	sets.idle.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="Azimuth Hood +1",
         neck="Twilight Torque", ear1="Etiolation Earring", ear2="Handler's Earring",
-        body="Respite Cloak",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        body="Witching Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
    
     sets.idle.PDT.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head=empty,

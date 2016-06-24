@@ -39,7 +39,7 @@ function get_sets()
     sets.precast.JA = {}	
     sets.precast.JA.Bolster = {body="Bagua Tunic"}
     sets.precast.JA['Life cycle'] = {body="Geomancy Tunic"}
-	sets.precast.JA['Full cycle'] = {head="Azimuth Hood"}
+	sets.precast.JA['Full cycle'] = {head="Azimuth Hood +1"}
     sets.precast.JA['Radial Arcana'] = {feet="Bagua sandals"}
 
 	fc_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+17','"Fast Cast"+3','"Mag.Atk.Bns."+2',}}
@@ -89,12 +89,12 @@ function get_sets()
         back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps +1"}
 
     sets.midcast.Geomancy = {main="Solstice", sub="Genbu's Shield",  range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
-		neck="Incanter's torque", ring2="Renaye Ring", feet="Azimuth Gaiters", back="Lifestream Cape"}
+		head="Azimuth Hood +1", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
+		neck="Incanter's torque", ring2="Renaye Ring", legs="Azimuth Tights +1", feet="Azimuth Gaiters +1", back="Lifestream Cape"}
 		
     sets.midcast.Geomancy.Indi = {main="Solstice", sub="Genbu's Shield", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's torque",
-		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Azimuth Gaiters", back="Lifestream Cape"}
+		head="Azimuth Hood +1", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's torque",
+		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Azimuth Gaiters +1", back="Lifestream Cape"}
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
         head="Vanya Hood", body="Vanya Robe",hands="Telchine Gloves", ring1="Sirona's ring", ring2="Lebeche ring",
@@ -161,9 +161,9 @@ function get_sets()
 	
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood", neck="Incanter's torque", rear="Etiolation Earring", lear="Ethereal Earring",
+				head="Azimuth Hood +1", neck="Incanter's torque", rear="Etiolation Earring", lear="Ethereal Earring",
                 body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
-                back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters"}
+                back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
 	
     -- Idle sets
 
@@ -188,7 +188,7 @@ function get_sets()
 	sets.idle.Pet = {
 --	main="Terra's Staff", sub="Volos Strap",
 	main="Bolelabunga", sub="Genbu's Shield", 
-	range="Dunna",head="Vanya Hood",
+	range="Dunna",head="Azimuth Hood +1",
         neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet=fc_feet
