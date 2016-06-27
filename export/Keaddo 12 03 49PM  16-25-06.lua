@@ -1,0 +1,17 @@
+sets.exported={
+    main="Tizona",
+    sub="Almace",
+    ammo="Ginsen",
+    head="Rawhide Mask",
+    body="Abnoba Kaftan",
+    hands={ name="Herculean Gloves", augments={'Crit.hit rate+4','DEX+8','Accuracy+13','Attack+14',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Herculean Boots", augments={'STR+14','Rng.Atk.+20','Damage taken-4%',}},
+    neck="Loricate Torque +1",
+    waist="Windbuffet Belt +1",
+    left_ear="Etiolation Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Defending Ring",
+    right_ring="Weather. Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+}

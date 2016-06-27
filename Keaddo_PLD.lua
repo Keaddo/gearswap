@@ -962,8 +962,7 @@ function file_unload()
 
 --	send_command('unbind f10')
   --  send_command('unbind f9')
-    send_command('unbind f9
-	')
+    send_command('unbind f9')
 	send_command('unbind f7')
 --	send_command('unbind f6')
 --	send_command('unbind f5')

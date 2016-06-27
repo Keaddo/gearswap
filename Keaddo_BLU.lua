@@ -295,8 +295,10 @@ function get_sets()
 	-- local binds
 	    cdc_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
 		tp_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-		cdc_hands = "Adhemar Wristbands"
+		cdc_hands = { name="Herculean Gloves", augments={'Crit.hit rate+4','DEX+8','Accuracy+13','Attack+14',}}
 		exp_hands = { name="Herculean Gloves", augments={'Accuracy+23 Attack+23','Crit.hit rate+1','STR+10','Attack+5',}}
+		dt_hands = { name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}}
+		dt_feet = { name="Herculean Boots", augments={'STR+14','Rng.Atk.+20','Damage taken-4%',}}
 		th_hands = { name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}}
 		th_feet = { name="Herculean Boots", augments={'MND+8','"Mag.Atk.Bns."+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}}
 
