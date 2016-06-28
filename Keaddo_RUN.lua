@@ -15,6 +15,7 @@ function get_sets()
 	dt_feet = { name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 	tp_feet = { name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}}
 	tp_acc_feet = { name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}
+	str_hands = { name="Herculean Gloves", augments={'Accuracy+23 Attack+23','Crit.hit rate+1','STR+10','Attack+5',}}
 				
 				--Idle Sets--
 				sets.Idle = {               
@@ -55,7 +56,7 @@ function get_sets()
 					head="Adhemar Bonnet",
 					neck="Asperity Necklace",
 					ear1="Brutal Earring",
-					ear2="Ethereal Earring",
+					ear2="Cessance Earring",
 					body="Adhemar Jacket",
 					hands="Adhemar Wristbands",
 					ring1="Epona's Ring",
@@ -72,12 +73,12 @@ function get_sets()
 					ammo="Falcon Eye",
 					head="Dampening Tam",
 					neck="Twilight Torque",
-					ear1="Steelflash Earring",
-					ear2="Zennaroi Earring",      
+					ear1="Dignitary Earring",
+					ear2="Cessance Earring",      
 					body="Emet Harness +1",
 					hands="Erilaz Gauntlets +1",
-					ring1="Patricius Ring",
-					ring2="Defending Ring",   
+					ring2="Patricius Ring",
+					ring1="Defending Ring",   
 					back="Evasionist's Cape",
 					waist="Olseni Belt",
 					legs="Taeon Tights",
@@ -97,21 +98,21 @@ function get_sets()
     sets.misc.DT.None = {}
     sets.misc.DT.Active = {
 					ammo="Vanir Battery",			-- 4 MDEF     
-					head=dt_head,					-- 4 PDT
+					head="Erilaz Galea +1",			-- 
 					neck="Loricate Torque +1",		-- 6 DT
 					ear1="Hearty Earring",			-- status_ailments
-					ear2="Ethereal Earring",
-					body="Erilaz Surcoat +1",
-					hands="Erilaz Gauntlets +1",	-- status_ailments +6
-					ring2="Gelatinous Ring +1",		-- 7 PDT
+					ear2="Genmei Earring",			-- 2 PDT 
+					body="Futhark Coat +1",			-- 7 DT
+					hands="Kurys Gloves",			-- 2 DT
+					ring2="Patricius Ring",			-- 5 PDT
 					ring1="Defending Ring",			-- 10 DT
-					back="Evasionist's Cape",		-- 5 DT 3 PDT
+					back="Ogma's Cape",				-- (5 DT 3 PDT)
 					waist="Flume Belt +1",			-- 4 PDT
 					legs="Erilaz Leg Guards +1",	-- 7 PDT
 					feet="Erilaz Greaves +1"		-- 5 PDT
 				}  
 			
-													-- 21 DT + 30 PDT + 5% PDT2 + 3 DT grip
+													-- 25 DT + 23 PDT + 5% PDT2 + 3 DT grip
 			
     sets.misc.Movement = {
         legs="Carmine Cuisses +1"}
@@ -130,10 +131,10 @@ function get_sets()
 					ear2="Brutal earring",
 					ear1="Moonshade Earring",
 					body="Adhemar Jacket",
-					hands="Adhemar Wristbands",
+					hands=str_hands,
 					ring1="Epona's Ring",
 					ring2="Rajas Ring",
-					back="Evasionist's Cape",
+					back="Bleating Mantle",
 					waist="Fotia Belt",
 					legs="Samnuha Tights",
 					feet=dt_feet
@@ -154,7 +155,7 @@ function get_sets()
 					back="Evasionist's Cape",
 					waist="Fotia Belt",
 					legs="Samnuha Tights",
-					feet=dt_feet
+					feet="Thereoid Greaves"
 				}  
 					
                 --single hit, benefits from DA
@@ -193,10 +194,20 @@ function get_sets()
 					
                 --Requiescat
 				
-                sets.Req = {                            ammo="Seething Bomblet +1",
-                                          head="Dampening Tam",neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade Earring",
-                                          body="Rawhide Vest",hands="Rawhide Gloves",ring1="Epona's Ring",ring2="Rajas Ring",
-                                          back="Evasionist's Cape",waist="Fotia Belt",legs="Taeon Tights",feet="Taeon Boots"}                                         
+                sets.Req = {
+					head="Carmine Mask",
+					body="Adhemar Jacket",
+					hands="Carmine Finger Gauntlets",
+					legs="Carmine Cuisses +1",
+					feet="Carmine Greaves",
+					neck="Fotia Gorget",
+					waist="Fotia Belt",
+					left_ear="Moonshade Earring",
+					right_ear="Brutal Earring",
+					left_ring="Epona's Ring",
+					right_ring="Rufescent Ring",
+					back="Bleating Mantle",
+							}                                         
                 --crit based
                 sets.Vorp = {                           ammo="Qirmiz Tathlum",
                                           head="Dampening Tam",neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade Earring",
@@ -255,7 +266,7 @@ function get_sets()
                 -- Cast set
 				
                 sets.precast = {
-					ammo = "Impatiens",
+					ammo = "Sapience Orb",
 					head="Runeist bandeau +1",
 					body="Samnuha Coat",
 					hands="Leyline Gloves",
@@ -274,19 +285,19 @@ function get_sets()
                 --Enmity set for high hate generating spells and JAs                
                 sets.Enmity =  {
 					ammo = "Sapience Orb",			-- 2 
-					head="Highwing Helm",
+					head="Rabid Visor",				-- 6
 					neck="Unmoving Collar",			-- 9
 					ear1="Friomisi earring",		-- 2 
 					body="Emet Harness",			-- 9
-					hands="Nilas Gloves",                     
-					back="Evasionist's Cape",		-- 5 
+					hands="Kurys Gloves",			-- 9             
+					back="Ogma's Cape",				-- 10 
 					legs="Erilaz Leg Guards +1",	-- 11
 					feet="Erilaz Greaves +1",		-- 6
 					ring1="Petrov Ring",			-- 4
 					ring2="Begrudging Ring"			-- 5 
 				}
 					
-										-- TOTAL ENMITY: 53  
+										-- TOTAL ENMITY: 73  
 										
                 --Magic acc for enfeebles, handy for VW
                 sets.MagicAcc = {head="Dampening Tam",ear1="Gwati Earring",
@@ -535,8 +546,8 @@ function equip_TP()
             equip(sets.TP.Accuracy)
         end
         --equips DW gear if using two weapons
-        if player.equipment.sub == "Tramontane Axe" or player.equipment.sub == "Pukulatmuj" or player.equipment.sub == "Anahera Sword" then
-            equip({ear2="Suppanomimi"})
+        if player.equipment.sub == "Emxgha" or player.equipment.sub == "Usonmunku" or player.equipment.sub == "Vampirism" then
+            equip({ear1="Suppanomimi", ear2="Eabani Earring"})
         end
         --equips offensive gear and relic boots during Battuta
         if buffactive.battuta then

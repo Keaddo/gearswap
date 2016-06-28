@@ -356,7 +356,7 @@ function get_sets()
 
     sets.misc.Learn = {
         ammo="Mavi Tathlum",
-        head="Luh. Keffiyeh",
+        head="Luhlaza Keffiyeh",
         body="Assim. Jubbah +1",
         hands="Magus Bauzbands",
         back="Cornflower Cape",
