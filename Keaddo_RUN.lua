@@ -20,7 +20,7 @@ function get_sets()
 				--Idle Sets--
 				sets.Idle = {               
 					ammo="Homiliary",
-					head="Rawhide Mask",
+					head="Erilaz Galea +1",
 					neck="Sanctity Necklace",
 					ear1="Infused Earring",
 					ear2="Ethereal Earring",   
@@ -100,7 +100,7 @@ function get_sets()
 					ammo="Vanir Battery",			-- 4 MDEF     
 					head="Erilaz Galea +1",			-- 
 					neck="Loricate Torque +1",		-- 6 DT
-					ear1="Hearty Earring",			-- status_ailments
+					ear1="Eabani Earring",			-- 8 meva
 					ear2="Genmei Earring",			-- 2 PDT 
 					body="Futhark Coat +1",			-- 7 DT
 					hands="Kurys Gloves",			-- 2 DT
@@ -236,6 +236,11 @@ function get_sets()
 				hands="Runeist Mitons +1",
 				waist="Olympus Sash",
 				legs="Futhark Trousers +1"
+				}
+				
+				sets.Utility.Doom = {
+				waist = "Gishdubar Sash",
+				ring1 = "Saida Ring"
 				}
                          
                 --Job Ability Sets--
@@ -386,6 +391,9 @@ function precast(spell,abil)
         if spell.skill == 'Enhancing Magic' then
                 equip({legs="Futhark Trousers +1"})
         end
+		if spell.name == 'Refresh' then
+				equip({waist="Gishdubar Sash"})
+		end
         if string.find(spell.name,'Utsusemi') then
                 equip({neck="Magoraga Beads"})
         end  
@@ -476,6 +484,9 @@ function precast(spell,abil)
         if buffactive.sleep and player.hp > 100 and player.status == "Engaged" then 
                 equip({head="Frenzy Sallet"})
         end
+		if buffactive['doom'] then
+				equip(sets.Utility.Doom)
+		end
 end            
   
 function midcast(spell,act,arg) 
@@ -571,6 +582,10 @@ function equip_TP()
         if buffactive.sleep and player.hp > 100 then 
             equip({head="Frenzy Sallet"})
         end
+		-- equip cursna gear if hit by doom
+		if buffactive['doom'] then
+			equip(sets.Utility.Doom)
+		end
 end
  
 function equip_idle()
@@ -586,6 +601,9 @@ function equip_idle()
                 equip(sets.Utility.PDT)
                 end
         end
+		if buffactive['doom'] then
+			equip(sets.Utility.Doom)
+		end
 end
  
 function buff_change(buff,gain)
