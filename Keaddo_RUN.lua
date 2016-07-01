@@ -70,18 +70,18 @@ function get_sets()
                 --high accuracy/DT hybrid set
 				
                 sets.TP.Accuracy = {        
-					ammo="Falcon Eye",
+					ammo="Amar Cluster",
 					head="Dampening Tam",
-					neck="Twilight Torque",
+					neck="Sanctity Necklace",
 					ear1="Dignitary Earring",
 					ear2="Cessance Earring",      
-					body="Emet Harness +1",
+					body="Adhemar Jacket",
 					hands="Erilaz Gauntlets +1",
-					ring2="Patricius Ring",
-					ring1="Defending Ring",   
-					back="Evasionist's Cape",
+					ring2="Cacoethic Ring +1",
+					ring1="Ramuh Ring",   
+					back="Ogma's Cape",
 					waist="Olseni Belt",
-					legs="Taeon Tights",
+					legs="Carmine Cuisses +1",
 					feet=tp_acc_feet
 				}   
 					                
