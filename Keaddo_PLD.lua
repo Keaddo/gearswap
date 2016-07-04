@@ -201,7 +201,7 @@ function get_sets()
 			body="Souveran Cuirass", -- 9 DT [Upgrade: Tartarus Platemail -10% DT] --
 			hands="Souveran Handschuhs", -- 3 PDT 2/5 Souv. Set --
 			ring1="Defending Ring", -- 4 PDT --
-			ring2="Gelatinous Ring +1", -- 7 PDT --
+			ring2="Patricius Ring", -- 5 PDT --
 			back="Weard Mantle", -- 3 DT --
 			waist="Flume Belt +1", -- 4 PDT --
 			legs="Souveran Diechlings", -- 4 PDT --
@@ -218,7 +218,7 @@ function get_sets()
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring", 
-			ring2="Gelatinous Ring +1", 
+			ring2="Patricius Ring", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1 +1", 
 			legs="Souveran Diechlings",
@@ -234,7 +234,7 @@ function get_sets()
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring", 
-			ring2="Gelatinous Ring +1", 
+			ring2="Patricius Ring", 
 			back="Weard Mantle", 
 			waist="Flume Belt +1 +1", 
 			legs="Souveran Diechlings",
@@ -294,18 +294,20 @@ function get_sets()
 	sets.DT.Ochain = {
 			sub="Ochain",
 			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
+			head="Loess Barbuta +1",		-- 10 DT --
+			neck="Loricate Torque +1",		-- 6 DT --
+			ear1="Odnowa Earring +1", 		
 			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Gelatinous Ring +1",
-			back="Weard Mantle", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Souveran Schuhs"}
+			body="Souveran Cuirass", 		-- 9 DT --
+			hands="Souveran Handschuhs",	-- MDT 4 PDT 3 --
+			ring1="Defending Ring",			-- 10 DT
+			ring2="Patricius Ring",			-- 5 PDT --
+			back="Weard Mantle", 		-- 5 DT --
+			waist="Flume Belt +1",			-- 4 PDT --
+			legs="Souveran Diechlings",		-- 3 DT
+			feet="Souveran Schuhs"}			-- 4 PDT --
+			
+									--	TOTAL: 43 DT + 4 MDT + 16 PDT + 3 DT Brilliance  
 			
 	sets.DT.Aegis = {
 			sub="Aegis",
@@ -317,7 +319,7 @@ function get_sets()
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring",
-			ring2="Gelatinous Ring +1",
+			ring2="Patricius Ring",
 			back="Weard Mantle", 
 			waist="Flume Belt +1",
 			legs="Souveran Diechlings", 
@@ -333,7 +335,7 @@ function get_sets()
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring",
-			ring2="Gelatinous Ring +1",
+			ring2="Patricius Ring",
 			back="Weard Mantle", 
 			waist="Flume Belt +1",
 			legs="Souveran Diechlings", 
@@ -519,6 +521,12 @@ function get_sets()
 
 	-- Sublimation --
 	sets.Sublimation = {}
+	
+	-- Doom --
+	sets.Doom = {
+					waist = "Gishdubar Sash",
+				ring2 = "Saida Ring"
+	}
 
 	-- Flourish --
 	sets.Flourish = set_combine(sets.Enmity)
@@ -580,17 +588,17 @@ function get_sets()
 	-- Cure Set --
 	sets.Midcast.Cure = {
 			ammo="Impatiens",
-			head="Shabti Armet +1",
-			neck="Phalaina Locket",
+			head="Loess Barbuta +1",
+			neck="Sanctity Necklace",
 			ear1="Oneiros Earring",
 			ear2="Nourish. Earring +1",
 			body="Jumalik Mail",
-			hands="Macabre Gaunt. +1",
-			ring1="Eihwaz Ring",
+			hands="Souveran Handschuhs",
+			ring1="Defending Ring",
 			ring2="Kunaji Ring",
-			back="Fierabras's Mantle",
-			waist="Chuq'aba Belt",
-			legs={name="Yorium Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
+			back="Solemnity Cape",
+			waist="Rumination Sash",
+			legs="Carmine Cuisses +1",
 			feet="Souveran Schuhs"}
 
 	-- Self Cure Set --
@@ -630,17 +638,17 @@ function get_sets()
 	-- Reprisal --
 	sets.Midcast.Reprisal = {
 			ammo="Impatiens",
-			head="Founder's Corona",
-			neck="Dualism Collar",
-			ear1="Oneiros Earring",
-			ear2="Ethereal Earring",
+			head="Loess Barbuta +1",
+			neck="Sanctity Necklace",
+			ear1="Odnowa Earring +1",
+			ear2="Eabani Earring",
 			body="Souveran Cuirass",
 			hands="Souveran Handschuhs",
 			ring1="Kunaji Ring",
 			ring2="Praan Ring",
 			back="Xucau Mantle",
-			waist="Eschan Stone",
-			legs="Eschite Cuisses",
+			waist="Gold Moogle Belt",
+			legs="Souveran Diechlings",
 			feet="Souveran Schuhs"}
 			
 	-- Lock Capa Mantle --
@@ -869,6 +877,9 @@ function status_change(new,old)
 		equip(sets.DT[ShieldArray[ShieldIndex]])
 	elseif buffactive["Sublimation: Activated"] then
 		equip(sets.Sublimation)
+		-- equip cursna gear if hit by doom
+	elseif buffactive['doom'] then
+			equip(sets.Doom)
 	elseif new == 'Engaged' then
 		equipSet = sets.TP
 		if Armor == 'Hybrid' and equipSet["Hybrid"] then
