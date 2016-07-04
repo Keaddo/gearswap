@@ -536,6 +536,7 @@ function init_gear_sets()
 		ring1="Mujin Band",
 	--	ring2="Locus Ring",
 		back=gear.nuke_back,
+		feet=gear.burst_feet,
 		legs=gear.burst_legs
 		}
 	-- Cap: 40%, Cap-breaking: 23% (Gifts: 13%, Mujin: 5%, Amalric Gages: 5%)

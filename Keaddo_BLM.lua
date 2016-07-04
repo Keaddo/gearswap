@@ -33,7 +33,7 @@ function user_setup()
     gear.aspir_body = "Merlinic Jubbah"
     gear.aspir_hands = "Amalric Gages"
     gear.aspir_legs = { name="Merlinic Shalwar", augments={'Mag. Acc.+21','"Drain" and "Aspir" potency +10','"Mag.Atk.Bns."+15',}}
-    gear.aspir_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +1','Mag. Acc.+4','"Mag.Atk.Bns."+11',}}
+    gear.aspir_feet = { name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +8','CHR+2',}}
 	gear.fc_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','Mag. Acc.+5',}}
 	gear.fc_body = "Merlinic Jubbah"
 	gear.fc_feet = { name="Merlinic Crackows", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+11',}}
@@ -354,6 +354,7 @@ function init_gear_sets()
     sets.magic_burst['Elemental Magic'] = {
 		head=gear.burst_head,
 		neck="Mizukage-no-Kubikazari",
+		feet=gear.burst_feet,
 		ring1="Mujin Band",
 	--	ring2="Locus Ring",
 		back=gear.nuke_back,
