@@ -8,10 +8,11 @@ function get_sets()
                         "Aht Urhgan Whitegate","Nashmau","Tavanazian Safehold",
                         "Selbina","Mhaura","Norg","Eastern Adoulin","Western Adoulin","Kazham","Tavnazia"}	
 
-
+	EnmityBlueMagic = S{"Jettatura","Sheep Song","Soporific","Blank Gaze","Geist Wall"}
 	-- gear
 	refresh_hands = { name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}}
 	dt_head = { name="Herculean Helm", augments={'Accuracy+3 Attack+3','Phys. dmg. taken -4%','Accuracy+9','Attack+5',}}
+	dt_hands = { name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}}
 	dt_feet = { name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
 	tp_feet = { name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}}
 	tp_acc_feet = { name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}
@@ -37,6 +38,7 @@ function get_sets()
 				sets.Town = set_combine(sets.Idle,{
 					body="Runeist Coat +1",
 					ear1="Etiolation Earring",
+					ear2="Genmei Earring",
 					neck="Loricate Torque +1",
 					ring1="Defending Ring",
 					ring2="Weatherspoon Ring",
@@ -73,7 +75,7 @@ function get_sets()
 					ammo="Amar Cluster",
 					head="Dampening Tam",
 					neck="Sanctity Necklace",
-					ear1="Dignitary Earring",
+					ear1="Dignitary's Earring",
 					ear2="Cessance Earring",      
 					body="Adhemar Jacket",
 					hands="Erilaz Gauntlets +1",
@@ -293,6 +295,7 @@ function get_sets()
 					head="Rabid Visor",				-- 6
 					neck="Unmoving Collar",			-- 9
 					ear1="Friomisi earring",		-- 2 
+					ear2="Counter Earring",			-- 4
 					body="Emet Harness",			-- 9
 					hands="Kurys Gloves",			-- 9             
 					back="Ogma's Cape",				-- 10 
@@ -302,7 +305,7 @@ function get_sets()
 					ring2="Begrudging Ring"			-- 5 
 				}
 					
-										-- TOTAL ENMITY: 73  
+										-- TOTAL ENMITY: 77  
 										
                 --Magic acc for enfeebles, handy for VW
                 sets.MagicAcc = {head="Dampening Tam",ear1="Gwati Earring",
@@ -504,7 +507,7 @@ function midcast(spell,act,arg)
                     equip({back="Evasionist's Cape"})
                 end 
         end
-        if spell.name == 'Foil' or spell.name == 'Flash' or spell.name == "Stun" then 
+        if EnmityBlueMagic:contains(spell.english) or spell.name == 'Foil' or spell.name == 'Flash' or spell.name == "Stun" then 
                 equip(sets.Enmity,{head="Runeist bandeau +1"})
         end 
         if spell.name == 'Phalanx' then
