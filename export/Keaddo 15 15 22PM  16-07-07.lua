@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','System: 2 ID: 114 Val: 9',}},
+    sub="Refined Grip +1",
+    ammo="Staunch Tathlum",
+    head="Erilaz Galea +1",
+    body="Runeist Coat +1",
+    hands={ name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Herculean Boots", augments={'STR+14','Rng.Atk.+20','Damage taken-4%',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Eabani Earring",
+    right_ear="Genmei Earring",
+    left_ring="Defending Ring",
+    right_ring="Weather. Ring",
+    back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}

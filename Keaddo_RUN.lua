@@ -8,7 +8,7 @@ function get_sets()
                         "Aht Urhgan Whitegate","Nashmau","Tavanazian Safehold",
                         "Selbina","Mhaura","Norg","Eastern Adoulin","Western Adoulin","Kazham","Tavnazia"}	
 
-	EnmityBlueMagic = S{"Jettatura","Sheep Song","Soporific","Blank Gaze","Geist Wall"}
+	EnmityBlueMagic = S{"Jettatura","Sheep Song","Soporific","Blank Gaze","Geist Wall", "Chaotic Eye"}
 	-- gear
 	refresh_hands = { name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}}
 	dt_head = { name="Herculean Helm", augments={'Accuracy+3 Attack+3','Phys. dmg. taken -4%','Accuracy+9','Attack+5',}}
@@ -17,11 +17,15 @@ function get_sets()
 	tp_feet = { name="Herculean Boots", augments={'STR+9','Accuracy+20','Triple Atk.+4',}}
 	tp_acc_feet = { name="Herculean Boots", augments={'Accuracy+30','Triple Atk.+3',}}
 	str_hands = { name="Herculean Gloves", augments={'Accuracy+23 Attack+23','Crit.hit rate+1','STR+10','Attack+5',}}
+	tank_cape = { name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10',}}
+	fc_legs = "Herculean Trousers"
+	fc_cape = { name="Ogma's cape", augments={'"Fast Cast"+10',}}
+	str_cape = { name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 				
 				--Idle Sets--
 				sets.Idle = {               
 					ammo="Homiliary",
-					head="Erilaz Galea +1",
+					head="Rawhide Mask",
 					neck="Sanctity Necklace",
 					ear1="Infused Earring",
 					ear2="Ethereal Earring",   
@@ -37,13 +41,13 @@ function get_sets()
 				
 				sets.Town = set_combine(sets.Idle,{
 					body="Runeist Coat +1",
-					ear1="Etiolation Earring",
+					ear1="Eabani Earring",
 					ear2="Genmei Earring",
 					neck="Loricate Torque +1",
 					ring1="Defending Ring",
 					ring2="Weatherspoon Ring",
 					waist="Flume Belt +1",
-					back="Ogma's Cape"
+					back=tank_cape
 				})
                                    
                 --TP Sets--
@@ -57,14 +61,14 @@ function get_sets()
 					ammo="Ginsen",
 					head="Adhemar Bonnet",
 					neck="Asperity Necklace",
-					ear1="Brutal Earring",
-					ear2="Cessance Earring",
+					ear2="Brutal Earring",
+					ear1="Cessance Earring",
 					body="Adhemar Jacket",
 					hands="Adhemar Wristbands",
 					ring1="Epona's Ring",
 					ring2="Petrov Ring",
-					back="Bleating Mantle",
-					waist="Windbuffet Belt +1",
+					back=str_cape,
+					waist="Ioskeha Belt",
 					legs="Samnuha Tights",
 					feet=tp_feet
 				}    
@@ -72,17 +76,17 @@ function get_sets()
                 --high accuracy/DT hybrid set
 				
                 sets.TP.Accuracy = {        
-					ammo="Amar Cluster",
+					ammo="Falcon Eye",
 					head="Dampening Tam",
 					neck="Sanctity Necklace",
-					ear1="Dignitary's Earring",
-					ear2="Cessance Earring",      
+					ear2="Dignitary's Earring",
+					ear1="Cessance Earring",      
 					body="Adhemar Jacket",
-					hands="Erilaz Gauntlets +1",
+					hands="Adhemar Wristbands",
 					ring2="Cacoethic Ring +1",
-					ring1="Ramuh Ring",   
-					back="Ogma's Cape",
-					waist="Olseni Belt",
+					ring1="Epona's Ring",   
+					back=str_cape,
+					waist="Ioskeha Belt",
 					legs="Carmine Cuisses +1",
 					feet=tp_acc_feet
 				}   
@@ -90,31 +94,41 @@ function get_sets()
 				
                 --DT acc melee set
 				
-                sets.TP.DTacc = {          ammo="Falcon Eye",          
-                                    head="Dampening Tam",neck="Twilight Torque",ear1="Steelflash Earring",ear2="Zennaroi Earring",          
-                                    body="Rawhide Vest",hands="Erilaz Gauntlets +1",ring1="Shadow Ring",ring2="Defending Ring",         
-                                    back="Evasionist's Cape",waist="Olseni Belt",legs="Runeist Trousers +1",feet="Taeon Boots"}         
+                sets.TP.DTacc = {          
+					ammo="Falcon Eye",          
+					head="Dampening Tam",
+					neck="Loricate Torque +1",
+					ear2="Dignitary's Earring",
+					ear1="Cessance Earring",        
+					body="Rawhide Vest",
+					hands="Erilaz Gauntlets +1",
+					ring1="Defending Ring",
+					ring2="Patricius Ring",         
+					back=str_cape,
+					waist="Olseni Belt",
+					legs="Runeist Trousers +1",
+					feet="Taeon Boots"}         
  
     sets.misc = {}
     sets.misc.DT = {}
     sets.misc.DT.None = {}
     sets.misc.DT.Active = {
-					ammo="Vanir Battery",			-- 4 MDEF     
+					ammo="Staunch Tathlum",			-- 2 DT    
 					head="Erilaz Galea +1",			-- 
 					neck="Loricate Torque +1",		-- 6 DT
 					ear1="Eabani Earring",			-- 8 meva
 					ear2="Genmei Earring",			-- 2 PDT 
-					body="Futhark Coat +1",			-- 7 DT
-					hands="Kurys Gloves",			-- 2 DT
-					ring2="Patricius Ring",			-- 5 PDT
+					body="Erilaz Surcoat +1",		-- 
+					hands=dt_hands,					-- 2 PDT 3 DT
+					ring2="Warden's Ring",			-- 3 PDT
 					ring1="Defending Ring",			-- 10 DT
-					back="Ogma's Cape",				-- (5 DT 3 PDT)
+					back=tank_cape,					-- 10 meva
 					waist="Flume Belt +1",			-- 4 PDT
 					legs="Erilaz Leg Guards +1",	-- 7 PDT
 					feet="Erilaz Greaves +1"		-- 5 PDT
 				}  
 			
-													-- 25 DT + 23 PDT + 5% PDT2 + 3 DT grip
+													-- 23 DT + 23 PDT + 5% PDT2 + 3 DT grip
 			
     sets.misc.Movement = {
         legs="Carmine Cuisses +1"}
@@ -132,11 +146,11 @@ function get_sets()
 					neck="Fotia Gorget",
 					ear2="Brutal earring",
 					ear1="Moonshade Earring",
-					body="Adhemar Jacket",
+					body="Herculean Vest",
 					hands=str_hands,
 					ring1="Epona's Ring",
-					ring2="Rajas Ring",
-					back="Bleating Mantle",
+					ring2="Rufescent Ring",
+					back=str_cape,
 					waist="Fotia Belt",
 					legs="Samnuha Tights",
 					feet=dt_feet
@@ -244,6 +258,19 @@ function get_sets()
 				waist = "Gishdubar Sash",
 				ring1 = "Saida Ring"
 				}
+				
+				sets.Utility.Healing = {
+					ammo = "Hydrocera",
+					neck = "Unmoving Collar",
+					head = "Rabid Visor",
+					ear1 = "Mendicant's Earring",
+					ring1 = "Rufescent Ring",
+					ring2 = "Kunaji Ring",
+					back = "Solemnity Cape",
+					waist = "Gishdubar Sash",
+					legs = "Erilaz Leg Guards +1",
+					feet = "Erilaz Greaves"				
+				}
                          
                 --Job Ability Sets--
                 sets.JA = {}
@@ -262,9 +289,9 @@ function get_sets()
 					feet="Adhemar Gamashes"
 				}
 				
-                sets.JA.Vallation = {body="Runeist Coat +1",legs="Futhark Trousers +1", back="Ogma's Cape"}       
+                sets.JA.Vallation = {body="Runeist Coat +1",legs="Futhark Trousers +1", back=tank_cape}       
                 sets.JA.Gambit = {hands="Runeist mitons +1"}
-                sets.JA.Rayke = {feet="Futhark bottes +1"}  
+                sets.JA.Rayke = {feet="Futhark Boots +1"}  
                 sets.JA.Battuta = {head="Futhark bandeau +1"}      
                 sets.JA.Pflug = {feet="Runeist bottes +1"}              
                 sets.JA.Pulse = {head="Erilaz Galea +1",legs="Runeist Trousers +1"}
@@ -274,14 +301,16 @@ function get_sets()
 				
                 sets.precast = {
 					ammo = "Sapience Orb",
-					head="Runeist bandeau +1",
-					body="Samnuha Coat",
-					hands="Leyline Gloves",
-					legs="Limbo Trousers",
-					ear1="Etiolation Earring",
-					ear2="Loquacious Earring",
-					ring1="Prolix Ring",
-					ring2="Weatherspoon Ring"
+					head = "Runeist bandeau +1",
+					body = "Samnuha Coat",
+					hands = "Leyline Gloves",
+					legs = fc_legs,
+					feet = "Carmine Greaves",
+					back = fc_cape,
+					ear1 = "Etiolation Earring",
+					ear2 = "Loquacious Earring",
+					ring1 = "Prolix Ring",
+					ring2 = "Weatherspoon Ring"
 				}
 				
                 sets.Phalanx = {
@@ -295,10 +324,10 @@ function get_sets()
 					head="Rabid Visor",				-- 6
 					neck="Unmoving Collar",			-- 9
 					ear1="Friomisi earring",		-- 2 
-					ear2="Counter Earring",			-- 4
+					ear2="Cryptic Earring",			-- 4
 					body="Emet Harness",			-- 9
 					hands="Kurys Gloves",			-- 9             
-					back="Ogma's Cape",				-- 10 
+					back=tank_cape,					-- 10 
 					legs="Erilaz Leg Guards +1",	-- 11
 					feet="Erilaz Greaves +1",		-- 6
 					ring1="Petrov Ring",			-- 4
@@ -395,7 +424,7 @@ function precast(spell,abil)
                 equip({legs="Futhark Trousers +1"})
         end
 		if spell.name == 'Refresh' then
-				equip({waist="Gishdubar Sash"})
+				equip({head="Erilaz Galea +1", waist="Gishdubar Sash"})
 		end
         if string.find(spell.name,'Utsusemi') then
                 equip({neck="Magoraga Beads"})
@@ -507,6 +536,9 @@ function midcast(spell,act,arg)
                     equip({back="Evasionist's Cape"})
                 end 
         end
+		if spell.name == "Healing Breeze" or spell.name == "Wild Carrot" then
+			equip(sets.Utility.Healing)
+		end
         if EnmityBlueMagic:contains(spell.english) or spell.name == 'Foil' or spell.name == 'Flash' or spell.name == "Stun" then 
                 equip(sets.Enmity,{head="Runeist bandeau +1"})
         end 

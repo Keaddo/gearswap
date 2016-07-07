@@ -297,6 +297,7 @@ function get_sets()
 		tp_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 		cdc_hands = { name="Herculean Gloves", augments={'Crit.hit rate+4','DEX+8','Accuracy+13','Attack+14',}}
 		exp_hands = { name="Herculean Gloves", augments={'Accuracy+23 Attack+23','Crit.hit rate+1','STR+10','Attack+5',}}
+		dt_head = { name="Herculean Helm", augments={'Accuracy+3 Attack+3','Phys. dmg. taken -4%','Accuracy+9','Attack+5',}}
 		dt_hands = { name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}}
 		dt_feet = { name="Herculean Boots", augments={'STR+14','Rng.Atk.+20','Damage taken-4%',}}
 		th_hands = { name="Herculean Gloves", augments={'Accuracy+15','Pet: STR+7','"Treasure Hunter"+2','Accuracy+17 Attack+17',}}
@@ -323,19 +324,19 @@ function get_sets()
     sets.misc.DT = {}
     sets.misc.DT.None = {}
     sets.misc.DT.Active = {
-			ammo="Vanir Battery",
+			ammo="Staunch Tathlum",
 			head="Dampening Tam",
 			neck="Loricate Torque +1", 
-			ear1="Etiolation Earring", 
+			ear1="Genmei Earring", 
 			ear2="Ethereal Earring",
 			body="Emet Harness",
-			hands={ name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}},
+			hands=dt_hands,
 			ring1="Defending Ring",
-			ring2="Gelatinous Ring +1",
+			ring2="Warden's Ring",
 			back="Solemnity Cape",
 			waist="Flume Belt +1",
 			legs="Herculean Trousers",
-			feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
+			feet=dt_feet
 			}
 
     sets.misc['Burst Affinity'] = {
@@ -750,7 +751,7 @@ function get_sets()
     TH_ind = 1
 	
     sets.idle = {
-			ammo="Ginsen",
+			ammo="Staunch Tathlum",
 			head="Rawhide Mask",
 			neck="Sanctity Necklace", 
 			ear1="Infused Earring", 
@@ -762,7 +763,7 @@ function get_sets()
 			back="Solemnity Cape",
 			waist="Flume Belt +1",
 			legs="Carmine Cuisses +1",
-			feet={ name="Herculean Boots", augments={'STR+14','Rng. Atk.+20','Damage taken -4%',}}
+			feet=dt_feet
 			}
 
     sets.idle.SphereRefresh = {
@@ -773,7 +774,7 @@ function get_sets()
 		
 		sets.Town = set_combine(sets.Idle,{
 		body="Abnoba Kaftan",
-		ear1="Etiolation Earring",
+		ear1="Genmei Earring",
 		neck="Loricate Torque +1",
 		ring1="Defending Ring",
 		ring2="Weatherspoon Ring",

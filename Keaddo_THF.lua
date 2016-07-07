@@ -192,15 +192,15 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
 		head="Adhemar Bonnet",
-        neck="Asperity Necklace",
-        ear1="Steelflash Earring",
-        ear2="Bladeborn Earring",
+        neck="Fotia Gorget",
+        ear1="Moonshade Earring",
+        ear2="Brutal Earring",
 		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         ring1="Epona's Ring",
         ring2="Petrov Ring",
 		back="Lupine Cape",
-        waist="Windbuffet Belt +1",
+        waist="Fotia Belt",
         legs="Samnuha Tights",
         feet="Herculean Boots"
     }
@@ -253,8 +253,6 @@ function init_gear_sets()
         head="Uk'uxkaj Cap",
         neck="Moepapa Medal",
         hands="Pillager's Armlets +1",
-        ring1="Ramuh Ring",
-        waist="Light Belt",
         legs="Samnuha Tights",
         back="Bleating Mantle",
         feet="Plunderer's Poulaines"
@@ -333,8 +331,8 @@ function init_gear_sets()
 	sets.idle = {
 		head="Adhemar Bonnet",
         neck="Asperity Necklace",
-        ear1="Steelflash Earring",
-        ear2="Bladeborn Earring",
+        ear1="Suppanomimi",
+        ear2="Eabani Earring",
 		--body="Skadi's Cuirie +1",
 		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
@@ -437,11 +435,9 @@ function init_gear_sets()
 		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         neck="Lissome Necklace",
-        ear1="Zennaroi Earring",
-        ear2="Steelflash Earring",
-        ring1="Patricius Ring",
-        waist="Olseni Belt",
-        feet="Herculean Boots"
+        ear1="Cessance Earring",
+        ear2="Dignitary's Earring",
+        ring1="Cacoethic Ring +1",
     })
 	sets.engaged.Evasion = set_combine(sets.engaged, {
 		body="Qaaxo Harness",
