@@ -250,12 +250,6 @@ function init_gear_sets()
 	sets.precast.WS['Dancing Edge'].SATA = set_combine(sets.precast.WS['Dancing Edge'].Mid, {neck="Breeze Gorget"})
 
 	sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {
-        head="Uk'uxkaj Cap",
-        neck="Moepapa Medal",
-        hands="Pillager's Armlets +1",
-        legs="Samnuha Tights",
-        back="Bleating Mantle",
-        feet="Plunderer's Poulaines"
     })
 	sets.precast.WS['Evisceration'].Mid = set_combine(sets.precast.WS['Evisceration'], {back="Canny Cape"})
 	sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {
@@ -271,6 +265,8 @@ function init_gear_sets()
 	sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Mid, {neck="Shadow Gorget"})
 	
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
+	head = "Lilitu Headpiece",
+	neck = "Caro Necklace"
     })
 	sets.precast.WS["Rudra's Storm"].Mid = set_combine(sets.precast.WS["Rudra's Storm"], {back="Canny Cape"})
 	sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {
@@ -476,6 +472,8 @@ function init_gear_sets()
     
     -- Haste 43%
     sets.engaged.Haste_43 = set_combine(sets.engaged, {
+	ear1 = "Cessance Earring",
+	ear2 = "Brutal Earring"
     })
     sets.engaged.Mid.Haste_43 = set_combine(sets.engaged.Haste_43, { 
 

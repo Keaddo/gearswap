@@ -293,6 +293,7 @@ function get_sets()
 
 	
 	-- local binds
+		refresh_hands = { name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}}
 	    cdc_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
 		tp_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 		cdc_hands = { name="Herculean Gloves", augments={'Crit.hit rate+4','DEX+8','Accuracy+13','Attack+14',}}
@@ -757,7 +758,7 @@ function get_sets()
 			ear1="Infused Earring", 
 			ear2="Ethereal Earring",
 			body="Vrikodara Jupon",
-			hands="Herculean Gloves",
+			hands=refresh_hands,
 			ring1="Sheltered Ring",
 			ring2="Paguroidea ring",
 			back="Solemnity Cape",
