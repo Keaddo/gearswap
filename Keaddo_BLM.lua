@@ -73,9 +73,9 @@ function init_gear_sets()
 		ring1="Sheltered Ring",
 		ring2="Paguroidea Ring",
 		back="Solemnity Cape", 
-		waist="Refoccilation Stone",
+		waist="Fucho-no-Obi",
 		legs="Assiduity Pants +1",
-		feet=gear.nuke_feet
+		feet=gear.burst_feet
 	}
 
     sets.idle.HighMP = {
@@ -87,9 +87,9 @@ function init_gear_sets()
         body="Amalric Doublet",
         hands="Amalric Gages",
         ring1="Defending Ring",
-        ring2="Gelatinous Ring +1",
-        back="Fucho-no-Obi",
-        waist=gear.ElementalObi,
+        ring2="Mephitas's Ring +1",
+        back=gear.death_back,
+        waist="Fucho-no-Obi",
         legs="Amalric Slops",
         feet="Amalric Nails",
 	}

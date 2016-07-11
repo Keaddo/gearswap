@@ -293,53 +293,57 @@ function get_sets()
 	sets.DT = {}
 	sets.DT.Ochain = {
 			sub="Ochain",
-			ammo="Vanir Battery", 
-			head="Loess Barbuta +1",		-- 10 DT --
+			ammo="Staunch Tathlum",			-- 2 DT -- 
+			head="Souveran Schaller",		
 			neck="Loricate Torque +1",		-- 6 DT --
-			ear1="Odnowa Earring +1", 		
+			ear1="Thureous Earring", 		
 			ear2="Ethereal Earring", 
 			body="Souveran Cuirass", 		-- 9 DT --
 			hands="Souveran Handschuhs",	-- MDT 4 PDT 3 --
 			ring1="Defending Ring",			-- 10 DT
-			ring2="Patricius Ring",			-- 5 PDT --
-			back="Weard Mantle", 		-- 5 DT --
+			ring2="Warden's Ring",			-- 3 PDT --
+			back="Weard Mantle", 			-- 3 DT --
 			waist="Flume Belt +1",			-- 4 PDT --
 			legs="Souveran Diechlings",		-- 3 DT
 			feet="Souveran Schuhs"}			-- 4 PDT --
 			
-									--	TOTAL: 43 DT + 4 MDT + 16 PDT + 3 DT Brilliance  
+									--	TOTAL: 33 DT + 8 MDT + 14 PDT + 3 DT Brilliance  
 			
 	sets.DT.Aegis = {
 			sub="Aegis",
-			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
+			ammo="Staunch Tathlum",			-- 2 DT -- 
+			head="Souveran Schaller",		
+			neck="Loricate Torque +1",		-- 6 DT --
+			ear1="Thureous Earring", 		
 			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Patricius Ring",
-			back="Weard Mantle", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Souveran Schuhs"}
+			body="Souveran Cuirass", 		-- 9 DT --
+			hands="Souveran Handschuhs",	-- MDT 4 PDT 3 --
+			ring1="Defending Ring",			-- 10 DT
+			ring2="Warden's Ring",			-- 3 PDT --
+			back="Weard Mantle", 			-- 3 DT --
+			waist="Flume Belt +1",			-- 4 PDT --
+			legs="Souveran Diechlings",		-- 3 DT
+			feet="Souveran Schuhs"}			-- 4 PDT --
+			
+									--	TOTAL: 33 DT + 8 MDT + 14 PDT + 3 DT Brilliance
 			
 	sets.DT.Priwen = {
 			sub="Priwen",
-			ammo="Vanir Battery", 
-			head="Loess Barbuta +1", 
-			neck="Loricate Torque +1",
-			ear1="Odnowa Earring +1", 
+			ammo="Staunch Tathlum",			-- 2 DT -- 
+			head="Souveran Schaller",		
+			neck="Loricate Torque +1",		-- 6 DT --
+			ear1="Thureous Earring", 		
 			ear2="Ethereal Earring", 
-			body="Souveran Cuirass", 
-			hands="Souveran Handschuhs", 
-			ring1="Defending Ring",
-			ring2="Patricius Ring",
-			back="Weard Mantle", 
-			waist="Flume Belt +1",
-			legs="Souveran Diechlings", 
-			feet="Souveran Schuhs"}
+			body="Souveran Cuirass", 		-- 9 DT --
+			hands="Souveran Handschuhs",	-- MDT 4 PDT 3 --
+			ring1="Defending Ring",			-- 10 DT
+			ring2="Warden's Ring",			-- 3 PDT --
+			back="Weard Mantle", 			-- 3 DT --
+			waist="Flume Belt +1",			-- 4 PDT --
+			legs="Souveran Diechlings",		-- 3 DT
+			feet="Souveran Schuhs"}			-- 4 PDT --
+			
+									--	TOTAL: 33 DT + 8 MDT + 14 PDT + 3 DT Brilliance
 
 	-- Weakness/Kiting/Repulse Sets --
 	sets.Weakness = {}
@@ -543,14 +547,14 @@ function get_sets()
 			ammo="Impatiens",
 			head="Carmine Mask",
 			neck="Orunmila's Torque",
-			ear1="Etiolation Earring",
+			ear1="Enchntr. Earring +1",
 			ear2="Loquac. Earring",
-			body="Odyssean Chestplate",
+			body="Chozoron Coselete",
 			hands="Leyline Gloves",
 			ring1="Prolix Ring",
 			ring2="Weatherspoon Ring",
-			back="Weard Mantle",
-			waist="Goading Belt",
+			back="Xucau Mantle",
+			waist="Gold Mog. Belt",
 			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
 			feet={name="Odyssean Greaves",augments={"INT+11", "Fast Cast+5"}}
 			}
@@ -575,8 +579,8 @@ function get_sets()
 			hands="Leyline Gloves",
 			ring1="Prolix Ring",
 			ring2="Weatherspoon Ring",
-			back="Weard Mantle",
-			waist="Goading Belt",
+			back="Xucau Mantle",
+			waist="Gold Mog. Belt",
 			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
 			feet={name="Odyssean Greaves",augments={"INT+11", "Fast Cast+5"}}
 			}
@@ -589,7 +593,7 @@ function get_sets()
 	sets.Midcast.Cure = {
 			ammo="Impatiens",
 			head="Loess Barbuta +1",
-			neck="Sanctity Necklace",
+			neck="Loricate Torque +1",
 			ear1="Oneiros Earring",
 			ear2="Nourish. Earring +1",
 			body="Jumalik Mail",
@@ -597,7 +601,7 @@ function get_sets()
 			ring1="Defending Ring",
 			ring2="Kunaji Ring",
 			back="Solemnity Cape",
-			waist="Rumination Sash",
+			waist="Gishdubar Sash",
 			legs="Carmine Cuisses +1",
 			feet="Souveran Schuhs"}
 
