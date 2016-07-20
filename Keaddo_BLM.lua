@@ -318,7 +318,7 @@ function init_gear_sets()
     }
 
     sets.midcast.Death.HighMP = {
-        ammo="Pemphredo Tathlum",
+        ammo="Psilomene",
         head="Pixie Hairpin +1",
         body=gear.nuke_body,
         hands="Amalric Gages",
@@ -351,15 +351,17 @@ function init_gear_sets()
 
     ---- Magic Burst Sets ----
     sets.magic_burst = {}
-    sets.magic_burst['Elemental Magic'] = {
+    sets.magic_burst['Elemental Magic'] = set_combine(sets.midcast['Elemental Magic'],{
 		head=gear.burst_head,
 		neck="Mizukage-no-Kubikazari",
 		feet=gear.burst_feet,
 		ring1="Mujin Band",
+		waist=gear.ElementalObi,
 	--	ring2="Locus Ring",
 		back=gear.nuke_back,
 		legs=gear.burst_legs
-	}
+		
+	})
     
     sets.magic_burst['Elemental Magic'].Comet = {
 		neck="Mizukage-no-Kubikazari",
@@ -372,9 +374,11 @@ function init_gear_sets()
 		ring1="Mujin Band",
     }
 
-    sets.magic_burst.Death.HighMP = {
+    sets.magic_burst.Death.HighMP = set_combine(sets.midcast.Death.HighMP,{
 		neck="Mizukage-no-Kubikazari",
-    }
+		ring1="Mujin Band"
+		
+    })
     
     sets.magic_burst.Aspir = {
         neck="Mizukage-no-Kubikazari",

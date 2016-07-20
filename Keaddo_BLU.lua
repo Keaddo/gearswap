@@ -296,7 +296,7 @@ function get_sets()
 		refresh_hands = { name="Herculean Gloves", augments={'Magic burst mdg.+7%','Enmity-2','"Refresh"+1','Accuracy+13 Attack+13',}}
 	    cdc_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
 		tp_back = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-		cdc_hands = { name="Herculean Gloves", augments={'Crit.hit rate+4','DEX+8','Accuracy+13','Attack+14',}}
+		cdc_hands = "Adhemar Wristbands"
 		exp_hands = { name="Herculean Gloves", augments={'Accuracy+23 Attack+23','Crit.hit rate+1','STR+10','Attack+5',}}
 		dt_head = { name="Herculean Helm", augments={'Accuracy+3 Attack+3','Phys. dmg. taken -4%','Accuracy+9','Attack+5',}}
 		dt_hands = { name="Herculean Gloves", augments={'AGI+8','Accuracy+9','Damage taken -3%',}}

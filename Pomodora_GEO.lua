@@ -397,28 +397,28 @@ function self_command(str)
 		if not check_buffs('silence', 'mute')
 		and check_recasts(s('Indi-Precision'))
 		and check_recasts(s('Entrust')) then
-			windower.send_command('Entrust <me>;wait 1;Indi-Precision <p1>')				
+			windower.send_command('Entrust <me>;wait 1;Indi-Precision <p3>')				
 		end
 		
 	elseif str == 'entrust_focus' then
 		if not check_buffs('silence', 'mute')
 		and check_recasts(s('Indi-Focus'))
 		and check_recasts(s('Entrust')) then
-			windower.send_command('Entrust <me>;wait 1;Indi-Focus <p1>')				
+			windower.send_command('Entrust <me>;wait 1;Indi-Focus <p3>')				
 		end		
 
 	elseif str == 'entrust_fury' then
 		if not check_buffs('silence', 'mute')
 		and check_recasts(s('Indi-Fury'))
 		and check_recasts(s('Entrust')) then
-			windower.send_command('Entrust <me>;wait 1;Indi-Fury <p1>')				
+			windower.send_command('Entrust <me>;wait 1;Indi-Fury <p3>')				
 		end	
 
 	elseif str == 'entrust_haste' then
 		if not check_buffs('silence', 'mute')
 		and check_recasts(s('Indi-Haste'))
 		and check_recasts(s('Entrust')) then
-			windower.send_command('Entrust <me>;wait 1;Indi-Haste <p1>')				
+			windower.send_command('Entrust <me>;wait 1;Indi-Haste <p3>')				
 		end	
 
 	elseif str == 'blaze' then

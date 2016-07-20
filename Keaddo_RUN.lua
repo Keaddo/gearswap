@@ -21,6 +21,8 @@ function get_sets()
 	fc_legs = "Herculean Trousers"
 	fc_cape = { name="Ogma's cape", augments={'"Fast Cast"+10',}}
 	str_cape = { name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	mab_head = { name="Herculean Helm", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst mdg.+4%','Mag. Acc.+1',}}
+	mab_feet = { name="Herculean Boots", augments={'Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','AGI+1','Magic burst mdg.+7%','Accuracy+6 Attack+6','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
 				
 				--Idle Sets--
 				sets.Idle = {               
@@ -276,17 +278,18 @@ function get_sets()
                 sets.JA = {}
                 sets.JA.Lunge = {
 					ammo="Seething Bomblet +1",
-					head="Highwing Helm",
-					neck="Deviant Necklace",
-					lear="Hecate's Earring",
-					rear="Friomisi earring",      
+					head=mab_head,
+					neck="Sanctity Necklace",     
 					body="Samnuha Coat",
 					hands="Leyline Gloves",
-					ring1="Acumen Ring",                         
+					ear1="Hecate's Earring",
+					ear2="Friomisi Earring",
+					ring1="Mujin Band",
+					ring2="Shiva Ring +1",
 					back="Toro Cape",
 					waist="Eschan Stone",
 					legs="Limbo Trousers",
-					feet="Adhemar Gamashes"
+					feet=mab_feet
 				}
 				
                 sets.JA.Vallation = {body="Runeist Coat +1",legs="Futhark Trousers +1", back=tank_cape}       
