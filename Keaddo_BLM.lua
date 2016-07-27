@@ -128,17 +128,17 @@ function init_gear_sets()
 
     sets.precast.FC.HighMP = {
         ammo="Psilomene",
-        head=gear.fc_head,
+        head="Amalric Coif",
 		body=gear.fc_body,
         hands="Amalric Gages",
         legs="Psycloth Lappas",
-		feet=gear.fc_feet,
+		feet="Amalric Nails",
         neck="Orunmila's Torque",
 		waist="Witful Belt",
         ear2="Etiolation Earring",
         ear1="Loquac. Earring",
-        left_ring="Mephitas's Ring",
-        right_ring="Mephitas's Ring +1",
+        ring1="Mephitas's Ring",
+        ring2="Mephitas's Ring +1",
         back="Bane Cape",
     }
 
@@ -224,8 +224,8 @@ function init_gear_sets()
 	ammo="Pemphredo Tathlum",
 	head="Amalric Coif",
 	neck="Sanctity Necklace",
-	ear1="Digni. Earring",
-	ear2="Barkarole Earring",
+	ear1="Barkarole Earring",
+	ear2="Dignitary's Earring",
 	body="Vanya Robe",
 	hands="Amalric Gages",
 	ring1="Metamorph Ring",
@@ -239,9 +239,9 @@ function init_gear_sets()
     sets.midcast.Aspir = {
 		ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",
-		neck="Mizu. Kubikazari",
-		ear1="Hirudinea Earring",
-		ear2="Barkarole Earring",
+		neck="Sanctity Necklace",
+		ear1="Barkarole Earring",
+		ear2="Hirudinea Earring",
         body=gear.aspir_body,
         hands=gear.aspir_hands,
 		ring1="Evanescence Ring",
@@ -249,14 +249,13 @@ function init_gear_sets()
 		back="Bane Cape",
 		waist="Fucho-no-Obi",
         legs=gear.aspir_legs,
-		Feet=gear.aspir_feet
+		feet=gear.aspir_feet
     }
 	
 
 
     sets.midcast.Aspir.HighMP = set_combine(sets.midcast.Aspir,{
-		ammo="Psilomene",
-		neck="Incanter's Torque",
+		ammo="Hydrocera",
 		legs="Amalric Slops",
 		ring2="Mephitas Ring +1"
     })
@@ -271,8 +270,8 @@ function init_gear_sets()
 		legs="Amalric Slops",
 		feet=gear.nuke_feet,
 		neck="Saevus Pendant +1",
-		ear1="Friomisi Earring",
-		ear2="Barkarole Earring",
+		ear1="Barkarole Earring",
+		ear2="Friomisi Earring",
 		ring1="Shiva Ring",
 		ring2="Shiva Ring +1",
 		back=gear.nuke_back,
@@ -287,8 +286,8 @@ function init_gear_sets()
         feet={name="Merlinic Crackows", augments={'Mag. Acc.+30','"Occult Acumen"+11','"Mag.Atk.Bns."+1',}},
         neck="Combatant's Torque",
         waist=gear.ElementalObi,
-        left_ear="Dedition Earring",
-        right_ear="Telos Earring",
+        ear1="Dedition Earring",
+        ear2="Telos Earring",
         left_ring="Petrov Ring",
         right_ring="Rajas Ring",
         back=gear.nuke_back,
@@ -296,13 +295,13 @@ function init_gear_sets()
         
     sets.midcast['Elemental Magic'].Comet = set_combine(sets.midcast['Elemental Magic'], {
         head="Pixie Hairpin +1",
-        left_ring="Archon Ring",
+        ring2="Archon Ring",
     })
 
     sets.midcast.ElementalEnfeeble = sets.midcast['Elemental Magic']
 
     sets.midcast.Death = {
-        ammo="Pemphredo Tathlum",
+        ammo="Psilomene",
         head="Pixie Hairpin +1",
         body=gear.nuke_body,
         hands="Amalric Gages",
@@ -310,10 +309,10 @@ function init_gear_sets()
 		feet=gear.nuke_Feet,
         neck="Saevus Pendant +1",
         waist=gear.ElementalObi,
-        left_ear="Barkaro. Earring",
-        right_ear="Friomisi Earring",
-        left_ring="Archon Ring",
-        right_ring="Mephitas's Ring +1",
+        ear1="Barkaro. Earring",
+        ear2="Friomisi Earring",
+        ring1="Mephitas's Ring",
+        ring2="Mephitas's Ring +1",
         back=gear.death_back,
     }
 
@@ -326,10 +325,10 @@ function init_gear_sets()
 		feet=gear.nuke_Feet,
         neck="Saevus Pendant +1",
         waist=gear.ElementalObi,
-        left_ear="Barkaro. Earring",
-        right_ear="Friomisi Earring",
-        left_ring="Archon Ring",
-        right_ring="Mephitas's Ring +1",
+        ear1="Barkaro. Earring",
+        ear2="Friomisi Earring",
+        ring1="Mephitas's Ring",
+        ring2="Mephitas's Ring +1",
         back=gear.death_back,
     }
     
@@ -342,8 +341,8 @@ function init_gear_sets()
         feet=gear.nuke_feet,
         neck="Incanter's Torque",
         waist="Refoccilation Stone",
-        left_ear="Barkaro. Earring",
-        right_ear="Digni. Earring",
+        ear1="Barkaro. Earring",
+        ear2="Digni. Earring",
         left_ring="Evanescence Ring",
         right_ring="Vertigo Ring",
         back=gear.nuke_back,
@@ -355,19 +354,23 @@ function init_gear_sets()
 		head=gear.burst_head,
 		neck="Mizukage-no-Kubikazari",
 		feet=gear.burst_feet,
+		ear2="Static Earring",
 		ring1="Mujin Band",
-		waist=gear.ElementalObi,
 	--	ring2="Locus Ring",
 		back=gear.nuke_back,
 		legs=gear.burst_legs
 		
 	})
     
-    sets.magic_burst['Elemental Magic'].Comet = {
+    sets.magic_burst['Elemental Magic'].Comet = set_combine(sets.midcast['Elemental Magic'].Comet,{
 		neck="Mizukage-no-Kubikazari",
-	--	ring2="Locus Ring",
-		back=gear.nuke_back
-	}
+		feet=gear.burst_feet,
+		ear2="Static Earring",
+		ring1="Mujin Band",
+		ring2="Locus Ring",
+		back=gear.nuke_back,
+		legs=gear.burst_legs
+	})
 
     sets.magic_burst.Death = {
 		neck="Mizukage-no-Kubikazari",
@@ -376,6 +379,7 @@ function init_gear_sets()
 
     sets.magic_burst.Death.HighMP = set_combine(sets.midcast.Death.HighMP,{
 		neck="Mizukage-no-Kubikazari",
+		ear2="Static Earring",
 		ring1="Mujin Band"
 		
     })
