@@ -68,7 +68,7 @@ function init_gear_sets()
 		neck="Sanctity Necklace",
 		ear1="Infused Earring",
 		ear2="Ethereal Earring",
-		body="Vrikodara Jupon",
+		body="Jhakri Robe +1",
 		hands="Amalric Gages",
 		ring1="Sheltered Ring",
 		ring2="Paguroidea Ring",

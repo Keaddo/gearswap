@@ -34,7 +34,7 @@ function get_sets()
 			head="Jumalik Helm",
 			neck="Coatl Gorget +1",
 			ear1="Infused Earring",
-			ear2="Ethereal Earring",
+			ear2="Genmei Earring",
 			body="Chozoron Coselete",
 			hands="Souveran Handschuhs",
 			ring1="Paguroidea Ring",
@@ -197,7 +197,7 @@ function get_sets()
 			head="Loess Barbuta +1", -- 5 PDT --
 			neck="Loricate Torque +1", -- 5 DT --
 			ear1="Zwazo Earring",
-			ear2="Ethereal Earring",
+			ear2="Genmei Earring",
 			body="Souveran Cuirass", -- 9 DT [Upgrade: Tartarus Platemail -10% DT] --
 			hands="Souveran Handschuhs", -- 3 PDT 2/5 Souv. Set --
 			ring1="Defending Ring", -- 4 PDT --
@@ -214,7 +214,7 @@ function get_sets()
 			head="Loess Barbuta +1",
 			neck="Loricate Torque +1",
 			ear1="Zwazo Earring",
-			ear2="Ethereal Earring",
+			ear2="Genmei Earring",
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring", 
@@ -230,7 +230,7 @@ function get_sets()
 			head="Loess Barbuta +1",
 			neck="Loricate Torque +1",
 			ear1="Zwazo Earring",
-			ear2="Ethereal Earring",
+			ear2="Genmei Earring",
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring", 
@@ -247,7 +247,7 @@ function get_sets()
 			head="Loess Barbuta +1", -- MDB 2 / MDT 5 --
 			neck="Loricate Torque +1", -- 5 DT --
 			ear1="Odnowa Earring +1", -- MDT 2 --
-			ear2="Ethereal Earring", 
+			ear2="Genmei Earring", 
 			body="Souveran Cuirass", -- 9 DT --
 			hands="Souveran Handschuhs", -- MDB 1 / MDT 5 --
 			ring1="Defending Ring",
@@ -264,7 +264,7 @@ function get_sets()
 			head="Loess Barbuta +1", 
 			neck="Loricate Torque +1",
 			ear1="Odnowa Earring +1", 
-			ear2="Ethereal Earring", 
+			ear2="Genmei Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring",
@@ -280,7 +280,7 @@ function get_sets()
 			head="Loess Barbuta +1", 
 			neck="Loricate Torque +1",
 			ear1="Odnowa Earring +1", 
-			ear2="Ethereal Earring", 
+			ear2="Genmei Earring", 
 			body="Souveran Cuirass", 
 			hands="Souveran Handschuhs", 
 			ring1="Defending Ring",
@@ -297,7 +297,7 @@ function get_sets()
 			head="Souveran Schaller",		
 			neck="Loricate Torque +1",		-- 6 DT --
 			ear1="Thureous Earring", 		
-			ear2="Ethereal Earring", 
+			ear2="Genmei Earring", 
 			body="Souveran Cuirass", 		-- 9 DT --
 			hands="Souveran Handschuhs",	-- MDT 4 PDT 3 --
 			ring1="Defending Ring",			-- 10 DT
@@ -315,7 +315,7 @@ function get_sets()
 			head="Souveran Schaller",		
 			neck="Loricate Torque +1",		-- 6 DT --
 			ear1="Thureous Earring", 		
-			ear2="Ethereal Earring", 
+			ear2="Genmei Earring", 
 			body="Souveran Cuirass", 		-- 9 DT --
 			hands="Souveran Handschuhs",	-- MDT 4 PDT 3 --
 			ring1="Defending Ring",			-- 10 DT
@@ -333,7 +333,7 @@ function get_sets()
 			head="Souveran Schaller",		
 			neck="Loricate Torque +1",		-- 6 DT --
 			ear1="Thureous Earring", 		
-			ear2="Ethereal Earring", 
+			ear2="Genmei Earring", 
 			body="Souveran Cuirass", 		-- 9 DT --
 			hands="Souveran Handschuhs",	-- MDT 4 PDT 3 --
 			ring1="Defending Ring",			-- 10 DT
@@ -488,7 +488,7 @@ function get_sets()
 			head="Loess Barbuta +1", -- 9-14 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
-			ear2="Ethereal Earring", -- 7 --
+			ear2="Genmei Earring", -- 7 --
 			body="Souveran Cuirass", -- 10 --
 			hands="Odyssean Gauntlets", -- 14 --
 			ring1="Apeile Ring", -- 4~8 --
@@ -614,7 +614,7 @@ function get_sets()
 			head="Loess Barbuta +1", -- 7 --
 			neck="Unmoving Collar", -- 9 --
 			ear1="Friomisi Earring", -- 2 --
-			ear2="Ethereal Earring", -- 7 --
+			ear2="Genmei Earring", -- 7 --
 			body="Souveran Cuirass", -- 10 --
 			hands="Odyssean Gauntlets", -- 14 --
 			ring1="Apeile Ring", -- 4~8 --
