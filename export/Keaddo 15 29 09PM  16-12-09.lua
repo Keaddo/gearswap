@@ -1,0 +1,17 @@
+sets.exported={
+    main="Heishi Shorinken",
+    sub={ name="Kanaria", augments={'Crit.hit rate+2','AGI+4','Accuracy+15','Attack+21','DMG:+20',}},
+    ammo="Impatiens",
+    head={ name="Herculean Helm", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst mdg.+4%','Mag. Acc.+1',}},
+    body="Hiza. Haramaki +1",
+    hands="Hizamaru Kote +1",
+    legs={ name="Mochi. Hakama +1", augments={'Enhances "Mijin Gakure" effect',}},
+    feet={ name="Herculean Boots", augments={'Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','AGI+1','Magic burst mdg.+7%','Accuracy+6 Attack+6','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+    neck="Loricate Torque +1",
+    waist="Windbuffet Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Genmei Earring",
+    left_ring="Defending Ring",
+    right_ring="Weather. Ring",
+    back="Solemnity Cape",
+}
