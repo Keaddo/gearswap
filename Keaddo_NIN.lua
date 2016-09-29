@@ -258,8 +258,8 @@ function init_gear_sets()
     sets.midcast.SelfNinjutsu = sets.midcast.Ninjutsu
     sets.midcast.Utsusemi = set_combine(sets.midcast.Ninjutsu, {
         hands="Mochizuki Tekko", 
-        back=Andartia.DEX,
-        feet="Iga Kyahan +2"
+        back="Andartia's Mantle",
+        feet="Hattori Kyahan"
     })
     sets.midcast.Migawari = set_combine(sets.midcast.Ninjutsu, {
         body="Hattori Ningi +1", 
@@ -482,7 +482,7 @@ function init_gear_sets()
         ring2="Petrov Ring",
         back=Andartia.DEX,
         waist="Windbuffet Belt +1",
-        legs="Herculean Trousers",
+        legs="Samnuha Tights",
         feet=gear.ta_feet
     })
     -- Base set for hard content

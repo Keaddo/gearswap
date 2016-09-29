@@ -546,12 +546,12 @@ function get_sets()
 	sets.Precast.FastCast = {
 			ammo="Impatiens",
 			head="Carmine Mask",
-			neck="Orunmila's Torque",
-			ear1="Enchntr. Earring +1",
-			ear2="Loquac. Earring",
-			body="Chozoron Coselete",
+			neck="Loricate Torque +1",
+			ear1="Loquacious Earring",
+			ear2="Genmei Earring",
+			body="Odyss. Chestplate",
 			hands="Leyline Gloves",
-			ring1="Prolix Ring",
+			ring1="Rahab Ring",
 			ring2="Weatherspoon Ring",
 			back="Xucau Mantle",
 			waist="Gold Mog. Belt",
@@ -571,18 +571,18 @@ function get_sets()
 	-- Spells Recast --
 	sets.Midcast.Recast = {
 			ammo="Impatiens",
-			head="Carmine Mask",
-			neck="Orunmila's Torque",
-			ear1="Enchntr. Earring +1",
-			ear2="Loquac. Earring",
-			body="Chozoron Coselete",
-			hands="Leyline Gloves",
-			ring1="Prolix Ring",
+			head="Souveran Schaller",
+			neck="Loricate Torque +1",
+			ear1="Loquacious Earring",
+			ear2="Genmei Earring",
+			body="Souveran Cuirass",
+			hands="Souveran Handschuhs",
+			ring1="Rahab Ring",
 			ring2="Weatherspoon Ring",
 			back="Xucau Mantle",
 			waist="Gold Mog. Belt",
-			legs={name="Odyssean Cuisses",augments={"STR+5", "Accuracy+10", "Attack+11", "Fast Cast+5"}},
-			feet={name="Odyssean Greaves",augments={"INT+11", "Fast Cast+5"}}
+			legs="Carmine Cuisses +1",
+			feet="Souveran Schuhs"
 			}
 
 	-- Divine Magic --
